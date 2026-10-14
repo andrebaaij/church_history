@@ -13,6 +13,22 @@ type Props = {
 export function YearSlider({ ds, timeline, year, lang, filters, selected, onYear, onSelect }: Props) {
   const { t } = useTranslation();
   const [playing, setPlaying] = useState(false);
+  const [showLanes, setShowLanes] = useState(() => {
+    try {
+      return localStorage.getItem("lanes") === "1";
+    } catch {
+      return false;
+    }
+  });
+  const toggleLanes = () =>
+    setShowLanes((v) => {
+      try {
+        localStorage.setItem("lanes", v ? "0" : "1");
+      } catch {
+        /* storage unavailable: keep the in-memory choice */
+      }
+      return !v;
+    });
   const min = timeline.start.year;
   const max = timeline.end.year;
   useEffect(() => {
@@ -39,11 +55,15 @@ export function YearSlider({ ds, timeline, year, lang, filters, selected, onYear
       <button className="play" onClick={() => setPlaying((p) => !p)} aria-label={t(playing ? "slider.pause" : "slider.play")}>
         {playing ? "❚❚" : "▶"}
       </button>
+      <button className={`lanes-toggle ${showLanes ? "on" : ""}`} onClick={toggleLanes} aria-pressed={showLanes}>
+        {t("slider.lanes", { count: lanes.length })}
+      </button>
       <div className="timeline-body">
         <div className="track">
-          <div className="lanes" aria-hidden>
+          {showLanes && <div className="lanes" aria-hidden>
             {lanes.map(({ person, items }) => (
               <div key={person.id} className="lane" title={tx(person.name, lang)}>
+                <span className="lane-label" style={{ color: person.color }}>{tx(person.name, lang)}</span>
                 {items.map((it) => (
                   <button
                     key={it.id}
@@ -55,7 +75,7 @@ export function YearSlider({ ds, timeline, year, lang, filters, selected, onYear
                 ))}
               </div>
             ))}
-          </div>
+          </div>}
           <input data-testid="year-slider" type="range" min={min} max={max} value={year} aria-label={t("slider.label")} onChange={(e) => onYear(Number(e.target.value))} />
           <div className="cursor" style={{ left: pct(year) }} aria-hidden />
         </div>

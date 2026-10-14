@@ -12,7 +12,8 @@
   "slider": {
     "label": "Year",
     "play": "Play",
-    "pause": "Pause"
+    "pause": "Pause",
+    "lanes": "Who was where ({{count}})"
   },
   "filters": {
     "title": "Filters",
