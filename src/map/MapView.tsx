@@ -9,6 +9,10 @@ import type { AppState } from "../state/store";
 import { buildStyle, INTERACTIVE_LAYERS, TERRITORY_LAYERS, territoryFilter } from "./style";
 import { buildPlaceFeatures, buildRouteFeatures, buildStayFeatures } from "./features";
 import { hatchImage } from "./hatch";
+import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
+
+// Bundle MapLibre's worker with Vite so it loads from our own origin in dev and production.
+maplibregl.setWorkerUrl(workerUrl);
 
 export type MapViewProps = {
   ds: Dataset; idx: Index; year: number; filters: Filters; lang: string; theme: ThemeName;
