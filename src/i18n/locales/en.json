@@ -1,8 +1,25 @@
 {
-  "app": { "title": "Apostles Map", "loading": "Loading map…", "loadError": "Could not load the map data." },
-  "year": { "exact": "{{year}} AD", "circa": "c. {{year}} AD" },
-  "slider": { "label": "Year", "play": "Play", "pause": "Pause" },
-  "filters": { "title": "Filters", "people": "People", "grades": "Reliability" },
+  "app": {
+    "title": "Apostles Map",
+    "loading": "Loading map…",
+    "loadError": "Could not load the map data.",
+    "subtitle": "The travels of the apostles, c. AD 30–100"
+  },
+  "year": {
+    "exact": "{{year}} AD",
+    "circa": "c. {{year}} AD"
+  },
+  "slider": {
+    "label": "Year",
+    "play": "Play",
+    "pause": "Pause"
+  },
+  "filters": {
+    "title": "Filters",
+    "people": "People",
+    "grades": "Reliability",
+    "hint": "Line style shows how reliable a route is; colour shows who travelled."
+  },
   "grade": {
     "A": "A — New Testament or archaeology",
     "B": "B — Early writers (within ~150 years)",
@@ -10,7 +27,9 @@
     "D": "D — Apocryphal acts and legend",
     "E": "E — Local tradition"
   },
-  "legend": { "title": "Reliability" },
+  "legend": {
+    "title": "Reliability"
+  },
   "detail": {
     "close": "Close",
     "sources": "Sources",
@@ -19,9 +38,52 @@
     "episodes": "What happened here",
     "notes": "Note"
   },
-  "media": { "illustration": "Illustration — not evidence", "evidence": "Evidence", "credit": "{{creator}}, {{licence}}" },
-  "search": { "placeholder": "Search a place, person or story…", "noResults": "No results" },
-  "story": { "start": "Stories", "exit": "Explore", "back": "Back to story", "close": "End story", "step": "{{n}} / {{total}}", "next": "Next", "prev": "Previous" },
-  "settings": { "language": "Language", "theme": "Display", "themeDefault": "Screen", "themeProjector": "Projector", "copyStep": "Copy as story step", "copied": "Copied" },
-  "attribution": { "open": "Sources & attribution", "title": "Sources & attribution", "close": "Close" }
+  "media": {
+    "illustration": "Illustration — not evidence",
+    "evidence": "Evidence",
+    "credit": "{{creator}}, {{licence}}"
+  },
+  "search": {
+    "placeholder": "Search a place, person or story…",
+    "noResults": "No results"
+  },
+  "story": {
+    "start": "Stories",
+    "exit": "Explore",
+    "back": "Back to story",
+    "close": "End story",
+    "step": "{{n}} / {{total}}",
+    "next": "Next",
+    "prev": "Previous"
+  },
+  "settings": {
+    "language": "Language",
+    "theme": "Display",
+    "themeDefault": "Screen",
+    "themeProjector": "Projector",
+    "copyStep": "Copy as story step",
+    "copied": "Copied"
+  },
+  "attribution": {
+    "open": "Sources & attribution",
+    "title": "Sources & attribution",
+    "close": "Close",
+    "intro": "Every route, place and border on this map is backed by a cited source. Map data comes from these open projects:"
+  },
+  "gradeShort": {
+    "A": "New Testament or archaeology",
+    "B": "Early writers (≤150 years)",
+    "C": "Later church writers",
+    "D": "Apocryphal acts & legend",
+    "E": "Local tradition"
+  },
+  "kind": {
+    "leg": "Journey",
+    "stay": "Stay",
+    "episode": "Story",
+    "place": "Place",
+    "territory": "Territory",
+    "claim": "Claim",
+    "person": "Person"
+  }
 }

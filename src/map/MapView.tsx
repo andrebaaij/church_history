@@ -35,9 +35,19 @@ export function MapView(props: MapViewProps) {
       bearing: initialCamera.bearing,
       attributionControl: false,
     });
+    // MapLibre 6 resolves pattern images on demand; event listeners can no longer supply them.
+    map.setMissingStyleImageResolver((id) => {
+      if (id === "hatch" && !map.hasImage("hatch")) map.addImage("hatch", hatchImage());
+    });
+    let frame = 0;
+    const pulse = (t: number) => {
+      if (map.getLayer("stays-halo")) map.setPaintProperty("stays-halo", "circle-radius", 12 + 4 * Math.sin(t / 400));
+      frame = requestAnimationFrame(pulse);
+    };
+    // Start the pulse only after "load": a repaint every frame keeps the map from ever going idle.
     map.on("load", () => {
-      map.addImage("hatch", hatchImage());
       setReady(true);
+      frame = requestAnimationFrame(pulse);
     });
     map.on("moveend", () => {
       const c = map.getCenter();
@@ -51,12 +61,6 @@ export function MapView(props: MapViewProps) {
       map.on("mouseenter", layer, () => (map.getCanvas().style.cursor = "pointer"));
       map.on("mouseleave", layer, () => (map.getCanvas().style.cursor = ""));
     }
-    let frame = 0;
-    const pulse = (t: number) => {
-      if (map.getLayer("stays-halo")) map.setPaintProperty("stays-halo", "circle-radius", 12 + 4 * Math.sin(t / 400));
-      frame = requestAnimationFrame(pulse);
-    };
-    frame = requestAnimationFrame(pulse);
     mapRef.current = map;
     return () => {
       cancelAnimationFrame(frame);
