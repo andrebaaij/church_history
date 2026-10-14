@@ -17,6 +17,32 @@ sources:
     written: { from: 90, to: 96, circa: true }
     kind: scripture
     locatorUrl: "https://www.biblegateway.com/passage/?search=Revelation+{locator}&version=KJV"
+  - { id: matthew-gospel, author: "Matthew", work: "Gospel of Matthew", written: { from: 70, to: 90, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=Matthew+{locator}&version=KJV" }
+  - { id: mark-gospel, author: "Mark", work: "Gospel of Mark", written: { from: 60, to: 75, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=Mark+{locator}&version=KJV" }
+  - { id: john-gospel, author: "John", work: "Gospel of John", written: { from: 90, to: 100, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=John+{locator}&version=KJV" }
+  - { id: romans, author: "Paul", work: "Letter to the Romans", written: { from: 56, to: 57, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=Romans+{locator}&version=KJV" }
+  - { id: 1-corinthians, author: "Paul", work: "First Letter to the Corinthians", written: { from: 53, to: 55, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=1+Corinthians+{locator}&version=KJV" }
+  - { id: 2-corinthians, author: "Paul", work: "Second Letter to the Corinthians", written: { from: 55, to: 56, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=2+Corinthians+{locator}&version=KJV" }
+  - { id: galatians, author: "Paul", work: "Letter to the Galatians", written: { from: 48, to: 55, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=Galatians+{locator}&version=KJV" }
+  - { id: philippians, author: "Paul", work: "Letter to the Philippians", written: { from: 55, to: 62, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=Philippians+{locator}&version=KJV" }
+  - { id: colossians, author: "Paul", work: "Letter to the Colossians", written: { from: 55, to: 62, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=Colossians+{locator}&version=KJV" }
+  - { id: 1-thessalonians, author: "Paul", work: "First Letter to the Thessalonians", written: { from: 50, to: 51, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=1+Thessalonians+{locator}&version=KJV" }
+  - { id: 2-timothy, author: "Paul", work: "Second Letter to Timothy", written: { from: 62, to: 67, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=2+Timothy+{locator}&version=KJV" }
+  - { id: titus, author: "Paul", work: "Letter to Titus", written: { from: 62, to: 67, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=Titus+{locator}&version=KJV" }
+  - { id: philemon, author: "Paul", work: "Letter to Philemon", written: { from: 55, to: 62, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=Philemon+{locator}&version=KJV" }
+  - { id: 1-peter, author: "Peter", work: "First Letter of Peter", written: { from: 62, to: 90, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=1+Peter+{locator}&version=KJV" }
+  - { id: 2-peter, author: "Peter", work: "Second Letter of Peter", written: { from: 65, to: 100, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=2+Peter+{locator}&version=KJV" }
+  - { id: jude-letter, author: "Jude", work: "Letter of Jude", written: { from: 65, to: 90, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=Jude+{locator}&version=KJV" }
+  - { id: jerome-vir-ill, author: Jerome, work: "On Illustrious Men (De viris illustribus)", written: { from: 392, to: 393, circa: true }, kind: church-writer, edition: "NPNF2 vol. 3", url: "https://www.newadvent.org/fathers/2708.htm" }
+  - { id: acts-of-thomas, author: Anonymous, work: Acts of Thomas, written: { from: 200, to: 240, circa: true }, kind: apocryphon, edition: "ANF vol. 8", url: "https://www.newadvent.org/fathers/0823.htm" }
+  - { id: ps-hippolytus-twelve, author: Pseudo-Hippolytus, work: On the Twelve Apostles, written: { from: 300, to: 800, circa: true }, kind: apocryphon, edition: "ANF vol. 5", url: "https://www.newadvent.org/fathers/0524.htm" }
+  - { id: 1-clement, author: Clement of Rome, work: First Letter of Clement, written: { from: 95, to: 97, circa: true }, kind: church-writer, edition: "ANF vol. 1", url: "https://www.newadvent.org/fathers/1010.htm" }
+  - { id: josephus-antiquities, author: Flavius Josephus, work: Antiquities of the Jews, written: { from: 93, to: 94, circa: true }, kind: historian }
+  - { id: josephus-war, author: Flavius Josephus, work: The Jewish War, written: { from: 75, to: 79, circa: true }, kind: historian }
+  - { id: suetonius-caesars, author: Suetonius, work: Lives of the Caesars, written: { from: 119, to: 122, circa: true }, kind: historian }
+  - { id: pliny-nh, author: Pliny the Elder, work: Natural History, written: { from: 77, to: 79, circa: true }, kind: historian }
+  - { id: periplus, author: Anonymous, work: Periplus of the Erythraean Sea, written: { from: 40, to: 70, circa: true }, kind: historian }
+  - { id: strabo-geography, author: Strabo, work: Geography, written: { from: 7, to: 24, circa: true }, kind: historian }
   - id: irenaeus-ah
     author: Irenaeus of Lyon
     work: Against Heresies

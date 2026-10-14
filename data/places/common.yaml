@@ -6,3 +6,21 @@ places:
   - { id: paphos, name: { ancient: { en: Paphos }, modern: { en: Paphos } }, coords: [32.407, 34.757], pleiades: "https://pleiades.stoa.org/places/707586", kind: city }
   - { id: ephesus, name: { ancient: { en: Ephesus }, modern: { en: "near Selçuk" } }, coords: [27.342, 37.940], pleiades: "https://pleiades.stoa.org/places/599612", kind: city }
   - { id: patmos, name: { ancient: { en: Patmos }, modern: { en: Patmos } }, coords: [26.559, 37.328], pleiades: "https://pleiades.stoa.org/places/599872", kind: island }
+  - { id: rome, name: { ancient: { en: Roma }, modern: { en: Rome } }, coords: [12.491, 41.890], pleiades: "https://pleiades.stoa.org/places/423025", kind: city }
+  - { id: alexandria, name: { ancient: { en: Alexandria }, modern: { en: Alexandria } }, coords: [29.910, 31.201], pleiades: "https://pleiades.stoa.org/places/727070", kind: city }
+  - { id: edessa, name: { ancient: { en: Edessa }, modern: { en: Şanlıurfa } }, coords: [38.787, 37.149], pleiades: "https://pleiades.stoa.org/places/658457", kind: city }
+  - { id: caesarea, name: { ancient: { en: Caesarea Maritima }, modern: { en: "near Or Akiva" } }, coords: [34.892, 32.502], pleiades: "https://pleiades.stoa.org/places/678401", kind: city }
+  - { id: damascus, name: { ancient: { en: Damascus }, modern: { en: Damascus } }, coords: [36.309, 33.512], pleiades: "https://pleiades.stoa.org/places/678106", kind: city }
+  - { id: hierapolis, name: { ancient: { en: Hierapolis }, modern: { en: Pamukkale } }, coords: [29.128, 37.927], pleiades: "https://pleiades.stoa.org/places/638860", kind: city }
+  - { id: corinth, name: { ancient: { en: Corinthus }, modern: { en: Corinth } }, coords: [22.879, 37.906], pleiades: "https://pleiades.stoa.org/places/570182", kind: city }
+  - { id: athens, name: { ancient: { en: Athenae }, modern: { en: Athens } }, coords: [23.724, 37.972], pleiades: "https://pleiades.stoa.org/places/579885", kind: city }
+  - { id: babylon, name: { ancient: { en: Babylon }, modern: { en: "near Hillah" } }, coords: [44.425, 32.537], pleiades: "https://pleiades.stoa.org/places/893951", kind: city }
+  - { id: ctesiphon, name: { ancient: { en: Ctesiphon }, modern: { en: "near Salman Pak" } }, coords: [44.581, 33.095], pleiades: "https://pleiades.stoa.org/places/893976", kind: city }
+  - { id: capernaum, name: { ancient: { en: Capernaum }, modern: { en: Kfar Nahum } }, coords: [35.576, 32.881], pleiades: "https://pleiades.stoa.org/places/678231", kind: city }
+  - { id: bethsaida, name: { ancient: { en: Bethsaida } }, coords: [35.620, 32.893], pleiades: "https://pleiades.stoa.org/places/678065", kind: city }
+  - { id: samaria, name: { ancient: { en: Samaria (Sebaste) }, modern: { en: Sebastia } }, coords: [35.190, 32.276], pleiades: "https://pleiades.stoa.org/places/678370", kind: city }
+  - { id: lydda, name: { ancient: { en: Lydda }, modern: { en: Lod } }, coords: [34.892, 31.958], pleiades: "https://pleiades.stoa.org/places/687953", kind: city }
+  - { id: byzantium, name: { ancient: { en: Byzantium }, modern: { en: Istanbul } }, coords: [28.974, 41.006], pleiades: "https://pleiades.stoa.org/places/520985", kind: city }
+  - { id: patrae, name: { ancient: { en: Patrae }, modern: { en: Patras } }, coords: [21.739, 38.243], pleiades: "https://pleiades.stoa.org/places/570567", kind: city }
+  - { id: axum, name: { ancient: { en: Axum }, modern: { en: Aksum } }, coords: [38.721, 14.134], pleiades: "https://pleiades.stoa.org/places/39303", kind: city }
+  - { id: meroe, name: { ancient: { en: Meroë }, modern: { en: "near Shendi" } }, coords: [33.712, 16.937], pleiades: "https://pleiades.stoa.org/places/805630", kind: city }

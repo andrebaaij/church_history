@@ -1,3 +1,15 @@
 people:
-  - { id: paul, name: { en: Paul }, role: apostle, color: "#c0392b" }
-  - { id: john, name: { en: John }, role: apostle, color: "#1f618d" }
+  - { id: paul, name: { en: Paul }, role: apostle, color: "#b03a2e" }
+  - { id: peter, name: { en: Peter }, role: apostle, color: "#1f6f8b" }
+  - { id: andrew, name: { en: Andrew }, role: apostle, color: "#2a9d8f" }
+  - { id: john, name: { en: John }, role: apostle, color: "#3a56a5" }
+  - { id: james-zebedee, name: { en: "James, son of Zebedee" }, role: apostle, color: "#6a4c93" }
+  - { id: james-brother-of-jesus, name: { en: "James, brother of the Lord" }, role: other, color: "#8d6e63" }
+  - { id: thomas, name: { en: Thomas }, role: apostle, color: "#e07a1f" }
+  - { id: bartholomew, name: { en: Bartholomew }, role: apostle, color: "#c2185b" }
+  - { id: matthew, name: { en: Matthew }, role: apostle, color: "#2e7d32" }
+  - { id: philip, name: { en: Philip }, role: apostle, color: "#00838f" }
+  - { id: james-alphaeus, name: { en: "James, son of Alphaeus" }, role: apostle, color: "#9e7d00" }
+  - { id: thaddaeus-jude, name: { en: "Thaddaeus (Jude)" }, role: apostle, color: "#5d4037" }
+  - { id: simon-zealot, name: { en: "Simon the Zealot" }, role: apostle, color: "#455a64" }
+  - { id: matthias, name: { en: Matthias }, role: apostle, color: "#ff6f61" }
