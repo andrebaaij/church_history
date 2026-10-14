@@ -54,7 +54,9 @@
     "close": "End story",
     "step": "{{n}} / {{total}}",
     "next": "Next",
-    "prev": "Previous"
+    "prev": "Previous",
+    "notes": "Speaker notes",
+    "keys": "← → to move · N notes · Esc explore"
   },
   "settings": {
     "language": "Language",
