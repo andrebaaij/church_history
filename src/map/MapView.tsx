@@ -17,7 +17,7 @@ maplibregl.setWorkerUrl(workerUrl);
 export type MapViewProps = {
   ds: Dataset; idx: Index; year: number; filters: Filters; lang: string; theme: ThemeName;
   selected: string | null; highlight: string[]; flyRequest: AppState["flyRequest"]; initialCamera: Camera;
-  onSelect(id: string | null): void; onCameraChange(c: Camera): void;
+  onSelect(id: string | null): void; onCameraChange(c: Camera): void; onFlown(): void;
 };
 
 const r3 = (n: number) => Math.round(n * 1000) / 1000;
@@ -102,6 +102,8 @@ export function MapView(props: MapViewProps) {
     if (!ready || !map || !props.flyRequest) return;
     const { center, zoom, bearing } = props.flyRequest.camera;
     map.flyTo({ center, zoom, bearing, duration: 2000, essential: true });
+    // Consume the request so a remount (theme/language change) does not replay it.
+    latest.current.onFlown();
   }, [ready, props.flyRequest?.seq]);
 
   const doneLegs = routes.features.filter((f) => f.properties?.part === "done").length;

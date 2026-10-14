@@ -15,6 +15,8 @@ export type EntityDetail = {
   id: string; kind: EntityKind; title: I18nText; when?: When; person?: string;
   claims: ClaimView[]; episodes: Episode[]; media: Media[];
   itinerary?: ItineraryItem[];
+  /** Where a place's location comes from when it has no claim of its own. */
+  links?: { label: string; href: string }[];
 };
 
 export function claimView(id: string, idx: Index): ClaimView | null {
@@ -53,7 +55,10 @@ export function describeEntity(id: string, idx: Index): EntityDetail | null {
     return { id, kind: "episode", title: ep.episode.title, when: ep.episode.when, person: ep.person, claims: views([ep.episode.claim], idx), episodes: [], media };
   }
   const place = idx.places.get(id);
-  if (place) return { id, kind: "place", title: place.name.ancient, claims: views([place.claim], idx), episodes: [], media: [] };
+  if (place) {
+    const links = place.pleiades ? [{ label: "Pleiades", href: place.pleiades }] : [];
+    return { id, kind: "place", title: place.name.ancient, claims: views([place.claim], idx), episodes: [], media: [], links };
+  }
   const territory = idx.territories.get(id);
   if (territory) {
     const claimIds = [...new Set(territory.versions.map((v) => v.claim))];

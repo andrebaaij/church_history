@@ -33,3 +33,10 @@ it("shows the welcome card on a first plain visit, not on shared links", async (
   render(<Loaded ds={makeDataset()} />);
   expect(screen.queryByRole("heading", { name: /Follow the apostles/ })).toBeNull();
 });
+
+it("ignores people a stale link names that no longer exist (shows everyone, not an empty map)", async () => {
+  history.replaceState(null, "", "/?p=renamed-person");
+  const { Loaded } = await import("./App");
+  render(<Loaded ds={makeDataset()} />);
+  expect((screen.getAllByRole("checkbox")[0] as HTMLInputElement).checked).toBe(true);
+});

@@ -38,3 +38,8 @@ it("describes a person as a chronological itinerary with grades", () => {
   ]);
   expect(d.itinerary![1].title.en).toBe("Antiochia → Seleucia Pieria");
 });
+
+it("gives a place without a claim its Pleiades record as the location source", () => {
+  const d = describeEntity("seleucia", idx)!;
+  expect(d.links).toEqual([{ label: "Pleiades", href: "https://pleiades.stoa.org/places/658483" }]);
+});

@@ -41,7 +41,8 @@
     "notes": "Note",
     "itinerary": "Journey, step by step",
     "written": "written {{years}}",
-    "writtenCirca": "written c. {{years}}"
+    "writtenCirca": "written c. {{years}}",
+    "location": "Location from"
   },
   "media": {
     "illustration": "Illustration — not evidence",

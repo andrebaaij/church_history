@@ -20,6 +20,7 @@ import { Search } from "./Search";
 import { Settings } from "./Settings";
 import { Attribution } from "./Attribution";
 import { Intro } from "./Intro";
+import { useUrlSync } from "./useUrlSync";
 import { StoryMode } from "../story/StoryMode";
 import { stepYaml } from "../story/story";
 import "./app.css";
@@ -43,6 +44,8 @@ export function Loaded({ ds }: { ds: Dataset }) {
       ...url,
       selected: url.selected && describeEntity(url.selected, idx) ? url.selected : null,
       story: url.story && idx.stories.has(url.story) ? url.story : null,
+      // Drop people a stale link names but the data no longer has; none left means "everyone".
+      filters: { ...url.filters, people: ((ps) => (ps === null || ps.length === 0 ? null : ps))(url.filters.people?.filter((p) => idx.people.has(p)) ?? null) },
     });
   });
   const [showAttribution, setShowAttribution] = useState(false);
@@ -63,9 +66,7 @@ export function Loaded({ ds }: { ds: Dataset }) {
     }
   };
 
-  useEffect(() => {
-    history.replaceState(null, "", location.pathname + serializeUrlState(state, defaults));
-  }, [state, defaults]);
+  useUrlSync(serializeUrlState(state, defaults));
   useEffect(() => {
     void i18n.changeLanguage(state.lang);
   }, [state.lang]);
@@ -97,6 +98,7 @@ export function Loaded({ ds }: { ds: Dataset }) {
         initialCamera={state.camera ?? DEFAULT_CAMERA}
         onSelect={select}
         onCameraChange={(camera) => dispatch({ type: "cameraMoved", camera })}
+        onFlown={() => dispatch({ type: "flown" })}
       />
       <div className="vignette" aria-hidden />
       <YearDisplay

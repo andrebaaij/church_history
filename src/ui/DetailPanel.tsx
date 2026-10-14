@@ -92,6 +92,12 @@ export function DetailPanel({ detail, lang, idx, onSelect, onClose }: Props) {
           </figcaption>
         </figure>
       ))}
+      {detail.links && detail.links.length > 0 && (
+        <p className="location-source">
+          <span className="eyebrow">{t("detail.location")}</span>{" "}
+          {detail.links.map((l) => <a key={l.href} href={l.href} target="_blank" rel="noreferrer">{l.label}</a>)}
+        </p>
+      )}
       {detail.claims.map((v) => <ClaimBlock key={v.claim.id} view={v} lang={lang} onSelect={onSelect} />)}
       {detail.itinerary && detail.itinerary.length > 0 && (
         <>

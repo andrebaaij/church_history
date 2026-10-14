@@ -24,7 +24,8 @@ export type Action =
   | { type: "exitStory" }
   | { type: "resumeStory" }
   | { type: "closeStory" }
-  | { type: "toggleNotes" };
+  | { type: "toggleNotes" }
+  | { type: "flown" };
 
 export function initialAppState(url: UrlState): AppState {
   return { ...url, mode: url.story ? "story" : "explore", showNotes: false, highlight: [], flyRequest: null };
@@ -35,7 +36,7 @@ const fly = (s: AppState, camera: Camera) => ({ camera, seq: (s.flyRequest?.seq 
 export function reducer(s: AppState, a: Action): AppState {
   switch (a.type) {
     case "setYear":
-      return { ...s, year: a.year };
+      return a.year === s.year ? s : { ...s, year: a.year };
     case "select":
       return { ...s, selected: a.id, highlight: [] };
     case "focus":
@@ -71,5 +72,7 @@ export function reducer(s: AppState, a: Action): AppState {
       return { ...s, mode: "explore", story: null, step: 0, highlight: [], showNotes: false };
     case "toggleNotes":
       return { ...s, showNotes: !s.showNotes };
+    case "flown":
+      return s.flyRequest ? { ...s, flyRequest: null } : s;
   }
 }

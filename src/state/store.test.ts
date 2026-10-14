@@ -36,3 +36,13 @@ it("story: start, step, exit keeps position, resume", () => {
   expect(reducer(s, { type: "resumeStory" }).mode).toBe("story");
   expect(reducer(s, { type: "closeStory" })).toMatchObject({ mode: "explore", story: null, step: 0, highlight: [] });
 });
+
+it("setYear with the same year returns the same state object (no URL/render churn)", () => {
+  expect(reducer(s0, { type: "setYear", year: s0.year })).toBe(s0);
+});
+
+it("clears the fly request once the map has flown, so a remount does not replay it", () => {
+  const cam = { center: [26.5, 37.3] as [number, number], zoom: 7, bearing: 0 };
+  const s1 = reducer(s0, { type: "focus", id: "x", camera: cam, year: null });
+  expect(reducer(s1, { type: "flown" }).flyRequest).toBeNull();
+});

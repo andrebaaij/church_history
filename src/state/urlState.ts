@@ -37,7 +37,7 @@ export function parseUrlState(search: string, d: UrlState, range: { min: number;
     selected: id(q.get("sel")) ?? d.selected,
     filters: {
       people: p === null ? d.filters.people : p.split(",").filter((x) => ID.test(x)),
-      grades: g === null ? d.filters.grades : GRADES.filter((gr) => g.toUpperCase().includes(gr)),
+      grades: ((gs) => (g === null || gs.length === 0 ? d.filters.grades : gs))(GRADES.filter((gr) => (g ?? "").toUpperCase().includes(gr))),
     },
     lang: lang && (LANGS as readonly string[]).includes(lang) ? lang : d.lang,
     theme: theme === "projector" || theme === "default" ? theme : d.theme,

@@ -6,6 +6,11 @@ import "@fontsource/eb-garamond/500-italic.css";
 import "@fontsource-variable/inter";
 import { initI18n } from "./i18n";
 import { App } from "./ui/App";
+import { ErrorBoundary } from "./ui/ErrorBoundary";
 
 initI18n();
-createRoot(document.getElementById("root")!).render(<App />);
+createRoot(document.getElementById("root")!).render(
+  <ErrorBoundary>
+    <App />
+  </ErrorBoundary>,
+);
