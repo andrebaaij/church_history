@@ -1,0 +1,27 @@
+{
+  "app": { "title": "Apostles Map", "loading": "Loading map…", "loadError": "Could not load the map data." },
+  "year": { "exact": "{{year}} AD", "circa": "c. {{year}} AD" },
+  "slider": { "label": "Year", "play": "Play", "pause": "Pause" },
+  "filters": { "title": "Filters", "people": "People", "grades": "Reliability" },
+  "grade": {
+    "A": "A — New Testament or archaeology",
+    "B": "B — Early writers (within ~150 years)",
+    "C": "C — Later church writers",
+    "D": "D — Apocryphal acts and legend",
+    "E": "E — Local tradition"
+  },
+  "legend": { "title": "Reliability" },
+  "detail": {
+    "close": "Close",
+    "sources": "Sources",
+    "alsoToldBy": "Also told by {{author}}, ch. {{chapter}}",
+    "alternatives": "Competing traditions",
+    "episodes": "What happened here",
+    "notes": "Note"
+  },
+  "media": { "illustration": "Illustration — not evidence", "evidence": "Evidence", "credit": "{{creator}}, {{licence}}" },
+  "search": { "placeholder": "Search a place, person or story…", "noResults": "No results" },
+  "story": { "start": "Stories", "exit": "Explore", "back": "Back to story", "close": "End story", "step": "{{n}} / {{total}}", "next": "Next", "prev": "Previous" },
+  "settings": { "language": "Language", "theme": "Display", "themeDefault": "Screen", "themeProjector": "Projector", "copyStep": "Copy as story step", "copied": "Copied" },
+  "attribution": { "open": "Sources & attribution", "title": "Sources & attribution", "close": "Close" }
+}
