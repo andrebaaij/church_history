@@ -327,5 +327,12 @@ figcaption { font-size: 12px; color: var(--muted); margin-top: 6px; }
 .intro-steps strong { font-family: var(--serif); font-size: 17px; }
 .intro-grades { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
 .intro-grades > span { display: inline-flex; align-items: center; gap: 4px; }
-.intro-actions { display: flex; gap: 8px; }
+.intro-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 .btn.icon { width: 32px; height: 32px; padding: 0; display: grid; place-items: center; font-weight: 700; border: 1px solid var(--line-strong); background: var(--paper-solid); }
+@media (max-width: 700px) {
+  .settings .segmented, .settings select, .settings .btn.icon { display: none; }
+  .settings { width: 100%; }
+  .settings .btn.primary { flex: 1; }
+  .year-display { top: 118px; }
+  .era { font-size: 14px; }
+}
