@@ -35,7 +35,7 @@ territories:
       - { when: { from: 30, to: 37 }, status: province, overlord: roman-empire, geometry: commagene.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-commagene }
       - { when: { from: 38, to: 71 }, status: client-kingdom, overlord: roman-empire, geometry: commagene.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-commagene }
       - { when: { from: 72, to: 100 }, status: province, overlord: roman-empire, geometry: commagene.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-commagene }
-  - id: nabataea
+  - id: nabataean-kingdom
     name: { en: Nabataea }
     color: "#c2853d"
     versions:
