@@ -1,0 +1,175 @@
+person: james-zebedee
+claims:
+  - id: james-zebedee-called
+    text: { en: "Jesus calls James and his brother John while they are mending nets with their father Zebedee; they are partners of Simon Peter." }
+    when: { from: 27, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: mark-gospel, locator: "1:19-20" }
+      - { source: matthew-gospel, locator: "4:21-22" }
+      - { source: luke, locator: "5:10" }
+  - id: james-zebedee-boanerges
+    text: { en: "James is named among the Twelve; Jesus surnames James and John \"Boanerges, that is, Sons of Thunder\"." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: mark-gospel, locator: "3:17" }
+      - { source: matthew-gospel, locator: "10:2" }
+      - { source: luke, locator: "6:14" }
+  - id: james-zebedee-inner-three
+    text: { en: "With Peter and John, James is one of the three who see Jairus' daughter raised, the transfiguration and Jesus' prayer in Gethsemane." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: mark-gospel, locator: "5:37" }
+      - { source: mark-gospel, locator: "9:2" }
+      - { source: mark-gospel, locator: "14:33" }
+  - id: james-zebedee-fire-on-samaria
+    text: { en: "When a Samaritan village refuses to receive Jesus, James and John ask whether they should call down fire from heaven; Jesus rebukes them." }
+    when: { from: 29, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: luke, locator: "9:51-56" }
+  - id: james-zebedee-the-cup
+    text: { en: "James and John ask for the places at Jesus' right and left; Jesus answers: \"The cup that I drink you will drink.\"" }
+    when: { from: 30, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: mark-gospel, locator: "10:35-40" }
+      - { source: matthew-gospel, locator: "20:20-23" }
+  - id: james-zebedee-in-jerusalem
+    text: { en: "After the Ascension James is with the apostles in Jerusalem; Acts next mentions him at his death there under Herod Agrippa I." }
+    when: { from: 30, to: 44, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:13" }
+      - { source: acts, locator: "12:1-2" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "preached the gospel wherever the Lord sent them" }
+    alternativeTo: [james-zebedee-preached-in-spain]
+    notes: { en: "Acts records no journeys of James between 1:13 and 12:2. Vreugdenhil's sentence is about the apostles in general." }
+  - id: james-zebedee-chooses-james-the-just
+    text: { en: "Clement of Alexandria says that after the Ascension Peter, James and John chose James the Just as bishop of Jerusalem." }
+    when: { from: 30, to: 33, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "2.1.3", quote: "(quoting Clement of Alexandria, Hypotyposes 6)" }
+  - id: james-zebedee-killed-by-herod
+    text: { en: "\"Herod the king\" (Agrippa I) kills James the brother of John with the sword in Jerusalem — the first of the Twelve to die for Christ." }
+    when: { from: 41, to: 44, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "12:1-3" }
+      - { source: acts, locator: "12:20-23" }
+      - { source: josephus-antiquities, locator: "19.8.2", quote: "Now when Agrippa had reigned three years over all Judea, he came to the city Cesarea" }
+      - { source: jerome-vir-ill, locator: "9", quote: "James, the apostle whom Herod, after our Lord's passion, beheaded" }
+    notes: { en: "Agrippa I ruled all Judea 41–44 and died at Caesarea in 44 (Josephus), shortly after these events in Acts. Peter's arrest at Passover suggests spring, most likely 44. Vreugdenhil ch. 1 tells the death of \"the apostle James\" thrown from the temple — that is the story of James the brother of the Lord, not of this James." }
+  - id: james-zebedee-accuser-converted
+    text: { en: "The man who brought James to trial was moved by his testimony and confessed that he too was a Christian; James said \"Peace be with you\" and kissed him, and both were beheaded together." }
+    when: { from: 44, to: 44, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "2.9.2-3", quote: "(quoting Clement of Alexandria, Hypotyposes 7) and thus they were both beheaded at the same time" }
+    notes: { en: "Clement (c. 200) says he received it \"from those who had lived before him\"." }
+  - id: james-zebedee-preached-in-spain
+    text: { en: "From the 7th century, writers say James preached in Spain and was \"the first to convert the Spanish peoples\" before his death." }
+    when: { from: 33, to: 43, circa: true }
+    grade: D
+    citations:
+      - { source: aldhelm-carmina, locator: "4.4", quote: "Primitus Hispanas convertit dogmate gentes" }
+    referenceWorks:
+      - { work: fletcher-catapult, chapter: "3", quote: "the story is in the highest degree unlikely" }
+    alternativeTo: [james-zebedee-in-jerusalem]
+    notes: { en: "First attested c. 600 years after James's death (Breviarium Apostolorum, late 6th–7th c.; Aldhelm c. 670–710). Against it: Acts places James in Jerusalem and has him killed in 44, and Paul (Rom 15:20–24) plans to go to Spain without building \"on another man's foundation\". Fletcher, following Duchesne, finds no sign that anyone in the first six centuries believed James preached or was buried in Spain." }
+  - id: james-zebedee-body-to-galicia
+    text: { en: "A medieval legend says James's disciples carried his body by sea from Jerusalem to Iria Flavia in Galicia, where it was buried; the tomb was \"rediscovered\" in the 9th century at what became Santiago de Compostela." }
+    when: { from: 44, to: 44, circa: true }
+    grade: D
+    citations:
+      - { source: epistola-leonis, locator: "translation narrative" }
+    referenceWorks:
+      - { work: fletcher-catapult, chapter: "3" }
+    notes: { en: "The Epistola Leonis (9th–11th c.) has seven disciples sail seven days to Iria, where the Sar and Ulla meet. The tomb was identified c. 818–842 under Bishop Theodemir of Iria and King Alfonso II (tomb identification: local tradition, grade E). The relics' authenticity is doubted by historians; the Camino de Santiago is a living devotional tradition. The route drawn is illustrative." }
+items:
+  - type: stay
+    id: james-zebedee-jerusalem
+    place: jerusalem
+    when: { from: 30, to: 43, circa: true }
+    claim: james-zebedee-in-jerusalem
+    episodes:
+      - id: james-zebedee-mending-nets
+        title: { en: "Leaving the nets" }
+        text: { en: "James and his brother John are mending nets in their father Zebedee's boat when Jesus calls them. At once they leave the boat, their father and the hired men, and follow him." }
+        when: { from: 27, to: 30, circa: true }
+        claim: james-zebedee-called
+      - id: james-zebedee-sons-of-thunder
+        title: { en: "Sons of Thunder" }
+        text: { en: "Jesus chooses James as one of the Twelve and gives him and John a nickname: Boanerges, \"Sons of Thunder\"." }
+        when: { from: 28, to: 30, circa: true }
+        claim: james-zebedee-boanerges
+      - id: james-zebedee-on-the-mountain
+        title: { en: "One of the three" }
+        text: { en: "Only Peter, James and John go with Jesus into Jairus' house, up the mountain where he is transfigured, and deeper into the garden of Gethsemane." }
+        when: { from: 28, to: 30, circa: true }
+        claim: james-zebedee-inner-three
+      - id: james-zebedee-fire-from-heaven
+        title: { en: "Fire from heaven?" }
+        text: { en: "A Samaritan village will not welcome Jesus. James and John ask, \"Lord, do you want us to call down fire from heaven?\" Jesus turns and rebukes them, and they go on to another village." }
+        when: { from: 29, to: 30, circa: true }
+        claim: james-zebedee-fire-on-samaria
+      - id: james-zebedee-drink-the-cup
+        title: { en: "Can you drink the cup?" }
+        text: { en: "James and John ask to sit at Jesus' right and left in his glory. Jesus tells them they will drink the cup he drinks — a promise that they too will suffer for him." }
+        when: { from: 30, to: 30, circa: true }
+        claim: james-zebedee-the-cup
+      - id: james-zebedee-upper-room
+        title: { en: "Waiting in the upper room" }
+        text: { en: "After Jesus is taken up into heaven, James is with the other apostles in the upper room in Jerusalem, praying together." }
+        when: { from: 30, to: 33, circa: true }
+        claim: james-zebedee-in-jerusalem
+      - id: james-zebedee-choosing-a-leader
+        title: { en: "Choosing a leader" }
+        text: { en: "Clement of Alexandria tells that Peter, James and John did not claim the honour for themselves, but chose James the Just, the Lord's brother, to lead the church in Jerusalem." }
+        when: { from: 30, to: 33, circa: true }
+        claim: james-zebedee-chooses-james-the-just
+  - type: stay
+    id: james-zebedee-martyrdom
+    place: jerusalem
+    when: { from: 44, to: 44, circa: true }
+    claim: james-zebedee-killed-by-herod
+    episodes:
+      - id: james-zebedee-killed-with-the-sword
+        title: { en: "The first apostle to die" }
+        text: { en: "King Herod Agrippa I turns against the church and has James killed with the sword. James is the first of the Twelve to die for Jesus — he has drunk the cup, just as Jesus said." }
+        when: { from: 44, to: 44, circa: true }
+        claim: james-zebedee-killed-by-herod
+      - id: james-zebedee-peace-be-with-you
+        title: { en: "\"Peace be with you\"" }
+        text: { en: "The man who accused James is so moved by his testimony that he confesses he is a Christian too. On the way to execution he asks James to forgive him; James kisses him and says \"Peace be with you\", and they are beheaded together." }
+        when: { from: 44, to: 44, circa: true }
+        claim: james-zebedee-accuser-converted
+  - type: stay
+    id: james-zebedee-spain-tradition
+    place: hispania
+    when: { from: 33, to: 43, circa: true }
+    claim: james-zebedee-preached-in-spain
+    episodes:
+      - id: james-zebedee-apostle-of-spain
+        title: { en: "Legend: apostle of Spain" }
+        text: { en: "About 600 years after James died, writers began to say he had first preached in Spain. Historians think this very unlikely: the Bible only ever finds James in Jerusalem." }
+        when: { from: 33, to: 43, circa: true }
+        claim: james-zebedee-preached-in-spain
+  - type: leg
+    id: james-zebedee-body-to-iria-flavia
+    from: jerusalem
+    to: iria-flavia
+    via: [[34.55, 32.1], [28.0, 33.6], [24.5, 34.6], [17.0, 36.0], [15.5, 36.4], [12.3, 36.9], [8.5, 38.0], [2.0, 37.6], [-1.0, 36.8], [-3.5, 36.2], [-5.6, 35.94], [-7.5, 36.3], [-9.3, 36.85], [-9.8, 38.7], [-9.6, 40.5], [-9.4, 42.3], [-9.1, 42.45], [-8.9, 42.55]]
+    when: { from: 44, to: 44, circa: true }
+    mode: sea
+    claim: james-zebedee-body-to-galicia
+    episodes:
+      - id: james-zebedee-santiago-legend
+        title: { en: "Legend: the voyage to Galicia" }
+        text: { en: "A medieval legend tells that James's disciples put his body in a boat and sailed for seven days to the far north-west of Spain. In the 9th century a tomb there was declared to be his — the beginning of Santiago de Compostela and the pilgrim road to it." }
+        when: { from: 44, to: 44, circa: true }
+        claim: james-zebedee-body-to-galicia

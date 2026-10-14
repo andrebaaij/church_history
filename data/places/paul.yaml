@@ -1,0 +1,37 @@
+places:
+  - { id: tarsus, name: { ancient: { en: Tarsus }, modern: { en: Tarsus } }, coords: [34.896, 36.914], pleiades: "https://pleiades.stoa.org/places/648789", kind: city }
+  - { id: nabataea, name: { ancient: { en: "Nabataea (\"Arabia\")" }, modern: { en: "Jordan / southern Syria" } }, coords: [37.5, 32.5], pleiades: "https://pleiades.stoa.org/places/29677", kind: region }
+  - { id: perge, name: { ancient: { en: Perge }, modern: { en: "Aksu, near Antalya" } }, coords: [30.853, 36.964], pleiades: "https://pleiades.stoa.org/places/639048", kind: city }
+  - { id: pisidian-antioch, name: { ancient: { en: Antiochia in Pisidia }, modern: { en: "near Yalvaç" } }, coords: [31.190, 38.305], pleiades: "https://pleiades.stoa.org/places/609307", kind: city }
+  - { id: iconium, name: { ancient: { en: Iconium }, modern: { en: Konya } }, coords: [32.492, 37.872], pleiades: "https://pleiades.stoa.org/places/648647", kind: city }
+  - { id: lystra, name: { ancient: { en: Lystra }, modern: { en: "near Hatunsaray" } }, coords: [32.344, 37.588], pleiades: "https://pleiades.stoa.org/places/648699", kind: city }
+  - { id: derbe, name: { ancient: { en: Derbe }, modern: { en: "near Karaman" } }, coords: [33.25, 37.25], pleiades: "https://pleiades.stoa.org/places/648621", kind: city }
+  - { id: attalea, name: { ancient: { en: Attalea }, modern: { en: Antalya } }, coords: [30.700, 36.890], pleiades: "https://pleiades.stoa.org/places/638778", kind: city }
+  - { id: galatia, name: { ancient: { en: Galatia }, modern: { en: "central Turkey" } }, coords: [32.427, 39.934], pleiades: "https://pleiades.stoa.org/places/619161", kind: region }
+  - { id: troas, name: { ancient: { en: Alexandria Troas }, modern: { en: "near Dalyan, Çanakkale" } }, coords: [26.158, 39.752], pleiades: "https://pleiades.stoa.org/places/550434", kind: city }
+  - { id: neapolis, name: { ancient: { en: Neapolis }, modern: { en: Kavala } }, coords: [24.414, 40.934], pleiades: "https://pleiades.stoa.org/places/501523", kind: city }
+  - { id: philippi, name: { ancient: { en: Philippi }, modern: { en: "Filippoi, near Kavala" } }, coords: [24.285, 41.013], pleiades: "https://pleiades.stoa.org/places/501482", kind: city }
+  - { id: thessalonica, name: { ancient: { en: Thessalonica }, modern: { en: Thessaloniki } }, coords: [22.953, 40.628], pleiades: "https://pleiades.stoa.org/places/491741", kind: city }
+  - { id: beroea, name: { ancient: { en: Beroea }, modern: { en: Veria } }, coords: [22.201, 40.522], pleiades: "https://pleiades.stoa.org/places/491546", kind: city }
+  - { id: cenchreae, name: { ancient: { en: "Cenchreae (Kenchreai)" }, modern: { en: Kechries } }, coords: [22.993, 37.882], pleiades: "https://pleiades.stoa.org/places/570347", kind: city }
+  - { id: illyricum, name: { ancient: { en: Illyricum }, modern: { en: "Albania / Croatian coast" } }, coords: [19.858, 41.254], pleiades: "https://pleiades.stoa.org/places/481865", kind: region }
+  - { id: assos, name: { ancient: { en: Assos }, modern: { en: Behramkale } }, coords: [26.336, 39.490], pleiades: "https://pleiades.stoa.org/places/550463", kind: city }
+  - { id: miletus, name: { ancient: { en: Miletus }, modern: { en: "near Didim" } }, coords: [27.279, 37.530], pleiades: "https://pleiades.stoa.org/places/599799", kind: city }
+  - { id: patara, name: { ancient: { en: Patara }, modern: { en: "Gelemiş" } }, coords: [29.315, 36.262], pleiades: "https://pleiades.stoa.org/places/639042", kind: city }
+  - { id: tyre, name: { ancient: { en: Tyrus }, modern: { en: "Tyre (Sour)" } }, coords: [35.202, 33.269], pleiades: "https://pleiades.stoa.org/places/678437", kind: city }
+  - { id: ptolemais, name: { ancient: { en: Ptolemais }, modern: { en: Akko } }, coords: [35.080, 32.921], pleiades: "https://pleiades.stoa.org/places/678010", kind: city }
+  - { id: sidon, name: { ancient: { en: Sidon }, modern: { en: "Sidon (Saida)" } }, coords: [35.373, 33.562], pleiades: "https://pleiades.stoa.org/places/678393", kind: city }
+  - { id: myra, name: { ancient: { en: Myra }, modern: { en: Demre } }, coords: [29.985, 36.259], pleiades: "https://pleiades.stoa.org/places/639005", kind: city }
+  - { id: cnidus, name: { ancient: { en: Cnidus }, modern: { en: "Tekir, Datça peninsula" } }, coords: [27.373, 36.688], pleiades: "https://pleiades.stoa.org/places/599575", kind: city }
+  - { id: fair-havens, name: { ancient: { en: "Kaloi Limenes (Fair Havens)" }, modern: { en: "Kali Limenes, Crete" } }, coords: [24.812, 34.932], pleiades: "https://pleiades.stoa.org/places/589834", kind: site }
+  - { id: malta, name: { ancient: { en: Melita }, modern: { en: Malta } }, coords: [14.438, 35.888], pleiades: "https://pleiades.stoa.org/places/462311", kind: island }
+  - { id: syracuse, name: { ancient: { en: Syracusae }, modern: { en: Syracuse } }, coords: [15.283, 37.070], pleiades: "https://pleiades.stoa.org/places/462503", kind: city }
+  - { id: rhegium, name: { ancient: { en: Rhegium }, modern: { en: Reggio Calabria } }, coords: [15.644, 38.109], pleiades: "https://pleiades.stoa.org/places/452416", kind: city }
+  - { id: puteoli, name: { ancient: { en: Puteoli }, modern: { en: Pozzuoli } }, coords: [14.122, 40.826], pleiades: "https://pleiades.stoa.org/places/432815", kind: city }
+  # Region marker for Hispania placed on the east coast (Valencia area) so the sea leg from Rome ends at the coast;
+  # no early source names a city in Spain. Pleiades' own representative point is at [-7.5, 42.5].
+  - { id: hispania, name: { ancient: { en: Hispania }, modern: { en: Spain } }, coords: [-0.40, 39.47], pleiades: "https://pleiades.stoa.org/places/1027", kind: region }
+  - { id: gortyn, name: { ancient: { en: "Gortyn (Crete)" }, modern: { en: "Gortyna, Crete" } }, coords: [24.947, 35.062], pleiades: "https://pleiades.stoa.org/places/589796", kind: city }
+  - { id: nicopolis, name: { ancient: { en: Nicopolis (Epirus) }, modern: { en: "near Preveza" } }, coords: [20.736, 39.016], pleiades: "https://pleiades.stoa.org/places/531013", kind: city }
+  # Marker at the basilica of San Paolo fuori le Mura, which stands on the Via Ostiensis (Pleiades road entry).
+  - { id: via-ostiensis, name: { ancient: { en: Via Ostiensis }, modern: { en: "San Paolo fuori le Mura, Rome" } }, coords: [12.477, 41.859], pleiades: "https://pleiades.stoa.org/places/390205932", kind: site }

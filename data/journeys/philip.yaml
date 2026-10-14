@@ -1,0 +1,183 @@
+person: philip
+claims:
+  - id: philip-from-bethsaida
+    text: { en: "Philip came from Bethsaida, the town of Andrew and Peter. Jesus called him with \"Follow me\", and Philip brought Nathanael to Jesus." }
+    when: { from: 27, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "1:43-48" }
+      - { source: john-gospel, locator: "12:21" }
+  - id: philip-one-of-twelve
+    text: { en: "Philip is listed among the Twelve apostles, always in fifth place." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: matthew-gospel, locator: "10:3" }
+      - { source: mark-gospel, locator: "3:18" }
+      - { source: luke, locator: "6:14" }
+  - id: philip-feeding-five-thousand
+    text: { en: "Before feeding the five thousand, Jesus tests Philip by asking where to buy bread; Philip answers that two hundred pennyworth of bread would not be enough." }
+    when: { from: 29, to: 32, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "6:5-7" }
+  - id: philip-greeks-see-jesus
+    text: { en: "In Jerusalem at the last Passover, Greeks come to Philip and say \"Sir, we would see Jesus\"; Philip tells Andrew and both tell Jesus." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "12:20-22" }
+  - id: philip-show-us-the-father
+    text: { en: "At the Last Supper Philip asks \"Lord, shew us the Father\", and Jesus answers \"he that hath seen me hath seen the Father\"." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "14:8-9" }
+  - id: philip-upper-room
+    text: { en: "After the Ascension Philip is with the eleven apostles in the upper room in Jerusalem, praying. This is the last time the New Testament mentions the apostle." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:13" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Not only Peter but also the other apostles preached the gospel wherever the Lord sent them." }
+    notes: { en: "Acts also tells of a different Philip, the evangelist, one of the Seven (Acts 6:5; 8; 21:8-9). Those stories are about him, not the apostle, and are not shown on this track." }
+  - id: philip-preached-phrygia
+    text: { en: "A late list of the apostles says that Philip preached in Phrygia." }
+    when: { from: 35, to: 80, circa: true }
+    grade: D
+    citations:
+      - { source: ps-hippolytus-twelve, locator: "5", quote: "Philip preached in Phrygia" }
+    notes: { en: "No source gives a date or a route; the years and road shown are only the apostolic period and a plausible way there." }
+  - id: philip-at-hierapolis
+    text: { en: "Polycrates, bishop of Ephesus (c. 190), writes that \"Philip, one of the twelve apostles\" fell asleep in Hierapolis, together with two of his aged virgin daughters; a third daughter rests at Ephesus." }
+    when: { from: 60, to: 90, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "3.31.3", quote: "Philip, one of the twelve apostles, who fell asleep in Hierapolis" }
+      - { source: eusebius-he, locator: "5.24.2" }
+    alternativeTo: [philip-hierapolis-evangelist]
+    notes: { en: "No early source gives the years; Papias (writing c. 110-130) knew the daughters, so a stay some time in the later 1st century is shown." }
+  - id: philip-hierapolis-evangelist
+    text: { en: "Proclus (c. 200) speaks of \"four prophetesses, the daughters of Philip, at Hierapolis\" and of their father's tomb there. Four prophesying daughters are exactly the family of Philip the evangelist in Acts 21:9, so many scholars think the Philip of Hierapolis was the evangelist, later confused with the apostle." }
+    when: { from: 60, to: 90, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "3.31.4", quote: "four prophetesses, the daughters of Philip, at Hierapolis in Asia. Their tomb is there and the tomb of their father." }
+      - { source: acts, locator: "21:8-9" }
+    alternativeTo: [philip-at-hierapolis]
+    notes: { en: "McGiffert (NPNF2 vol. 1, note on HE 3.31.3): \"Philip the apostle and Philip the evangelist are here confounded.\" Scholars do not agree." }
+  - id: philip-papias-daughters
+    text: { en: "Papias of Hierapolis heard a wonderful story from the daughters of Philip about a person raised from the dead in his own time." }
+    when: { from: 60, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "3.39.9" }
+  - id: philip-death-asleep
+    text: { en: "The earliest witness says only that Philip \"fell asleep\" (died) in Hierapolis; it does not say how or when." }
+    when: { from: 60, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "3.31.3" }
+    alternativeTo: [philip-death-crucified]
+    notes: { en: "No early source gives the year of his death." }
+  - id: philip-not-martyred-heracleon
+    text: { en: "Heracleon (c. 170), quoted by Clement of Alexandria, names Philip among apostles who did not die by confessing Christ before judges." }
+    grade: B
+    citations:
+      - { source: clement-stromata, locator: "4.9" }
+  - id: philip-death-crucified
+    text: { en: "Later legends say Philip was crucified head-downward at Hierapolis; one late list dates this to the time of the emperor Domitian (81-96)." }
+    when: { from: 81, to: 96, circa: true }
+    grade: D
+    citations:
+      - { source: ps-hippolytus-twelve, locator: "5" }
+      - { source: acts-of-philip, locator: "Martyrdom" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Philip was bound to a pillar and was starved to death." }
+    alternativeTo: [philip-death-asleep]
+    notes: { en: "Vreugdenhil's pillar-and-starvation version has no ancient source that our research could find; the 'pillar' first appears in 17th-18th-century Protestant compilations." }
+items:
+  - type: stay
+    id: philip-jerusalem
+    place: jerusalem
+    when: { from: 30, to: 33, circa: true }
+    claim: philip-upper-room
+    episodes:
+      - id: philip-called-at-bethsaida
+        title: { en: "\"Follow me\"" }
+        text: { en: "Philip came from Bethsaida, a fishing town on the Sea of Galilee. When Jesus said \"Follow me\", Philip went straight to his friend Nathanael: \"Come and see!\"" }
+        when: { from: 27, to: 30, circa: true }
+        claim: philip-from-bethsaida
+      - id: philip-among-the-twelve
+        title: { en: "One of the Twelve" }
+        text: { en: "In every list of the twelve apostles Philip's name stands in fifth place." }
+        when: { from: 28, to: 30, circa: true }
+        claim: philip-one-of-twelve
+      - id: philip-bread-test
+        title: { en: "Where shall we buy bread?" }
+        text: { en: "Thousands of hungry people sat on the hillside. Jesus asked Philip where they could buy bread, and Philip sighed that even two hundred days' wages would not be enough. Then Jesus fed them all." }
+        when: { from: 29, to: 32, circa: true }
+        claim: philip-feeding-five-thousand
+      - id: philip-we-would-see-jesus
+        title: { en: "\"We would see Jesus\"" }
+        text: { en: "During the last Passover some Greeks came to Philip with a request: \"Sir, we would see Jesus.\" Philip fetched Andrew, and together they brought the request to Jesus." }
+        when: { from: 30, to: 33, circa: true }
+        claim: philip-greeks-see-jesus
+      - id: philip-show-us-father
+        title: { en: "\"Show us the Father\"" }
+        text: { en: "At the Last Supper Philip asked, \"Lord, show us the Father.\" Jesus answered that whoever has seen him has seen the Father." }
+        when: { from: 30, to: 33, circa: true }
+        claim: philip-show-us-the-father
+  - type: leg
+    id: philip-to-phrygia
+    from: jerusalem
+    to: hierapolis
+    via: [[36.31, 33.51], [36.2, 36.85], [34.9, 36.92]]
+    when: { from: 35, to: 80, circa: true }
+    mode: land
+    claim: philip-preached-phrygia
+  - type: stay
+    id: philip-hierapolis
+    place: hierapolis
+    when: { from: 60, to: 90, circa: true }
+    claim: philip-at-hierapolis
+    episodes:
+      - id: philip-daughters-story
+        title: { en: "Stories from Philip's daughters" }
+        text: { en: "Papias, a church leader in Hierapolis, met Philip's daughters. They told him an amazing story of someone raised from the dead in their own day." }
+        when: { from: 60, to: 100, circa: true }
+        claim: philip-papias-daughters
+  - type: stay
+    id: philip-hierapolis-other-philip
+    place: hierapolis
+    when: { from: 60, to: 90, circa: true }
+    claim: philip-hierapolis-evangelist
+    episodes:
+      - id: philip-which-philip
+        title: { en: "Which Philip?" }
+        text: { en: "The Bible has two Philips: the apostle and Philip the evangelist, who had four daughters who prophesied. A writer around 200 says four prophetess daughters of Philip were buried at Hierapolis, so perhaps the evangelist lived there, not the apostle." }
+        when: { from: 60, to: 90, circa: true }
+        claim: philip-hierapolis-evangelist
+  - type: stay
+    id: philip-death-hierapolis-asleep
+    place: hierapolis
+    when: { from: 60, to: 100, circa: true }
+    claim: philip-death-asleep
+    episodes:
+      - id: philip-fell-asleep
+        title: { en: "He fell asleep" }
+        text: { en: "The oldest report simply says Philip \"fell asleep\" in Hierapolis, the usual Christian way of saying someone died. Another 2nd-century teacher counts Philip among apostles who were not put on trial for their faith." }
+        when: { from: 60, to: 100, circa: true }
+        claim: philip-not-martyred-heracleon
+  - type: stay
+    id: philip-death-hierapolis-crucified
+    place: hierapolis
+    when: { from: 81, to: 96, circa: true }
+    claim: philip-death-crucified
+    episodes:
+      - id: philip-crucified-upside-down
+        title: { en: "Crucified upside down?" }
+        text: { en: "Stories written hundreds of years later say Philip was hung head-down on a cross at Hierapolis. They are legends, not eyewitness reports." }
+        when: { from: 81, to: 96, circa: true }
+        claim: philip-death-crucified

@@ -1,0 +1,128 @@
+person: matthias
+claims:
+  - id: matthias-with-jesus-from-baptism
+    text: { en: "Matthias had been with the disciples all the time the Lord Jesus went in and out among them, from John's baptism to the Ascension; that was the condition for being chosen." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:21-23" }
+  - id: matthias-one-of-seventy
+    text: { en: "Eusebius reports that Matthias and Joseph Barsabbas \"are said\" to have been among the Seventy whom Jesus sent out." }
+    when: { from: 28, to: 30, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "1.12.3", quote: "are likewise said to have been deemed worthy of the same calling with the seventy" }
+  - id: matthias-chosen-by-lot
+    text: { en: "In Jerusalem, between the Ascension and Pentecost, the believers put forward Joseph Barsabbas and Matthias. They prayed and cast lots, the lot fell on Matthias, and he was numbered with the eleven apostles." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:15-26" }
+  - id: matthias-preached-jerusalem
+    text: { en: "A late list of the apostles says Matthias preached in Jerusalem, \"fell asleep\" (died peacefully) and was buried there." }
+    when: { from: 33, to: 90, circa: true }
+    grade: D
+    citations:
+      - { source: ps-hippolytus-twelve, locator: "12", quote: "preached in Jerusalem, and fell asleep and was buried there" }
+    alternativeTo: [matthias-stoned-beheaded, matthias-death-sebastopolis, matthias-crucified-britain]
+    notes: { en: "No source gives a year." }
+  - id: matthias-stoned-beheaded
+    text: { en: "The Golden Legend (c. 1260), citing a legend found at Trier, says Matthias preached around Jerusalem, was stoned, and was then beheaded with an axe \"after the manner of the Romans\"." }
+    when: { from: 33, to: 90, circa: true }
+    grade: D
+    citations:
+      - { source: golden-legend, locator: "St. Matthias" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Mattias was first stoned and then beheaded." }
+    alternativeTo: [matthias-preached-jerusalem, matthias-death-sebastopolis, matthias-crucified-britain]
+    notes: { en: "Vreugdenhil's version rests on this medieval legend (probably via Foxe), not on any early church writer. No source gives a year." }
+  - id: matthias-death-sebastopolis
+    text: { en: "One version of the 8th-century apostle lists says Matthias preached to barbarians and man-eaters in \"inner Ethiopia\", near the mouth of the river Phasis, and died and was buried at Sebastopolis near the Temple of the Sun." }
+    when: { from: 40, to: 90, circa: true }
+    grade: D
+    citations:
+      - { source: ps-dorotheus-lists, locator: "Matthias (version quoted in Catholic Encyclopedia, 'St. Matthias')" }
+    alternativeTo: [matthias-preached-jerusalem, matthias-stoned-beheaded, matthias-crucified-britain]
+    notes: { en: "Taking Sebastopolis to be Dioscurias (Sukhumi) is a modern identification, not the source's. No source gives a year." }
+  - id: matthias-crucified-britain
+    text: { en: "Another version of the same 8th-century lists says Matthias preached in \"Ethiopia Prima\" and was later crucified in Britain." }
+    when: { from: 40, to: 90, circa: true }
+    grade: D
+    citations:
+      - { source: ps-dorotheus-lists, locator: "Matthias (Schermann text, NASSCAL translation)", quote: "after preaching Christ in Ethiopia Prima, later he was crucified in Britain" }
+    alternativeTo: [matthias-preached-jerusalem, matthias-stoned-beheaded, matthias-death-sebastopolis]
+    notes: { en: "No source gives a year." }
+items:
+  - type: stay
+    id: matthias-jerusalem
+    place: jerusalem
+    when: { from: 30, to: 33, circa: true }
+    claim: matthias-chosen-by-lot
+    episodes:
+      - id: matthias-follower-from-the-start
+        title: { en: "There from the beginning" }
+        text: { en: "Matthias is never named in the Gospels, but he had followed Jesus from the day John baptised him until Jesus went up to heaven." }
+        when: { from: 28, to: 30, circa: true }
+        claim: matthias-with-jesus-from-baptism
+      - id: matthias-seventy
+        title: { en: "One of the Seventy?" }
+        text: { en: "Eusebius, writing around 300, had heard that Matthias was one of the seventy disciples Jesus sent out two by two." }
+        when: { from: 28, to: 30, circa: true }
+        claim: matthias-one-of-seventy
+      - id: matthias-the-lot
+        title: { en: "The lot falls on Matthias" }
+        text: { en: "After Judas' death, about 120 believers met in Jerusalem to choose a new apostle. They put forward two names, prayed, and cast lots. The lot fell on Matthias, and he became one of the Twelve." }
+        when: { from: 30, to: 33, circa: true }
+        claim: matthias-chosen-by-lot
+  - type: stay
+    id: matthias-death-jerusalem-asleep
+    place: jerusalem
+    when: { from: 33, to: 90, circa: true }
+    claim: matthias-preached-jerusalem
+    episodes:
+      - id: matthias-buried-in-jerusalem
+        title: { en: "A quiet end in Jerusalem?" }
+        text: { en: "One late list says Matthias stayed and preached in Jerusalem, and died there in peace." }
+        when: { from: 33, to: 90, circa: true }
+        claim: matthias-preached-jerusalem
+  - type: stay
+    id: matthias-death-jerusalem-stoned
+    place: jerusalem
+    when: { from: 33, to: 90, circa: true }
+    claim: matthias-stoned-beheaded
+    episodes:
+      - id: matthias-stoned-and-beheaded
+        title: { en: "Stoned and beheaded?" }
+        text: { en: "A medieval legend says Matthias was stoned for his preaching and then beheaded with an axe. This is the version Vreugdenhil tells, but it was written down more than a thousand years later." }
+        when: { from: 33, to: 90, circa: true }
+        claim: matthias-stoned-beheaded
+  - type: leg
+    id: matthias-to-colchis
+    from: jerusalem
+    to: dioscurias
+    via: [[36.31, 33.51], [38.79, 37.15], [42.7, 41.27]]
+    when: { from: 40, to: 90, circa: true }
+    mode: land
+    claim: matthias-death-sebastopolis
+  - type: stay
+    id: matthias-death-sebastopolis-stay
+    place: dioscurias
+    when: { from: 40, to: 90, circa: true }
+    claim: matthias-death-sebastopolis
+    episodes:
+      - id: matthias-among-the-man-eaters
+        title: { en: "To the land of the man-eaters?" }
+        text: { en: "Old lists say Matthias went to wild peoples, even \"man-eaters\", on the far coast of the Black Sea, and died at a town called Sebastopolis." }
+        when: { from: 40, to: 90, circa: true }
+        claim: matthias-death-sebastopolis
+  - type: stay
+    id: matthias-death-britain
+    place: britannia
+    when: { from: 40, to: 90, circa: true }
+    claim: matthias-crucified-britain
+    episodes:
+      - id: matthias-crucified-in-britain
+        title: { en: "As far as Britain?" }
+        text: { en: "One version of an 8th-century list claims Matthias was crucified in Britain. Different copies of the same list disagree, which shows how little was really known." }
+        when: { from: 40, to: 90, circa: true }
+        claim: matthias-crucified-britain

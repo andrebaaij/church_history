@@ -1,18 +1,1976 @@
 person: paul
 claims:
+  # ---------- Background (before AD 30) ----------
+  - id: paul-born-tarsus
+    text: { en: "Paul is a Jew of the tribe of Benjamin, born in Tarsus in Cilicia and a Roman citizen by birth." }
+    when: { from: 5, to: 10, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "21:39" }
+      - { source: acts, locator: "22:3" }
+      - { source: acts, locator: "22:25-28" }
+      - { source: philippians, locator: "3:5" }
+      - { source: romans, locator: "11:1" }
+    alternativeTo: [paul-family-gischala]
+    notes: { en: "The birth year is not stated anywhere; c. 5–10 is inferred from 'a young man' (Acts 7:58) and 'Paul the aged' (Philemon 9)." }
+  - id: paul-family-gischala
+    text: { en: "Jerome says Paul's family came from Gischala in Galilee and moved to Tarsus when the Romans took the town." }
+    when: { from: 5, to: 10, circa: true }
+    grade: C
+    citations:
+      - { source: jerome-vir-ill, locator: "5", quote: "of the tribe of Benjamin and the town of Giscalis in Judea. When this was taken by the Romans he removed with his parents to Tarsus" }
+    alternativeTo: [paul-born-tarsus]
+    notes: { en: "The two can be harmonised: Gischala as the family's origin, Tarsus as Paul's birthplace." }
+  - id: paul-trained-gamaliel
+    text: { en: "Paul is brought up in Jerusalem, educated 'at the feet of Gamaliel', and lives as a strict Pharisee." }
+    when: { from: 15, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "22:3" }
+      - { source: acts, locator: "26:4-5" }
+      - { source: philippians, locator: "3:5-6" }
+      - { source: galatians, locator: "1:14" }
+  # ---------- Persecutor and conversion ----------
+  - id: paul-persecutor
+    text: { en: "Saul guards the cloaks at the stoning of Stephen and approves of it; then he ravages the church in Jerusalem, dragging believers to prison." }
+    when: { from: 31, to: 34, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "7:58" }
+      - { source: acts, locator: "8:1-3" }
+      - { source: acts, locator: "22:4" }
+      - { source: acts, locator: "26:9-11" }
+      - { source: galatians, locator: "1:13" }
+      - { source: 1-corinthians, locator: "15:9" }
+      - { source: philippians, locator: "3:6" }
+    notes: { en: "Vreugdenhil (ch. 1) tells Stephen's stoning but does not link Saul to it. Dated before the conversion (c. 31–36)." }
+  - id: paul-damascus-road
+    text: { en: "Near Damascus the risen Jesus appears to Saul. He is blinded, baptised by Ananias and called to bring the gospel to the Gentiles." }
+    when: { from: 31, to: 36, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "9:1-19" }
+      - { source: acts, locator: "22:6-16" }
+      - { source: acts, locator: "26:12-18" }
+      - { source: galatians, locator: "1:15-16" }
+      - { source: 1-corinthians, locator: "15:8" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "the Lord Jesus Himself called Paul on his way to Damascus. The Lord Jesus made him 'the apostle of the Gentiles.'" }
+    notes: { en: "Most often dated 33–34. The date is reconstructed from Galatians 1:18 and 2:1 ('after three years', 'after fourteen years'), counted back from the Jerusalem Council (c. 48/49)." }
+  - id: paul-in-arabia
+    text: { en: "After his conversion Paul goes away into 'Arabia' (the Nabataean kingdom) and then returns to Damascus." }
+    when: { from: 34, to: 37, circa: true }
+    grade: A
+    citations:
+      - { source: galatians, locator: "1:17" }
+    notes: { en: "Acts does not mention this. Where in Arabia he went is unknown; the map shows the region only." }
+  - id: paul-damascus-escape
+    text: { en: "Paul preaches Jesus in the synagogues of Damascus. When a plot is made against him and the ethnarch of King Aretas guards the city, he is let down through the wall in a basket." }
+    when: { from: 36, to: 37, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "9:19-25" }
+      - { source: 2-corinthians, locator: "11:32-33" }
+      - { source: galatians, locator: "1:17" }
+    notes: { en: "Aretas IV of Nabataea died c. AD 40, so the escape happened before then; many scholars narrow it to c. 37–40." }
+  - id: paul-first-jerusalem-visit
+    text: { en: "Three years after his conversion Paul goes up to Jerusalem and stays fifteen days with Cephas (Peter), also seeing James. Barnabas introduces him to the apostles; Greek-speaking Jews try to kill him." }
+    when: { from: 36, to: 38, circa: true }
+    grade: A
+    citations:
+      - { source: galatians, locator: "1:18-20" }
+      - { source: acts, locator: "9:26-29" }
+      - { source: acts, locator: "22:17-21" }
+  - id: paul-sent-to-tarsus
+    text: { en: "The believers bring Paul down to Caesarea and send him off to Tarsus; he then preaches in the regions of Syria and Cilicia." }
+    when: { from: 37, to: 44, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "9:30" }
+      - { source: galatians, locator: "1:21-24" }
+  - id: paul-third-heaven
+    text: { en: "Paul writes of a man in Christ 'caught up to the third heaven' fourteen years before 2 Corinthians, usually taken as his own experience." }
+    when: { from: 41, to: 42, circa: true }
+    grade: A
+    citations:
+      - { source: 2-corinthians, locator: "12:2-4" }
+    notes: { en: "'Fourteen years ago' counted back from 2 Corinthians (c. 55–56) points to the 'silent years' in Syria and Cilicia." }
+  # ---------- Antioch ----------
+  - id: paul-antioch-year
+    text: { en: "Barnabas fetches Saul from Tarsus. For a whole year they teach in Antioch, where the disciples are first called Christians." }
+    when: { from: 44, to: 45, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "11:25-26" }
+  - id: paul-famine-relief
+    text: { en: "After the prophet Agabus predicts a great famine, the church in Antioch sends relief to Judea by Barnabas and Saul." }
+    when: { from: 45, to: 47, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "11:27-30" }
+      - { source: acts, locator: "12:25" }
+    notes: { en: "Some scholars identify this visit, rather than the Jerusalem Council, with Galatians 2:1–10." }
+  - id: paul-famine-josephus
+    text: { en: "Josephus records a great famine in Judea under the procurators Fadus and Tiberius Alexander (c. AD 44–48)." }
+    when: { from: 44, to: 48, circa: true }
+    grade: B
+    citations:
+      - { source: josephus-antiquities, locator: "20.101", quote: "Under these procurators that great famine happened in Judea" }
+      - { source: acts, locator: "11:28" }
+  - id: paul-agrippa-death-44
+    text: { en: "King Herod Agrippa I dies suddenly at Caesarea; Josephus places his death in AD 44, the time Luke sets next to the famine-relief visit." }
+    when: { from: 44, to: 44, circa: true }
+    grade: B
+    citations:
+      - { source: acts, locator: "12:20-23" }
+      - { source: josephus-antiquities, locator: "19.343-350" }
+    notes: { en: "Acts tells the death (A); the year comes from Josephus (B). Luke's ordering may be thematic, so the relief visit could be 44–47." }
+  # ---------- First journey ----------
   - id: paul-sent-from-antioch
     text: { en: "Sent out by the Holy Spirit, Barnabas and Saul go down to Seleucia and sail to Cyprus." }
     when: { from: 46, to: 48, circa: true }
     grade: A
     citations:
       - { source: acts, locator: "13:2-4" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "The Bible tells us about the missionary travels of the Apostle Paul" }
   - id: paul-salamis-to-paphos
     text: { en: "They preach in the synagogues at Salamis and cross the whole island to Paphos." }
     when: { from: 46, to: 48, circa: true }
     grade: A
     citations:
       - { source: acts, locator: "13:5-6" }
+  - id: paul-sergius-paulus
+    text: { en: "At Paphos the proconsul Sergius Paulus believes, after the magician Bar-Jesus (Elymas) is struck blind. From here on Luke calls Saul 'Paul'." }
+    when: { from: 46, to: 47, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "13:6-12" }
+  - id: paul-sergius-paullus-inscription
+    text: { en: "An inscription from Rome names a Lucius Sergius Paullus as a curator of the Tiber banks under Claudius; he is probably, though not certainly, the proconsul of Acts." }
+    when: { from: 41, to: 54, circa: true }
+    grade: A
+    citations:
+      - { source: sergius-paullus-inscription, locator: "CIL VI 31545" }
+    notes: { en: "The inscription does not date his time as proconsul of Cyprus. It only fits a career in the 40s." }
+  - id: paul-perge-mark-leaves
+    text: { en: "Paul and his companions sail from Paphos to Perga in Pamphylia; John Mark leaves them and returns to Jerusalem." }
+    when: { from: 47, to: 47, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "13:13" }
+  - id: paul-preaches-pisidian-antioch
+    text: { en: "In the synagogue of Pisidian Antioch Paul preaches Jesus as the promised Saviour. When many Jews oppose them, Paul and Barnabas turn to the Gentiles and are driven out of the district." }
+    when: { from: 47, to: 47, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "13:14-52" }
+      - { source: 2-timothy, locator: "3:11" }
+  - id: paul-preaches-iconium
+    text: { en: "At Iconium a great number believe, but the city is divided; when a plot to stone them is formed, they flee." }
+    when: { from: 47, to: 48, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "14:1-6" }
+  - id: paul-stoned-lystra
+    text: { en: "At Lystra Paul heals a man lame from birth; the crowd hails Barnabas and Paul as Zeus and Hermes. Then opponents from Antioch and Iconium stir up the crowd, Paul is stoned and dragged out of the city for dead, but he gets up." }
+    when: { from: 48, to: 48, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "14:8-20" }
+      - { source: 2-corinthians, locator: "11:25" }
+      - { source: 2-timothy, locator: "3:11" }
+  - id: paul-preaches-derbe
+    text: { en: "At Derbe they preach the gospel and make many disciples." }
+    when: { from: 48, to: 48, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "14:20-21" }
+  - id: paul-retrace-elders
+    text: { en: "Paul and Barnabas retrace their steps through Lystra, Iconium and Antioch, strengthening the disciples and appointing elders in every church." }
+    when: { from: 48, to: 48, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "14:21-25" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Paul and other apostles ordained elders and deacons in the new congregations" }
+  - id: paul-return-antioch-48
+    text: { en: "From Attalia they sail back to Syrian Antioch and report how God had 'opened a door of faith to the Gentiles'." }
+    when: { from: 48, to: 48, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "14:25-28" }
+  # ---------- Jerusalem Council ----------
+  - id: paul-jerusalem-council
+    text: { en: "At the Jerusalem Council the apostles and elders decide that Gentile believers need not be circumcised. James, Cephas and John give Paul and Barnabas 'the right hand of fellowship'." }
+    when: { from: 48, to: 49, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "15:1-29" }
+      - { source: galatians, locator: "2:1-10" }
+    notes: { en: "Majority view: Acts 15 and Galatians 2:1–10 describe the same visit ('after fourteen years'). A minority links Galatians 2 to the famine visit instead." }
+  - id: paul-antioch-incident
+    text: { en: "Back in Antioch Paul opposes Cephas (Peter) to his face for drawing back from eating with Gentile believers. Later Paul and Barnabas part ways over John Mark." }
+    when: { from: 49, to: 49, circa: true }
+    grade: A
+    citations:
+      - { source: galatians, locator: "2:11-14" }
+      - { source: acts, locator: "15:30-40" }
+  - id: paul-galatians-letter
+    text: { en: "Paul writes the Letter to the Galatians, either c. 48/49 from Antioch (before the Council) or c. 53–55 from Ephesus or Macedonia." }
+    when: { from: 48, to: 55, circa: true }
+    grade: A
+    citations:
+      - { source: galatians, locator: "1:1-2" }
+    notes: { en: "The date and the readers (south or north Galatia) are heavily debated; the map shows the letter at Antioch with this caveat." }
+  # ---------- Second journey ----------
+  - id: paul-second-journey-start
+    text: { en: "Paul chooses Silas and goes through Syria and Cilicia, strengthening the churches, and comes again to Derbe and Lystra." }
+    when: { from: 49, to: 50, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "15:40-16:1" }
+  - id: paul-timothy-joins
+    text: { en: "At Lystra the young disciple Timothy, whose mother is a Jewish believer and whose father is Greek, joins Paul." }
+    when: { from: 49, to: 50, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "16:1-3" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "7", quote: "Timothy … was Paul's companion on his second missionary journey" }
+  - id: paul-forbidden-asia
+    text: { en: "Delivering the Council's decisions, they pass through Phrygia and Galatia. The Holy Spirit forbids them to preach in Asia, and the Spirit of Jesus does not let them enter Bithynia, so they come down to Troas." }
+    when: { from: 49, to: 50, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "16:4-8" }
+  - id: paul-macedonian-vision
+    text: { en: "At Troas Paul sees a man of Macedonia in a night vision begging, 'Come over into Macedonia and help us.' Here the 'we' passages begin." }
+    when: { from: 49, to: 50, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "16:8-10" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "He travelled to Europe" }
+    notes: { en: "The switch to 'we' is traditionally taken to mean that the author, Luke, joins the group here." }
+  - id: paul-crossing-to-europe
+    text: { en: "They sail from Troas with a straight course to Samothrace, and the next day reach Neapolis." }
+    when: { from: 49, to: 50, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "16:11" }
+  - id: paul-philippi
+    text: { en: "At Philippi Lydia and her household are baptised. After Paul frees a slave girl from a spirit, he and Silas are beaten and jailed; an earthquake opens the prison and the jailer believes. Paul invokes his Roman citizenship." }
+    when: { from: 49, to: 50, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "16:12-40" }
+      - { source: 1-thessalonians, locator: "2:2" }
+      - { source: philippians, locator: "4:15-16" }
+  - id: paul-thessalonica
+    text: { en: "Passing through Amphipolis and Apollonia, Paul reasons for three sabbaths in the synagogue of Thessalonica. A mob attacks Jason's house, and the believers send Paul away by night." }
+    when: { from: 50, to: 50, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "17:1-10" }
+      - { source: 1-thessalonians, locator: "1:9" }
+      - { source: 1-thessalonians, locator: "2:1-2" }
+      - { source: philippians, locator: "4:16" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "3", quote: "Trace the history of the opposition of the Jews to the gospel in the various cities of Paul's missionary journeys" }
+  - id: paul-beroea
+    text: { en: "The Jews of Beroea receive the word eagerly and examine the Scriptures daily. When agitators come from Thessalonica, the believers send Paul off to the sea and on to Athens." }
+    when: { from: 50, to: 50, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "17:10-15" }
+  - id: paul-athens-areopagus
+    text: { en: "In Athens Paul is stirred by a city full of idols. He speaks at the Areopagus about the 'unknown god'; Dionysius the Areopagite and a woman named Damaris believe." }
+    when: { from: 50, to: 50, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "17:16-34" }
+      - { source: 1-thessalonians, locator: "3:1" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "He travelled to Europe, preached in Athens, Corinth, and Rome" }
+  - id: paul-corinth
+    text: { en: "Paul stays eighteen months in Corinth, making tents with Aquila and Priscilla. Crispus, the synagogue ruler, believes, and in a vision the Lord says, 'I have many people in this city.'" }
+    when: { from: 50, to: 52, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "18:1-11" }
+      - { source: 1-corinthians, locator: "2:1-5" }
+      - { source: 2-corinthians, locator: "11:7-9" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "preached in Athens, Corinth, and Rome" }
+    notes: { en: "Dated by the Gallio inscription (proconsul c. 51–52)." }
+  - id: paul-claudius-expulsion
+    text: { en: "Aquila and Priscilla had recently come from Italy because Claudius ordered all Jews to leave Rome; Suetonius also reports that Claudius expelled the Jews for disturbances 'at the instigation of Chrestus'." }
+    when: { from: 49, to: 50, circa: true }
+    grade: B
+    citations:
+      - { source: acts, locator: "18:2" }
+      - { source: suetonius-caesars, locator: "Claudius 25.4", quote: "Since the Jews constantly made disturbances at the instigation of Chrestus, he expelled them from Rome." }
+    notes: { en: "The year 49 comes from the late writer Orosius (c. 417); some scholars prefer AD 41 (Dio Cassius)." }
+  - id: paul-before-gallio
+    text: { en: "The Jews bring Paul before the proconsul Gallio, who refuses to judge a dispute about 'words and names' of their own law and drives them from the judgement seat." }
+    when: { from: 51, to: 52, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "18:12-17" }
+  - id: paul-gallio-inscription
+    text: { en: "A letter of Emperor Claudius carved at Delphi names Gallio as proconsul of Achaia. It dates to the first half of AD 52, so Gallio governed c. 51–52 — the firmest date in Paul's life." }
+    when: { from: 51, to: 52, circa: true }
+    grade: A
+    citations:
+      - { source: gallio-inscription, locator: "SIG³ 801D" }
+    notes: { en: "Proconsuls normally served one year from early summer. A minority prefers 50–51 or 52–53." }
+  - id: paul-thessalonians-letters
+    text: { en: "From Corinth Paul writes 1 Thessalonians, widely regarded as his earliest surviving letter, and (if it is his) 2 Thessalonians." }
+    when: { from: 50, to: 51, circa: true }
+    grade: A
+    citations:
+      - { source: 1-thessalonians, locator: "1:1" }
+      - { source: 1-thessalonians, locator: "3:1-6" }
+      - { source: 2-thessalonians, locator: "1:1" }
+    notes: { en: "The authenticity of 2 Thessalonians is disputed by many critical scholars." }
+  - id: paul-cenchreae-ephesus
+    text: { en: "Paul has his hair cut at Cenchreae because of a vow, sails with Priscilla and Aquila to Ephesus, and reasons briefly in the synagogue there, promising to return." }
+    when: { from: 52, to: 52, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "18:18-21" }
+  - id: paul-end-second-journey
+    text: { en: "Paul lands at Caesarea, goes up and greets the church (probably in Jerusalem), and goes down to Antioch." }
+    when: { from: 52, to: 52, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "18:22" }
+  # ---------- Third journey ----------
+  - id: paul-third-journey-start
+    text: { en: "After some time in Antioch Paul sets out again, going through Galatia and Phrygia and strengthening all the disciples." }
+    when: { from: 52, to: 53, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "18:23" }
+  - id: paul-ephesus-ministry
+    text: { en: "Paul spends about three years in Ephesus, teaching daily in the hall of Tyrannus 'so that all the residents of Asia heard'. God does extraordinary miracles, and former magicians burn their books." }
+    when: { from: 53, to: 55, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "19:1-20" }
+      - { source: acts, locator: "20:31" }
+      - { source: 1-corinthians, locator: "16:8-9" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "The apostle Paul instituted the churches in Ephesus and cities around Ephesus" }
+  - id: paul-ephesus-dangers
+    text: { en: "Paul writes that he 'fought with beasts at Ephesus' and faced an affliction in Asia so heavy that he despaired of life." }
+    when: { from: 53, to: 55, circa: true }
+    grade: A
+    citations:
+      - { source: 1-corinthians, locator: "15:32" }
+      - { source: 2-corinthians, locator: "1:8-10" }
+    notes: { en: "Some scholars suggest an imprisonment at Ephesus; the texts do not state it." }
+  - id: paul-ephesus-riot
+    text: { en: "The silversmith Demetrius, who makes silver shrines of Artemis, stirs up a riot; the crowd shouts 'Great is Artemis of the Ephesians!' for two hours in the theatre until the town clerk calms them." }
+    when: { from: 55, to: 55, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "19:23-41" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "7", quote: "There was almost an uproar when Paul preached there because the silversmiths … were out of work" }
+  - id: paul-1-corinthians-letter
+    text: { en: "From Ephesus Paul writes 1 Corinthians: 'I will stay in Ephesus until Pentecost.'" }
+    when: { from: 54, to: 55, circa: true }
+    grade: A
+    citations:
+      - { source: 1-corinthians, locator: "16:8" }
+      - { source: 1-corinthians, locator: "16:19" }
+    notes: { en: "A short 'painful visit' to Corinth and a lost 'tearful letter' are inferred from 2 Corinthians 2:1–4 and 13:1–2." }
+  - id: paul-troas-to-macedonia
+    text: { en: "Paul leaves Ephesus for Macedonia. At Troas a door is open for the gospel, but he has no rest because Titus is not there, so he goes on to Macedonia." }
+    when: { from: 55, to: 55, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "20:1" }
+      - { source: 2-corinthians, locator: "2:12-13" }
+  - id: paul-macedonia-2-corinthians
+    text: { en: "In Macedonia Titus arrives with good news from Corinth. Paul writes 2 Corinthians and organises the collection for the poor believers in Jerusalem." }
+    when: { from: 55, to: 56, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "20:1-2" }
+      - { source: 2-corinthians, locator: "7:5-7" }
+      - { source: 2-corinthians, locator: "8:1-9:15" }
+    notes: { en: "The city in Macedonia is not named; the map uses Philippi. Many scholars regard 2 Corinthians as made up of two or more letters." }
+  - id: paul-illyricum
+    text: { en: "Paul says he has fully preached the gospel 'from Jerusalem and as far round as Illyricum'." }
+    when: { from: 55, to: 56, circa: true }
+    grade: A
+    citations:
+      - { source: romans, locator: "15:19" }
+    notes: { en: "This may mean he reached the border of Illyricum, or travelled through Macedonia toward it. Acts does not mention Illyricum. The route shown is a guess along the Via Egnatia." }
+  - id: paul-romans-letter
+    text: { en: "Spending three winter months in Greece, Paul writes Romans from Corinth, where Gaius is his host; Phoebe of Cenchreae probably carries it." }
+    when: { from: 56, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "20:2-3" }
+      - { source: romans, locator: "16:1" }
+      - { source: romans, locator: "16:23" }
+  - id: paul-spain-plan
+    text: { en: "Paul plans to take the collection to Jerusalem, then visit Rome on his way to Spain." }
+    when: { from: 56, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: romans, locator: "15:22-33" }
+  - id: paul-plot-land-route
+    text: { en: "Because of a plot against him as he is about to sail for Syria, Paul goes back through Macedonia by land; after the Feast of Unleavened Bread they sail from Philippi to Troas." }
+    when: { from: 57, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "20:3-6" }
+  - id: paul-eutychus
+    text: { en: "At Troas Paul talks until midnight; a young man named Eutychus falls asleep, drops from a third-storey window and is taken up dead, but Paul embraces him and he is brought home alive." }
+    when: { from: 57, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "20:7-12" }
+  - id: paul-voyage-to-miletus
+    text: { en: "Paul walks to Assos while the others sail; together they sail to Mytilene, past Chios, to Samos and on to Miletus, hurrying to reach Jerusalem by Pentecost." }
+    when: { from: 57, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "20:13-16" }
+  - id: paul-miletus-farewell
+    text: { en: "At Miletus Paul says farewell to the elders of Ephesus: 'you all will see my face no more.' They weep, kiss him and bring him to the ship." }
+    when: { from: 57, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "20:17-38" }
+  - id: paul-voyage-to-tyre
+    text: { en: "The ship runs to Cos, Rhodes and Patara; there they board a ship to Phoenicia, sight Cyprus on the left and land at Tyre." }
+    when: { from: 57, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "21:1-3" }
+  - id: paul-tyre-disciples
+    text: { en: "The disciples at Tyre urge Paul through the Spirit not to go up to Jerusalem; after a week they all kneel and pray with him on the beach." }
+    when: { from: 57, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "21:3-6" }
+  - id: paul-agabus-belt
+    text: { en: "From Ptolemais they come to Caesarea and stay with Philip the evangelist. The prophet Agabus binds his own hands and feet with Paul's belt: so the Jews will bind its owner in Jerusalem." }
+    when: { from: 57, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "21:7-14" }
+  # ---------- Arrest and Caesarea ----------
+  - id: paul-arrest-jerusalem
+    text: { en: "In Jerusalem Paul delivers the collection and meets James and the elders. Accused of bringing Greeks into the Temple, he is seized by a mob and rescued by the Roman tribune Claudius Lysias. A plot by more than forty men to kill him is uncovered." }
+    when: { from: 57, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "21:15-23:22" }
+      - { source: romans, locator: "15:25-31" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "The Jews would have killed Paul themselves if the Romans hadn't intervened and taken him prisoner." }
+  - id: paul-escorted-caesarea
+    text: { en: "The tribune sends Paul by night under a strong guard, by way of Antipatris, to the governor Felix at Caesarea." }
+    when: { from: 57, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "23:23-35" }
+  - id: paul-caesarea-felix
+    text: { en: "Paul is tried before the governor Felix, with the high priest Ananias as accuser. Felix and his wife Drusilla hear him speak about faith in Christ, but Felix hopes for a bribe and leaves Paul in custody for two years." }
+    when: { from: 57, to: 59, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "23:23-24:27" }
+  - id: paul-appeal-caesar
+    text: { en: "Under the new governor Porcius Festus, Paul appeals to Caesar. He then defends himself before King Agrippa II and Bernice, who says, 'Almost thou persuadest me to be a Christian.'" }
+    when: { from: 58, to: 60, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "25:1-26:32" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "2", quote: "King Agrippa, the same King who visited Festus and wanted to hear the Apostle Paul" }
+  - id: paul-festus-josephus
+    text: { en: "Josephus confirms that Nero sent Porcius Festus to succeed Felix as governor of Judea (c. 58–60)." }
+    when: { from: 58, to: 60, circa: true }
+    grade: B
+    citations:
+      - { source: josephus-antiquities, locator: "20.182", quote: "Porcius Festus was sent as successor to Felix by Nero" }
+      - { source: acts, locator: "24:27" }
+    notes: { en: "Most scholars date Festus' arrival to 59 or 60; proposals range from 55/56 to 61." }
+  # ---------- Voyage to Rome ----------
+  - id: paul-voyage-to-crete
+    text: { en: "Paul sails for Italy as a prisoner of the centurion Julius, with Aristarchus and Luke. They touch at Sidon, sail under the lee of Cyprus to Myra, change to an Alexandrian ship, and struggle past Cnidus to Fair Havens on Crete." }
+    when: { from: 59, to: 59, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "27:1-8" }
+  - id: paul-warning-fair-havens
+    text: { en: "Because the Fast (the Day of Atonement) is already past, Paul warns that the voyage will bring great loss, but the centurion trusts the captain and owner instead." }
+    when: { from: 59, to: 59, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "27:9-13" }
+  - id: paul-storm
+    text: { en: "A north-east gale, 'Euraquilo', drives the ship past the island of Cauda. For many days neither sun nor stars appear. An angel tells Paul that he must stand before Caesar and that no life will be lost." }
+    when: { from: 59, to: 59, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "27:13-38" }
+  - id: paul-shipwreck-malta
+    text: { en: "The ship runs aground and breaks up, but all 276 people reach land on Malta. Paul shakes off a viper unharmed, heals the father of Publius, and stays three months on the island." }
+    when: { from: 59, to: 60, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "27:39-28:10" }
+    notes: { en: "Acts 28:1 calls the island Melitē. Malta is the strong majority view; other proposals (Mljet, Kefalonia) are late or modern and are not shown." }
+  - id: paul-malta-to-puteoli
+    text: { en: "In an Alexandrian ship with the sign of the Twin Brothers they sail to Syracuse, Rhegium and Puteoli, where they find believers and stay seven days." }
+    when: { from: 60, to: 60, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "28:11-14" }
+  - id: paul-via-appia-welcome
+    text: { en: "Believers from Rome come out along the Via Appia as far as the Forum of Appius and Three Taverns to meet Paul; when he sees them he thanks God and takes courage." }
+    when: { from: 60, to: 60, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "28:14-15" }
+  # ---------- Rome ----------
+  - id: paul-rome-two-years
+    text: { en: "In Rome Paul lives for two whole years in his own rented lodging, guarded by a soldier. He welcomes all who come to him, preaching the kingdom of God 'with all boldness, no man forbidding him'. Acts ends here." }
+    when: { from: 60, to: 62, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "28:16-31" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "preached in Athens, Corinth, and Rome" }
+  - id: paul-prison-letters
+    text: { en: "As a prisoner Paul writes Philippians and Philemon (and, traditionally, Colossians and Ephesians), mentioning 'the whole praetorium' and 'Caesar's household'." }
+    when: { from: 60, to: 62, circa: true }
+    grade: A
+    citations:
+      - { source: philippians, locator: "1:13" }
+      - { source: philippians, locator: "4:22" }
+      - { source: philemon, locator: "1:9-10" }
+      - { source: colossians, locator: "4:10" }
+      - { source: colossians, locator: "4:18" }
+      - { source: ephesians, locator: "6:20" }
+    notes: { en: "Rome is the traditional place; some scholars prefer Ephesus (c. 54–55) or Caesarea (c. 57–59). Philippians and Philemon are undisputed; Colossians is disputed and Ephesians widely regarded by critical scholars as written by a later follower." }
+  - id: paul-expects-release
+    text: { en: "From prison Paul expects to be released and to see his friends again: 'prepare me also a lodging'." }
+    when: { from: 60, to: 62, circa: true }
+    grade: A
+    citations:
+      - { source: philippians, locator: "1:19-26" }
+      - { source: philippians, locator: "2:24" }
+      - { source: philemon, locator: "1:22" }
+  # ---------- After Acts ----------
+  - id: paul-release-tradition
+    text: { en: "Eusebius reports that 'it is said' Paul was released, sent out again to preach, and martyred on a second visit to Rome, during which he wrote 2 Timothy." }
+    when: { from: 62, to: 67, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "2.22.2", quote: "it is said that the apostle was sent again upon the ministry of preaching, and that upon coming to the same city a second time he suffered martyrdom" }
+      - { source: jerome-vir-ill, locator: "5" }
+    notes: { en: "No first-century source states a release outright. It is implied by 1 Clement 5.7 and the Muratorian Fragment if they mean Spain, and by the travels in the Pastoral Letters. Many critical scholars think Paul died at the end of the Acts 28 imprisonment instead." }
+  - id: paul-spain-visit
+    text: { en: "Clement of Rome writes that Paul, having taught righteousness to the whole world, came 'to the extreme limit of the west' before his martyrdom; the Muratorian Fragment speaks of Paul's journey from Rome to Spain." }
+    when: { from: 62, to: 64, circa: true }
+    grade: B
+    citations:
+      - { source: 1-clement, locator: "5.6-7", quote: "having taught righteousness to the whole world, and come to the extreme limit of the west" }
+      - { source: muratorian-fragment, locator: "lines 38-39", quote: "the departure of Paul from the city when he journeyed to Spain" }
+      - { source: romans, locator: "15:24" }
+      - { source: romans, locator: "15:28" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "He travelled to Europe, preached in Athens, Corinth, and Rome, and even went to Spain." }
+    notes: { en: "Ambiguous: written from Rome, 'the limit of the west' could mean Rome itself, though it normally means Spain or the Pillars of Hercules. The Muratorian Fragment is usually dated late 2nd century, but some date it to the 4th. No early source names a city in Spain. Vreugdenhil states the visit as fact; present it as 'early tradition says…'." }
+  - id: paul-spain-acts-of-peter
+    text: { en: "The apocryphal Acts of Peter tell how the Lord said to Paul in a vision, 'Arise, Paul, and become a physician … to them that are in Spain,' and how the believers in Rome wept as he left." }
+    when: { from: 62, to: 64, circa: true }
+    grade: D
+    citations:
+      - { source: acts-of-peter, locator: "1-3", quote: "Arise, Paul, and become a physician in thy body to them that are in Spain" }
+  - id: paul-pastoral-travels
+    text: { en: "The Pastoral Letters describe travels that do not fit within Acts: Paul leaves Titus in Crete, urges Timothy to stay at Ephesus while he goes to Macedonia, and plans to winter at Nicopolis." }
+    when: { from: 62, to: 66, circa: true }
+    grade: A
+    citations:
+      - { source: titus, locator: "1:5" }
+      - { source: 1-timothy, locator: "1:3" }
+      - { source: titus, locator: "3:12" }
+    notes: { en: "The order of these travels is unknown. Their historical value depends on whether Paul wrote the Pastoral Letters, which many critical scholars doubt; they are one argument for a release after Acts 28." }
+  - id: paul-2-timothy-chains
+    text: { en: "In chains in Rome, deserted by most ('only Luke is with me'), Paul writes to Timothy: 'the time of my departure is at hand … I have finished my course, I have kept the faith.' He asks for his cloak and books left at Troas." }
+    when: { from: 64, to: 67, circa: true }
+    grade: A
+    citations:
+      - { source: 2-timothy, locator: "1:8" }
+      - { source: 2-timothy, locator: "1:16-17" }
+      - { source: 2-timothy, locator: "4:6-18" }
+    notes: { en: "Eusebius (HE 2.22.2–7) places this letter in a second Roman imprisonment (grade C); critical scholars who doubt Pauline authorship treat it as not historical." }
+  # ---------- Death ----------
+  - id: paul-martyrdom-rome-nero
+    text: { en: "Paul dies as a martyr in Rome under Nero (AD 54–68). Clement of Rome, Ignatius, Dionysius of Corinth and Irenaeus all remember Peter and Paul as the martyred founders of the church in Rome." }
+    when: { from: 64, to: 68, circa: true }
+    grade: B
+    citations:
+      - { source: 1-clement, locator: "5.5-7", quote: "suffered martyrdom under the prefects" }
+      - { source: ignatius-ephesians, locator: "12.2", quote: "Paul, the holy, the martyred" }
+      - { source: eusebius-he, locator: "2.25.8", quote: "taught together in like manner in Italy, and suffered martyrdom at the same time" }
+      - { source: irenaeus-ah, locator: "3.3.2" }
+    notes: { en: "The Dionysius of Corinth quotation (c. 170) survives only in Eusebius. Neither Tacitus nor Suetonius names Paul." }
+  - id: paul-beheaded
+    text: { en: "Paul is beheaded with the sword, the death of a Roman citizen — 'a death like John's' (the Baptist)." }
+    when: { from: 64, to: 68, circa: true }
+    grade: B
+    citations:
+      - { source: tertullian-praescription, locator: "36", quote: "Where Paul wins his crown in a death like John's" }
+      - { source: tertullian-scorpiace, locator: "15", quote: "That Paul is beheaded has been written in their own blood" }
+      - { source: eusebius-he, locator: "2.25.5", quote: "It is, therefore, recorded that Paul was beheaded in Rome itself" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "At Nero's command, the soldiers beheaded Paul and crucified Peter, probably upside down." }
+    notes: { en: "Tertullian (c. 200) is the earliest explicit source. Vreugdenhil's account probably rests on Eusebius, Jerome and Tertullian (he gives no footnotes)." }
+  - id: paul-martyrdom-acts-of-paul
+    text: { en: "The apocryphal Acts of Paul tell that Paul prayed facing east before he was beheaded, and that milk instead of blood spurted onto the soldier's cloak." }
+    when: { from: 64, to: 68, circa: true }
+    grade: D
+    citations:
+      - { source: acts-of-paul, locator: "Martyrdom of Paul 3-5" }
+  - id: paul-death-64
+    text: { en: "Paul is martyred in the persecution Nero launched after the great fire of Rome (July 64): Clement places him among that 'great multitude' of martyrs, and Dionysius says Peter and Paul died 'at the same time'." }
+    when: { from: 64, to: 65, circa: true }
+    grade: B
+    citations:
+      - { source: 1-clement, locator: "5.5-7" }
+      - { source: 1-clement, locator: "6.1" }
+      - { source: tacitus-annals, locator: "15.44" }
+    alternativeTo: [paul-death-67]
+    notes: { en: "Tacitus describes the persecution but does not name Paul. This date is favoured by scholars who reject a long second career." }
+  - id: paul-death-67
+    text: { en: "Jerome dates Paul's beheading to the fourteenth year of Nero (AD 67–68), on the same day as Peter's death, and says he was buried on the Ostian Way." }
+    when: { from: 67, to: 68, circa: true }
+    grade: C
+    citations:
+      - { source: jerome-vir-ill, locator: "5", quote: "in the fourteenth year of Nero on the same day with Peter, was beheaded at Rome for Christ's sake and was buried in the Ostian way" }
+    alternativeTo: [paul-death-64]
+    notes: { en: "The traditional date, which leaves time for a release and second imprisonment. Jerome's 'twenty-seventh year after our Lord's passion' (as translated) does not fit AD 67/68." }
+  - id: paul-trophy-ostian-way
+    text: { en: "Around AD 200 the Roman Christian Gaius could point visitors to the 'trophies' (memorials) of the apostles on the Vatican hill and on the Ostian Way; Jerome says Paul was buried on the Ostian Way." }
+    when: { from: 67, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "2.25.7", quote: "if you will go to the Vatican or to the Ostian way, you will find the trophies of those who laid the foundations of this church" }
+      - { source: jerome-vir-ill, locator: "5" }
+    notes: { en: "Gaius' words survive only as quoted by Eusebius. The basilica of San Paolo fuori le Mura stands on this spot." }
+  - id: paul-sarcophagus-radiocarbon
+    text: { en: "Excavations in 2006 exposed a sarcophagus under the altar of San Paolo fuori le Mura; in 2009 bone fragments inside were radiocarbon-dated to the 1st–2nd century." }
+    when: { from: 1, to: 200, circa: true }
+    grade: A
+    citations:
+      - { source: san-paolo-radiocarbon-2009, locator: "28 June 2009" }
+    notes: { en: "This shows an early burial and early veneration at the site; it cannot prove whose bones they are." }
 items:
-  - { type: leg, id: paul-antioch-seleucia, from: antioch, to: seleucia, when: { from: 47, to: 47, circa: true }, mode: land, claim: paul-sent-from-antioch }
-  - { type: leg, id: paul-seleucia-salamis, from: seleucia, to: salamis, when: { from: 47, to: 47, circa: true }, mode: sea, claim: paul-sent-from-antioch }
-  - { type: leg, id: paul-salamis-paphos, from: salamis, to: paphos, when: { from: 47, to: 47, circa: true }, mode: land, claim: paul-salamis-to-paphos }
+  # ---------- Jerusalem, persecutor ----------
+  - type: stay
+    id: paul-jerusalem-persecutor
+    place: jerusalem
+    when: { from: 31, to: 34, circa: true }
+    claim: paul-persecutor
+    episodes:
+      - id: paul-born-in-tarsus
+        title: { en: "Born in Tarsus" }
+        text: { en: "Saul grew up as a Jew of the tribe of Benjamin in Tarsus, a busy city in Cilicia. He was also a Roman citizen from birth, which would protect him more than once later on." }
+        when: { from: 5, to: 10, circa: true }
+        claim: paul-born-tarsus
+      - id: paul-family-from-gischala
+        title: { en: "A family from Galilee?" }
+        text: { en: "Jerome, writing around 392, says Paul's family came from Gischala in Galilee. When the Romans captured the town, his parents moved to Tarsus." }
+        when: { from: 5, to: 10, circa: true }
+        claim: paul-family-gischala
+      - id: paul-at-gamaliels-feet
+        title: { en: "At the feet of Gamaliel" }
+        text: { en: "As a young man Saul studied the Law in Jerusalem under the famous teacher Gamaliel. He became a zealous Pharisee, more eager than most of his own age." }
+        when: { from: 15, to: 30, circa: true }
+        claim: paul-trained-gamaliel
+      - id: paul-stephen-stoning
+        title: { en: "Holding the cloaks" }
+        text: { en: "When Stephen was stoned, the witnesses laid their cloaks at the feet of a young man named Saul. Saul agreed that Stephen should die." }
+        when: { from: 31, to: 34, circa: true }
+        claim: paul-persecutor
+      - id: paul-ravages-church
+        title: { en: "Hunting the believers" }
+        text: { en: "Saul went from house to house, dragging men and women off to prison. Later he called himself the least of the apostles, because he had persecuted the church of God." }
+        when: { from: 31, to: 34, circa: true }
+        claim: paul-persecutor
+  - type: leg
+    id: paul-jerusalem-damascus
+    from: jerusalem
+    to: damascus
+    via: [[35.20, 32.28], [35.63, 33.00]]
+    when: { from: 33, to: 34, circa: true }
+    mode: land
+    claim: paul-damascus-road
+    episodes:
+      - id: paul-light-from-heaven
+        title: { en: "A light from heaven" }
+        text: { en: "Near Damascus a light from heaven flashed around Saul and he fell to the ground. A voice said, 'Saul, Saul, why do you persecute me? … I am Jesus.' He got up blind and was led by the hand into the city." }
+        when: { from: 33, to: 34, circa: true }
+        claim: paul-damascus-road
+      - id: paul-ananias
+        title: { en: "Scales fall from his eyes" }
+        text: { en: "The Lord sent a disciple named Ananias to Saul, calling him 'a chosen vessel' to carry his name to the Gentiles. Ananias laid his hands on him, something like scales fell from his eyes, and Saul was baptised." }
+        when: { from: 33, to: 34, circa: true }
+        claim: paul-damascus-road
+  - type: leg
+    id: paul-damascus-arabia
+    from: damascus
+    to: nabataea
+    when: { from: 34, to: 34, circa: true }
+    mode: land
+    claim: paul-in-arabia
+  - type: stay
+    id: paul-arabia
+    place: nabataea
+    when: { from: 34, to: 37, circa: true }
+    claim: paul-in-arabia
+    episodes:
+      - id: paul-goes-to-arabia
+        title: { en: "Away into Arabia" }
+        text: { en: "Paul writes that after his conversion he did not go to the apostles in Jerusalem but went away into Arabia. Nobody knows exactly where, or what he did there." }
+        when: { from: 34, to: 37, circa: true }
+        claim: paul-in-arabia
+  - type: leg
+    id: paul-arabia-damascus
+    from: nabataea
+    to: damascus
+    when: { from: 36, to: 37, circa: true }
+    mode: land
+    claim: paul-in-arabia
+  - type: stay
+    id: paul-damascus-preaching
+    place: damascus
+    when: { from: 36, to: 37, circa: true }
+    claim: paul-damascus-escape
+    episodes:
+      - id: paul-basket-escape
+        title: { en: "Down the wall in a basket" }
+        text: { en: "Paul preached in Damascus that Jesus is the Son of God, and his enemies plotted to kill him. The governor under King Aretas guarded the city gates, so the disciples let Paul down through an opening in the wall in a basket." }
+        when: { from: 36, to: 37, circa: true }
+        claim: paul-damascus-escape
+  - type: leg
+    id: paul-damascus-jerusalem
+    from: damascus
+    to: jerusalem
+    via: [[35.63, 33.00], [35.20, 32.28]]
+    when: { from: 37, to: 37, circa: true }
+    mode: land
+    claim: paul-first-jerusalem-visit
+  - type: stay
+    id: paul-jerusalem-first-visit
+    place: jerusalem
+    when: { from: 37, to: 37, circa: true }
+    claim: paul-first-jerusalem-visit
+    episodes:
+      - id: paul-fifteen-days-with-peter
+        title: { en: "Fifteen days with Peter" }
+        text: { en: "The disciples in Jerusalem were afraid of Saul until Barnabas brought him to the apostles. Paul stayed fifteen days with Peter and also met James, the Lord's brother." }
+        when: { from: 37, to: 37, circa: true }
+        claim: paul-first-jerusalem-visit
+  - type: leg
+    id: paul-jerusalem-caesarea-37
+    from: jerusalem
+    to: caesarea
+    via: [[34.93, 32.10]]
+    when: { from: 37, to: 37, circa: true }
+    mode: land
+    claim: paul-sent-to-tarsus
+  - type: leg
+    id: paul-caesarea-tarsus
+    from: caesarea
+    to: tarsus
+    via: [[34.70, 32.70], [34.90, 33.60], [35.30, 34.60], [35.55, 35.50], [35.30, 36.20], [34.90, 36.65]]
+    when: { from: 37, to: 37, circa: true }
+    mode: sea
+    claim: paul-sent-to-tarsus
+  - type: stay
+    id: paul-tarsus-silent-years
+    place: tarsus
+    when: { from: 37, to: 44, circa: true }
+    claim: paul-sent-to-tarsus
+    episodes:
+      - id: paul-preaches-syria-cilicia
+        title: { en: "The quiet years" }
+        text: { en: "For several years Paul preached in Syria and Cilicia. The churches in Judea had never seen his face, but they heard that their old persecutor now preached the faith he once tried to destroy, and they praised God." }
+        when: { from: 37, to: 44, circa: true }
+        claim: paul-sent-to-tarsus
+      - id: paul-caught-up-third-heaven
+        title: { en: "Caught up to the third heaven" }
+        text: { en: "Paul later wrote about a man who was caught up into paradise and heard words too sacred to repeat. Most readers think Paul was describing his own experience during these years." }
+        when: { from: 41, to: 42, circa: true }
+        claim: paul-third-heaven
+  # ---------- Antioch and the famine visit ----------
+  - type: leg
+    id: paul-tarsus-antioch
+    from: tarsus
+    to: antioch
+    via: [[35.32, 37.00], [36.17, 36.85], [36.22, 36.49]]
+    when: { from: 44, to: 44, circa: true }
+    mode: land
+    claim: paul-antioch-year
+  - type: stay
+    id: paul-antioch-first-year
+    place: antioch
+    when: { from: 44, to: 45, circa: true }
+    claim: paul-antioch-year
+    episodes:
+      - id: paul-first-called-christians
+        title: { en: "First called Christians" }
+        text: { en: "Barnabas went to Tarsus to look for Saul and brought him to Antioch. For a whole year they taught a large crowd, and it was in Antioch that the disciples were first called 'Christians'." }
+        when: { from: 44, to: 45, circa: true }
+        claim: paul-antioch-year
+  - type: leg
+    id: paul-antioch-jerusalem-famine
+    from: antioch
+    to: jerusalem
+    via: [[35.84, 34.44], [35.20, 33.27], [34.95, 32.10]]
+    when: { from: 45, to: 47, circa: true }
+    mode: land
+    claim: paul-famine-relief
+    episodes:
+      - id: paul-agabus-famine
+        title: { en: "A famine is coming" }
+        text: { en: "The prophet Agabus foretold a great famine. Each disciple in Antioch gave what he could, and they sent the gift to the elders in Judea with Barnabas and Saul." }
+        when: { from: 45, to: 47, circa: true }
+        claim: paul-famine-relief
+      - id: paul-famine-in-josephus
+        title: { en: "The famine in Josephus" }
+        text: { en: "The Jewish historian Josephus, writing around 93, also tells of 'that great famine' in Judea in the mid-40s. It helps us date this journey." }
+        when: { from: 44, to: 48, circa: true }
+        claim: paul-famine-josephus
+      - id: paul-death-of-agrippa
+        title: { en: "King Herod Agrippa dies" }
+        text: { en: "Luke tells how King Herod Agrippa I, who had killed James and imprisoned Peter, died suddenly at Caesarea. Josephus also tells the story, and his account places it in AD 44." }
+        when: { from: 44, to: 44, circa: true }
+        claim: paul-agrippa-death-44
+  - type: leg
+    id: paul-jerusalem-antioch-famine
+    from: jerusalem
+    to: antioch
+    via: [[34.95, 32.10], [35.20, 33.27], [35.84, 34.44]]
+    when: { from: 45, to: 47, circa: true }
+    mode: land
+    claim: paul-famine-relief
+  # ---------- First journey ----------
+  - type: leg
+    id: paul-antioch-seleucia
+    from: antioch
+    to: seleucia
+    when: { from: 47, to: 47, circa: true }
+    mode: land
+    claim: paul-sent-from-antioch
+    episodes:
+      - id: paul-set-apart
+        title: { en: "Set apart for the work" }
+        text: { en: "While the church in Antioch was worshipping and fasting, the Holy Spirit said, 'Set apart for me Barnabas and Saul for the work to which I have called them.' They laid their hands on them and sent them off." }
+        when: { from: 47, to: 47, circa: true }
+        claim: paul-sent-from-antioch
+  - type: leg
+    id: paul-seleucia-salamis
+    from: seleucia
+    to: salamis
+    via: [[35.70, 36.00], [34.60, 35.40]]
+    when: { from: 47, to: 47, circa: true }
+    mode: sea
+    claim: paul-sent-from-antioch
+  - type: leg
+    id: paul-salamis-paphos
+    from: salamis
+    to: paphos
+    via: [[33.63, 34.92], [33.14, 34.71], [32.88, 34.67]]
+    when: { from: 47, to: 47, circa: true }
+    mode: land
+    claim: paul-salamis-to-paphos
+  - type: stay
+    id: paul-paphos
+    place: paphos
+    when: { from: 47, to: 47, circa: true }
+    claim: paul-sergius-paulus
+    episodes:
+      - id: paul-elymas-blinded
+        title: { en: "The magician struck blind" }
+        text: { en: "The Roman governor Sergius Paulus wanted to hear the word of God, but the magician Elymas tried to turn him away from the faith. Paul looked straight at him and said he would be blind for a time, and mist and darkness fell on him. When the governor saw this, he believed." }
+        when: { from: 47, to: 47, circa: true }
+        claim: paul-sergius-paulus
+      - id: paul-sergius-paullus-stone
+        title: { en: "A governor's name in stone" }
+        text: { en: "An inscription found in Rome names a Lucius Sergius Paullus who served under Emperor Claudius. He is probably the same man Paul met on Cyprus, though we cannot be certain." }
+        when: { from: 41, to: 54, circa: true }
+        claim: paul-sergius-paullus-inscription
+  - type: leg
+    id: paul-paphos-perge
+    from: paphos
+    to: perge
+    via: [[32.20, 34.90], [32.10, 35.15], [31.30, 36.50], [30.95, 36.80]]
+    when: { from: 47, to: 47, circa: true }
+    mode: sea
+    claim: paul-perge-mark-leaves
+    episodes:
+      - id: paul-mark-goes-home
+        title: { en: "John Mark goes home" }
+        text: { en: "When they reached Perga in Pamphylia, John Mark left them and went back to Jerusalem. Paul did not forget it: later he refused to take Mark along again." }
+        when: { from: 47, to: 47, circa: true }
+        claim: paul-perge-mark-leaves
+  - type: leg
+    id: paul-perge-pisidian-antioch
+    from: perge
+    to: pisidian-antioch
+    via: [[30.70, 37.30], [31.15, 37.90]]
+    when: { from: 47, to: 47, circa: true }
+    mode: land
+    claim: paul-preaches-pisidian-antioch
+  - type: stay
+    id: paul-pisidian-antioch
+    place: pisidian-antioch
+    when: { from: 47, to: 47, circa: true }
+    claim: paul-preaches-pisidian-antioch
+    episodes:
+      - id: paul-synagogue-sermon
+        title: { en: "A sermon in the synagogue" }
+        text: { en: "Invited to speak after the reading of the Law and the Prophets, Paul told the story of Israel from Egypt to King David, and preached Jesus as the Saviour God had promised. The next sabbath almost the whole city came to hear." }
+        when: { from: 47, to: 47, circa: true }
+        claim: paul-preaches-pisidian-antioch
+      - id: paul-turn-to-gentiles
+        title: { en: "We turn to the Gentiles" }
+        text: { en: "When some of the Jews contradicted them, Paul and Barnabas said boldly, 'We turn to the Gentiles.' The Gentiles rejoiced, but the two were driven out and shook the dust off their feet." }
+        when: { from: 47, to: 47, circa: true }
+        claim: paul-preaches-pisidian-antioch
+  - type: leg
+    id: paul-pisidian-antioch-iconium
+    from: pisidian-antioch
+    to: iconium
+    via: [[31.75, 37.95]]
+    when: { from: 47, to: 47, circa: true }
+    mode: land
+    claim: paul-preaches-iconium
+  - type: stay
+    id: paul-iconium
+    place: iconium
+    when: { from: 47, to: 48, circa: true }
+    claim: paul-preaches-iconium
+    episodes:
+      - id: paul-iconium-divided
+        title: { en: "A city divided" }
+        text: { en: "In Iconium many Jews and Greeks believed, but the city was split in two. When they learned of a plan to stone them, Paul and Barnabas fled to Lystra and Derbe." }
+        when: { from: 47, to: 48, circa: true }
+        claim: paul-preaches-iconium
+  - type: leg
+    id: paul-iconium-lystra
+    from: iconium
+    to: lystra
+    when: { from: 48, to: 48, circa: true }
+    mode: land
+    claim: paul-stoned-lystra
+  - type: stay
+    id: paul-lystra
+    place: lystra
+    when: { from: 48, to: 48, circa: true }
+    claim: paul-stoned-lystra
+    episodes:
+      - id: paul-zeus-and-hermes
+        title: { en: "Mistaken for gods" }
+        text: { en: "Paul healed a man who had never walked, and the crowd shouted that the gods had come down as men. They called Barnabas Zeus and Paul Hermes, and the priest of Zeus brought oxen to sacrifice, until the apostles tore their clothes and stopped them." }
+        when: { from: 48, to: 48, circa: true }
+        claim: paul-stoned-lystra
+      - id: paul-stoned-left-for-dead
+        title: { en: "Stoned and left for dead" }
+        text: { en: "Opponents from Antioch and Iconium turned the crowd. They stoned Paul and dragged him out of the city, thinking he was dead. But when the disciples gathered round him, he got up and went back into the city." }
+        when: { from: 48, to: 48, circa: true }
+        claim: paul-stoned-lystra
+  - type: leg
+    id: paul-lystra-derbe
+    from: lystra
+    to: derbe
+    when: { from: 48, to: 48, circa: true }
+    mode: land
+    claim: paul-preaches-derbe
+  - type: stay
+    id: paul-derbe
+    place: derbe
+    when: { from: 48, to: 48, circa: true }
+    claim: paul-preaches-derbe
+  - type: leg
+    id: paul-derbe-pisidian-antioch-return
+    from: derbe
+    to: pisidian-antioch
+    via: [[32.344, 37.588], [32.492, 37.872], [31.75, 37.95]]
+    when: { from: 48, to: 48, circa: true }
+    mode: land
+    claim: paul-retrace-elders
+    episodes:
+      - id: paul-appoints-elders
+        title: { en: "Elders in every church" }
+        text: { en: "Instead of taking the short way home, Paul and Barnabas went back through the cities where they had been attacked. They encouraged the believers that 'we must through much tribulation enter into the kingdom of God' and appointed elders in every church." }
+        when: { from: 48, to: 48, circa: true }
+        claim: paul-retrace-elders
+  - type: leg
+    id: paul-pisidian-antioch-perge-return
+    from: pisidian-antioch
+    to: perge
+    via: [[31.15, 37.90], [30.70, 37.30]]
+    when: { from: 48, to: 48, circa: true }
+    mode: land
+    claim: paul-retrace-elders
+  - type: leg
+    id: paul-perge-attalea
+    from: perge
+    to: attalea
+    when: { from: 48, to: 48, circa: true }
+    mode: land
+    claim: paul-return-antioch-48
+  - type: leg
+    id: paul-attalea-antioch
+    from: attalea
+    to: antioch
+    via: [[30.90, 36.60], [31.40, 36.30], [33.00, 35.80], [34.60, 36.00], [35.70, 36.05], [35.88, 36.10]]
+    when: { from: 48, to: 48, circa: true }
+    mode: sea
+    claim: paul-return-antioch-48
+  - type: stay
+    id: paul-antioch-report
+    place: antioch
+    when: { from: 48, to: 48, circa: true }
+    claim: paul-return-antioch-48
+    episodes:
+      - id: paul-door-of-faith
+        title: { en: "A door of faith" }
+        text: { en: "Back in Antioch, Paul and Barnabas gathered the church and told everything God had done with them, and how he had opened a door of faith to the Gentiles." }
+        when: { from: 48, to: 48, circa: true }
+        claim: paul-return-antioch-48
+  # ---------- Jerusalem Council ----------
+  - type: leg
+    id: paul-antioch-jerusalem-council
+    from: antioch
+    to: jerusalem
+    via: [[35.84, 34.44], [35.20, 33.27], [35.19, 32.28]]
+    when: { from: 49, to: 49, circa: true }
+    mode: land
+    claim: paul-jerusalem-council
+  - type: stay
+    id: paul-jerusalem-council-stay
+    place: jerusalem
+    when: { from: 49, to: 49, circa: true }
+    claim: paul-jerusalem-council
+    episodes:
+      - id: paul-council-decision
+        title: { en: "The Jerusalem Council" }
+        text: { en: "Some teachers said Gentile believers had to be circumcised to be saved. After Peter, Barnabas and Paul had spoken, James proposed that the Gentiles should not be burdened with the Law, and the whole church agreed and sent a letter to Antioch." }
+        when: { from: 49, to: 49, circa: true }
+        claim: paul-jerusalem-council
+      - id: paul-right-hand-of-fellowship
+        title: { en: "The right hand of fellowship" }
+        text: { en: "James, Peter and John saw that God had entrusted the gospel for the Gentiles to Paul. They shook hands with Paul and Barnabas as partners, asking only that they remember the poor." }
+        when: { from: 49, to: 49, circa: true }
+        claim: paul-jerusalem-council
+  - type: leg
+    id: paul-jerusalem-antioch-council
+    from: jerusalem
+    to: antioch
+    via: [[35.19, 32.28], [35.20, 33.27], [35.84, 34.44]]
+    when: { from: 49, to: 49, circa: true }
+    mode: land
+    claim: paul-jerusalem-council
+  - type: stay
+    id: paul-antioch-49
+    place: antioch
+    when: { from: 49, to: 49, circa: true }
+    claim: paul-antioch-incident
+    episodes:
+      - id: paul-opposes-peter
+        title: { en: "Paul opposes Peter" }
+        text: { en: "At Antioch Peter used to eat with the Gentile believers, but when men came from James he drew back. Paul rebuked him in front of everyone, because the truth of the gospel was at stake." }
+        when: { from: 49, to: 49, circa: true }
+        claim: paul-antioch-incident
+      - id: paul-barnabas-part
+        title: { en: "Paul and Barnabas part ways" }
+        text: { en: "Barnabas wanted to take John Mark on the next journey, but Paul did not. Their disagreement was so sharp that they split up: Barnabas sailed to Cyprus with Mark, and Paul chose Silas." }
+        when: { from: 49, to: 49, circa: true }
+        claim: paul-antioch-incident
+      - id: paul-writes-galatians
+        title: { en: "A letter to the Galatians" }
+        text: { en: "Paul wrote a fiery letter to the churches of Galatia, insisting that we are made right with God by faith in Christ, not by the works of the Law. Scholars disagree whether he wrote it about now or some five years later." }
+        when: { from: 48, to: 55, circa: true }
+        claim: paul-galatians-letter
+  # ---------- Second journey ----------
+  - type: leg
+    id: paul-antioch-derbe
+    from: antioch
+    to: derbe
+    via: [[36.22, 36.49], [34.896, 36.914], [34.75, 37.27]]
+    when: { from: 49, to: 50, circa: true }
+    mode: land
+    claim: paul-second-journey-start
+  - type: leg
+    id: paul-derbe-lystra
+    from: derbe
+    to: lystra
+    when: { from: 50, to: 50, circa: true }
+    mode: land
+    claim: paul-second-journey-start
+  - type: stay
+    id: paul-lystra-timothy
+    place: lystra
+    when: { from: 50, to: 50, circa: true }
+    claim: paul-timothy-joins
+    episodes:
+      - id: paul-timothy-chosen
+        title: { en: "Timothy joins Paul" }
+        text: { en: "At Lystra lived a young disciple named Timothy, well spoken of by the believers. Paul wanted him as a travelling companion, and Timothy became like a son to him." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-timothy-joins
+  - type: leg
+    id: paul-lystra-troas
+    from: lystra
+    to: troas
+    via: [[32.492, 37.872], [31.19, 38.305], [30.50, 39.80]]
+    when: { from: 50, to: 50, circa: true }
+    mode: land
+    claim: paul-forbidden-asia
+    episodes:
+      - id: paul-doors-closed
+        title: { en: "Doors that stay shut" }
+        text: { en: "Paul wanted to preach in Asia, but the Holy Spirit stopped him. He tried to go north into Bithynia, but again the Spirit did not allow it, so they walked on to the coast at Troas." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-forbidden-asia
+  - type: stay
+    id: paul-troas-vision
+    place: troas
+    when: { from: 50, to: 50, circa: true }
+    claim: paul-macedonian-vision
+    episodes:
+      - id: paul-man-of-macedonia
+        title: { en: "Come over and help us" }
+        text: { en: "One night Paul saw a vision of a man from Macedonia begging him, 'Come over into Macedonia and help us.' From this point the story says 'we', so its writer, Luke, seems to have joined them." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-macedonian-vision
+  - type: leg
+    id: paul-troas-neapolis
+    from: troas
+    to: neapolis
+    via: [[26.00, 39.75], [25.60, 40.00], [25.42, 40.47], [25.45, 40.56], [25.00, 40.75], [24.60, 40.84], [24.42, 40.90]]
+    when: { from: 50, to: 50, circa: true }
+    mode: sea
+    claim: paul-crossing-to-europe
+    episodes:
+      - id: paul-into-europe
+        title: { en: "The gospel crosses into Europe" }
+        text: { en: "They sailed straight to the island of Samothrace and the next day landed at Neapolis. For the first time the gospel came to Europe." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-crossing-to-europe
+  - type: leg
+    id: paul-neapolis-philippi
+    from: neapolis
+    to: philippi
+    when: { from: 50, to: 50, circa: true }
+    mode: land
+    claim: paul-philippi
+  - type: stay
+    id: paul-philippi-50
+    place: philippi
+    when: { from: 50, to: 50, circa: true }
+    claim: paul-philippi
+    episodes:
+      - id: paul-lydia
+        title: { en: "Lydia by the river" }
+        text: { en: "On the sabbath Paul spoke to women gathered for prayer by the river. Lydia, a seller of purple cloth, listened; the Lord opened her heart, and she and her household were baptised." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-philippi
+      - id: paul-midnight-earthquake
+        title: { en: "Singing in prison" }
+        text: { en: "After Paul freed a slave girl from a spirit, her owners had Paul and Silas beaten and thrown into prison. At midnight they were praying and singing hymns when an earthquake shook the doors open. The jailer asked, 'What must I do to be saved?' and that night he and his household were baptised." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-philippi
+      - id: paul-roman-citizen-philippi
+        title: { en: "We are Romans!" }
+        text: { en: "The next morning the magistrates wanted to let them go quietly. Paul said they had beaten Roman citizens without a trial, and the frightened magistrates came in person to escort them out." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-philippi
+  - type: leg
+    id: paul-philippi-thessalonica
+    from: philippi
+    to: thessalonica
+    via: [[23.842, 40.826], [23.470, 40.624]]
+    when: { from: 50, to: 50, circa: true }
+    mode: land
+    claim: paul-thessalonica
+  - type: stay
+    id: paul-thessalonica-50
+    place: thessalonica
+    when: { from: 50, to: 50, circa: true }
+    claim: paul-thessalonica
+    episodes:
+      - id: paul-world-upside-down
+        title: { en: "Turning the world upside down" }
+        text: { en: "For three sabbaths Paul showed from the Scriptures that the Messiah had to suffer and rise again. Many believed, but a mob attacked Jason's house, shouting that these men 'have turned the world upside down'. The believers sent Paul and Silas away by night." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-thessalonica
+  - type: leg
+    id: paul-thessalonica-beroea
+    from: thessalonica
+    to: beroea
+    when: { from: 50, to: 50, circa: true }
+    mode: land
+    claim: paul-beroea
+  - type: stay
+    id: paul-beroea-50
+    place: beroea
+    when: { from: 50, to: 50, circa: true }
+    claim: paul-beroea
+    episodes:
+      - id: paul-bereans
+        title: { en: "Searching the Scriptures" }
+        text: { en: "The Jews of Beroea were more noble-minded: they received the message eagerly and searched the Scriptures every day to check whether it was true. Many of them believed." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-beroea
+  - type: leg
+    id: paul-beroea-athens
+    from: beroea
+    to: athens
+    via: [[22.70, 40.35], [22.90, 40.10], [23.42, 39.35], [23.56, 39.18], [23.65, 38.95], [24.10, 38.85], [24.55, 38.40], [24.64, 38.06], [24.15, 37.60], [23.90, 37.58], [23.60, 37.85], [23.63, 37.94]]
+    when: { from: 50, to: 50, circa: true }
+    mode: sea
+    claim: paul-beroea
+  - type: stay
+    id: paul-athens-50
+    place: athens
+    when: { from: 50, to: 50, circa: true }
+    claim: paul-athens-areopagus
+    episodes:
+      - id: paul-unknown-god
+        title: { en: "To an unknown god" }
+        text: { en: "Paul was upset to see Athens full of idols. Standing on the Areopagus, he told the philosophers that he had found an altar 'to an unknown god' — and that this God, who made the world, now calls everyone to repent." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-athens-areopagus
+      - id: paul-dionysius-damaris
+        title: { en: "Some believed" }
+        text: { en: "When Paul spoke of the resurrection of the dead, some laughed at him. But a few believed, among them Dionysius, a member of the Areopagus council, and a woman named Damaris." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-athens-areopagus
+  - type: leg
+    id: paul-athens-corinth
+    from: athens
+    to: corinth
+    via: [[23.54, 38.04], [23.35, 38.00]]
+    when: { from: 50, to: 50, circa: true }
+    mode: land
+    claim: paul-corinth
+  - type: stay
+    id: paul-corinth-50
+    place: corinth
+    when: { from: 50, to: 52, circa: true }
+    claim: paul-corinth
+    episodes:
+      - id: paul-tentmakers
+        title: { en: "Tentmakers" }
+        text: { en: "In Corinth Paul met Aquila and Priscilla, Jews who had just come from Italy because Emperor Claudius had ordered all Jews to leave Rome. They were tentmakers like Paul, so he lived and worked with them." }
+        when: { from: 50, to: 50, circa: true }
+        claim: paul-claudius-expulsion
+      - id: paul-many-people-in-this-city
+        title: { en: "Many people in this city" }
+        text: { en: "Crispus, the leader of the synagogue, believed with his whole household. One night the Lord said to Paul in a vision, 'Do not be afraid … for I have many people in this city.' Paul stayed a year and a half." }
+        when: { from: 50, to: 52, circa: true }
+        claim: paul-corinth
+      - id: paul-letters-to-thessalonica
+        title: { en: "Letters to Thessalonica" }
+        text: { en: "When Timothy brought good news from Thessalonica, Paul wrote to the young church there. 1 Thessalonians is probably the oldest of Paul's letters that we still have." }
+        when: { from: 50, to: 51, circa: true }
+        claim: paul-thessalonians-letters
+      - id: paul-before-gallio-seat
+        title: { en: "Before Gallio's judgement seat" }
+        text: { en: "Paul's opponents dragged him before Gallio, the Roman governor of Achaia. Gallio said it was only a quarrel about words and names of their own law, and threw the case out." }
+        when: { from: 51, to: 52, circa: true }
+        claim: paul-before-gallio
+      - id: paul-gallio-stone
+        title: { en: "Gallio's name at Delphi" }
+        text: { en: "A letter of Emperor Claudius, carved in stone at Delphi, names Gallio as governor and can be dated to AD 52. Because of it we know Paul was in Corinth around 51 — the best-fixed date in his whole life." }
+        when: { from: 51, to: 52, circa: true }
+        claim: paul-gallio-inscription
+  - type: leg
+    id: paul-corinth-cenchreae
+    from: corinth
+    to: cenchreae
+    when: { from: 52, to: 52, circa: true }
+    mode: land
+    claim: paul-cenchreae-ephesus
+    episodes:
+      - id: paul-vow-cenchreae
+        title: { en: "A vow at Cenchreae" }
+        text: { en: "At the port of Cenchreae Paul had his hair cut because he had taken a vow. Then he sailed for Syria with Priscilla and Aquila." }
+        when: { from: 52, to: 52, circa: true }
+        claim: paul-cenchreae-ephesus
+  - type: leg
+    id: paul-cenchreae-to-ephesus
+    from: cenchreae
+    to: ephesus
+    via: [[23.30, 37.80], [23.75, 37.70], [24.00, 37.55], [24.60, 37.45], [24.85, 37.32], [25.20, 37.30], [25.60, 37.45], [26.00, 37.75], [26.60, 37.90], [27.10, 37.90]]
+    when: { from: 52, to: 52, circa: true }
+    mode: sea
+    claim: paul-cenchreae-ephesus
+  - type: stay
+    id: paul-ephesus-brief
+    place: ephesus
+    when: { from: 52, to: 52, circa: true }
+    claim: paul-cenchreae-ephesus
+    episodes:
+      - id: paul-if-god-wills
+        title: { en: "I will return, if God wills" }
+        text: { en: "Paul left Priscilla and Aquila in Ephesus and reasoned in the synagogue. The Jews asked him to stay longer, but he said goodbye: 'I will return to you, if God wills.'" }
+        when: { from: 52, to: 52, circa: true }
+        claim: paul-cenchreae-ephesus
+  - type: leg
+    id: paul-ephesus-caesarea
+    from: ephesus
+    to: caesarea
+    via: [[27.10, 37.90], [26.60, 37.90], [26.55, 37.45], [26.75, 37.20], [26.85, 37.00], [26.90, 36.70], [27.40, 36.60], [27.60, 36.30], [27.50, 35.85], [28.00, 35.60], [32.50, 34.35], [34.50, 33.00]]
+    when: { from: 52, to: 52, circa: true }
+    mode: sea
+    claim: paul-end-second-journey
+  - type: leg
+    id: paul-caesarea-antioch
+    from: caesarea
+    to: antioch
+    via: [[35.08, 32.92], [35.20, 33.27], [35.84, 34.44]]
+    when: { from: 52, to: 52, circa: true }
+    mode: land
+    claim: paul-end-second-journey
+    episodes:
+      - id: paul-greets-the-church
+        title: { en: "Home to Antioch" }
+        text: { en: "Landing at Caesarea, Paul went up and greeted the church — probably in Jerusalem — and then went down to Antioch, ending his second journey." }
+        when: { from: 52, to: 52, circa: true }
+        claim: paul-end-second-journey
+  # ---------- Third journey ----------
+  - type: leg
+    id: paul-antioch-galatia
+    from: antioch
+    to: galatia
+    via: [[36.22, 36.49], [34.896, 36.914], [34.75, 37.27]]
+    when: { from: 53, to: 53, circa: true }
+    mode: land
+    claim: paul-third-journey-start
+  - type: leg
+    id: paul-galatia-ephesus
+    from: galatia
+    to: ephesus
+    via: [[30.20, 38.50], [28.50, 38.20]]
+    when: { from: 53, to: 53, circa: true }
+    mode: land
+    claim: paul-ephesus-ministry
+  - type: stay
+    id: paul-ephesus-three-years
+    place: ephesus
+    when: { from: 53, to: 55, circa: true }
+    claim: paul-ephesus-ministry
+    episodes:
+      - id: paul-hall-of-tyrannus
+        title: { en: "The hall of Tyrannus" }
+        text: { en: "When the synagogue turned against him, Paul taught every day in the lecture hall of Tyrannus. This went on for two years, so that people all over the province of Asia heard the word of the Lord." }
+        when: { from: 53, to: 55, circa: true }
+        claim: paul-ephesus-ministry
+      - id: paul-books-burned
+        title: { en: "A bonfire of magic books" }
+        text: { en: "God did unusual miracles through Paul. Many who had practised magic brought their scrolls and burned them in public; their value was counted at fifty thousand pieces of silver." }
+        when: { from: 53, to: 55, circa: true }
+        claim: paul-ephesus-ministry
+      - id: paul-fought-with-beasts
+        title: { en: "Fighting wild beasts" }
+        text: { en: "Paul later wrote that he had 'fought with beasts at Ephesus' and had been under such pressure in Asia that he despaired of life itself. We do not know exactly what happened." }
+        when: { from: 53, to: 55, circa: true }
+        claim: paul-ephesus-dangers
+      - id: paul-writes-1-corinthians
+        title: { en: "A letter to Corinth" }
+        text: { en: "From Ephesus Paul wrote 1 Corinthians, with its great chapter on love. 'I will stay in Ephesus until Pentecost,' he told them, 'for a great door has opened to me, and there are many adversaries.'" }
+        when: { from: 54, to: 55, circa: true }
+        claim: paul-1-corinthians-letter
+      - id: paul-great-is-artemis
+        title: { en: "Great is Artemis!" }
+        text: { en: "Demetrius the silversmith complained that Paul's preaching was ruining the trade in silver shrines of Artemis. A huge crowd rushed into the theatre and shouted 'Great is Artemis of the Ephesians!' for two hours, until the town clerk calmed them down." }
+        when: { from: 55, to: 55, circa: true }
+        claim: paul-ephesus-riot
+  - type: leg
+    id: paul-ephesus-troas
+    from: ephesus
+    to: troas
+    via: [[27.14, 38.42], [27.18, 39.13], [26.60, 39.50]]
+    when: { from: 55, to: 55, circa: true }
+    mode: land
+    claim: paul-troas-to-macedonia
+  - type: leg
+    id: paul-troas-neapolis-55
+    from: troas
+    to: neapolis
+    via: [[26.00, 39.75], [25.60, 40.00], [25.42, 40.47], [25.45, 40.56], [25.00, 40.75], [24.60, 40.84], [24.42, 40.90]]
+    when: { from: 55, to: 55, circa: true }
+    mode: sea
+    claim: paul-troas-to-macedonia
+  - type: leg
+    id: paul-neapolis-philippi-55
+    from: neapolis
+    to: philippi
+    when: { from: 55, to: 55, circa: true }
+    mode: land
+    claim: paul-troas-to-macedonia
+  - type: stay
+    id: paul-macedonia-55
+    place: philippi
+    when: { from: 55, to: 56, circa: true }
+    claim: paul-macedonia-2-corinthians
+    episodes:
+      - id: paul-titus-good-news
+        title: { en: "Comforted by Titus" }
+        text: { en: "In Macedonia Paul had no rest — 'fightings without, fears within'. Then Titus arrived with good news from Corinth, and Paul wrote 2 Corinthians and urged the churches to give generously for the poor in Jerusalem." }
+        when: { from: 55, to: 56, circa: true }
+        claim: paul-macedonia-2-corinthians
+  - type: leg
+    id: paul-philippi-illyricum
+    from: philippi
+    to: illyricum
+    via: [[22.953, 40.628], [21.34, 41.01], [20.80, 41.12]]
+    when: { from: 56, to: 56, circa: true }
+    mode: land
+    claim: paul-illyricum
+  - type: stay
+    id: paul-illyricum-56
+    place: illyricum
+    when: { from: 56, to: 56, circa: true }
+    claim: paul-illyricum
+    episodes:
+      - id: paul-as-far-as-illyricum
+        title: { en: "As far as Illyricum" }
+        text: { en: "Writing to the Romans, Paul said he had preached the gospel all the way from Jerusalem round to Illyricum, on the Adriatic coast. He may have only reached its border; Acts says nothing about it." }
+        when: { from: 56, to: 56, circa: true }
+        claim: paul-illyricum
+  - type: leg
+    id: paul-illyricum-corinth
+    from: illyricum
+    to: corinth
+    via: [[22.201, 40.522], [22.53, 38.80], [23.35, 38.00]]
+    when: { from: 56, to: 56, circa: true }
+    mode: land
+    claim: paul-romans-letter
+  - type: stay
+    id: paul-corinth-winter
+    place: corinth
+    when: { from: 56, to: 57, circa: true }
+    claim: paul-romans-letter
+    episodes:
+      - id: paul-writes-romans
+        title: { en: "A letter to Rome" }
+        text: { en: "During three winter months in Corinth, staying with Gaius, Paul wrote his longest letter, to the Christians in Rome. Phoebe, a servant of the church at nearby Cenchreae, probably carried it." }
+        when: { from: 56, to: 57, circa: true }
+        claim: paul-romans-letter
+      - id: paul-plans-spain
+        title: { en: "Plans for Spain" }
+        text: { en: "Paul told the Romans that he first had to take the gift to Jerusalem. After that he hoped to visit them on his way to Spain." }
+        when: { from: 56, to: 57, circa: true }
+        claim: paul-spain-plan
+  - type: leg
+    id: paul-corinth-philippi
+    from: corinth
+    to: philippi
+    via: [[23.35, 38.00], [22.53, 38.80], [22.953, 40.628]]
+    when: { from: 57, to: 57, circa: true }
+    mode: land
+    claim: paul-plot-land-route
+  - type: leg
+    id: paul-philippi-troas
+    from: philippi
+    to: troas
+    via: [[24.42, 40.90], [24.60, 40.84], [25.00, 40.75], [25.45, 40.56], [25.42, 40.47], [25.60, 40.00], [26.00, 39.75]]
+    when: { from: 57, to: 57, circa: true }
+    mode: sea
+    claim: paul-plot-land-route
+  - type: stay
+    id: paul-troas-eutychus
+    place: troas
+    when: { from: 57, to: 57, circa: true }
+    claim: paul-eutychus
+    episodes:
+      - id: paul-eutychus-falls
+        title: { en: "Eutychus falls asleep" }
+        text: { en: "Paul preached until midnight in an upstairs room full of lamps. A young man named Eutychus, sitting in the window, fell asleep and fell three floors to his death. Paul went down, took him in his arms and said, 'His life is in him' — and they took the boy home alive." }
+        when: { from: 57, to: 57, circa: true }
+        claim: paul-eutychus
+  - type: leg
+    id: paul-troas-assos
+    from: troas
+    to: assos
+    when: { from: 57, to: 57, circa: true }
+    mode: land
+    claim: paul-voyage-to-miletus
+  - type: leg
+    id: paul-assos-miletus
+    from: assos
+    to: miletus
+    via: [[26.50, 39.38], [26.60, 39.18], [26.62, 39.10], [26.62, 38.95], [26.33, 38.62], [26.22, 38.35], [26.40, 38.00], [26.45, 37.70], [26.75, 37.60], [27.10, 37.55]]
+    when: { from: 57, to: 57, circa: true }
+    mode: sea
+    claim: paul-voyage-to-miletus
+  - type: stay
+    id: paul-miletus-57
+    place: miletus
+    when: { from: 57, to: 57, circa: true }
+    claim: paul-miletus-farewell
+    episodes:
+      - id: paul-farewell-elders
+        title: { en: "You will see my face no more" }
+        text: { en: "Paul called the elders of Ephesus to Miletus. He reminded them how he had served among them with tears, and warned that savage wolves would come. When he said they would never see him again, they all wept, embraced him and walked him to the ship." }
+        when: { from: 57, to: 57, circa: true }
+        claim: paul-miletus-farewell
+  - type: leg
+    id: paul-miletus-patara
+    from: miletus
+    to: patara
+    via: [[27.15, 37.40], [27.20, 36.97], [27.40, 36.95], [27.45, 36.62], [27.75, 36.50], [28.15, 36.50], [28.40, 36.45], [29.20, 36.20]]
+    when: { from: 57, to: 57, circa: true }
+    mode: sea
+    claim: paul-voyage-to-tyre
+  - type: leg
+    id: paul-patara-tyre
+    from: patara
+    to: tyre
+    via: [[29.30, 36.15], [29.50, 35.80], [32.00, 34.40], [33.50, 34.20], [35.00, 33.40]]
+    when: { from: 57, to: 57, circa: true }
+    mode: sea
+    claim: paul-voyage-to-tyre
+  - type: stay
+    id: paul-tyre-57
+    place: tyre
+    when: { from: 57, to: 57, circa: true }
+    claim: paul-tyre-disciples
+    episodes:
+      - id: paul-prayer-on-the-beach
+        title: { en: "Prayer on the beach" }
+        text: { en: "The disciples at Tyre begged Paul not to go to Jerusalem. After seven days the whole church, wives and children too, walked him out of the city, and they knelt on the beach and prayed together." }
+        when: { from: 57, to: 57, circa: true }
+        claim: paul-tyre-disciples
+  - type: leg
+    id: paul-tyre-ptolemais
+    from: tyre
+    to: ptolemais
+    via: [[35.10, 33.10]]
+    when: { from: 57, to: 57, circa: true }
+    mode: sea
+    claim: paul-agabus-belt
+  - type: leg
+    id: paul-ptolemais-caesarea
+    from: ptolemais
+    to: caesarea
+    when: { from: 57, to: 57, circa: true }
+    mode: land
+    claim: paul-agabus-belt
+  - type: stay
+    id: paul-caesarea-agabus
+    place: caesarea
+    when: { from: 57, to: 57, circa: true }
+    claim: paul-agabus-belt
+    episodes:
+      - id: paul-agabus-binds-belt
+        title: { en: "Agabus and the belt" }
+        text: { en: "At the house of Philip the evangelist, the prophet Agabus took Paul's belt and tied his own hands and feet with it: so the owner of this belt will be bound in Jerusalem. Paul answered that he was ready not only to be bound but to die for the name of the Lord Jesus." }
+        when: { from: 57, to: 57, circa: true }
+        claim: paul-agabus-belt
+  # ---------- Arrest ----------
+  - type: leg
+    id: paul-caesarea-jerusalem-57
+    from: caesarea
+    to: jerusalem
+    via: [[34.93, 32.10]]
+    when: { from: 57, to: 57, circa: true }
+    mode: land
+    claim: paul-arrest-jerusalem
+  - type: stay
+    id: paul-jerusalem-arrest
+    place: jerusalem
+    when: { from: 57, to: 57, circa: true }
+    claim: paul-arrest-jerusalem
+    episodes:
+      - id: paul-temple-riot
+        title: { en: "Riot in the Temple" }
+        text: { en: "Some Jews from Asia saw Paul in the Temple and shouted that he had brought Greeks inside. The whole city was stirred up; they dragged Paul out and were trying to kill him when the Roman commander ran down with soldiers and arrested him." }
+        when: { from: 57, to: 57, circa: true }
+        claim: paul-arrest-jerusalem
+      - id: paul-speech-from-the-steps
+        title: { en: "Speaking from the steps" }
+        text: { en: "From the steps of the fortress Paul asked to speak to the crowd. In their own language he told them how Jesus had met him on the road to Damascus — but when he said God had sent him to the Gentiles, they shouted for his death." }
+        when: { from: 57, to: 57, circa: true }
+        claim: paul-arrest-jerusalem
+      - id: paul-nephew-plot
+        title: { en: "Paul's nephew uncovers a plot" }
+        text: { en: "More than forty men swore not to eat or drink until they had killed Paul. But Paul's sister's son heard of the ambush and told the Roman commander." }
+        when: { from: 57, to: 57, circa: true }
+        claim: paul-arrest-jerusalem
+  - type: leg
+    id: paul-jerusalem-caesarea-escort
+    from: jerusalem
+    to: caesarea
+    via: [[34.93, 32.10]]
+    when: { from: 57, to: 57, circa: true }
+    mode: land
+    claim: paul-escorted-caesarea
+    episodes:
+      - id: paul-night-ride
+        title: { en: "A night ride under guard" }
+        text: { en: "The commander sent Paul off at nine at night with two hundred soldiers, seventy horsemen and two hundred spearmen. They rode by way of Antipatris and delivered him to Governor Felix at Caesarea." }
+        when: { from: 57, to: 57, circa: true }
+        claim: paul-escorted-caesarea
+  - type: stay
+    id: paul-caesarea-under-felix
+    place: caesarea
+    when: { from: 57, to: 59, circa: true }
+    claim: paul-caesarea-felix
+    episodes:
+      - id: paul-felix-trembles
+        title: { en: "Felix is afraid" }
+        text: { en: "Felix and his wife Drusilla sent for Paul to hear about faith in Christ. When Paul spoke of righteousness, self-control and the coming judgement, Felix grew afraid and said, 'Go away for now.' He also hoped Paul would pay him a bribe, so he kept him in prison for two years." }
+        when: { from: 57, to: 59, circa: true }
+        claim: paul-caesarea-felix
+  - type: stay
+    id: paul-caesarea-festus
+    place: caesarea
+    when: { from: 59, to: 59, circa: true }
+    claim: paul-appeal-caesar
+    episodes:
+      - id: paul-i-appeal-to-caesar
+        title: { en: "I appeal to Caesar!" }
+        text: { en: "The new governor, Festus, wanted to please the Jewish leaders by sending Paul to Jerusalem for trial. As a Roman citizen Paul said, 'I appeal to Caesar.' Festus answered, 'To Caesar you shall go.'" }
+        when: { from: 59, to: 59, circa: true }
+        claim: paul-appeal-caesar
+      - id: paul-before-agrippa
+        title: { en: "Before King Agrippa" }
+        text: { en: "King Agrippa II and Bernice came to Caesarea with great pomp to hear Paul. Paul told the story of his life and urged the king to believe. Agrippa said, 'Almost you persuade me to be a Christian.'" }
+        when: { from: 59, to: 59, circa: true }
+        claim: paul-appeal-caesar
+      - id: paul-festus-in-josephus
+        title: { en: "Festus in Josephus" }
+        text: { en: "The historian Josephus also records that Nero sent Porcius Festus to take over from Felix. This change of governors helps date Paul's voyage to Rome to around 59 or 60." }
+        when: { from: 58, to: 60, circa: true }
+        claim: paul-festus-josephus
+  # ---------- Voyage to Rome ----------
+  - type: leg
+    id: paul-caesarea-sidon
+    from: caesarea
+    to: sidon
+    via: [[34.75, 32.70], [35.00, 33.30], [35.25, 33.60]]
+    when: { from: 59, to: 59, circa: true }
+    mode: sea
+    claim: paul-voyage-to-crete
+    episodes:
+      - id: paul-julius-kindness
+        title: { en: "A kind centurion" }
+        text: { en: "Paul sailed as a prisoner in the charge of a centurion named Julius. At Sidon Julius treated Paul kindly and let him visit his friends." }
+        when: { from: 59, to: 59, circa: true }
+        claim: paul-voyage-to-crete
+  - type: leg
+    id: paul-sidon-myra
+    from: sidon
+    to: myra
+    via: [[35.20, 33.80], [34.80, 35.55], [34.20, 36.15], [33.00, 35.90], [32.00, 36.20], [30.55, 36.05], [30.10, 36.18]]
+    when: { from: 59, to: 59, circa: true }
+    mode: sea
+    claim: paul-voyage-to-crete
+  - type: leg
+    id: paul-myra-cnidus
+    from: myra
+    to: cnidus
+    via: [[29.90, 36.15], [29.60, 36.10], [28.50, 36.30], [28.30, 36.50], [27.95, 36.50], [27.70, 36.55]]
+    when: { from: 59, to: 59, circa: true }
+    mode: sea
+    claim: paul-voyage-to-crete
+    episodes:
+      - id: paul-alexandrian-ship
+        title: { en: "On board a grain ship" }
+        text: { en: "At Myra the centurion found a ship from Alexandria sailing for Italy and put the prisoners on board. Against the wind they sailed slowly for many days and only just reached Cnidus." }
+        when: { from: 59, to: 59, circa: true }
+        claim: paul-voyage-to-crete
+  - type: leg
+    id: paul-cnidus-fair-havens
+    from: cnidus
+    to: fair-havens
+    via: [[27.30, 36.60], [26.50, 35.50], [26.40, 35.30], [26.20, 34.90], [25.00, 34.88]]
+    when: { from: 59, to: 59, circa: true }
+    mode: sea
+    claim: paul-voyage-to-crete
+  - type: stay
+    id: paul-fair-havens
+    place: fair-havens
+    when: { from: 59, to: 59, circa: true }
+    claim: paul-warning-fair-havens
+    episodes:
+      - id: paul-warns-the-crew
+        title: { en: "Paul's warning" }
+        text: { en: "It was autumn and sailing had become dangerous. Paul warned that the voyage would end in disaster, but the centurion listened to the captain and the ship's owner, who wanted to winter in a better harbour." }
+        when: { from: 59, to: 59, circa: true }
+        claim: paul-warning-fair-havens
+  - type: leg
+    id: paul-fair-havens-malta
+    from: fair-havens
+    to: malta
+    via: [[24.60, 34.90], [24.09, 34.78], [22.00, 35.00], [18.00, 35.30], [15.00, 35.80], [14.50, 35.98]]
+    when: { from: 59, to: 59, circa: true }
+    mode: sea
+    claim: paul-storm
+    episodes:
+      - id: paul-euraquilo
+        title: { en: "The storm Euraquilo" }
+        text: { en: "Soon a violent north-easter called Euraquilo struck the ship. Under the shelter of the little island of Cauda the sailors hauled in the lifeboat and tied ropes around the hull, then threw cargo and tackle overboard. For many days they saw neither sun nor stars." }
+        when: { from: 59, to: 59, circa: true }
+        claim: paul-storm
+      - id: paul-angel-in-the-storm
+        title: { en: "Take courage!" }
+        text: { en: "When all hope was gone, Paul stood up and told them an angel of God had said, 'Do not be afraid, Paul; you must stand before Caesar.' Not one of them would lose his life — only the ship." }
+        when: { from: 59, to: 59, circa: true }
+        claim: paul-storm
+  - type: stay
+    id: paul-malta
+    place: malta
+    when: { from: 59, to: 60, circa: true }
+    claim: paul-shipwreck-malta
+    episodes:
+      - id: paul-shipwreck
+        title: { en: "Shipwreck!" }
+        text: { en: "After fourteen days adrift the ship struck a sandbank and broke apart in the waves. Some swam and others floated on planks, and all 276 people on board reached land safely." }
+        when: { from: 59, to: 59, circa: true }
+        claim: paul-shipwreck-malta
+      - id: paul-viper
+        title: { en: "The viper" }
+        text: { en: "As Paul put sticks on the fire, a viper fastened on his hand. The islanders waited for him to swell up and drop dead; when nothing happened, they changed their minds and said he was a god." }
+        when: { from: 59, to: 59, circa: true }
+        claim: paul-shipwreck-malta
+      - id: paul-heals-publius-father
+        title: { en: "Healing on Malta" }
+        text: { en: "Paul prayed for the sick father of Publius, the island's chief man, laid his hands on him and healed him. Then the other sick people of the island came and were healed too." }
+        when: { from: 59, to: 60, circa: true }
+        claim: paul-shipwreck-malta
+  - type: leg
+    id: paul-malta-syracuse
+    from: malta
+    to: syracuse
+    via: [[14.60, 36.10], [15.20, 36.60], [15.35, 36.95]]
+    when: { from: 60, to: 60, circa: true }
+    mode: sea
+    claim: paul-malta-to-puteoli
+  - type: leg
+    id: paul-syracuse-rhegium
+    from: syracuse
+    to: rhegium
+    via: [[15.40, 37.50], [15.55, 38.00]]
+    when: { from: 60, to: 60, circa: true }
+    mode: sea
+    claim: paul-malta-to-puteoli
+  - type: leg
+    id: paul-rhegium-puteoli
+    from: rhegium
+    to: puteoli
+    via: [[15.62, 38.20], [15.67, 38.27], [15.60, 38.80], [14.50, 40.30], [14.10, 40.50], [14.13, 40.79]]
+    when: { from: 60, to: 60, circa: true }
+    mode: sea
+    claim: paul-malta-to-puteoli
+  - type: stay
+    id: paul-puteoli
+    place: puteoli
+    when: { from: 60, to: 60, circa: true }
+    claim: paul-malta-to-puteoli
+    episodes:
+      - id: paul-seven-days-puteoli
+        title: { en: "Friends in Italy" }
+        text: { en: "At the busy harbour of Puteoli, Paul found fellow believers, and they invited him to stay with them for seven days." }
+        when: { from: 60, to: 60, circa: true }
+        claim: paul-malta-to-puteoli
+  - type: leg
+    id: paul-puteoli-rome
+    from: puteoli
+    to: rome
+    via: [[14.25, 41.08], [12.998, 41.466], [12.874, 41.562]]
+    when: { from: 60, to: 60, circa: true }
+    mode: land
+    claim: paul-via-appia-welcome
+    episodes:
+      - id: paul-three-taverns
+        title: { en: "A welcome on the Appian Way" }
+        text: { en: "The believers in Rome heard that Paul was coming and walked out along the Appian Way to meet him at the Forum of Appius and Three Taverns. When Paul saw them, he thanked God and took courage." }
+        when: { from: 60, to: 60, circa: true }
+        claim: paul-via-appia-welcome
+  # ---------- Rome ----------
+  - type: stay
+    id: paul-rome-house-arrest
+    place: rome
+    when: { from: 60, to: 62, circa: true }
+    claim: paul-rome-two-years
+    episodes:
+      - id: paul-chained-to-a-soldier
+        title: { en: "A prisoner in his own house" }
+        text: { en: "In Rome Paul was allowed to live in his own rented house, with a soldier guarding him. Three days after arriving he called the Jewish leaders together to explain why he was in chains." }
+        when: { from: 60, to: 60, circa: true }
+        claim: paul-rome-two-years
+      - id: paul-no-man-forbidding
+        title: { en: "No one stopped him" }
+        text: { en: "For two whole years Paul welcomed everyone who came to him, preaching the kingdom of God and teaching about the Lord Jesus with all boldness, and no one stopped him. Here the book of Acts ends." }
+        when: { from: 60, to: 62, circa: true }
+        claim: paul-rome-two-years
+      - id: paul-prison-letters-written
+        title: { en: "Letters from prison" }
+        text: { en: "As a prisoner Paul wrote to the Philippians and to his friend Philemon, and — traditionally — to the Colossians and Ephesians. He even sent greetings from believers in 'Caesar's household'." }
+        when: { from: 60, to: 62, circa: true }
+        claim: paul-prison-letters
+      - id: paul-hopes-for-release
+        title: { en: "Prepare me a guest room" }
+        text: { en: "Paul expected to be set free. He told Philemon to get a guest room ready for him and told the Philippians he trusted he would come to them soon." }
+        when: { from: 60, to: 62, circa: true }
+        claim: paul-expects-release
+      - id: paul-released-it-is-said
+        title: { en: "Set free again?" }
+        text: { en: "Acts does not say what happened next. Eusebius, writing around 300, reports that 'it is said' Paul was released, went out preaching again, and was martyred on a second stay in Rome." }
+        when: { from: 62, to: 62, circa: true }
+        claim: paul-release-tradition
+  - type: leg
+    id: paul-rome-spain
+    from: rome
+    to: hispania
+    via: [[12.29, 41.74], [11.00, 40.50], [9.80, 38.90], [8.50, 38.60], [4.50, 38.80], [1.80, 38.50], [0.50, 39.00]]
+    when: { from: 62, to: 64, circa: true }
+    mode: sea
+    claim: paul-spain-visit
+    episodes:
+      - id: paul-farewell-for-spain
+        title: { en: "A legend: farewell for Spain" }
+        text: { en: "The Acts of Peter, a legend written over a century later, tell how the Lord said to Paul in a vision, 'Arise, Paul, and become a physician … to them that are in Spain.' The believers in Rome wept as he left." }
+        when: { from: 62, to: 64, circa: true }
+        claim: paul-spain-acts-of-peter
+  - type: stay
+    id: paul-spain
+    place: hispania
+    when: { from: 62, to: 64, circa: true }
+    claim: paul-spain-visit
+    episodes:
+      - id: paul-limit-of-the-west
+        title: { en: "To the limit of the west" }
+        text: { en: "Clement of Rome, writing about 30 years after Paul's death, says Paul taught righteousness to the whole world and reached 'the extreme limit of the west' — probably Spain, though no early writer names a town there." }
+        when: { from: 62, to: 64, circa: true }
+        claim: paul-spain-visit
+  - type: stay
+    id: paul-crete-titus
+    place: gortyn
+    when: { from: 62, to: 66, circa: true }
+    claim: paul-pastoral-travels
+    episodes:
+      - id: paul-leaves-titus-crete
+        title: { en: "Titus left on Crete" }
+        text: { en: "In his letter to Titus, Paul says he left him on Crete to put things in order and appoint elders in every town." }
+        when: { from: 62, to: 66, circa: true }
+        claim: paul-pastoral-travels
+  - type: stay
+    id: paul-ephesus-timothy
+    place: ephesus
+    when: { from: 62, to: 66, circa: true }
+    claim: paul-pastoral-travels
+    episodes:
+      - id: paul-timothy-stays-ephesus
+        title: { en: "Timothy stays at Ephesus" }
+        text: { en: "In 1 Timothy Paul reminds Timothy that he asked him to stay on at Ephesus while Paul went into Macedonia, to stop people teaching strange doctrines." }
+        when: { from: 62, to: 66, circa: true }
+        claim: paul-pastoral-travels
+  - type: stay
+    id: paul-nicopolis
+    place: nicopolis
+    when: { from: 62, to: 66, circa: true }
+    claim: paul-pastoral-travels
+    episodes:
+      - id: paul-winter-at-nicopolis
+        title: { en: "A winter at Nicopolis" }
+        text: { en: "Paul asked Titus to hurry to him at Nicopolis, 'for I have decided to spend the winter there'." }
+        when: { from: 62, to: 66, circa: true }
+        claim: paul-pastoral-travels
+  - type: stay
+    id: paul-rome-chains
+    place: rome
+    when: { from: 64, to: 67, circa: true }
+    claim: paul-2-timothy-chains
+    episodes:
+      - id: paul-i-have-kept-the-faith
+        title: { en: "I have kept the faith" }
+        text: { en: "In chains again, Paul wrote to Timothy: 'The time of my departure is at hand. I have fought a good fight, I have finished my course, I have kept the faith.' Almost everyone had left him — only Luke was still with him." }
+        when: { from: 64, to: 67, circa: true }
+        claim: paul-2-timothy-chains
+      - id: paul-bring-my-cloak
+        title: { en: "Bring my cloak and books" }
+        text: { en: "Paul asked Timothy to come before winter and to bring the cloak he had left at Troas with Carpus, and his books, especially the parchments." }
+        when: { from: 64, to: 67, circa: true }
+        claim: paul-2-timothy-chains
+  # ---------- Death ----------
+  - type: stay
+    id: paul-martyrdom-rome
+    place: rome
+    when: { from: 64, to: 68, circa: true }
+    claim: paul-martyrdom-rome-nero
+    episodes:
+      - id: paul-holy-martyred
+        title: { en: "Paul the martyr" }
+        text: { en: "The earliest Christian writers after the New Testament all remember that Paul died for Christ in Rome under Nero. About fifty years later, Bishop Ignatius called him 'Paul, the holy, the martyred'." }
+        when: { from: 64, to: 68, circa: true }
+        claim: paul-martyrdom-rome-nero
+      - id: paul-beheaded-sword
+        title: { en: "Beheaded with the sword" }
+        text: { en: "Because Paul was a Roman citizen, he was not crucified like Peter but beheaded with the sword. Tertullian, around 200, wrote that Paul won his crown 'in a death like John's' — John the Baptist." }
+        when: { from: 64, to: 68, circa: true }
+        claim: paul-beheaded
+      - id: paul-legend-milk
+        title: { en: "A legend about his death" }
+        text: { en: "A legend from the late second century, the Acts of Paul, says Paul prayed facing east before he was beheaded, and that milk instead of blood spurted onto the soldier's cloak. It is a story, not history." }
+        when: { from: 64, to: 68, circa: true }
+        claim: paul-martyrdom-acts-of-paul
+  - type: stay
+    id: paul-martyred-64
+    place: rome
+    when: { from: 64, to: 65, circa: true }
+    claim: paul-death-64
+    episodes:
+      - id: paul-dies-after-the-fire
+        title: { en: "After the great fire" }
+        text: { en: "In July 64 a great fire burned much of Rome, and Nero blamed the Christians. Clement of Rome counts Paul with the 'great multitude' who died then, which would date his death to about 64–65." }
+        when: { from: 64, to: 65, circa: true }
+        claim: paul-death-64
+  - type: stay
+    id: paul-martyred-67
+    place: rome
+    when: { from: 67, to: 68, circa: true }
+    claim: paul-death-67
+    episodes:
+      - id: paul-dies-same-day-as-peter
+        title: { en: "The same day as Peter" }
+        text: { en: "Jerome, writing in 392, says Paul was beheaded in the fourteenth year of Nero (67–68), on the same day that Peter died, and was buried on the road to Ostia." }
+        when: { from: 67, to: 68, circa: true }
+        claim: paul-death-67
+  - type: stay
+    id: paul-tomb-ostian-way
+    place: via-ostiensis
+    when: { from: 67, to: 100, circa: true }
+    claim: paul-trophy-ostian-way
+    episodes:
+      - id: paul-trophy-of-the-apostle
+        title: { en: "The apostle's trophy" }
+        text: { en: "Around the year 200 a Roman Christian named Gaius told visitors that if they went out on the Ostian Way they would find the 'trophy' — the memorial — of the apostle Paul. A great church, San Paolo fuori le Mura, stands there today." }
+        when: { from: 67, to: 100, circa: true }
+        claim: paul-trophy-ostian-way
+      - id: paul-sarcophagus-found
+        title: { en: "A sarcophagus under the altar" }
+        text: { en: "In 2006 archaeologists uncovered a stone coffin under the church's altar. Tiny bone fragments inside were dated to the first or second century. That shows people honoured this grave very early, though it cannot prove whose bones they are." }
+        when: { from: 64, to: 100, circa: true }
+        claim: paul-sarcophagus-radiocarbon

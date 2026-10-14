@@ -1,0 +1,120 @@
+person: james-alphaeus
+claims:
+  - id: james-alphaeus-one-of-twelve
+    text: { en: "\"James the son of Alphaeus\" is named in every list of the Twelve. The New Testament tells nothing else certain about him." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: matthew-gospel, locator: "10:3" }
+      - { source: mark-gospel, locator: "3:18" }
+      - { source: luke, locator: "6:15" }
+  - id: james-alphaeus-upper-room
+    text: { en: "After the Ascension James son of Alphaeus is with the eleven in the upper room in Jerusalem, praying with the women and Jesus' brothers, and he is among the apostles at Pentecost." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:13-14" }
+      - { source: acts, locator: "2:14" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Not only Peter but also the other apostles preached the gospel wherever the Lord sent them." }
+  - id: james-alphaeus-southern-palestine
+    text: { en: "Byzantine church calendars say James son of Alphaeus preached in Eleutheropolis and the country around it (Gaza in some versions)." }
+    when: { from: 35, to: 60, circa: true }
+    grade: E
+    citations:
+      - { source: prologue-ochrid, locator: "9 October" }
+    notes: { en: "Liturgical tradition only; no early text was found and no source gives a date." }
+  - id: james-alphaeus-ostrakine
+    text: { en: "The Byzantine calendar of saints says he preached in Egypt and was crucified by pagans in the town of Ostrakine." }
+    when: { from: 40, to: 90, circa: true }
+    grade: D
+    citations:
+      - { source: prologue-ochrid, locator: "9 October", quote: "He suffered in Egypt in the town of Ostracina, being crucified by the pagans." }
+    alternativeTo: [james-alphaeus-stoned-claudius, james-alphaeus-if-james-the-just]
+    notes: { en: "The underlying source is the 10th-century Synaxarion of Constantinople (9 October); its exact column was not checked. No source gives a year." }
+  - id: james-alphaeus-stoned-claudius
+    text: { en: "A Coptic martyrdom story and a late list of the apostles say that James son of Alphaeus was stoned by the Jews while preaching in Jerusalem, under the emperor Claudius, and was buried beside the temple." }
+    when: { from: 41, to: 54, circa: true }
+    grade: D
+    citations:
+      - { source: martyrdom-james-alphaeus, locator: "whole text (e-Clavis summary)" }
+      - { source: ps-hippolytus-twelve, locator: "9", quote: "James the son of Alphaeus, when preaching in Jerusalem, was stoned to death by the Jews, and was buried there beside the temple." }
+    alternativeTo: [james-alphaeus-ostrakine, james-alphaeus-if-james-the-just]
+    notes: { en: "Probably a copy of the Hegesippus story about James the Lord's brother." }
+  - id: james-alphaeus-if-james-the-just
+    text: { en: "In the Western church, following Jerome, James son of Alphaeus is the same man as James the Lord's brother. If so, he is the James whom the high priest Ananus had stoned in Jerusalem in 62, as Josephus reports." }
+    when: { from: 62, to: 62, circa: false }
+    grade: C
+    citations:
+      - { source: jerome-vir-ill, locator: "2" }
+      - { source: josephus-antiquities, locator: "20.9.1", quote: "the brother of Jesus, who was called Christ, whose name was James" }
+      - { source: eusebius-he, locator: "2.23.4-18" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "The Jews killed the apostle James in Jerusalem. They took him to the roof of the temple and shoved him over the edge." }
+    alternativeTo: [james-alphaeus-ostrakine, james-alphaeus-stoned-claudius]
+    notes: { en: "Grade C because the identification is Jerome's (c. 383-393). The Eastern churches, and most Protestant and modern scholars, count them as two men; the death in 62 then belongs to James the Lord's brother only. Vreugdenhil's version is Hegesippus' account of James the Just." }
+items:
+  - type: stay
+    id: james-alphaeus-jerusalem
+    place: jerusalem
+    when: { from: 30, to: 33, circa: true }
+    claim: james-alphaeus-upper-room
+    episodes:
+      - id: james-alphaeus-chosen
+        title: { en: "One of the Twelve" }
+        text: { en: "Jesus chose twelve apostles, and one of them was James, the son of a man called Alphaeus. The Bible names him four times and tells us nothing more about him." }
+        when: { from: 28, to: 30, circa: true }
+        claim: james-alphaeus-one-of-twelve
+  - type: leg
+    id: james-alphaeus-to-eleutheropolis
+    from: jerusalem
+    to: eleutheropolis
+    when: { from: 35, to: 60, circa: true }
+    mode: land
+    claim: james-alphaeus-southern-palestine
+  - type: stay
+    id: james-alphaeus-eleutheropolis
+    place: eleutheropolis
+    when: { from: 35, to: 60, circa: true }
+    claim: james-alphaeus-southern-palestine
+  - type: leg
+    id: james-alphaeus-to-ostrakine
+    from: eleutheropolis
+    to: ostrakine
+    via: [[34.45, 31.52]]
+    when: { from: 40, to: 90, circa: true }
+    mode: land
+    claim: james-alphaeus-ostrakine
+  - type: stay
+    id: james-alphaeus-death-ostrakine
+    place: ostrakine
+    when: { from: 40, to: 90, circa: true }
+    claim: james-alphaeus-ostrakine
+    episodes:
+      - id: james-alphaeus-crucified-egypt
+        title: { en: "Crucified in Egypt?" }
+        text: { en: "Greek church calendars remember James son of Alphaeus on 9 October. They say he preached in Egypt and was crucified by pagans in Ostrakine, a small town on the coast of Sinai." }
+        when: { from: 40, to: 90, circa: true }
+        claim: james-alphaeus-ostrakine
+  - type: stay
+    id: james-alphaeus-death-jerusalem-claudius
+    place: jerusalem
+    when: { from: 41, to: 54, circa: true }
+    claim: james-alphaeus-stoned-claudius
+    episodes:
+      - id: james-alphaeus-stoned-by-temple
+        title: { en: "Stoned in Jerusalem?" }
+        text: { en: "A Coptic legend says James preached in Jerusalem, was stoned there in the days of the emperor Claudius, and was buried beside the temple." }
+        when: { from: 41, to: 54, circa: true }
+        claim: james-alphaeus-stoned-claudius
+  - type: stay
+    id: james-alphaeus-death-jerusalem-62
+    place: jerusalem
+    when: { from: 62, to: 62, circa: false }
+    claim: james-alphaeus-if-james-the-just
+    episodes:
+      - id: james-alphaeus-same-as-james-the-just
+        title: { en: "The same James as the Lord's brother?" }
+        text: { en: "Jerome thought James son of Alphaeus was also James the brother of the Lord, the leader of the church in Jerusalem. That James was stoned in 62 on the orders of the high priest. Other churches say these were two different men." }
+        when: { from: 62, to: 62, circa: false }
+        claim: james-alphaeus-if-james-the-just

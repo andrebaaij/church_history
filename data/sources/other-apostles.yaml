@@ -1,0 +1,63 @@
+sources:
+  - id: acts-of-philip
+    author: Anonymous
+    work: Acts of Philip (Martyrdom); Coptic Martyrdom of Philip
+    written: { from: 350, to: 400, circa: true }
+    kind: apocryphon
+    edition: "tr. F. Bovon & C. R. Matthews, The Acts of Philip (Baylor UP, 2012); e-Clavis entry by T. Burke"
+    url: "https://www.nasscal.com/e-clavis-christian-apocrypha/martyrdom-of-philip/"
+  - id: martyrdom-james-alphaeus
+    author: Anonymous
+    work: Martyrdom of James son of Alphaeus (Coptic, Arabic, Ethiopic; ECCA 120)
+    written: { from: 400, to: 900, circa: true }
+    kind: apocryphon
+    edition: "E. A. W. Budge, The Contendings of the Apostles (1899–1901)"
+    url: "https://www.nasscal.com/e-clavis-christian-apocrypha/martyrdom-of-james-son-of-alphaeus/"
+  - id: prologue-ochrid
+    author: Nikolai Velimirović
+    work: The Prologue from Ochrid (after the Byzantine synaxaria)
+    written: { from: 1926, to: 1928, circa: true }
+    kind: tradition
+    edition: "Eng. tr. Lazarica Press, 1985"
+    url: "https://orthodox.net/menaion-october/09-holy-apostle-james.html"
+  - id: acts-of-thaddaeus
+    author: Anonymous
+    work: Acts of the Holy Apostle Thaddaeus
+    written: { from: 400, to: 600, circa: true }
+    kind: apocryphon
+    edition: "ANF vol. 8"
+    url: "https://tertullian.org/fathers2/ANF-08/anf08-103.htm"
+  - id: movses-khorenatsi
+    author: Movses Khorenatsi
+    work: History of the Armenians
+    written: { from: 450, to: 750, circa: true }
+    kind: historian
+    edition: "tr. R. W. Thomson (1978; rev. 2006); online English text"
+    url: "https://historians.armeniancathedral.org/book/t06Khor2_34.htm"
+  - id: passio-simonis-iudae
+    author: Pseudo-Abdias
+    work: Passion of Simon and Jude (Passio Simonis et Iudae, in the Virtutes apostolorum)
+    written: { from: 550, to: 800, circa: true }
+    kind: apocryphon
+    edition: "e-Clavis entry by T. Burke (2023); English summary in J. K. Elliott, The Apocryphal New Testament (1993)"
+    url: "https://www.nasscal.com/e-clavis-christian-apocrypha/passion-of-simon-and-jude/"
+  - id: golden-legend
+    author: Jacobus de Voragine
+    work: Golden Legend (Legenda aurea)
+    written: { from: 1259, to: 1266, circa: true }
+    kind: church-writer
+    edition: "Caxton tr. 1483, ed. F. S. Ellis (Temple Classics, 1900)"
+    url: "https://sourcebooks.fordham.edu/basis/goldenlegend/"
+  - id: ps-dorotheus-lists
+    author: Pseudo-Dorotheus of Tyre
+    work: Lists of the Apostles and Disciples
+    written: { from: 700, to: 811, circa: true }
+    kind: apocryphon
+    edition: "ed. T. Schermann, Prophetarum vitae fabulosae (Leipzig, 1907); English via NASSCAL e-Clavis"
+    url: "https://www.nasscal.com/e-clavis-christian-apocrypha/list-of-the-apostles-and-disciples-by-pseudo-dorotheus-of-tyre"
+  - id: unesco-whs-1262
+    author: UNESCO World Heritage Centre
+    work: Armenian Monastic Ensembles of Iran (World Heritage Site 1262)
+    written: { from: 2008, to: 2008 }
+    kind: modern-scholarship
+    url: "https://whc.unesco.org/en/list/1262"

@@ -1,0 +1,220 @@
+person: matthew
+claims:
+  # --- Gospel period and Jerusalem (grade A) ---
+  - id: matthew-in-upper-room
+    text: { en: "Matthew is named among the apostles waiting in the upper room in Jerusalem before Pentecost. This is the last time the New Testament mentions him." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:13" }
+  - id: matthew-called
+    text: { en: "Jesus calls Matthew (Levi, son of Alphaeus) from his tax booth at Capernaum with the words \"Follow me\", and he gets up and follows him." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: matthew-gospel, locator: "9:9" }
+      - { source: mark-gospel, locator: "2:14" }
+      - { source: luke, locator: "5:27-28" }
+  - id: matthew-feast
+    text: { en: "Levi holds a great feast in his house for Jesus with many tax collectors and sinners; Jesus says he came to call sinners to repentance." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: luke, locator: "5:29-32" }
+      - { source: matthew-gospel, locator: "9:10-13" }
+      - { source: mark-gospel, locator: "2:15-17" }
+
+  # --- Judea and the Gospel ---
+  - id: matthew-preaches-to-hebrews
+    text: { en: "Matthew first preaches to the Hebrews; when he is about to go to other peoples, he writes his Gospel in his native tongue for those he leaves behind." }
+    when: { from: 33, to: 65, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "3.24.6", quote: "For Matthew, who had at first preached to the Hebrews, when he was about to go to other peoples, committed his Gospel to writing in his native tongue" }
+    notes: { en: "Eusebius introduces this with 'tradition says'. The length of his stay is unknown (the 'fifteen years' sometimes quoted is untraced); the end date follows Irenaeus' dating of the Gospel." }
+  - id: matthew-writes-gospel
+    text: { en: "Matthew writes a Gospel for the Hebrews in their own language, while Peter and Paul are preaching at Rome." }
+    when: { from: 60, to: 67, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "3.39.16", quote: "Matthew wrote the oracles in the Hebrew language, and every one interpreted them as he was able." }
+      - { source: irenaeus-ah, locator: "3.1.1" }
+      - { source: jerome-vir-ill, locator: "3" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Matthew, Mark, Luke, and John wrote the four gospels." }
+    notes: { en: "Papias (c. 110–130), quoted by Eusebius, and Irenaeus (c. 180). Irenaeus' timing implies c. 60–67; most modern scholars date canonical Greek Matthew c. 80–90, and Papias' Hebrew 'oracles' may not be our Greek Gospel." }
+  - id: matthew-diet
+    text: { en: "The apostle Matthew lived on seeds, nuts and vegetables, without meat." }
+    grade: B
+    citations:
+      - { source: clement-paedagogus, locator: "2.1", quote: "the apostle Matthew partook of seeds, and nuts, and vegetables, without flesh" }
+    notes: { en: "Clement of Alexandria (c. 190–200); his source is unknown." }
+
+  # --- Mission field: competing traditions ---
+  - id: matthew-ethiopia
+    text: { en: "In the division of the world by lot, Matthew was allotted Ethiopia — in context most naturally the kingdom of Kush with its capital Meroë (modern Sudan)." }
+    grade: C
+    citations:
+      - { source: socrates-he, locator: "1.19", quote: "Matthew was allotted Ethiopia" }
+    alternativeTo: [matthew-myrna, matthew-parthia]
+    notes: { en: "Socrates (c. 440) relays Rufinus, HE 10.9 (c. 402; Latin not checked online). In the same chapter Socrates calls Aksum 'India interior', so his 'Ethiopia' is not Aksum but the Kush/Meroë kingdom of Acts 8 — an inference. Kush and Aksum were separate kingdoms in the 1st century. The overland Nile route is a modern placement for the map. Years are a placeholder." }
+  - id: matthew-ethiopia-is-kush
+    text: { en: "In 1st-century writers 'Ethiopia' is the kingdom of Kush/Meroë on the Nile, ruled by queens with the title Candace; Philip baptised an official of 'Candace queen of the Ethiopians'." }
+    when: { from: 32, to: 62, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "8:27", quote: "a man of Ethiopia, an eunuch of great authority under Candace queen of the Ethiopians" }
+      - { source: pliny-nh, locator: "6.35 (6.186)" }
+    notes: { en: "Pliny reports that Nero's explorers (c. 61–62) found a queen Candace ruling Meroë, 'that name having passed from queen to queen'." }
+  - id: matthew-aksum-not-ethiopia
+    text: { en: "In the mid-1st century Aksum (in today's Ethiopia) was a separate kingdom, 'the city of the people called Auxumites', reached five days inland from the port of Adulis." }
+    when: { from: 40, to: 70, circa: true }
+    grade: B
+    citations:
+      - { source: periplus, locator: "4-5" }
+  - id: matthew-myrna
+    text: { en: "In the Acts of Matthew he goes to Myrna, \"the city of the man-eaters\", plants Christ's rod by the church he and Andrew had founded, converts King Fulvanus' family, survives a pyre, and dies there in peace." }
+    grade: D
+    citations:
+      - { source: acts-of-matthew, locator: "whole text", quote: "go into Myrna, the city of the man-eaters" }
+    alternativeTo: [matthew-ethiopia, matthew-parthia, matthew-death-natural, matthew-death-ethiopia]
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Bartholomew, Matthew, Simon the Zealot and Thaddeus all died the martyrs death." }
+    notes: { en: "Greek apocryphon, 3rd c. per Lipsius, with Gnostic traces; the Catholic Encyclopedia calls it 'absolutely devoid of historic value'. Myrna is unidentified; one Greek manuscript title says 'in Pontus', so the Pontus region is used as the marker. Years are a placeholder." }
+  - id: matthew-parthia
+    text: { en: "Matthew wrote the Gospel in Hebrew, published it at Jerusalem, and \"fell asleep\" (died a natural death) at Hierees, a town of Parthia." }
+    grade: D
+    citations:
+      - { source: ps-hippolytus-twelve, locator: "7", quote: "fell asleep at Hierees, a town of Parthia" }
+    alternativeTo: [matthew-ethiopia, matthew-myrna, matthew-death-natural, matthew-death-ethiopia]
+    notes: { en: "Hierees is unidentified; Ctesiphon marks the Parthian empire. Date of Pseudo-Hippolytus uncertain. Years are a placeholder." }
+
+  # --- Death: competing accounts ---
+  - id: matthew-death-natural
+    text: { en: "The earliest statement about his end: Matthew is listed among the saved who 'departed' without making a public confession before the authorities, i.e. he did not die as a martyr." }
+    grade: B
+    citations:
+      - { source: clement-stromata, locator: "4.9", quote: "Of whom are Matthew, Philip, Thomas, Levi, and many others." }
+    alternativeTo: [matthew-death-ethiopia, matthew-myrna, matthew-parthia]
+    notes: { en: "Heracleon the Valentinian (c. 170), quoted by Clement of Alexandria (c. 200). Heterodox, but Clement does not dispute the fact. Heracleon lists Matthew and Levi separately. No place is given, so this claim has no map item." }
+  - id: matthew-death-ethiopia
+    text: { en: "In the Latin Passion of Matthew he preaches at Naddaver, a city of Ethiopia, staying with the eunuch of Candace whom Philip had baptised, defeats two magicians, and is martyred there." }
+    grade: D
+    citations:
+      - { source: passio-matthaei, locator: "Naddaver narrative (summary in NASSCAL e-Clavis)" }
+    alternativeTo: [matthew-death-natural, matthew-myrna, matthew-parthia]
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Bartholomew, Matthew, Simon the Zealot and Thaddeus all died the martyrs death." }
+    notes: { en: "Probably 6th c. Naddaver is unidentified, but the link to Candace's eunuch ties this 'Ethiopia' to Kush/Meroë. Later versions disagree whether he was burned, stoned or beheaded. No year given." }
+items:
+  - type: stay
+    id: matthew-jerusalem
+    place: jerusalem
+    when: { from: 30, to: 33, circa: true }
+    claim: matthew-in-upper-room
+    episodes:
+      - id: matthew-ep-follow-me
+        title: { en: "\"Follow me\"" }
+        text: { en: "Matthew collects taxes at Capernaum, a job that made people hate him. Jesus walks past his booth and says just two words: \"Follow me.\" Matthew gets up, leaves everything, and follows him." }
+        when: { from: 28, to: 30, circa: true }
+        claim: matthew-called
+      - id: matthew-ep-feast
+        title: { en: "A party for sinners" }
+        text: { en: "Matthew throws a big feast at his house and invites his tax-collector friends. When the Pharisees complain, Jesus says he came to call sinners, not the righteous, to repentance." }
+        when: { from: 28, to: 30, circa: true }
+        claim: matthew-feast
+  - type: stay
+    id: matthew-judea-stay
+    place: jerusalem
+    when: { from: 33, to: 65, circa: true }
+    claim: matthew-preaches-to-hebrews
+    episodes:
+      - id: matthew-ep-writes-gospel
+        title: { en: "A Gospel for the Hebrews" }
+        text: { en: "Papias, a church leader writing around 120, says Matthew wrote down the words of Jesus in the Hebrew language. Irenaeus adds that he did this while Peter and Paul were preaching in Rome, so the believers he left behind would still have his teaching." }
+        when: { from: 60, to: 65, circa: true }
+        claim: matthew-writes-gospel
+      - id: matthew-ep-diet
+        title: { en: "Seeds, nuts and vegetables" }
+        text: { en: "Clement of Alexandria, writing around 195, remembers that Matthew lived simply: he ate seeds, nuts and vegetables, and no meat." }
+        when: { from: 33, to: 65, circa: true }
+        claim: matthew-diet
+
+  # Tradition A — Ethiopia = Kush/Meroë (grade C)
+  - type: leg
+    id: matthew-jerusalem-meroe
+    from: jerusalem
+    to: meroe
+    via: [[32.570, 31.040], [31.180, 27.180], [32.900, 24.090]]
+    when: { from: 65, to: 66, circa: true }
+    mode: land
+    claim: matthew-ethiopia
+  - type: stay
+    id: matthew-ethiopia-stay
+    place: meroe
+    when: { from: 66, to: 80, circa: true }
+    claim: matthew-ethiopia
+    episodes:
+      - id: matthew-ep-candace
+        title: { en: "The land of Queen Candace" }
+        text: { en: "When old writers say \"Ethiopia\" they usually mean Kush, a kingdom on the Nile in today's Sudan, ruled by queens with the title Candace. An official of that queen had already been baptised by Philip on the road to Gaza." }
+        when: { from: 66, to: 80, circa: true }
+        claim: matthew-ethiopia-is-kush
+      - id: matthew-ep-not-aksum
+        title: { en: "Not today's Ethiopia" }
+        text: { en: "Today's Ethiopia grew out of the kingdom of Aksum. A Greek sailors' guide from Matthew's time knows Aksum as a separate kingdom, five days inland from the Red Sea port of Adulis — so Matthew's \"Ethiopia\" and Aksum are not the same place." }
+        when: { from: 66, to: 70, circa: true }
+        claim: matthew-aksum-not-ethiopia
+  - type: stay
+    id: matthew-death-ethiopia-stay
+    place: meroe
+    when: { from: 75, to: 80, circa: true }
+    claim: matthew-death-ethiopia
+    episodes:
+      - id: matthew-ep-naddaver
+        title: { en: "Martyr in Ethiopia?" }
+        text: { en: "A Latin legend from about the 6th century says Matthew preached in an Ethiopian city called Naddaver, stayed with the official whom Philip had baptised, defeated two magicians, and was killed there as a martyr." }
+        when: { from: 75, to: 80, circa: true }
+        claim: matthew-death-ethiopia
+
+  # Tradition B — Myrna, "city of the man-eaters" (Pontus?) (grade D)
+  - type: leg
+    id: matthew-jerusalem-pontus
+    from: jerusalem
+    to: pontus
+    via: [[36.183, 36.223], [35.480, 38.720]]
+    when: { from: 65, to: 66, circa: true }
+    mode: land
+    claim: matthew-myrna
+  - type: stay
+    id: matthew-myrna-stay
+    place: pontus
+    when: { from: 66, to: 80, circa: true }
+    claim: matthew-myrna
+    episodes:
+      - id: matthew-ep-rod-becomes-tree
+        title: { en: "The rod that became a tree" }
+        text: { en: "In a fanciful 3rd-century story, Matthew is sent to Myrna, \"the city of the man-eaters\", to plant a rod by the church door, and it grows into a great tree. The king tries to burn him on a pyre, but the fire does not touch him, and Matthew dies there in peace." }
+        when: { from: 66, to: 80, circa: true }
+        claim: matthew-myrna
+
+  # Tradition C — Parthia (grade D)
+  - type: leg
+    id: matthew-jerusalem-ctesiphon
+    from: jerusalem
+    to: ctesiphon
+    via: [[36.309, 33.512], [38.270, 34.550], [40.730, 34.750]]
+    when: { from: 65, to: 66, circa: true }
+    mode: land
+    claim: matthew-parthia
+  - type: stay
+    id: matthew-parthia-stay
+    place: ctesiphon
+    when: { from: 66, to: 80, circa: true }
+    claim: matthew-parthia
+    episodes:
+      - id: matthew-ep-fell-asleep
+        title: { en: "He fell asleep" }
+        text: { en: "A late list of the apostles says Matthew died at Hierees, a town in Parthia. It says he \"fell asleep\" — a peaceful death, not a martyrdom." }
+        when: { from: 66, to: 80, circa: true }
+        claim: matthew-parthia

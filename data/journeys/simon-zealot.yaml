@@ -1,0 +1,111 @@
+person: simon-zealot
+claims:
+  - id: simon-zealot-one-of-twelve
+    text: { en: "Simon is one of the Twelve, called \"the Cananaean\" in Matthew and Mark and \"Simon called Zelotes\" (the Zealot) in Luke; both names mean \"the zealous one\"." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: matthew-gospel, locator: "10:4" }
+      - { source: mark-gospel, locator: "3:18" }
+      - { source: luke, locator: "6:15" }
+  - id: simon-zealot-zealot-party
+    text: { en: "Josephus first uses \"Zealots\" as the name of a rebel party during the Jewish War (67-68), so in Simon's day \"zealot\" may simply mean zealous for God's law." }
+    when: { from: 67, to: 68, circa: true }
+    grade: B
+    citations:
+      - { source: josephus-war, locator: "4.3.9", quote: "for that was the name they went by, as if they were zealous in good undertakings" }
+    notes: { en: "Scholars disagree whether an organised Zealot movement already existed around AD 30." }
+  - id: simon-zealot-upper-room
+    text: { en: "After the Ascension Simon the Zealot is with the eleven in the upper room in Jerusalem, and he is among the apostles at Pentecost." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:13-14" }
+      - { source: acts, locator: "2:14" }
+  - id: simon-zealot-egypt
+    text: { en: "The Golden Legend (c. 1260) says Simon preached in Egypt." }
+    when: { from: 35, to: 60, circa: true }
+    grade: D
+    citations:
+      - { source: golden-legend, locator: "159 (Simon and Jude)", quote: "Simon preached in Egypt" }
+    notes: { en: "No source gives a date. Isidore of Seville (7th c.) is reported to say the same, but his text was not checked." }
+  - id: simon-zealot-death-persia
+    text: { en: "The Latin Passion of Simon and Jude says Simon came from Egypt to Persia, worked there with Jude against the magicians Zaroes and Arphaxat, and was killed with him by pagan priests at Suanir." }
+    when: { from: 45, to: 90, circa: true }
+    grade: D
+    citations:
+      - { source: passio-simonis-iudae, locator: "whole text (e-Clavis summary)" }
+      - { source: golden-legend, locator: "159 (Simon and Jude)" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Bartholomew, Matthew, Simon the Zealot and Thaddeus all died the martyrs death." }
+    alternativeTo: [simon-zealot-death-jerusalem]
+    notes: { en: "Suanir cannot be located, so the region of Persis is shown. The saw shown in art as Simon's sign has no ancient text behind it." }
+  - id: simon-zealot-death-jerusalem
+    text: { en: "A late list of the apostles says Simon the Zealot, \"the son of Clopas\", became bishop of Jerusalem after James the Just and died there aged 120. This mixes him up with Symeon son of Clopas, the second bishop of Jerusalem, crucified under Trajan." }
+    when: { from: 98, to: 107, circa: true }
+    grade: D
+    citations:
+      - { source: ps-hippolytus-twelve, locator: "11" }
+      - { source: eusebius-he, locator: "3.32.1-6" }
+    alternativeTo: [simon-zealot-death-persia]
+    notes: { en: "Hegesippus (via Eusebius HE 3.11; 3.32) tells of Symeon son of Clopas but never makes him the apostle Simon. Even the Golden Legend notes the confusion. Do not present this as fact." }
+items:
+  - type: stay
+    id: simon-zealot-jerusalem
+    place: jerusalem
+    when: { from: 30, to: 33, circa: true }
+    claim: simon-zealot-upper-room
+    episodes:
+      - id: simon-zealot-chosen
+        title: { en: "Simon the zealous one" }
+        text: { en: "Jesus chose a second Simon among the Twelve, nicknamed \"the Zealot\", which means \"the zealous one\". Nothing more is told about him in the Bible." }
+        when: { from: 28, to: 30, circa: true }
+        claim: simon-zealot-one-of-twelve
+      - id: simon-zealot-name-meaning
+        title: { en: "A freedom fighter?" }
+        text: { en: "Later, during the war against Rome, rebels called themselves Zealots. But the historian Josephus first mentions them by that name in 67, so Simon's nickname may just mean he was zealous for God." }
+        when: { from: 67, to: 68, circa: true }
+        claim: simon-zealot-zealot-party
+  - type: leg
+    id: simon-zealot-to-egypt
+    from: jerusalem
+    to: aegyptus
+    via: [[34.45, 31.52], [32.55, 31.04]]
+    when: { from: 35, to: 60, circa: true }
+    mode: land
+    claim: simon-zealot-egypt
+  - type: stay
+    id: simon-zealot-egypt-stay
+    place: aegyptus
+    when: { from: 35, to: 60, circa: true }
+    claim: simon-zealot-egypt
+  - type: leg
+    id: simon-zealot-egypt-to-persia
+    from: aegyptus
+    to: persis
+    via: [[34.4, 31.2], [38.27, 34.55], [44.58, 33.1]]
+    when: { from: 45, to: 90, circa: true }
+    mode: land
+    claim: simon-zealot-death-persia
+  - type: stay
+    id: simon-zealot-death-persis
+    place: persis
+    when: { from: 45, to: 90, circa: true }
+    claim: simon-zealot-death-persia
+    episodes:
+      - id: simon-zealot-with-jude-in-persia
+        title: { en: "With Jude in Persia?" }
+        text: { en: "A legend says Simon went from Egypt to Persia and met Jude there. Together they won a contest against two magicians, but pagan priests later killed them both." }
+        when: { from: 45, to: 90, circa: true }
+        claim: simon-zealot-death-persia
+  - type: stay
+    id: simon-zealot-death-jerusalem-stay
+    place: jerusalem
+    when: { from: 98, to: 107, circa: true }
+    claim: simon-zealot-death-jerusalem
+    episodes:
+      - id: simon-zealot-mixed-up-with-symeon
+        title: { en: "A case of mixed-up names" }
+        text: { en: "Symeon, a cousin of Jesus, led the church in Jerusalem and was crucified at a great age under the emperor Trajan. A late list confused him with Simon the Zealot, so be careful with this story." }
+        when: { from: 98, to: 107, circa: true }
+        claim: simon-zealot-death-jerusalem

@@ -1,0 +1,22 @@
+sources:
+  - { id: clement-alex-qds, author: Clement of Alexandria, work: "Who is the Rich Man that shall be Saved? (Quis dives salvetur)", written: { from: 195, to: 210, circa: true }, kind: church-writer, edition: "ANF vol. 2", url: "https://www.newadvent.org/fathers/0207.htm" }
+  - { id: justin-dialogue, author: Justin Martyr, work: Dialogue with Trypho, written: { from: 155, to: 160, circa: true }, kind: church-writer, edition: "ANF vol. 1", url: "https://www.newadvent.org/fathers/01286.htm" }
+  - { id: jerome-comm-gal, author: Jerome, work: "Commentary on Galatians", written: { from: 386, to: 387, circa: true }, kind: church-writer, edition: "PL 26, cols. 433–434", url: "https://archive.org/details/bim_early-english-books-1641-1700_patrologiae-cursus-completus-_1845_26" }
+  - { id: victorinus-apoc, author: Victorinus of Pettau, work: Commentary on the Apocalypse, written: { from: 260, to: 304, circa: true }, kind: church-writer, edition: "ANF vol. 7", url: "https://www.newadvent.org/fathers/0712.htm" }
+  - { id: epiphanius-panarion, author: Epiphanius of Salamis, work: "Panarion (Against Heresies)", written: { from: 374, to: 377, circa: true }, kind: church-writer, edition: "Greek text as quoted in H.B. Swete, The Apocalypse of St. John (1906), Introduction ch. IX", url: "https://archive.org/details/apocalypseofstj00swet" }
+  - { id: theophylact-comm-matt, author: Theophylact of Ohrid, work: Commentary on Matthew, written: { from: 1080, to: 1107, circa: true }, kind: church-writer, edition: "PG 123; cited via H.B. Swete, The Apocalypse of St. John (1906), Introduction ch. IX", url: "https://archive.org/details/apocalypseofstj00swet" }
+  - { id: syriac-revelation-title, author: Anonymous (Syriac translators), work: "Title of Revelation in the Syriac (Philoxenian/Harklean) version", written: { from: 508, to: 616, circa: true }, kind: tradition, edition: "L. de Dieu, Apocalypsis Sancti Johannis (Leiden: Elzevier, 1627); quoted by Isaac Newton, Observations upon the Prophecies (1733), pt II ch. 1", url: "https://bibliasacra.nl/edition/1627.Rev.poly.BE.a" }
+  - { id: philip-of-side-epitome, author: Philip of Side (epitome), work: "Christian History, epitome in Codex Baroccianus 142 (fragment of Papias)", written: { from: 430, to: 440, circa: true }, kind: church-writer, edition: "tr. J.B. Lightfoot (1891), as given by P. Kirby, Putting Papias in Order (2013)", url: "http://peterkirby.com/putting-papias-in-order.html" }
+  - { id: acts-of-john, author: Anonymous, work: Acts of John, written: { from: 150, to: 250, circa: true }, kind: apocryphon, edition: "tr. M.R. James, The Apocryphal New Testament (1924)", url: "https://www.earlychristianwritings.com/text/actsjohn.html" }
+  - { id: augustine-tract-john, author: Augustine of Hippo, work: Tractates on the Gospel of John, written: { from: 406, to: 420, circa: true }, kind: church-writer, edition: "NPNF1 vol. 7", url: "https://www.newadvent.org/fathers/1701124.htm" }
+  - { id: aldhelm-carmina, author: Aldhelm of Malmesbury, work: "Carmina ecclesiastica", written: { from: 670, to: 710, circa: true }, kind: church-writer, edition: "ed. R. Ehwald, MGH AA 15 (1919) p. 23; tr. M. Lapidge & J. Rosier, Aldhelm: The Poetic Works (1985) p. 52" }
+  - { id: epistola-leonis, author: Anonymous ("Pope Leo"), work: "Epistola Leonis (letter on the translation of St James)", written: { from: 850, to: 1050, circa: true }, kind: apocryphon, url: "https://xacopedia.com/Ep%C3%ADstola_del_papa_Le%C3%B3n" }
+referenceWorks:
+  - id: fletcher-catapult
+    author: Richard Fletcher
+    title: "Saint James's Catapult: The Life and Times of Diego Gelmírez of Santiago de Compostela (Oxford, 1984)"
+    url: "https://libro.uca.edu/sjc/sjc3.htm"
+  - id: swete-apocalypse
+    author: H.B. Swete
+    title: "The Apocalypse of St. John (London, 1906)"
+    url: "https://archive.org/details/apocalypseofstj00swet"

@@ -1,0 +1,30 @@
+sources:
+  - { id: ephesians, author: "Paul", work: "Letter to the Ephesians", written: { from: 60, to: 90, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=Ephesians+{locator}&version=KJV" }
+  - { id: 2-thessalonians, author: "Paul", work: "Second Letter to the Thessalonians", written: { from: 50, to: 90, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=2+Thessalonians+{locator}&version=KJV" }
+  - { id: 1-timothy, author: "Paul", work: "First Letter to Timothy", written: { from: 62, to: 100, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=1+Timothy+{locator}&version=KJV" }
+  - id: gallio-inscription
+    author: Emperor Claudius (letter to Delphi)
+    work: "Gallio inscription, Delphi (SIG³ 801D)"
+    written: { from: 52, to: 52, circa: true }
+    kind: inscription
+    edition: "W. Dittenberger, Sylloge Inscriptionum Graecarum, 3rd ed., no. 801D"
+    url: "https://biblearchaeologyreport.com/2019/10/31/gallio-an-archaeological-biography/"
+  - id: sergius-paullus-inscription
+    author: Anonymous (Roman public inscription)
+    work: "Inscription of L. Sergius Paullus, curator of the Tiber banks (CIL VI 31545)"
+    written: { from: 41, to: 54, circa: true }
+    kind: inscription
+    edition: "Corpus Inscriptionum Latinarum VI 31545"
+    url: "https://biblearchaeologyreport.com/2019/11/15/sergius-paulus-an-archaeological-biography/"
+  - { id: ignatius-ephesians, author: Ignatius of Antioch, work: Letter to the Ephesians, written: { from: 105, to: 115, circa: true }, kind: church-writer, edition: "ANF vol. 1", url: "https://www.newadvent.org/fathers/0104.htm" }
+  - { id: muratorian-fragment, author: Anonymous, work: Muratorian Fragment, written: { from: 170, to: 200, circa: true }, kind: church-writer, edition: "tr. B. M. Metzger", url: "http://www.earlychristianwritings.com/text/muratorian-metzger.html" }
+  - { id: tertullian-praescription, author: Tertullian, work: "Prescription against Heretics (De praescriptione haereticorum)", written: { from: 198, to: 203, circa: true }, kind: church-writer, edition: "ANF vol. 3", url: "https://www.newadvent.org/fathers/0311.htm" }
+  - { id: tertullian-scorpiace, author: Tertullian, work: "Scorpiace", written: { from: 203, to: 213, circa: true }, kind: church-writer, edition: "ANF vol. 3", url: "https://www.newadvent.org/fathers/0318.htm" }
+  - { id: acts-of-paul, author: Anonymous, work: "Acts of Paul (Martyrdom of Paul)", written: { from: 160, to: 200, circa: true }, kind: apocryphon, edition: "M. R. James, The Apocryphal New Testament (1924)", url: "http://www.earlychristianwritings.com/text/actspaul.html" }
+  - { id: acts-of-peter, author: Anonymous, work: "Acts of Peter (Vercelli Acts)", written: { from: 180, to: 200, circa: true }, kind: apocryphon, edition: "M. R. James, The Apocryphal New Testament (1924)", url: "http://www.earlychristianwritings.com/text/actspeter.html" }
+  - id: san-paolo-radiocarbon-2009
+    author: NBC News / Associated Press
+    work: "Report of Pope Benedict XVI's announcement on the sarcophagus under San Paolo fuori le Mura (28 June 2009)"
+    written: { from: 2009, to: 2009, circa: false }
+    kind: modern-scholarship
+    url: "https://www.nbcnews.com/id/wbna31599704"

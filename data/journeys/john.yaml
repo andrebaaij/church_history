@@ -1,18 +1,349 @@
 person: john
 claims:
+  # --- Jerusalem and Samaria (Acts, Galatians) ---
+  - id: john-called-by-jesus
+    text: { en: "Jesus calls the brothers James and John from their father Zebedee's boat on the Sea of Galilee; they are partners of Simon Peter." }
+    when: { from: 27, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: mark-gospel, locator: "1:19-20" }
+      - { source: luke, locator: "5:10" }
+  - id: john-inner-three
+    text: { en: "John is one of the Twelve and, with Peter and James, one of the three who see Jairus' daughter raised, the transfiguration and Gethsemane. Jesus calls the brothers \"Boanerges, Sons of Thunder\"." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: mark-gospel, locator: "3:17" }
+      - { source: mark-gospel, locator: "5:37" }
+      - { source: mark-gospel, locator: "9:2" }
+      - { source: mark-gospel, locator: "14:33" }
+  - id: john-beloved-disciple-mary
+    text: { en: "At the cross Jesus entrusts his mother to \"the disciple whom Jesus loved\", who takes her into his own home." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "19:26-27" }
+      - { source: john-gospel, locator: "21:20-24" }
+      - { source: irenaeus-ah, locator: "3.1.1", quote: "John, the disciple of the Lord, who also had leaned upon His breast" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "the same John to whom the Lord Jesus said while on the cross: 'Behold your mother.'" }
+    notes: { en: "The Gospel never names the beloved disciple. That he is John son of Zebedee is tradition, first stated by Irenaeus (c. 180, grade B)." }
+  - id: john-in-jerusalem-with-apostles
+    text: { en: "After the Ascension John is with the apostles in the upper room in Jerusalem; with Peter he heals a lame man at the temple, and both are tried by the Sanhedrin." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:13" }
+      - { source: acts, locator: "3:1-4:22" }
+  - id: john-sent-to-samaria
+    text: { en: "The apostles in Jerusalem send Peter and John to Samaria; on the way back they preach the gospel in many Samaritan villages." }
+    when: { from: 33, to: 36, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "8:14-25" }
+  - id: john-pillar-jerusalem
+    text: { en: "James, Cephas and John, \"who seemed to be pillars\" of the Jerusalem church, give Paul and Barnabas the right hand of fellowship." }
+    when: { from: 47, to: 49, circa: true }
+    grade: A
+    citations:
+      - { source: galatians, locator: "2:9" }
+    notes: { en: "The date depends on how Paul's \"after fourteen years\" (Gal 2:1) is counted. This is the last New Testament mention of John by name outside Revelation." }
+  # --- To Asia ---
+  - id: john-moves-to-asia
+    text: { en: "Asia was allotted to John, who lived there for some time and died at Ephesus (Origen, quoted by Eusebius). No ancient source says when he moved." }
+    when: { from: 60, to: 70, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "3.1.1", quote: "Asia [was allotted] to John, who, after he had lived some time there, died at Ephesus." }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "when Paul was imprisoned and beheaded in Rome, John took his place and continued the work of Paul" }
+    notes: { en: "The date is an inference: Acts 19–20 and Paul's letters (Paul at Ephesus c. 52–57) never mention John there, so a later move is usually assumed. Vreugdenhil's \"after Paul's death\" is likewise inference. Route through Antioch and the Anatolian roads is illustrative." }
+  # --- Rome and Patmos ---
+  - id: john-boiling-oil-rome
+    text: { en: "At Rome John is plunged into boiling oil without suffering harm, and is then banished to his island." }
+    when: { from: 81, to: 95, circa: true }
+    grade: B
+    citations:
+      - { source: tertullian-praescription, locator: "36" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "the heathens put John into a cauldron of boiling oil, but God… preserved him… Finally, the cruel emperor Domitian banished John to Patmos." }
+    notes: { en: "Tertullian (c. 200) names no emperor and gives no date; later writers link the story to Domitian." }
   - id: john-on-patmos
     text: { en: "John is on the island of Patmos \"for the word of God and for the testimony of Jesus\"." }
     grade: A
     citations:
       - { source: revelation, locator: "1:9" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "The apostle John wrote the Book of Revelation on that little, desolate island." }
   - id: john-patmos-under-domitian
     text: { en: "The Revelation was seen near the end of Domitian's reign (Domitian ruled AD 81–96)." }
     when: { from: 95, to: 96, circa: true }
     grade: B
     citations:
-      - { source: irenaeus-ah, locator: "5.30.3" }
+      - { source: irenaeus-ah, locator: "5.30.3", quote: "towards the end of Domitian's reign" }
       - { source: eusebius-he, locator: "3.18.1-3" }
+      - { source: victorinus-apoc, locator: "on 10:11", quote: "condemned to the labour of the mines by Caesar Domitian" }
+      - { source: jerome-vir-ill, locator: "9", quote: "In the fourteenth year then after Nero Domitian having raised a second persecution he was banished to the island of Patmos" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "7", quote: "During his reign, the apostle John was banished to the small island of Patmos." }
+      - { work: swete-apocalypse, chapter: "Introduction ch. IX", quote: "Early Christian tradition is practically unanimous in assigning the Apocalypse to the last years of Domitian." }
+    alternativeTo: [john-patmos-under-nero, john-patmos-under-claudius, john-patmos-under-trajan]
+    notes: { en: "This is the oldest dating and the majority scholarly view." }
+  - id: john-patmos-under-nero
+    text: { en: "A later title in the Syriac version of Revelation says John was banished to Patmos by Nero, which would put the vision c. 65–68." }
+    when: { from: 65, to: 68, circa: true }
+    grade: D
+    citations:
+      - { source: syriac-revelation-title, locator: "title of Revelation", quote: "The Revelation which was made to John the Evangelist by God in the Island Patmos, into which he was banished by Nero the Caesar" }
+    referenceWorks:
+      - { work: swete-apocalypse, chapter: "Introduction ch. IX" }
+    alternativeTo: [john-patmos-under-domitian, john-patmos-under-claudius, john-patmos-under-trajan]
+    notes: { en: "No early church writer names Nero. The title is a later addition of uncertain date (6th–7th c. versions). The main modern case for an early date rests on readings of Revelation itself (Rev 11:1–2; 13:18; 17:9–11), e.g. J.A.T. Robinson, Redating the New Testament (1976). Minority view." }
+  - id: john-patmos-under-claudius
+    text: { en: "Epiphanius says John prophesied on Patmos in the time of the emperor Claudius (41–54)." }
+    when: { from: 41, to: 54, circa: true }
+    grade: C
+    citations:
+      - { source: epiphanius-panarion, locator: "51.12.2; 51.33.9", quote: "in the times of Claudius Caesar… when he was on the island of Patmos" }
+    referenceWorks:
+      - { work: swete-apocalypse, chapter: "Introduction ch. IX" }
+    alternativeTo: [john-patmos-under-domitian, john-patmos-under-nero, john-patmos-under-trajan]
+    notes: { en: "Written 374–377 and generally regarded as an error (Swete). Greek text checked via Swete, whose numbering gives 51.32 for 51.33." }
+  - id: john-patmos-under-trajan
+    text: { en: "Theophylact (11th century) says it was Trajan who condemned John." }
+    when: { from: 98, to: 100, circa: true }
+    grade: D
+    citations:
+      - { source: theophylact-comm-matt, locator: "on Matt 20:22", quote: "Trajan condemned John" }
+    referenceWorks:
+      - { work: swete-apocalypse, chapter: "Introduction ch. IX" }
+    alternativeTo: [john-patmos-under-domitian, john-patmos-under-nero, john-patmos-under-claudius]
+    notes: { en: "Very late; Swete suggests a misreading of Irenaeus' \"until the times of Trajan\". Primary text (PG 123) seen only through Swete." }
+  - id: john-seven-churches
+    text: { en: "In Revelation John writes to seven churches of Asia: Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia and Laodicea, and knows each of them closely." }
+    when: { from: 95, to: 96, circa: true }
+    grade: A
+    citations:
+      - { source: revelation, locator: "1:11" }
+      - { source: revelation, locator: "2:1-3:22" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "John regularly visited these seven congregations." }
+    notes: { en: "That John regularly visited the seven churches is Vreugdenhil's inference, not an ancient statement." }
+  - id: john-apostle-received-revelation
+    text: { en: "Justin Martyr says that \"a certain man with us, whose name was John, one of the apostles of Christ\" received a revelation." }
+    grade: B
+    citations:
+      - { source: justin-dialogue, locator: "81.4" }
+    notes: { en: "The earliest attribution of Revelation to the apostle (c. 155–160)." }
+  - id: john-returns-to-ephesus
+    text: { en: "After the tyrant's death John returns from the island of Patmos to Ephesus." }
+    when: { from: 96, to: 97, circa: true }
+    grade: B
+    citations:
+      - { source: clement-alex-qds, locator: "42", quote: "on the tyrant's death, he returned to Ephesus from the isle of Patmos" }
+      - { source: eusebius-he, locator: "3.20.8-11" }
+      - { source: victorinus-apoc, locator: "on 10:11" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "After the death of Domitian, the apostle returned to Ephesus and continued to preach and work there for years." }
+    notes: { en: "Clement (c. 200) does not name the tyrant; Eusebius (c. 313–325, grade C) dates the return under Nerva, when the Senate recalled the exiles. Domitian was killed on 18 September 96 (Suetonius, Domitian 17)." }
+  # --- Ephesus, last years ---
+  - id: john-ephesus-churches
+    text: { en: "From Ephesus John travels to neighbouring cities to appoint bishops and set churches in order; he entrusts a young man to a bishop and later wins him back from a life as a robber chief." }
+    when: { from: 96, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: clement-alex-qds, locator: "42" }
+      - { source: eusebius-he, locator: "3.23.6-19" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1" }
+    notes: { en: "Clement leaves the young man's city unnamed (\"not far off, the name of which some give\"). Vreugdenhil's \"probably Smyrna\" has no source we could find." }
+  - id: john-gospel-at-ephesus
+    text: { en: "John publishes his Gospel while living at Ephesus in Asia; Clement of Alexandria calls it a \"spiritual Gospel\", written last of the four." }
+    when: { from: 90, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: irenaeus-ah, locator: "3.1.1", quote: "John, the disciple of the Lord… did himself publish a Gospel during his residence at Ephesus in Asia." }
+      - { source: eusebius-he, locator: "6.14.7", quote: "(quoting Clement of Alexandria, Hypotyposes) John, last of all… composed a spiritual Gospel" }
+      - { source: jerome-vir-ill, locator: "9" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Matthew, Mark, Luke, and John wrote the four gospels" }
+  - id: john-flees-cerinthus
+    text: { en: "At Ephesus John leaves a bath-house without bathing when he learns that the false teacher Cerinthus is inside. Irenaeus heard this from people who heard it from Polycarp." }
+    when: { from: 90, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: irenaeus-ah, locator: "3.3.4" }
+      - { source: eusebius-he, locator: "4.14.6" }
+  - id: john-teaches-polycarp
+    text: { en: "Polycarp, later bishop of Smyrna, heard John and told of his conversations with him; Tertullian says the church of Smyrna recorded that John placed Polycarp there." }
+    when: { from: 90, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "5.20.6", quote: "(Irenaeus, Letter to Florinus) his intercourse with John" }
+      - { source: irenaeus-ah, locator: "3.3.4", quote: "appointed bishop… by apostles in Asia" }
+      - { source: tertullian-praescription, locator: "32", quote: "the church of Smyrna, which records that Polycarp was placed therein by John" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "9", quote: "Polycarp was also a student of the apostle John… John appointed Polycarp as bishop" }
+  - id: john-two-johns-papias
+    text: { en: "Papias names two Johns among \"the disciples of the Lord\": John among the apostles, and \"the presbyter John\". Eusebius concludes that there were two Johns at Ephesus, each with a tomb there." }
+    when: { from: 90, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "3.39.4", quote: "(quoting Papias) what… John, or Matthew… and what things Aristion and the presbyter John, the disciples of the Lord, say" }
+      - { source: eusebius-he, locator: "3.39.5-7" }
+    notes: { en: "The Papias quotation (c. 110–130) is grade B; Eusebius' conclusion that the second John was a different person is grade C. Some scholars think the long-lived John of Ephesus was this Elder rather than the son of Zebedee." }
+  - id: john-love-one-another
+    text: { en: "In extreme old age John, carried into church, says only: \"Little children, love one another\" — \"because it is the Lord's command, and if this alone be done, it is enough\"." }
+    when: { from: 98, to: 100, circa: true }
+    grade: C
+    citations:
+      - { source: jerome-comm-gal, locator: "3, on Gal 6:10" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "he had himself carried into the church and spoke only these words: 'Little children, love one another fervently.'" }
+  # --- Death: competing accounts ---
+  - id: john-dies-at-ephesus
+    text: { en: "John dies of old age at Ephesus in the time of Trajan and is buried there, the last of the apostles." }
+    when: { from: 98, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: irenaeus-ah, locator: "2.22.5", quote: "he remained among them up to the times of Trajan" }
+      - { source: eusebius-he, locator: "3.31.3", quote: "(quoting Polycrates of Ephesus, c. 190) He fell asleep at Ephesus." }
+      - { source: eusebius-he, locator: "3.23.1-4" }
+      - { source: jerome-vir-ill, locator: "9", quote: "worn out by old age, died in the sixty-eighth year after our Lord's passion and was buried near the same city" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "One apostle did not die the martyr's death: the apostle John… when he was very old, he quietly and peacefully entered eternal glory… When he died, the apostolic age had come to an end." }
+    alternativeTo: [john-lies-down-in-grave, john-killed-by-the-jews]
+    notes: { en: "Trajan became emperor in January 98; Irenaeus gives no year. Jerome's \"sixty-eighth year after the Passion\" gives c. 98–101, conventionally c. 100." }
+  - id: john-lies-down-in-grave
+    text: { en: "The apocryphal Acts of John say that at Ephesus John had his disciples dig a trench, lay down in it, said \"Peace be with you, brethren\" and gave up his spirit rejoicing." }
+    when: { from: 98, to: 100, circa: true }
+    grade: D
+    citations:
+      - { source: acts-of-john, locator: "106-115", quote: "Let the trench be deeper" }
+    alternativeTo: [john-dies-at-ephesus, john-killed-by-the-jews]
+  - id: john-sleeps-in-tomb
+    text: { en: "Augustine reports, without believing it, a story that John is sleeping rather than dead in his tomb at Ephesus, and that the earth over him moves with his breathing." }
+    when: { from: 98, to: 100, circa: true }
+    grade: E
+    citations:
+      - { source: augustine-tract-john, locator: "124.2" }
+      - { source: john-gospel, locator: "21:22-23" }
+    notes: { en: "A local legend rooted in the rumour \"that this disciple should not die\", which John 21:23 itself corrects." }
+  - id: john-killed-by-the-jews
+    text: { en: "A 5th-century summary says that Papias, in his second book, wrote that John and his brother James were killed by the Jews." }
+    when: { from: 44, to: 100, circa: true }
+    grade: C
+    citations:
+      - { source: philip-of-side-epitome, locator: "Codex Baroccianus 142", quote: "Papias in his second book says that John the Divine and James his brother were killed by the Jews." }
+      - { source: mark-gospel, locator: "10:39", quote: "the cup that I drink you will drink" }
+    alternativeTo: [john-dies-at-ephesus, john-lies-down-in-grave]
+    notes: { en: "Papias' book is lost; no place or date is given (shown at Jerusalem, where a Syriac martyrology of 411 commemorates \"John and James, the Apostles, at Jerusalem\"). Most scholars regard the report as garbled; it contradicts Irenaeus and Polycrates (grade B)." }
 items:
+  - type: stay
+    id: john-jerusalem-early
+    place: jerusalem
+    when: { from: 30, to: 33, circa: true }
+    claim: john-in-jerusalem-with-apostles
+    episodes:
+      - id: john-called-from-the-boat
+        title: { en: "Fisherman called" }
+        text: { en: "John and his brother James are mending nets in their father Zebedee's boat on the Sea of Galilee when Jesus calls them. They leave the boat and their father and follow him." }
+        when: { from: 27, to: 30, circa: true }
+        claim: john-called-by-jesus
+      - id: john-son-of-thunder
+        title: { en: "Sons of Thunder" }
+        text: { en: "Jesus nicknames James and John \"Boanerges\", Sons of Thunder. With Peter they are the three who go with Jesus up the mountain of the transfiguration and further into the garden of Gethsemane." }
+        when: { from: 28, to: 30, circa: true }
+        claim: john-inner-three
+      - id: john-behold-your-mother
+        title: { en: "\"Behold your mother\"" }
+        text: { en: "From the cross Jesus gives his mother into the care of \"the disciple whom Jesus loved\", and from that hour this disciple takes her into his own home. Since Irenaeus, Christians have identified this disciple as John." }
+        when: { from: 30, to: 33, circa: true }
+        claim: john-beloved-disciple-mary
+      - id: john-heals-lame-man
+        title: { en: "Silver and gold have I none" }
+        text: { en: "Peter and John meet a man lame from birth at the temple gate and heal him in Jesus' name. They are arrested, and the council is amazed that these ordinary, unschooled men speak so boldly." }
+        when: { from: 30, to: 33, circa: true }
+        claim: john-in-jerusalem-with-apostles
+  - type: leg
+    id: john-jerusalem-to-samaria
+    from: jerusalem
+    to: samaria
+    when: { from: 34, to: 34, circa: true }
+    mode: land
+    claim: john-sent-to-samaria
+  - type: stay
+    id: john-samaria
+    place: samaria
+    when: { from: 34, to: 34, circa: true }
+    claim: john-sent-to-samaria
+    episodes:
+      - id: john-samaria-holy-spirit
+        title: { en: "Sent to Samaria" }
+        text: { en: "When the apostles hear that Samaria has received the word of God, they send Peter and John. The two pray for the new believers, and they receive the Holy Spirit." }
+        when: { from: 34, to: 34, circa: true }
+        claim: john-sent-to-samaria
+  - type: leg
+    id: john-samaria-to-jerusalem
+    from: samaria
+    to: jerusalem
+    when: { from: 34, to: 34, circa: true }
+    mode: land
+    claim: john-sent-to-samaria
+    episodes:
+      - id: john-samaritan-villages
+        title: { en: "Preaching in the villages" }
+        text: { en: "On the way back to Jerusalem, Peter and John preach the gospel in many Samaritan villages." }
+        when: { from: 34, to: 34, circa: true }
+        claim: john-sent-to-samaria
+  - type: stay
+    id: john-jerusalem-pillar
+    place: jerusalem
+    when: { from: 35, to: 49, circa: true }
+    claim: john-pillar-jerusalem
+    episodes:
+      - id: john-brother-james-killed
+        title: { en: "His brother is killed" }
+        text: { en: "King Herod Agrippa I has John's brother James killed with the sword — the first of the Twelve to die for Christ." }
+        when: { from: 44, to: 44, circa: true }
+        claim: james-zebedee-killed-by-herod
+      - id: john-right-hand-of-fellowship
+        title: { en: "One of the pillars" }
+        text: { en: "Paul comes to Jerusalem and meets James, Peter and John, the \"pillars\" of the church. They shake hands with Paul and Barnabas: Paul will go to the Gentiles, they to the Jews." }
+        when: { from: 47, to: 49, circa: true }
+        claim: john-pillar-jerusalem
+  - type: leg
+    id: john-jerusalem-to-ephesus
+    from: jerusalem
+    to: ephesus
+    via: [[36.183, 36.223], [34.9, 36.92], [32.49, 37.87]]
+    when: { from: 60, to: 70, circa: true }
+    mode: land
+    claim: john-moves-to-asia
+  - type: stay
+    id: john-ephesus-first
+    place: ephesus
+    when: { from: 70, to: 94, circa: true }
+    claim: john-moves-to-asia
+  - type: stay
+    id: john-rome-boiling-oil
+    place: rome
+    when: { from: 94, to: 95, circa: true }
+    claim: john-boiling-oil-rome
+    episodes:
+      - id: john-oil-cauldron
+        title: { en: "The cauldron of boiling oil" }
+        text: { en: "Tertullian writes that at Rome John was plunged into boiling oil — and came out unharmed. Afterwards he was banished to an island." }
+        when: { from: 94, to: 95, circa: true }
+        claim: john-boiling-oil-rome
+  - type: leg
+    id: john-rome-to-patmos
+    from: rome
+    to: patmos
+    via: [[12.25, 41.6], [12.0, 40.0], [11.8, 38.1], [12.6, 37.2], [15.5, 36.4], [20.5, 36.4], [22.5, 35.9], [23.15, 36.0], [26.0, 36.0], [26.8, 36.55], [26.62, 37.2]]
+    when: { from: 95, to: 95, circa: true }
+    mode: sea
+    claim: john-boiling-oil-rome
   - type: stay
     id: john-patmos
     place: patmos
@@ -29,3 +360,134 @@ items:
         text: { en: "Irenaeus, writing around 180, dates the vision to the end of Domitian's reign." }
         when: { from: 95, to: 96, circa: true }
         claim: john-patmos-under-domitian
+      - id: john-letters-to-seven-churches
+        title: { en: "Letters to seven churches" }
+        text: { en: "Jesus gives John a message for seven churches in Asia — Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia and Laodicea. Each gets praise, warning or comfort that fits it exactly." }
+        when: { from: 95, to: 96, circa: true }
+        claim: john-seven-churches
+      - id: john-justin-names-the-apostle
+        title: { en: "Which John?" }
+        text: { en: "Revelation only says its author is called John. Around 155 Justin Martyr is the first to write that this John was \"one of the apostles of Christ\"." }
+        when: { from: 95, to: 96, circa: true }
+        claim: john-apostle-received-revelation
+  - type: stay
+    id: john-patmos-under-nero-tradition
+    place: patmos
+    when: { from: 65, to: 68, circa: true }
+    claim: john-patmos-under-nero
+    episodes:
+      - id: john-banished-by-nero
+        title: { en: "Banished by Nero?" }
+        text: { en: "A title added to the Syriac translation of Revelation says Nero sent John to Patmos. If so, John would have seen his visions before Jerusalem fell in 70 — but no early writer says this." }
+        when: { from: 65, to: 68, circa: true }
+        claim: john-patmos-under-nero
+  - type: stay
+    id: john-patmos-under-claudius-tradition
+    place: patmos
+    when: { from: 41, to: 54, circa: true }
+    claim: john-patmos-under-claudius
+    episodes:
+      - id: john-banished-by-claudius
+        title: { en: "Under Claudius?" }
+        text: { en: "Bishop Epiphanius, writing around 375, puts John's time on Patmos in the reign of Claudius. Most scholars think he simply made a mistake." }
+        when: { from: 41, to: 54, circa: true }
+        claim: john-patmos-under-claudius
+  - type: stay
+    id: john-patmos-under-trajan-tradition
+    place: patmos
+    when: { from: 98, to: 100, circa: true }
+    claim: john-patmos-under-trajan
+    episodes:
+      - id: john-banished-by-trajan
+        title: { en: "Under Trajan?" }
+        text: { en: "Theophylact, a bishop writing a thousand years later, says Trajan condemned John. This is probably a misreading of Irenaeus, who said John lived until Trajan's time." }
+        when: { from: 98, to: 100, circa: true }
+        claim: john-patmos-under-trajan
+  - type: leg
+    id: john-patmos-to-ephesus
+    from: patmos
+    to: ephesus
+    via: [[26.85, 37.55], [27.06, 37.68], [27.2, 37.85]]
+    when: { from: 96, to: 97, circa: true }
+    mode: sea
+    claim: john-returns-to-ephesus
+    episodes:
+      - id: john-home-from-exile
+        title: { en: "Home from exile" }
+        text: { en: "When the tyrant who banished him is dead, John sails back from Patmos to Ephesus and takes up his work among the churches again." }
+        when: { from: 96, to: 97, circa: true }
+        claim: john-returns-to-ephesus
+  - type: stay
+    id: john-ephesus-last-years
+    place: ephesus
+    when: { from: 97, to: 100, circa: true }
+    claim: john-lives-to-trajan
+    episodes:
+      - id: john-writes-gospel
+        title: { en: "The last Gospel" }
+        text: { en: "While living at Ephesus, John publishes his Gospel. Clement of Alexandria calls it a \"spiritual Gospel\", written after the other three." }
+        when: { from: 90, to: 100, circa: true }
+        claim: john-gospel-at-ephesus
+      - id: john-bath-house-cerinthus
+        title: { en: "Out of the bath-house" }
+        text: { en: "John goes to the public baths in Ephesus, but when he hears that the false teacher Cerinthus is inside, he rushes out without bathing. Polycarp told this story to his own students." }
+        when: { from: 90, to: 100, circa: true }
+        claim: john-flees-cerinthus
+      - id: john-and-the-robber
+        title: { en: "The apostle and the robber" }
+        text: { en: "John entrusts a young believer to a bishop, but the young man becomes the leader of a robber band. The old apostle rides into the mountains, runs after him, and brings him back to Christ with tears." }
+        when: { from: 96, to: 100, circa: true }
+        claim: john-ephesus-churches
+      - id: john-and-polycarp
+        title: { en: "Polycarp's teacher" }
+        text: { en: "Young Polycarp listens to John and later tells his own students what John said about Jesus. The church of Smyrna remembered that John made Polycarp its bishop." }
+        when: { from: 90, to: 100, circa: true }
+        claim: john-teaches-polycarp
+      - id: john-the-elder-question
+        title: { en: "Two Johns?" }
+        text: { en: "Papias, bishop of nearby Hierapolis, mentions an apostle John and also a \"presbyter John\". Eusebius later decided there were two Johns at Ephesus, each with his own tomb — a question scholars still discuss." }
+        when: { from: 90, to: 100, circa: true }
+        claim: john-two-johns-papias
+      - id: john-little-children
+        title: { en: "\"Little children, love one another\"" }
+        text: { en: "When John is too old to preach, his disciples carry him into church. He says only: \"Little children, love one another.\" Asked why he always says this, he answers: \"Because it is the Lord's command, and if this alone be done, it is enough.\"" }
+        when: { from: 98, to: 100, circa: true }
+        claim: john-love-one-another
+  - type: stay
+    id: john-death-ephesus
+    place: ephesus
+    when: { from: 98, to: 100, circa: true }
+    claim: john-dies-at-ephesus
+    episodes:
+      - id: john-falls-asleep
+        title: { en: "The last apostle" }
+        text: { en: "John dies of old age at Ephesus in the reign of Trajan and is buried near the city. With him the age of the apostles comes to an end." }
+        when: { from: 98, to: 100, circa: true }
+        claim: john-dies-at-ephesus
+  - type: stay
+    id: john-death-in-the-trench
+    place: ephesus
+    when: { from: 98, to: 100, circa: true }
+    claim: john-lies-down-in-grave
+    episodes:
+      - id: john-the-trench
+        title: { en: "Legend: the open grave" }
+        text: { en: "A legendary book, the Acts of John, tells that John had his friends dig a grave, lay down in it, wished them peace and died rejoicing." }
+        when: { from: 98, to: 100, circa: true }
+        claim: john-lies-down-in-grave
+      - id: john-sleeping-legend
+        title: { en: "Legend: only sleeping" }
+        text: { en: "Some people in Augustine's day said John was not dead but asleep in his tomb, and that the ground moved as he breathed. Augustine did not believe it — John's own Gospel says Jesus never promised he would not die." }
+        when: { from: 98, to: 100, circa: true }
+        claim: john-sleeps-in-tomb
+  - type: stay
+    id: john-death-killed-by-jews
+    place: jerusalem
+    when: { from: 44, to: 100, circa: true }
+    claim: john-killed-by-the-jews
+    episodes:
+      - id: john-papias-martyrdom
+        title: { en: "Martyred after all?" }
+        text: { en: "A summary of a lost book by Papias says John and his brother James were both killed by the Jews, as Jesus foretold: \"the cup that I drink you will drink.\" It gives no place or date, and most scholars think the report is muddled." }
+        when: { from: 44, to: 100, circa: true }
+        claim: john-killed-by-the-jews

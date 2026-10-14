@@ -1,0 +1,167 @@
+person: thaddaeus-jude
+claims:
+  - id: thaddaeus-jude-one-of-twelve
+    text: { en: "One of the Twelve is called Thaddaeus in Matthew and Mark and \"Judas of James\" in Luke; the lists line up name for name, so these are taken to be one man." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: matthew-gospel, locator: "10:3" }
+      - { source: mark-gospel, locator: "3:18" }
+      - { source: luke, locator: "6:16" }
+  - id: thaddaeus-jude-last-supper
+    text: { en: "At the Last Supper \"Judas, not Iscariot\" asks Jesus how he will show himself to the disciples and not to the world." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "14:22" }
+  - id: thaddaeus-jude-upper-room
+    text: { en: "After the Ascension \"Judas of James\" is with the eleven in the upper room in Jerusalem; Jesus' brothers are listed separately." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:13-14" }
+  - id: thaddaeus-jude-edessa
+    text: { en: "The Greek Acts of Thaddaeus make \"Lebbaeus, who also is Thaddaeus\", one of the Twelve, and say he preached in Edessa and healed King Abgar." }
+    when: { from: 30, to: 40, circa: true }
+    grade: D
+    citations:
+      - { source: acts-of-thaddaeus, locator: "opening: Lebbaeus of Edessa heals Abgar" }
+    notes: { en: "The earliest Edessa story (Eusebius) is about a Thaddaeus \"one of the Seventy\", not one of the Twelve; later texts merged the two." }
+  - id: thaddaeus-jude-abgar-eusebius
+    text: { en: "Eusebius says he translated documents from the archives of Edessa: after the Ascension, Thomas sent Thaddaeus, \"one of the Seventy\", to King Abgar, who was healed, and the city believed." }
+    when: { from: 30, to: 31, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "1.13.4-5" }
+      - { source: eusebius-he, locator: "1.13.10" }
+      - { source: eusebius-he, locator: "1.13.20" }
+    notes: { en: "Eusebius dates it to the year 340 of the Seleucid era (about AD 29/30). Scholars widely judge the Abgar story legendary." }
+  - id: thaddaeus-jude-death-berytus
+    text: { en: "The Acts of Thaddaeus and a late list of the apostles say he preached in Edessa, Mesopotamia and Syria, then \"fell asleep\" (died peacefully) at Berytus and was buried there." }
+    when: { from: 40, to: 90, circa: true }
+    grade: D
+    citations:
+      - { source: acts-of-thaddaeus, locator: "ending: death at Berytus" }
+      - { source: ps-hippolytus-twelve, locator: "10", quote: "Jude, who is also called Lebbaeus, preached to the people of Edessa, and to all Mesopotamia, and fell asleep at Berytus, and was buried there." }
+    alternativeTo: [thaddaeus-jude-death-armenia, thaddaeus-jude-death-persia]
+    notes: { en: "No source gives a year." }
+  - id: thaddaeus-jude-death-armenia
+    text: { en: "The Armenian historian Movses Khorenatsi says that Thaddaeus went to Armenia, and that he and his companions were martyred under King Sanatruk in the province of Shavarshan, now called Artaz." }
+    when: { from: 45, to: 90, circa: true }
+    grade: D
+    citations:
+      - { source: movses-khorenatsi, locator: "2.34" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Bartholomew, Matthew, Simon the Zealot and Thaddeus all died the martyrs death." }
+    alternativeTo: [thaddaeus-jude-death-berytus, thaddaeus-jude-death-persia]
+    notes: { en: "Movses is traditionally 5th-century, probably early 8th. The Armenian Church's date of AD 66 has no ancient basis. Vreugdenhil names no place." }
+  - id: thaddaeus-jude-artaz-location
+    text: { en: "Shavarshan/Artaz is placed at the Monastery of St Thaddeus (Qara Kelisa) in north-west Iran, a pilgrimage site of the apostle Thaddaeus listed by UNESCO." }
+    grade: E
+    citations:
+      - { source: movses-khorenatsi, locator: "2.34" }
+      - { source: unesco-whs-1262, locator: "St Thaddeus Monastery" }
+  - id: thaddaeus-jude-death-persia
+    text: { en: "The Latin Passion of Simon and Jude says Jude and Simon worked together in Persia, defeated the magicians Zaroes and Arphaxat, and were killed by pagan priests at a city called Suanir." }
+    when: { from: 45, to: 90, circa: true }
+    grade: D
+    citations:
+      - { source: passio-simonis-iudae, locator: "whole text (e-Clavis summary)" }
+      - { source: golden-legend, locator: "159 (Simon and Jude)" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Bartholomew, Matthew, Simon the Zealot and Thaddeus all died the martyrs death." }
+    alternativeTo: [thaddaeus-jude-death-berytus, thaddaeus-jude-death-armenia]
+    notes: { en: "Suanir cannot be located, so the region of Persis is shown. No source gives a year." }
+items:
+  - type: stay
+    id: thaddaeus-jude-jerusalem
+    place: jerusalem
+    when: { from: 30, to: 33, circa: true }
+    claim: thaddaeus-jude-upper-room
+    episodes:
+      - id: thaddaeus-jude-two-names
+        title: { en: "One man, two names" }
+        text: { en: "Matthew and Mark call this apostle Thaddaeus; Luke calls him Judas, son of James. He is not Judas Iscariot, the one who betrayed Jesus." }
+        when: { from: 28, to: 30, circa: true }
+        claim: thaddaeus-jude-one-of-twelve
+      - id: thaddaeus-jude-question
+        title: { en: "Why not to the world?" }
+        text: { en: "At the Last Supper this Judas asked Jesus: \"Lord, how is it that you will show yourself to us, and not to the world?\"" }
+        when: { from: 30, to: 33, circa: true }
+        claim: thaddaeus-jude-last-supper
+  - type: leg
+    id: thaddaeus-jude-to-edessa
+    from: jerusalem
+    to: edessa
+    via: [[36.31, 33.51], [37.16, 36.2]]
+    when: { from: 30, to: 40, circa: true }
+    mode: land
+    claim: thaddaeus-jude-edessa
+  - type: stay
+    id: thaddaeus-jude-edessa-stay
+    place: edessa
+    when: { from: 30, to: 40, circa: true }
+    claim: thaddaeus-jude-edessa
+    episodes:
+      - id: thaddaeus-jude-king-abgar
+        title: { en: "The sick king of Edessa" }
+        text: { en: "An old story says King Abgar of Edessa was ill and wrote to Jesus for help. After the Ascension a disciple called Thaddaeus came, the king was healed, and the city believed. The oldest version calls him one of the Seventy, not one of the Twelve." }
+        when: { from: 30, to: 31, circa: true }
+        claim: thaddaeus-jude-abgar-eusebius
+  - type: leg
+    id: thaddaeus-jude-edessa-to-berytus
+    from: edessa
+    to: berytus
+    via: [[37.16, 36.2], [36.72, 34.73]]
+    when: { from: 40, to: 90, circa: true }
+    mode: land
+    claim: thaddaeus-jude-death-berytus
+  - type: stay
+    id: thaddaeus-jude-death-berytus-stay
+    place: berytus
+    when: { from: 40, to: 90, circa: true }
+    claim: thaddaeus-jude-death-berytus
+    episodes:
+      - id: thaddaeus-jude-asleep-berytus
+        title: { en: "A peaceful end in Beirut?" }
+        text: { en: "Some old stories say Thaddaeus preached across Syria and Mesopotamia and then died peacefully in Berytus, today's Beirut." }
+        when: { from: 40, to: 90, circa: true }
+        claim: thaddaeus-jude-death-berytus
+  - type: leg
+    id: thaddaeus-jude-edessa-to-armenia
+    from: edessa
+    to: artaz
+    via: [[40.22, 37.91], [42.6, 39.25]]
+    when: { from: 45, to: 90, circa: true }
+    mode: land
+    claim: thaddaeus-jude-death-armenia
+  - type: stay
+    id: thaddaeus-jude-death-artaz
+    place: artaz
+    when: { from: 45, to: 90, circa: true }
+    claim: thaddaeus-jude-death-armenia
+    episodes:
+      - id: thaddaeus-jude-martyr-armenia
+        title: { en: "Martyr in Armenia?" }
+        text: { en: "Armenian Christians remember Thaddaeus as one of the first to bring them the gospel. Their historian says King Sanatruk had him killed at Artaz, where a monastery of St Thaddeus still stands." }
+        when: { from: 45, to: 90, circa: true }
+        claim: thaddaeus-jude-death-armenia
+  - type: leg
+    id: thaddaeus-jude-edessa-to-persia
+    from: edessa
+    to: persis
+    via: [[44.58, 33.1], [48.26, 32.19]]
+    when: { from: 45, to: 90, circa: true }
+    mode: land
+    claim: thaddaeus-jude-death-persia
+  - type: stay
+    id: thaddaeus-jude-death-persis
+    place: persis
+    when: { from: 45, to: 90, circa: true }
+    claim: thaddaeus-jude-death-persia
+    episodes:
+      - id: thaddaeus-jude-with-simon-in-persia
+        title: { en: "With Simon in Persia?" }
+        text: { en: "A Latin legend says Jude and Simon the Zealot travelled together to Persia, where they beat two magicians in a contest. In the end pagan priests killed them both." }
+        when: { from: 45, to: 90, circa: true }
+        claim: thaddaeus-jude-death-persia

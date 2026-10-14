@@ -1,0 +1,211 @@
+person: bartholomew
+claims:
+  # --- Gospel period and Jerusalem (grade A) ---
+  - id: bartholomew-in-upper-room
+    text: { en: "Bartholomew is named among the apostles waiting in the upper room in Jerusalem before Pentecost. This is the last time the New Testament mentions him." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:13" }
+  - id: bartholomew-one-of-twelve
+    text: { en: "Bartholomew is one of the twelve apostles; the first three Gospels always name him together with Philip." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: matthew-gospel, locator: "10:3" }
+      - { source: mark-gospel, locator: "3:18" }
+      - { source: luke, locator: "6:14" }
+  - id: bartholomew-nathanael-story
+    text: { en: "Philip brings Nathanael of Cana to Jesus, who calls him \"an Israelite indeed, in whom is no guile\"." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "1:45-51", quote: "Behold an Israelite indeed, in whom is no guile!" }
+      - { source: john-gospel, locator: "21:2" }
+    notes: { en: "The Gospel story is grade A, but the identification of Nathanael with Bartholomew is a later harmonising inference (explicit only from the 9th c.; the primary reference is unverified). Present it as 'many think…', not as fact." }
+
+  # --- Mission field: competing traditions ---
+  - id: bartholomew-india-pantaenus
+    text: { en: "Bartholomew preached in \"India\" and left there the Gospel of Matthew in Hebrew, which Pantaenus of Alexandria reportedly found among Christians there around 180–190." }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "5.10.3", quote: "For Bartholomew, one of the apostles, had preached to them, and left with them the writing of Matthew in the Hebrew language" }
+      - { source: jerome-vir-ill, locator: "36" }
+    alternativeTo: [bartholomew-india-near-ethiopia, bartholomew-armenia]
+    notes: { en: "Eusebius (c. 320) hedges twice ('is said', 'it is reported'); no earlier source mentions Bartholomew's mission. Which 'India' is meant is unknown: South Arabia, Aksum (Ethiopia) and India proper are all defended. Jerome's 'Brahmans' (Ep. 70.4) points to India proper, so the map marker is Muziris, the main Roman port of India — treat it as an uncertain area, not a point. Years are a placeholder." }
+  - id: bartholomew-india-near-ethiopia
+    text: { en: "In the division of the world by lot, Bartholomew received \"the part of India contiguous to\" Ethiopia — most likely South Arabia or the Red Sea coast." }
+    grade: C
+    citations:
+      - { source: socrates-he, locator: "1.19", quote: "Matthew was allotted Ethiopia; and Bartholomew the part of India contiguous to that country" }
+    alternativeTo: [bartholomew-india-pantaenus, bartholomew-armenia]
+    notes: { en: "Socrates (c. 440) relays Rufinus, HE 10.9 (c. 402; Latin 'India citerior', not checked online). In the same chapter Socrates calls Aksum 'India interior', so this 'nearer India' is most naturally South Arabia; Aden is used as the marker. The overland incense road is a modern placement for the map. Years are a placeholder." }
+  - id: bartholomew-armenia
+    text: { en: "Armenian tradition: Bartholomew, together with Thaddaeus, is one of the two apostles who first brought the gospel to Armenia." }
+    grade: E
+    citations:
+      - { source: armenian-bartholomew-tradition, locator: "Armenian Apostolic Church tradition (First Illuminators)" }
+    alternativeTo: [bartholomew-india-pantaenus, bartholomew-india-near-ethiopia]
+    notes: { en: "No early written source traced; the Armenian historiographical sources (e.g. Movses Khorenatsʿi) and the Latin Passio Bartholomaei are unverified. No secure year: dates are a placeholder." }
+
+  # --- Death: competing accounts (none early) ---
+  - id: bartholomew-death-india-beheaded
+    text: { en: "In a city of \"India\", Bartholomew heals the daughter of King Polymius and baptises him; the king's elder brother Astreges has him beaten with rods and beheaded." }
+    grade: D
+    citations:
+      - { source: martyrdom-bartholomew, locator: "final section", quote: "ordered the holy apostle Bartholomew to be beaten with rods; and after having been thus scourged, to be beheaded" }
+    alternativeTo: [bartholomew-death-allanum, bartholomew-death-flayed]
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Bartholomew, Matthew, Simon the Zealot and Thaddeus all died the martyrs death." }
+    notes: { en: "The Greek Martyrdom describes an India that stretches from Ethiopia to Media and names no city; the marker shares the uncertain 'India' point. The same Polymius story is later set in Armenia. No year given." }
+  - id: bartholomew-death-allanum
+    text: { en: "Bartholomew preached to the Indians and gave them Matthew's Gospel; he was crucified head downward and buried at Allanum, a town of Greater Armenia." }
+    grade: D
+    citations:
+      - { source: ps-hippolytus-twelve, locator: "6", quote: "was crucified with his head downward, and was buried in Allanum, a town of the great Armenia" }
+    alternativeTo: [bartholomew-death-india-beheaded, bartholomew-death-flayed]
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Bartholomew, Matthew, Simon the Zealot and Thaddeus all died the martyrs death." }
+    notes: { en: "Allanum is usually taken to be Albanopolis/Albac (Başkale). Pleiades 'Albanopolis' (481711) is a different town in Illyria and is NOT used. No year given." }
+  - id: bartholomew-death-flayed
+    text: { en: "Armenian tradition: Bartholomew is flayed alive and beheaded at Albanopolis (Albac) on the orders of King Astyages." }
+    grade: E
+    citations:
+      - { source: armenian-bartholomew-tradition, locator: "Albanopolis martyrdom tradition" }
+    alternativeTo: [bartholomew-death-india-beheaded, bartholomew-death-allanum]
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Bartholomew, Matthew, Simon the Zealot and Thaddeus all died the martyrs death." }
+    notes: { en: "The source of the iconography of Bartholomew holding his own skin. The Latin Passio that tells it is unverified here. No secure year." }
+  - id: bartholomew-albac-location
+    text: { en: "Armenian tradition places Bartholomew's martyrdom and the St Bartholomew monastery at Albac, near Başkale (Van region)." }
+    grade: E
+    citations:
+      - { source: armenian-bartholomew-tradition, locator: "St Bartholomew monastery, Albac" }
+items:
+  - type: stay
+    id: bartholomew-jerusalem
+    place: jerusalem
+    when: { from: 30, to: 33, circa: true }
+    claim: bartholomew-in-upper-room
+    episodes:
+      - id: bartholomew-ep-chosen
+        title: { en: "Philip's partner" }
+        text: { en: "Bartholomew is one of the Twelve, but the Bible gives us little more than his name. In the lists of apostles he always stands next to his friend Philip." }
+        when: { from: 28, to: 30, circa: true }
+        claim: bartholomew-one-of-twelve
+      - id: bartholomew-ep-nathanael
+        title: { en: "Was he Nathanael?" }
+        text: { en: "John's Gospel tells how Philip brought his friend Nathanael to Jesus, and Jesus called him \"an Israelite indeed, in whom is no guile\". Many Christians think Nathanael and Bartholomew are the same man, but the Bible never says so." }
+        when: { from: 28, to: 30, circa: true }
+        claim: bartholomew-nathanael-story
+
+  # Tradition A — "India" (Pantaenus report, grade C)
+  - type: leg
+    id: bartholomew-jerusalem-aila
+    from: jerusalem
+    to: aila
+    via: [[35.400, 31.050], [35.150, 30.200]]
+    when: { from: 33, to: 35, circa: true }
+    mode: land
+    claim: bartholomew-india-pantaenus
+  - type: leg
+    id: bartholomew-aila-muziris
+    from: aila
+    to: muziris
+    via: [[34.780, 29.000], [34.550, 28.300], [34.450, 27.960], [34.900, 27.300], [36.600, 24.500], [38.400, 20.500], [40.200, 17.300], [41.000, 15.800], [42.300, 14.300], [43.150, 12.950], [43.350, 12.580], [44.300, 12.250], [47.500, 12.600], [51.000, 12.900], [53.500, 13.200], [60.000, 12.000], [68.000, 10.500], [73.200, 9.300], [75.900, 10.150]]
+    when: { from: 35, to: 35, circa: true }
+    mode: sea
+    claim: bartholomew-india-pantaenus
+  - type: stay
+    id: bartholomew-india-stay
+    place: muziris
+    when: { from: 35, to: 60, circa: true }
+    claim: bartholomew-india-pantaenus
+    episodes:
+      - id: bartholomew-ep-hebrew-gospel
+        title: { en: "A Gospel left behind" }
+        text: { en: "About 150 years later, a teacher from Alexandria called Pantaenus travelled to \"India\". There, Eusebius reports, he found Christians who still had the Gospel of Matthew in Hebrew — left with them by the apostle Bartholomew." }
+        when: { from: 35, to: 60, circa: true }
+        claim: bartholomew-india-pantaenus
+  - type: stay
+    id: bartholomew-death-india-stay
+    place: muziris
+    when: { from: 60, to: 62, circa: true }
+    claim: bartholomew-death-india-beheaded
+    episodes:
+      - id: bartholomew-ep-polymius
+        title: { en: "The king's daughter" }
+        text: { en: "A later legend tells that Bartholomew stayed in a temple of an idol in \"India\", healed the daughter of King Polymius and baptised the king. But the king's brother Astreges had Bartholomew beaten with rods and beheaded." }
+        when: { from: 60, to: 62, circa: true }
+        claim: bartholomew-death-india-beheaded
+
+  # Tradition A′ — "the part of India next to Ethiopia" = South Arabia (grade C)
+  - type: leg
+    id: bartholomew-jerusalem-eudaimon-arabia
+    from: jerusalem
+    to: eudaimon-arabia
+    via: [[35.440, 30.330], [37.950, 26.780], [44.130, 17.490]]
+    when: { from: 33, to: 35, circa: true }
+    mode: land
+    claim: bartholomew-india-near-ethiopia
+  - type: stay
+    id: bartholomew-arabia-stay
+    place: eudaimon-arabia
+    when: { from: 35, to: 60, circa: true }
+    claim: bartholomew-india-near-ethiopia
+    episodes:
+      - id: bartholomew-ep-which-india
+        title: { en: "Which India?" }
+        text: { en: "For ancient writers \"India\" could mean many faraway lands. One church historian says Bartholomew's lot was \"the part of India next to Ethiopia\" — most likely southern Arabia, just across the Red Sea from Africa." }
+        when: { from: 35, to: 60, circa: true }
+        claim: bartholomew-india-near-ethiopia
+
+  # Tradition B — Armenia (grade E / D)
+  - type: leg
+    id: bartholomew-jerusalem-armenia
+    from: jerusalem
+    to: armenia-maior
+    via: [[36.309, 33.512], [38.787, 37.149], [40.230, 37.910]]
+    when: { from: 58, to: 60, circa: true }
+    mode: land
+    claim: bartholomew-armenia
+  - type: stay
+    id: bartholomew-armenia-stay
+    place: armenia-maior
+    when: { from: 60, to: 68, circa: true }
+    claim: bartholomew-armenia
+    episodes:
+      - id: bartholomew-ep-first-illuminators
+        title: { en: "Apostle of Armenia" }
+        text: { en: "The Armenian Church remembers Bartholomew and Thaddaeus as the two apostles who first brought the gospel to Armenia, high in the mountains between the Roman and Parthian empires." }
+        when: { from: 60, to: 68, circa: true }
+        claim: bartholomew-armenia
+  - type: leg
+    id: bartholomew-armenia-albac
+    from: armenia-maior
+    to: albac
+    when: { from: 68, to: 68, circa: true }
+    mode: land
+    claim: bartholomew-armenia
+  - type: stay
+    id: bartholomew-death-flayed-stay
+    place: albac
+    when: { from: 68, to: 69, circa: true }
+    claim: bartholomew-death-flayed
+    episodes:
+      - id: bartholomew-ep-flayed
+        title: { en: "Holding his own skin" }
+        text: { en: "Armenian tradition says King Astyages had Bartholomew skinned alive and beheaded at Albanopolis. That is why painters show him holding his own skin, as Michelangelo did in his Last Judgement." }
+        when: { from: 68, to: 69, circa: true }
+        claim: bartholomew-death-flayed
+  - type: stay
+    id: bartholomew-death-allanum-stay
+    place: albac
+    when: { from: 68, to: 69, circa: true }
+    claim: bartholomew-death-allanum
+    episodes:
+      - id: bartholomew-ep-upside-down
+        title: { en: "Crucified upside down" }
+        text: { en: "A late list of the apostles says something different: Bartholomew was crucified head downward and buried at Allanum, a town in Greater Armenia." }
+        when: { from: 68, to: 69, circa: true }
+        claim: bartholomew-death-allanum

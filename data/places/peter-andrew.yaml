@@ -1,0 +1,14 @@
+places:
+  - { id: joppa, name: { ancient: { en: Ioppe (Joppa) }, modern: { en: Jaffa } }, coords: [34.750, 32.053], pleiades: "https://pleiades.stoa.org/places/687931", kind: city }
+  - { id: vatican-hill, name: { ancient: { en: Vaticanus Mons }, modern: { en: "Vatican Hill, Rome" } }, coords: [12.450, 41.903], pleiades: "https://pleiades.stoa.org/places/463398874", kind: site }
+  - { id: scythia, name: { ancient: { en: Scythia }, modern: { en: "north of the Black Sea" } }, coords: [29.475, 46.689], pleiades: "https://pleiades.stoa.org/places/1273", kind: region }
+  - { id: epirus, name: { ancient: { en: Epirus }, modern: { en: "NW Greece / S Albania" } }, coords: [20.714, 39.685], pleiades: "https://pleiades.stoa.org/places/530871", kind: region }
+  - { id: amaseia, name: { ancient: { en: Amaseia }, modern: { en: Amasya } }, coords: [35.828, 40.667], pleiades: "https://pleiades.stoa.org/places/857018", kind: city }
+  - { id: sinope, name: { ancient: { en: Sinope }, modern: { en: Sinop } }, coords: [35.143, 42.026], pleiades: "https://pleiades.stoa.org/places/857321", kind: city }
+  - { id: nicaea, name: { ancient: { en: Nicaea }, modern: { en: İznik } }, coords: [29.715, 40.429], pleiades: "https://pleiades.stoa.org/places/511268", kind: city }
+  - { id: nicomedia, name: { ancient: { en: Nicomedia }, modern: { en: İzmit } }, coords: [29.920, 40.765], pleiades: "https://pleiades.stoa.org/places/511337", kind: city }
+  - { id: perinthus, name: { ancient: { en: Perinthus (Heraclea) }, modern: { en: Marmara Ereğlisi } }, coords: [27.953, 40.971], pleiades: "https://pleiades.stoa.org/places/511357", kind: city }
+  - { id: chersonesos, name: { ancient: { en: "Chersonesos (Korsun)" }, modern: { en: "near Sevastopol" } }, coords: [33.492, 44.611], pleiades: "https://pleiades.stoa.org/places/226564", kind: city }
+  - { id: tomis, name: { ancient: { en: Tomis }, modern: { en: Constanța } }, coords: [28.650, 44.173], pleiades: "https://pleiades.stoa.org/places/217016", kind: city }
+  - { id: kyiv, name: { ancient: { en: "Hills of Kyiv (no ancient city)" }, modern: { en: Kyiv } }, coords: [30.520, 50.450], kind: site, claim: andrew-kyiv-chronicle }
+  - { id: novgorod, name: { ancient: { en: "Novgorod (land of the Slovenes)" }, modern: { en: Veliky Novgorod } }, coords: [31.270, 58.520], kind: site, claim: andrew-kyiv-chronicle }

@@ -1,0 +1,236 @@
+person: james-brother-of-jesus
+claims:
+  - id: james-brother-of-jesus-unbelieving-brothers
+    text: { en: "James is named first among Jesus' brothers; during Jesus' ministry his brothers did not believe in him." }
+    when: { from: 27, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: mark-gospel, locator: "6:3" }
+      - { source: matthew-gospel, locator: "13:55" }
+      - { source: john-gospel, locator: "7:5" }
+    notes: { en: "Whether \"brother\" means a younger son of Mary and Joseph, a son of Joseph from an earlier marriage, or a cousin (Jerome) is disputed between church traditions; the map does not decide it." }
+  - id: james-brother-of-jesus-risen-lord-appears
+    text: { en: "The risen Lord \"appeared to James, then to all the apostles\"." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: 1-corinthians, locator: "15:7" }
+  - id: james-brother-of-jesus-upper-room
+    text: { en: "Jesus' brothers are with the apostles and Mary in the upper room in Jerusalem, praying." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:14" }
+  - id: james-brother-of-jesus-chosen-bishop
+    text: { en: "Clement of Alexandria says Peter, James and John chose James the Just as bishop of Jerusalem; Hegesippus says he took charge of the church together with the apostles." }
+    when: { from: 30, to: 33, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "2.1.2-3", quote: "(quoting Clement of Alexandria, Hypotyposes 6)" }
+      - { source: eusebius-he, locator: "2.23.4", quote: "(quoting Hegesippus) succeeded to the government of the Church in conjunction with the apostles" }
+      - { source: jerome-vir-ill, locator: "2" }
+  - id: james-brother-of-jesus-paul-first-visit
+    text: { en: "On his first visit to Jerusalem after his conversion, Paul sees Peter and \"none of the other apostles except James the Lord's brother\"." }
+    when: { from: 35, to: 37, circa: true }
+    grade: A
+    citations:
+      - { source: galatians, locator: "1:18-19" }
+      - { source: acts, locator: "9:26-28" }
+  - id: james-brother-of-jesus-leads-jerusalem
+    text: { en: "James is a leader of the Jerusalem church: Peter sends word to him after escaping prison, Paul counts him a \"pillar\", he gives the decisive judgment at the Jerusalem council, and Paul reports to him and the elders." }
+    when: { from: 41, to: 62, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "12:17" }
+      - { source: galatians, locator: "2:9" }
+      - { source: acts, locator: "15:13-21" }
+      - { source: acts, locator: "21:17-26" }
+  - id: james-brother-of-jesus-tell-james
+    text: { en: "After his release from prison Peter says, \"Tell these things to James and to the brothers.\"" }
+    when: { from: 41, to: 44, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "12:17" }
+  - id: james-brother-of-jesus-pillar
+    text: { en: "James, Cephas and John, \"who seemed to be pillars\", give Paul and Barnabas the right hand of fellowship." }
+    when: { from: 47, to: 49, circa: true }
+    grade: A
+    citations:
+      - { source: galatians, locator: "2:9" }
+  - id: james-brother-of-jesus-men-to-antioch
+    text: { en: "\"Certain men came from James\" to Antioch, and Peter stops eating with Gentile believers." }
+    when: { from: 48, to: 49, circa: true }
+    grade: A
+    citations:
+      - { source: galatians, locator: "2:11-13" }
+  - id: james-brother-of-jesus-council
+    text: { en: "At the Jerusalem council James gives the decisive judgment that Gentile believers should not be burdened with the law of circumcision." }
+    when: { from: 48, to: 50, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "15:13-21" }
+  - id: james-brother-of-jesus-paul-reports
+    text: { en: "On Paul's last visit to Jerusalem he reports to James and all the elders what God has done among the Gentiles." }
+    when: { from: 57, to: 57, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "21:17-26" }
+  - id: james-brother-of-jesus-letter
+    text: { en: "The New Testament letter of James is traditionally ascribed to James the brother of the Lord, though some already disputed this in antiquity." }
+    when: { from: 45, to: 62, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "2.23.25" }
+      - { source: jerome-vir-ill, locator: "2" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "epistles of Paul, James, Peter, John, and Jude" }
+    notes: { en: "The letter itself (James 1:1, grade A) names only \"James, a servant of God and of the Lord Jesus Christ\"." }
+  - id: james-brother-of-jesus-stoned-by-ananus
+    text: { en: "In 62, after the governor Festus has died and before Albinus arrives, the high priest Ananus has \"the brother of Jesus, the so-called Christ, James by name\" and some others condemned by the Sanhedrin and stoned; Ananus is deposed after three months." }
+    when: { from: 62, to: 62, circa: true }
+    grade: B
+    citations:
+      - { source: josephus-antiquities, locator: "20.9.1", quote: "Festus was now dead, and Albinus was but upon the road; so he assembled the sanhedrim of judges, and brought before them the brother of Jesus, who was called Christ, whose name was James… he delivered them to be stoned." }
+      - { source: eusebius-he, locator: "2.23.21-24" }
+    alternativeTo: [james-brother-of-jesus-thrown-from-temple]
+    notes: { en: "Josephus is a non-Christian, near-contemporary historian (written c. 93–94). Most historians follow his date." }
+  - id: james-brother-of-jesus-thrown-from-temple
+    text: { en: "Hegesippus tells that scribes and Pharisees set James on the pinnacle of the temple at Passover; when he confessed Jesus they threw him down, stoned him while he prayed for them, and a fuller killed him with a club. He was buried by the temple, \"and immediately Vespasian besieged them\"." }
+    when: { from: 62, to: 69, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "2.23.4-18", quote: "(quoting Hegesippus, Memoirs 5) I entreat you, Lord God our Father, forgive them, for they know not what they do" }
+      - { source: eusebius-he, locator: "2.1.4", quote: "(quoting Clement of Alexandria, Hypotyposes 7) one called the Just, who was thrown from the pinnacle of the temple and was beaten to death with a club by a fuller" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "The Jews killed the apostle James in Jerusalem. They took him to the roof of the temple and shoved him over the edge…" }
+    alternativeTo: [james-brother-of-jesus-stoned-by-ananus]
+    notes: { en: "Hegesippus wrote in the 170s; some details are widely regarded as embellishment. \"Immediately Vespasian besieged them\" would put the death just before 67–70, not 62. Vreugdenhil tells this story of \"the apostle James\" without distinguishing him from James son of Zebedee — it belongs to James the brother of the Lord. Clement already distinguished the two Jameses." }
+  - id: james-brother-of-jesus-revenge-saying
+    text: { en: "Origen and Eusebius quote Josephus as saying Jerusalem was destroyed to avenge James the Just — but no such sentence exists in our manuscripts of Josephus." }
+    when: { from: 62, to: 70, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "2.23.20" }
+    notes: { en: "Traceable only to Origen (Contra Celsum 1.47; Comm. Matt. 10.17, c. 230–250). Do not present it as a Josephus quotation." }
+  - id: james-brother-of-jesus-symeon-successor
+    text: { en: "After James's death, Symeon son of Clopas, a cousin of the Saviour, is chosen to lead the Jerusalem church." }
+    when: { from: 62, to: 70, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "4.22.4", quote: "(quoting Hegesippus)" }
+      - { source: eusebius-he, locator: "3.11" }
+    notes: { en: "Hegesippus' report is grade B; Eusebius' own framing in 3.11 (\"it is said\") is grade C." }
+  - id: james-brother-of-jesus-church-to-pella
+    text: { en: "Before the war of 66–70 the Jerusalem church, warned by a revelation, leaves the city and settles in Pella beyond the Jordan." }
+    when: { from: 66, to: 68, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "3.5.3" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "2", quote: "The Christians left in Jerusalem fled to Pella. A little place in the mountains, across the Jordan." }
+    notes: { en: "Eusebius does not name his source; the historicity of the flight is debated." }
+items:
+  - type: stay
+    id: james-brother-of-jesus-jerusalem-early
+    place: jerusalem
+    when: { from: 30, to: 40, circa: true }
+    claim: james-brother-of-jesus-risen-lord-appears
+    episodes:
+      - id: james-brother-of-jesus-not-believing
+        title: { en: "A brother who did not believe" }
+        text: { en: "James is one of the brothers of Jesus, well known in his home town of Nazareth. While Jesus is preaching and healing, his own brothers do not believe in him." }
+        when: { from: 27, to: 30, circa: true }
+        claim: james-brother-of-jesus-unbelieving-brothers
+      - id: james-brother-of-jesus-jesus-appears
+        title: { en: "Jesus appears to James" }
+        text: { en: "After the resurrection the Lord appears to James himself. The brother who did not believe becomes a follower." }
+        when: { from: 30, to: 33, circa: true }
+        claim: james-brother-of-jesus-risen-lord-appears
+      - id: james-brother-of-jesus-praying-together
+        title: { en: "Praying with the apostles" }
+        text: { en: "In the upper room in Jerusalem, Jesus' brothers pray together with the apostles and with Mary, his mother." }
+        when: { from: 30, to: 33, circa: true }
+        claim: james-brother-of-jesus-upper-room
+      - id: james-brother-of-jesus-made-bishop
+        title: { en: "Leader of the church" }
+        text: { en: "Later writers tell that the apostles chose James, called \"the Just\" because of his upright life, to lead the church in Jerusalem." }
+        when: { from: 30, to: 33, circa: true }
+        claim: james-brother-of-jesus-chosen-bishop
+      - id: james-brother-of-jesus-meets-paul
+        title: { en: "Paul's first visit" }
+        text: { en: "Three years after his conversion Paul comes to Jerusalem to get to know Peter. The only other apostle he sees is James, the Lord's brother." }
+        when: { from: 35, to: 37, circa: true }
+        claim: james-brother-of-jesus-paul-first-visit
+  - type: stay
+    id: james-brother-of-jesus-jerusalem-leader
+    place: jerusalem
+    when: { from: 41, to: 61, circa: true }
+    claim: james-brother-of-jesus-leads-jerusalem
+    episodes:
+      - id: james-brother-of-jesus-tell-james-episode
+        title: { en: "\"Tell James\"" }
+        text: { en: "An angel frees Peter from Herod's prison. Before he leaves Jerusalem, Peter says: \"Tell these things to James and to the brothers.\"" }
+        when: { from: 41, to: 44, circa: true }
+        claim: james-brother-of-jesus-tell-james
+      - id: james-brother-of-jesus-a-pillar
+        title: { en: "A pillar of the church" }
+        text: { en: "Paul calls James, Peter and John the \"pillars\" of the church. They shake hands with Paul and Barnabas as partners in the gospel." }
+        when: { from: 47, to: 49, circa: true }
+        claim: james-brother-of-jesus-pillar
+      - id: james-brother-of-jesus-men-from-james
+        title: { en: "Trouble in Antioch" }
+        text: { en: "Some men \"from James\" arrive in Antioch. Peter, afraid of them, stops eating with the Gentile believers — and Paul confronts him to his face." }
+        when: { from: 48, to: 49, circa: true }
+        claim: james-brother-of-jesus-men-to-antioch
+      - id: james-brother-of-jesus-council-judgment
+        title: { en: "The Jerusalem council" }
+        text: { en: "Must Gentile Christians be circumcised? After Peter, Paul and Barnabas have spoken, James gives his judgment: do not make it hard for Gentiles who turn to God." }
+        when: { from: 48, to: 50, circa: true }
+        claim: james-brother-of-jesus-council
+      - id: james-brother-of-jesus-letter-episode
+        title: { en: "The letter of James" }
+        text: { en: "The Bible contains a letter from \"James, a servant of God and of the Lord Jesus Christ\". From early times Christians believed it was written by James, the Lord's brother." }
+        when: { from: 45, to: 61, circa: true }
+        claim: james-brother-of-jesus-letter
+      - id: james-brother-of-jesus-paul-last-visit
+        title: { en: "Paul's report" }
+        text: { en: "Paul comes to Jerusalem for the last time and tells James and all the elders what God has done among the Gentiles. They praise God." }
+        when: { from: 57, to: 57, circa: true }
+        claim: james-brother-of-jesus-paul-reports
+  - type: stay
+    id: james-brother-of-jesus-death-josephus
+    place: jerusalem
+    when: { from: 62, to: 62, circa: false }
+    claim: james-brother-of-jesus-stoned-by-ananus
+    episodes:
+      - id: james-brother-of-jesus-stoned
+        title: { en: "Stoned by order of the high priest" }
+        text: { en: "The Jewish historian Josephus writes that in 62, while Rome's new governor is still on the road, the high priest Ananus has James and some others condemned and stoned. For this Ananus loses his office after only three months." }
+        when: { from: 62, to: 62, circa: false }
+        claim: james-brother-of-jesus-stoned-by-ananus
+      - id: james-brother-of-jesus-symeon
+        title: { en: "A new leader" }
+        text: { en: "After James's death the church in Jerusalem chooses Symeon son of Clopas, another relative of Jesus, as its leader." }
+        when: { from: 62, to: 70, circa: true }
+        claim: james-brother-of-jesus-symeon-successor
+      - id: james-brother-of-jesus-flight-to-pella
+        title: { en: "Flight to Pella" }
+        text: { en: "Before the Romans besiege Jerusalem, the Christians there are warned by a revelation to leave. They flee across the Jordan to the town of Pella." }
+        when: { from: 66, to: 68, circa: true }
+        claim: james-brother-of-jesus-church-to-pella
+  - type: stay
+    id: james-brother-of-jesus-death-hegesippus
+    place: jerusalem
+    when: { from: 62, to: 69, circa: true }
+    claim: james-brother-of-jesus-thrown-from-temple
+    episodes:
+      - id: james-brother-of-jesus-pinnacle
+        title: { en: "Thrown from the temple" }
+        text: { en: "Hegesippus tells that James was placed on the pinnacle of the temple to speak against Jesus, but instead he confessed him. Thrown down and stoned, James knelt and prayed, \"Forgive them, for they know not what they do,\" until a fuller struck him dead with his club." }
+        when: { from: 62, to: 69, circa: true }
+        claim: james-brother-of-jesus-thrown-from-temple
+      - id: james-brother-of-jesus-revenge-for-james
+        title: { en: "A quotation that is not there" }
+        text: { en: "Origen and Eusebius say Josephus wrote that Jerusalem fell to avenge James the Just. But no copy of Josephus we have contains that sentence." }
+        when: { from: 62, to: 70, circa: true }
+        claim: james-brother-of-jesus-revenge-saying

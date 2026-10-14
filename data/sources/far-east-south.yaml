@@ -1,0 +1,58 @@
+# Sources first needed by the Thomas, Bartholomew and Matthew imports.
+sources:
+  - id: socrates-he
+    author: Socrates Scholasticus
+    work: Church History (Historia Ecclesiastica)
+    written: { from: 439, to: 443, circa: true }
+    kind: church-writer
+    edition: "NPNF2 vol. 2, tr. Zenos"
+    url: "https://www.newadvent.org/fathers/2601.htm"
+  - id: clement-stromata
+    author: Clement of Alexandria
+    work: Stromata (Miscellanies)
+    written: { from: 198, to: 203, circa: true }
+    kind: church-writer
+    edition: "ANF vol. 2, tr. Wilson"
+    url: "https://www.newadvent.org/fathers/0210.htm"
+  - id: clement-paedagogus
+    author: Clement of Alexandria
+    work: Paedagogus (The Instructor)
+    written: { from: 190, to: 200, circa: true }
+    kind: church-writer
+    edition: "ANF vol. 2, tr. Wilson"
+    url: "https://www.newadvent.org/fathers/0209.htm"
+  - id: thomas-christian-tradition
+    author: Thomas Christians of Kerala and Tamil Nadu
+    work: Local tradition of St Thomas in Kerala and Mylapore (written down e.g. in the Thomas Ramban Pattu)
+    written: { from: 1500, to: 1700, circa: true }
+    kind: tradition
+    edition: "H. Hosten, The Song of Thomas Ramban (1928)"
+    url: "https://gpura.org/blog/?p=7773"
+  - id: armenian-bartholomew-tradition
+    author: Armenian Apostolic Church
+    work: Armenian church tradition of Bartholomew as apostle of Armenia
+    written: { from: 1200, to: 1300, circa: true }
+    kind: tradition
+    edition: "No early written source traced; summarised in the Catholic Encyclopedia (1912), \"St. Bartholomew\". Date = the St Bartholomew monastery at Albac."
+    url: "https://www.newadvent.org/cathen/02313c.htm"
+  - id: martyrdom-bartholomew
+    author: Anonymous
+    work: Martyrdom of the Holy and Glorious Apostle Bartholomew
+    written: { from: 400, to: 600, circa: true }
+    kind: apocryphon
+    edition: "ANF vol. 8 (date of composition uncertain)"
+    url: "https://www.newadvent.org/fathers/0825.htm"
+  - id: acts-of-matthew
+    author: Anonymous
+    work: Acts and Martyrdom of St. Matthew
+    written: { from: 200, to: 300, circa: true }
+    kind: apocryphon
+    edition: "ANF vol. 8 (3rd c. per Lipsius)"
+    url: "https://www.newadvent.org/fathers/0822.htm"
+  - id: passio-matthaei
+    author: Anonymous (Pseudo-Abdias collection)
+    work: Passion of Matthew (Passio Matthaei)
+    written: { from: 500, to: 600, circa: true }
+    kind: apocryphon
+    edition: "ECCA 937 / CANT 270"
+    url: "https://www.nasscal.com/e-clavis-christian-apocrypha/passion-of-matthew/"

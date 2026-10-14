@@ -1,0 +1,8 @@
+places:
+  - { id: smyrna, name: { ancient: { en: Smyrna }, modern: { en: Izmir } }, coords: [27.141, 38.417], pleiades: "https://pleiades.stoa.org/places/550893", kind: city }
+  - { id: pergamum, name: { ancient: { en: Pergamum }, modern: { en: Bergama } }, coords: [27.184, 39.133], pleiades: "https://pleiades.stoa.org/places/550812", kind: city }
+  - { id: thyatira, name: { ancient: { en: Thyateira }, modern: { en: Akhisar } }, coords: [27.836, 38.920], pleiades: "https://pleiades.stoa.org/places/550924", kind: city }
+  - { id: sardis, name: { ancient: { en: Sardis }, modern: { en: Sart } }, coords: [28.040, 38.488], pleiades: "https://pleiades.stoa.org/places/550867", kind: city }
+  - { id: philadelphia-lydia, name: { ancient: { en: Philadelpheia }, modern: { en: Alaşehir } }, coords: [28.517, 38.350], pleiades: "https://pleiades.stoa.org/places/550822", kind: city }
+  - { id: laodicea, name: { ancient: { en: Laodicea ad Lycum }, modern: { en: "near Denizli" } }, coords: [29.107, 37.836], pleiades: "https://pleiades.stoa.org/places/638955", kind: city }
+  - { id: iria-flavia, name: { ancient: { en: Iria Flavia }, modern: { en: Padrón } }, coords: [-8.655, 42.747], pleiades: "https://pleiades.stoa.org/places/236491", kind: city }

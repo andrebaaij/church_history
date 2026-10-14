@@ -1,0 +1,259 @@
+person: andrew
+claims:
+  - id: andrew-first-disciple
+    text: { en: "Andrew of Bethsaida, a disciple of John the Baptist, follows Jesus and brings his brother Simon: \"We have found the Messiah.\" Later Jesus calls the two brothers from their fishing." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "1:35-44" }
+      - { source: mark-gospel, locator: "1:16-18, 29" }
+      - { source: matthew-gospel, locator: "4:18-20" }
+  - id: andrew-with-jesus
+    text: { en: "Andrew is one of the Twelve; he finds the boy with five loaves, brings Greeks to Jesus with Philip, and sits with Peter, James and John on the Mount of Olives." }
+    when: { from: 28, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: mark-gospel, locator: "3:18; 13:3" }
+      - { source: john-gospel, locator: "6:8-9; 12:20-22" }
+  - id: andrew-upper-room
+    text: { en: "After the Ascension Andrew is with the eleven in the upper room in Jerusalem. This is the last time the New Testament mentions him." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:13" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "the divine commission the Lord Jesus gave to His disciples" }
+  - id: andrew-papias
+    text: { en: "Papias (early 2nd century) still asked visitors \"what Andrew … said\": Andrew's teaching was remembered, though no place or date is given." }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "3.39.4 (Papias)" }
+  - id: andrew-scythia
+    text: { en: "\"According to tradition\", Scythia, the lands north of the Black Sea, was allotted to Andrew as his mission field." }
+    when: { from: 33, to: 100, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "3.1.1 (Origen, Commentary on Genesis III)", quote: "Scythia to Andrew" }
+    alternativeTo: [andrew-epirus, andrew-achaia]
+    notes: { en: "No ancient source gives a date; the map shows the whole period after the Ascension. \"Scythia\" is vague and can mean the steppe from the Danube to the Don." }
+  - id: andrew-scythians-thracians
+    text: { en: "A late list of the apostles says Andrew preached to the Scythians and Thracians." }
+    grade: D
+    citations:
+      - { source: ps-hippolytus-twelve, locator: "2" }
+  - id: andrew-epirus
+    text: { en: "Gregory of Nazianzus pairs apostles with regions: \"Luke with Achaia, Andrew with Epirus\"." }
+    when: { from: 33, to: 100, circa: true }
+    grade: C
+    citations:
+      - { source: gregory-nazianzus-or33, locator: "33.11", quote: "Luke with Achaia, Andrew with Epirus" }
+    alternativeTo: [andrew-scythia, andrew-achaia]
+    notes: { en: "No date given; the map shows the whole period after the Ascension." }
+  - id: andrew-achaia
+    text: { en: "By about 400, church writers place Andrew's work in Achaia (Greece) and his death at Patras." }
+    when: { from: 33, to: 100, circa: true }
+    grade: C
+    citations:
+      - { source: jerome-ep59, locator: "59.5", quote: "with Andrew in Achaia" }
+      - { source: gaudentius-sermon17, locator: "Sermon 17" }
+    alternativeTo: [andrew-scythia, andrew-epirus]
+    notes: { en: "Jerome's letter checked via the NPNF summary only; Gaudentius via the Cult of Saints summary only. The tradition itself goes back to the apocryphal Acts of Andrew (late 2nd century, grade D)." }
+  - id: andrew-relics-constantinople
+    text: { en: "In 356/357 Emperor Constantius II has Andrew's remains moved from Achaia to the Church of the Holy Apostles in Constantinople." }
+    when: { from: 356, to: 357, circa: false }
+    grade: C
+    citations:
+      - { source: jerome-vir-ill, locator: "7", quote: "in the twentieth year of Constantius" }
+      - { source: philostorgius-he, locator: "3.2", quote: "translated the remains of St. Andrew the apostle from Achaia" }
+  - id: andrew-acts-itinerary
+    text: { en: "In the Acts of Andrew, as summarised by Gregory of Tours, Andrew travels from Pontus via Amaseia, Sinope, Nicaea, Nicomedia, Byzantium, Thrace, Perinthus, Philippi and Thessalonica to Patras." }
+    when: { from: 33, to: 100, circa: true }
+    grade: D
+    citations:
+      - { source: gregory-tours-andrew, locator: "2-21" }
+      - { source: acts-of-andrew, locator: "travel section (via Gregory's epitome)" }
+    notes: { en: "Apocryphal novel; no year given. Eusebius (HE 3.25.6) lists the Acts of Andrew among rejected books. Itinerary checked via the e-Clavis summary." }
+  - id: andrew-crucified-patras
+    text: { en: "At Patras the proconsul Aegeates has Andrew flogged and crucified, tied with ropes rather than nailed, after Andrew converts Aegeates' wife Maximilla; Andrew preaches from the cross for days before he dies." }
+    when: { from: 33, to: 100, circa: true }
+    grade: D
+    citations:
+      - { source: acts-of-andrew, locator: "Passion (Martyrdom)" }
+      - { source: gregory-tours-andrew, locator: "35-38" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "The apostle Andrew was also crucified, not on an ordinary, typical cross, but on a rough cross made of two beams nailed together in the centre. To this day, it is still known as 'St. Andrew's cross.'" }
+    notes: { en: "No ancient source gives a year of death. The X-shaped \"St Andrew's cross\" that Vreugdenhil describes is not in the Acts of Andrew or any early source; it is a medieval development." }
+  - id: andrew-olive-tree
+    text: { en: "A late list says Andrew was crucified hanging on an olive tree at Patras and buried there." }
+    grade: D
+    citations:
+      - { source: ps-hippolytus-twelve, locator: "2", quote: "crucified, suspended on an olive tree, at Patrae, a town of Achaia; and there too he was buried" }
+  - id: andrew-byzantium-stachys
+    text: { en: "An 8th-century list says Andrew preached at Byzantium and ordained Stachys (Rom 16:9) as its first bishop." }
+    when: { from: 33, to: 100, circa: true }
+    grade: D
+    citations:
+      - { source: ps-dorotheus-lists, locator: "Andrew" }
+    notes: { en: "F. Dvornik (1958) argues the legend was codified only in the 9th century, giving Constantinople an apostolic founder to match Peter at Rome. Later lists give the year 38; its source was not traced." }
+  - id: andrew-kyiv-chronicle
+    text: { en: "The Russian Primary Chronicle (c. 1113) tells that Andrew sailed from Sinope to Chersonesos (Korsun), went up the Dnieper, blessed the hills where Kyiv would stand and set up a cross, then visited the Slovenes near Novgorod." }
+    when: { from: 33, to: 100, circa: true }
+    grade: E
+    citations:
+      - { source: russian-primary-chronicle, locator: "Introduction (Andrew's journey)" }
+    notes: { en: "A legend first written down more than a thousand years later. The Andrew passage of the translation was not opened by the researcher. Kyiv and Novgorod coordinates are the modern cities named in the chronicle." }
+  - id: andrew-scythia-minor
+    text: { en: "Romanian Orthodox tradition says Andrew preached in Scythia Minor (Dobruja, around Tomis) and lived in a cave there." }
+    when: { from: 33, to: 100, circa: true }
+    grade: E
+    citations:
+      - { source: romanian-andrew-tradition, locator: "Dobruja cave tradition" }
+    notes: { en: "Built on Origen's \"Scythia\" read as the Roman province of Scythia Minor; the written tradition is 20th-century. The cave near Ion Corvin is not mapped (location unverified); Tomis stands for the region." }
+items:
+  - type: stay
+    id: andrew-jerusalem
+    place: jerusalem
+    when: { from: 30, to: 33, circa: true }
+    claim: andrew-upper-room
+    episodes:
+      - id: andrew-we-have-found-messiah
+        title: { en: "\"We have found the Messiah!\"" }
+        text: { en: "Andrew, a fisherman from Bethsaida, was first a follower of John the Baptist. When John pointed to Jesus, Andrew followed him, then ran to fetch his brother Simon: \"We have found the Messiah!\"" }
+        when: { from: 28, to: 30, circa: true }
+        claim: andrew-first-disciple
+      - id: andrew-five-loaves
+        title: { en: "Five loaves and two fish" }
+        text: { en: "When thousands of hungry people sit before Jesus, it is Andrew who finds a boy with five loaves and two fish. Later he and Philip bring some Greeks who want to see Jesus." }
+        when: { from: 28, to: 33, circa: true }
+        claim: andrew-with-jesus
+      - id: andrew-in-upper-room
+        title: { en: "Last seen in the upper room" }
+        text: { en: "After Jesus goes up to heaven, Andrew prays with the other apostles in the upper room in Jerusalem. After this, the Bible does not mention him again." }
+        when: { from: 30, to: 33, circa: true }
+        claim: andrew-upper-room
+      - id: andrew-remembered-by-papias
+        title: { en: "Remembered words" }
+        text: { en: "Decades later, Papias of Hierapolis still asked travellers what Andrew had said. People remembered his teaching, even if they did not record where he went." }
+        when: { from: 30, to: 33, circa: true }
+        claim: andrew-papias
+  - type: stay
+    id: andrew-in-scythia
+    place: scythia
+    when: { from: 33, to: 100, circa: true }
+    claim: andrew-scythia
+    episodes:
+      - id: andrew-allotted-scythia
+        title: { en: "Sent to Scythia" }
+        text: { en: "Origen, writing around 230, passes on a tradition that the apostles divided the world between them, and that Andrew received Scythia, the wild lands north of the Black Sea." }
+        when: { from: 33, to: 100, circa: true }
+        claim: andrew-scythia
+      - id: andrew-scythians-and-thracians
+        title: { en: "Scythians and Thracians" }
+        text: { en: "A much later list of the apostles adds that Andrew preached to both the Scythians and the Thracians." }
+        when: { from: 33, to: 100, circa: true }
+        claim: andrew-scythians-thracians
+  - type: stay
+    id: andrew-in-epirus
+    place: epirus
+    when: { from: 33, to: 100, circa: true }
+    claim: andrew-epirus
+    episodes:
+      - id: andrew-with-epirus
+        title: { en: "Andrew with Epirus" }
+        text: { en: "Around 380, Gregory of Nazianzus lists the apostles with their regions and links Andrew with Epirus in north-western Greece." }
+        when: { from: 33, to: 100, circa: true }
+        claim: andrew-epirus
+  - type: stay
+    id: andrew-in-achaia
+    place: patrae
+    when: { from: 33, to: 100, circa: true }
+    claim: andrew-achaia
+    episodes:
+      - id: andrew-with-achaia
+        title: { en: "Andrew in Achaia" }
+        text: { en: "Jerome and Gaudentius, writing around 400, place Andrew's work in Achaia, southern Greece, and his death at the port of Patras." }
+        when: { from: 33, to: 100, circa: true }
+        claim: andrew-achaia
+      - id: andrew-relics-moved
+        title: { en: "Moved to Constantinople" }
+        text: { en: "In 357 the emperor Constantius had Andrew's remains carried from Achaia to the new Church of the Holy Apostles in Constantinople. So by then Christians already believed Andrew had died in Greece." }
+        when: { from: 356, to: 357, circa: false }
+        claim: andrew-relics-constantinople
+  - type: leg
+    id: andrew-amaseia-sinope
+    from: amaseia
+    to: sinope
+    via: [[35.60, 41.30]]
+    when: { from: 33, to: 100, circa: true }
+    mode: land
+    claim: andrew-acts-itinerary
+    episodes:
+      - id: andrew-black-sea-journey
+        title: { en: "A legendary journey" }
+        text: { en: "The Acts of Andrew, a 2nd-century novel, sends Andrew on a long journey from Pontus around the Black Sea and through Greece, doing miracles in every city. It is a legend, not history, but it shaped how later Christians remembered him." }
+        when: { from: 33, to: 100, circa: true }
+        claim: andrew-acts-itinerary
+  - { type: leg, id: andrew-sinope-nicaea, from: sinope, to: nicaea, via: [[34.20, 41.50], [31.60, 40.74]], when: { from: 33, to: 100, circa: true }, mode: land, claim: andrew-acts-itinerary }
+  - { type: leg, id: andrew-nicaea-nicomedia, from: nicaea, to: nicomedia, when: { from: 33, to: 100, circa: true }, mode: land, claim: andrew-acts-itinerary }
+  - { type: leg, id: andrew-nicomedia-byzantium, from: nicomedia, to: byzantium, via: [[29.40, 40.85], [29.03, 40.99]], when: { from: 33, to: 100, circa: true }, mode: land, claim: andrew-acts-itinerary }
+  - { type: leg, id: andrew-byzantium-perinthus, from: byzantium, to: perinthus, via: [[28.50, 41.05]], when: { from: 33, to: 100, circa: true }, mode: land, claim: andrew-acts-itinerary }
+  - { type: leg, id: andrew-perinthus-philippi, from: perinthus, to: philippi, via: [[27.50, 41.10], [26.40, 40.95], [25.90, 40.95], [24.90, 41.05]], when: { from: 33, to: 100, circa: true }, mode: land, claim: andrew-acts-itinerary }
+  - { type: leg, id: andrew-philippi-thessalonica, from: philippi, to: thessalonica, via: [[23.85, 40.82], [23.50, 40.65]], when: { from: 33, to: 100, circa: true }, mode: land, claim: andrew-acts-itinerary }
+  - { type: leg, id: andrew-thessalonica-patrae, from: thessalonica, to: patrae, via: [[22.42, 39.64], [22.40, 38.90], [21.83, 38.39]], when: { from: 33, to: 100, circa: true }, mode: land, claim: andrew-acts-itinerary }
+  - type: stay
+    id: andrew-martyrdom
+    place: patrae
+    when: { from: 33, to: 100, circa: true }
+    claim: andrew-crucified-patras
+    episodes:
+      - id: andrew-and-aegeates
+        title: { en: "The governor's anger" }
+        text: { en: "According to the Acts of Andrew, Maximilla, wife of the Roman governor Aegeates, became a Christian through Andrew. Furious, Aegeates had Andrew flogged and crucified." }
+        when: { from: 33, to: 100, circa: true }
+        claim: andrew-crucified-patras
+      - id: andrew-preaches-from-cross
+        title: { en: "Preaching from the cross" }
+        text: { en: "The story says Andrew was tied to the cross with ropes instead of nails, so that he would suffer longer. For days he kept preaching to the crowd from the cross before he died." }
+        when: { from: 33, to: 100, circa: true }
+        claim: andrew-crucified-patras
+      - id: andrew-hung-on-olive-tree
+        title: { en: "On an olive tree" }
+        text: { en: "Another late list tells it differently: Andrew was hung on an olive tree at Patras and buried there. The famous X-shaped cross appears only in the Middle Ages." }
+        when: { from: 33, to: 100, circa: true }
+        claim: andrew-olive-tree
+  - type: stay
+    id: andrew-byzantium
+    place: byzantium
+    when: { from: 33, to: 100, circa: true }
+    claim: andrew-byzantium-stachys
+    episodes:
+      - id: andrew-ordains-stachys
+        title: { en: "Founder of Constantinople's church?" }
+        text: { en: "Centuries later, when Constantinople had become a great capital, a list claimed that Andrew had founded its church and made Stachys its first bishop. This gave the city an apostle of its own, like Peter in Rome." }
+        when: { from: 33, to: 100, circa: true }
+        claim: andrew-byzantium-stachys
+  - { type: leg, id: andrew-sinope-chersonesos, from: sinope, to: chersonesos, via: [[34.50, 43.50], [33.40, 44.45]], when: { from: 33, to: 100, circa: true }, mode: sea, claim: andrew-kyiv-chronicle }
+  - { type: leg, id: andrew-chersonesos-kyiv, from: chersonesos, to: kyiv, via: [[33.70, 45.30], [33.40, 46.80], [35.10, 47.85], [34.60, 48.50], [33.00, 49.10]], when: { from: 33, to: 100, circa: true }, mode: land, claim: andrew-kyiv-chronicle }
+  - type: stay
+    id: andrew-kyiv
+    place: kyiv
+    when: { from: 33, to: 100, circa: true }
+    claim: andrew-kyiv-chronicle
+    episodes:
+      - id: andrew-blesses-kyiv-hills
+        title: { en: "A cross on the hills" }
+        text: { en: "A chronicle written in Kyiv around 1113 tells that Andrew sailed up the river Dnieper, climbed the hills by the river, blessed them and set up a cross, saying a great city would one day stand there." }
+        when: { from: 33, to: 100, circa: true }
+        claim: andrew-kyiv-chronicle
+  - { type: leg, id: andrew-kyiv-novgorod, from: kyiv, to: novgorod, via: [[30.80, 54.80]], when: { from: 33, to: 100, circa: true }, mode: land, claim: andrew-kyiv-chronicle }
+  - type: stay
+    id: andrew-in-scythia-minor
+    place: tomis
+    when: { from: 33, to: 100, circa: true }
+    claim: andrew-scythia-minor
+    episodes:
+      - id: andrew-dobruja-cave
+        title: { en: "The cave in Dobruja" }
+        text: { en: "In Romania, people say Andrew preached in Dobruja near the Black Sea and lived in a cave there. This tradition is modern and builds on Origen's word \"Scythia\"." }
+        when: { from: 33, to: 100, circa: true }
+        claim: andrew-scythia-minor

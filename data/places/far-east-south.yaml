@@ -1,0 +1,15 @@
+# Places first needed by the Thomas, Bartholomew and Matthew imports.
+# Pleiades ids checked against https://pleiades.stoa.org/places/<id>/json on 2026-10-14.
+places:
+  - { id: muziris, name: { ancient: { en: Muziris }, modern: { en: "Pattanam, near Kodungallur" } }, coords: [76.213, 10.154], pleiades: "https://pleiades.stoa.org/places/50146", kind: city }
+  - { id: berenike, name: { ancient: { en: Berenike }, modern: { en: "Berenice, near Ras Banas" } }, coords: [35.475, 23.911], pleiades: "https://pleiades.stoa.org/places/785986", kind: city }
+  - { id: coptos, name: { ancient: { en: Coptos }, modern: { en: Qift } }, coords: [32.816, 25.996], pleiades: "https://pleiades.stoa.org/places/786010", kind: city }
+  - { id: aila, name: { ancient: { en: Aila (Aelana) }, modern: { en: Aqaba } }, coords: [35.000, 29.531], pleiades: "https://pleiades.stoa.org/places/746700", kind: city }
+  - { id: barbarikon, name: { ancient: { en: Barbarikon }, modern: { en: "Indus delta, near Karachi" } }, coords: [69.022, 24.924], pleiades: "https://pleiades.stoa.org/places/59734", kind: city }
+  - { id: taxila, name: { ancient: { en: Taxila (Sirkap) }, modern: { en: "Sirkap, Taxila" } }, coords: [72.829, 33.755], pleiades: "https://pleiades.stoa.org/places/801825162", kind: city }
+  - { id: calamina, name: { ancient: { en: Calamina }, modern: { en: "Coromandel coast, near Chennai" } }, coords: [80.170, 12.847], pleiades: "https://pleiades.stoa.org/places/49933", kind: city }
+  - { id: mylapore, name: { ancient: { en: Mylapore }, modern: { en: "Mylapore, Chennai" } }, coords: [80.270, 13.030], kind: site, claim: thomas-mylapore-location }
+  - { id: eudaimon-arabia, name: { ancient: { en: Eudaimon Arabia (Adane) }, modern: { en: Aden } }, coords: [45.039, 12.772], pleiades: "https://pleiades.stoa.org/places/39269", kind: city }
+  - { id: armenia-maior, name: { ancient: { en: Armenia Maior }, modern: { en: Armenia } }, coords: [45.031, 40.835], pleiades: "https://pleiades.stoa.org/places/863747", kind: region }
+  - { id: albac, name: { ancient: { en: Albanopolis (Armenian) }, modern: { en: "Albac, near Başkale" } }, coords: [44.020, 38.050], kind: site, claim: bartholomew-albac-location }
+  - { id: pontus, name: { ancient: { en: Pontus }, modern: { en: "Black Sea coast of north-east Turkey" } }, coords: [37.923, 40.221], pleiades: "https://pleiades.stoa.org/places/857287", kind: region }

@@ -1,0 +1,9 @@
+places:
+  - { id: berytus, name: { ancient: { en: Berytus }, modern: { en: Beirut } }, coords: [35.511, 33.899], pleiades: "https://pleiades.stoa.org/places/678060", kind: city }
+  - { id: eleutheropolis, name: { ancient: { en: Eleutheropolis }, modern: { en: Beit Guvrin } }, coords: [34.891, 31.614], pleiades: "https://pleiades.stoa.org/places/687854", kind: city }
+  - { id: ostrakine, name: { ancient: { en: Ostrakine }, modern: { en: "El-Felusiyat, North Sinai" } }, coords: [33.431, 31.116], pleiades: "https://pleiades.stoa.org/places/687993", kind: city }
+  - { id: aegyptus, name: { ancient: { en: Aegyptus }, modern: { en: Egypt } }, coords: [31.2, 30.0], pleiades: "https://pleiades.stoa.org/places/981503", kind: region }
+  - { id: persis, name: { ancient: { en: Persis }, modern: { en: "Fars, Iran" } }, coords: [52.491, 30.103], pleiades: "https://pleiades.stoa.org/places/922698", kind: region }
+  - { id: dioscurias, name: { ancient: { en: Dioscurias (Sebastopolis) }, modern: { en: Sukhumi } }, coords: [41.011, 42.998], pleiades: "https://pleiades.stoa.org/places/857107", kind: city }
+  - { id: britannia, name: { ancient: { en: Britannia }, modern: { en: Britain } }, coords: [-2.5, 52.5], pleiades: "https://pleiades.stoa.org/places/981513", kind: region }
+  - { id: artaz, name: { ancient: { en: Shavarshan (Artaz) }, modern: { en: "St Thaddeus Monastery, Chaldoran, Iran" } }, coords: [44.543, 39.089], kind: site, claim: thaddaeus-jude-artaz-location }

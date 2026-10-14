@@ -1,0 +1,458 @@
+person: peter
+claims:
+  - id: peter-called
+    text: { en: "Simon son of John, a fisherman from Bethsaida, is brought to Jesus by his brother Andrew and named Cephas (Peter). He and Andrew have a house in Capernaum, and Peter is married." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "1:40-44" }
+      - { source: mark-gospel, locator: "1:16-18, 29-31" }
+      - { source: 1-corinthians, locator: "9:5" }
+  - id: peter-leads-eleven
+    text: { en: "After the Ascension Peter is named first among the eleven in Jerusalem and leads the choice of Matthias." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:13-26" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "the divine commission the Lord Jesus gave to His disciples shortly before He ascended" }
+    notes: { en: "Ascension c. 30 or 33, depending on whether the crucifixion is placed in 30 or 33." }
+  - id: peter-pentecost
+    text: { en: "At Pentecost Peter preaches to the crowd in Jerusalem; about 3,000 are baptised." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "2:14-41" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "On the day of Pentecost, Peter spoke to the multitude. He proved to them from Scripture that Jesus is the Christ" }
+  - id: peter-temple-arrests
+    text: { en: "Peter heals a lame man at the temple; Peter and John are arrested twice and flogged." }
+    when: { from: 30, to: 34, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "3:1-5:42" }
+  - id: peter-samaria
+    text: { en: "Peter and John are sent from Jerusalem to the new believers in Samaria; Peter rebukes Simon Magus; they return to Jerusalem." }
+    when: { from: 31, to: 35, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "8:14-25" }
+    notes: { en: "After Stephen's death; no fixed date anchor." }
+  - id: peter-paul-visit
+    text: { en: "Three years after his conversion, Paul goes up to Jerusalem and stays fifteen days with Cephas." }
+    when: { from: 34, to: 37, circa: true }
+    grade: A
+    citations:
+      - { source: galatians, locator: "1:18" }
+      - { source: acts, locator: "9:26-28" }
+  - id: peter-lydda
+    text: { en: "Peter visits the believers at Lydda and heals Aeneas, who had been paralysed for eight years." }
+    when: { from: 35, to: 40, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "9:32-35" }
+  - id: peter-joppa
+    text: { en: "At Joppa Peter raises Tabitha (Dorcas), stays with Simon the tanner and sees the vision of the sheet." }
+    when: { from: 35, to: 40, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "9:36-43; 10:9-23" }
+  - id: peter-cornelius
+    text: { en: "Peter goes from Joppa to Caesarea; the Roman officer Cornelius and his household receive the Spirit and are baptised, the first Gentile converts." }
+    when: { from: 35, to: 40, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "10:23-48" }
+  - id: peter-defends-gentiles
+    text: { en: "Back in Jerusalem, Peter defends the baptism of Gentiles before the church." }
+    when: { from: 37, to: 41, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "11:1-18" }
+  - id: peter-prison-escape
+    text: { en: "King Herod Agrippa I kills James son of Zebedee and imprisons Peter; an angel frees him and he \"went to another place\"." }
+    when: { from: 41, to: 44, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "12:1-19" }
+      - { source: josephus-antiquities, locator: "19.343-352", quote: "death of Agrippa I (AD 44) — date anchor only" }
+    notes: { en: "Agrippa I ruled Judea 41–44; Josephus dates his death to 44. Acts does not say where \"another place\" was." }
+  - id: peter-council
+    text: { en: "At the Jerusalem meeting Peter speaks for accepting Gentiles without circumcision; James, Cephas and John, the \"pillars\", agree that Peter goes to the Jews." }
+    when: { from: 48, to: 49, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "15:7-11" }
+      - { source: galatians, locator: "2:1-10" }
+    notes: { en: "Date from the Gallio-anchored chronology of Paul (Paul in Corinth c. 50–52)." }
+  - id: peter-antioch-clash
+    text: { en: "When Cephas comes to Antioch, Paul opposes him to his face for drawing back from eating with Gentiles." }
+    when: { from: 48, to: 50, circa: true }
+    grade: A
+    citations:
+      - { source: galatians, locator: "2:11-14" }
+  - id: peter-antioch-bishop
+    text: { en: "Later succession lists make Peter the first leader of the church at Antioch, followed by Evodius and Ignatius." }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "3.22; 3.36.2", quote: "Ignatius … chosen bishop of Antioch, second in succession to Peter" }
+      - { source: jerome-vir-ill, locator: "1" }
+    notes: { en: "The New Testament shows Peter at Antioch (Gal 2:11) but not leading the church there; Acts 13:1 lists Antioch's leaders without him." }
+  - id: peter-cephas-party
+    text: { en: "At Corinth some believers say \"I follow Cephas\"; Paul mentions that Peter travels with his wife. This does not by itself say Peter visited Corinth." }
+    when: { from: 53, to: 55, circa: true }
+    grade: A
+    citations:
+      - { source: 1-corinthians, locator: "1:12; 3:22; 9:5" }
+  - id: peter-corinth-dionysius
+    text: { en: "Dionysius, bishop of Corinth (c. 170), writes that Peter and Paul both planted the church at Corinth and then taught together in Italy." }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "2.25.8 (Dionysius of Corinth, Letter to the Romans)", quote: "both planted and likewise taught us in our Corinth" }
+    notes: { en: "Paul calls himself the planter at Corinth (1 Cor 3:6; 4:15), which is in tension with Dionysius. No source gives a date; the map window c. 50–64 is an editorial estimate between Antioch and Rome." }
+  - id: peter-asia-minor
+    text: { en: "Origen says Peter \"appears to have preached\" to the Jews of the dispersion in Pontus, Galatia, Bithynia, Cappadocia and Asia — the regions 1 Peter is addressed to." }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "3.1.2 (Origen, Commentary on Genesis III); 3.4.2" }
+      - { source: 1-peter, locator: "1:1", quote: "address of the letter only" }
+    notes: { en: "Origen infers this from the letter's address; the letter shows only that its author wrote to Christians there. No date is given; the map window c. 50–64 is an editorial estimate." }
+  - id: peter-rome-founding
+    text: { en: "Irenaeus (c. 180) says Peter and Paul preached in Rome and laid the foundations of the church there." }
+    grade: B
+    citations:
+      - { source: irenaeus-ah, locator: "3.1.1; 3.3.2", quote: "the Church founded and organized at Rome by the two most glorious apostles, Peter and Paul" }
+    alternativeTo: [peter-rome-early-claudius]
+    notes: { en: "No ancient source gives Peter's arrival year. Paul's letter to the Romans (c. 57, ch. 16) and Acts 28 (c. 60–62) do not mention him in Rome, so the map shows a late arrival, c. 60–64 (editorial estimate). A church already existed in Rome before either apostle came (Rom 1:8-13)." }
+  - id: peter-mark-gospel
+    text: { en: "Mark, Peter's interpreter, writes down what Peter preached about the Lord." }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "3.39.15 (Papias)" }
+      - { source: eusebius-he, locator: "6.14.6 (Clement of Alexandria, Hypotyposes)" }
+      - { source: irenaeus-ah, locator: "3.1.1" }
+  - id: peter-1peter-babylon
+    text: { en: "1 Peter is sent from \"she who is in Babylon\", with Mark; Papias and Clement of Alexandria, as reported by Eusebius, take \"Babylon\" as a code-name for Rome." }
+    grade: B
+    citations:
+      - { source: 1-peter, locator: "5:12-13" }
+      - { source: eusebius-he, locator: "2.15.2", quote: "they say that he wrote [1 Peter] in Rome itself … when he calls the city, by a figure, Babylon" }
+      - { source: revelation, locator: "14:8; 17:5, 18", quote: "Revelation also uses \"Babylon\" for Rome" }
+    notes: { en: "It is not fully clear whether the Babylon = Rome note is from Papias/Clement (B) or Eusebius's own inference (C). Many scholars date 1 Peter c. 70–90 and treat it as written in Peter's name. Literal Babylon (Calvin) and Babylon in Egypt (Coptic) are other readings — see research/import-issues/peter-andrew.md." }
+  - id: peter-rome-early-claudius
+    text: { en: "Eusebius says Peter came to Rome under Claudius to oppose Simon Magus; Jerome adds that he arrived in Claudius's second year (42) and led the church there for 25 years." }
+    when: { from: 42, to: 67, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "2.14.6" }
+      - { source: jerome-vir-ill, locator: "1", quote: "held the sacerdotal chair there for twenty-five years" }
+    alternativeTo: [peter-rome-founding]
+    notes: { en: "Against it: Acts puts Peter in Jerusalem c. 48/49 (Acts 15) and Galatians in Antioch (Gal 2:11); Romans 16 (c. 57) greets many people in Rome but not Peter." }
+  - id: peter-martyred-rome
+    text: { en: "Peter suffers martyrdom after \"numerous labours\"; early writers link his death with Rome." }
+    when: { from: 64, to: 68, circa: true }
+    grade: B
+    citations:
+      - { source: 1-clement, locator: "5.4", quote: "Peter, through unrighteous envy, endured not one or two, but numerous labours; and when he had at length suffered martyrdom, departed to the place of glory" }
+      - { source: ignatius-romans, locator: "4.3", quote: "I do not, as Peter and Paul, issue commandments unto you" }
+      - { source: eusebius-he, locator: "2.25.8 (Dionysius of Corinth)", quote: "suffered martyrdom at the same time" }
+    notes: { en: "Window from Nero's persecution after the fire of Rome (July 64; Tacitus, Annals 15.44) to Nero's death (June 68). Jerome (De vir. ill. 1) gives the fourteenth year of Nero (67/68). Scholars disagree between 64/65 and 67/68." }
+  - id: peter-death-foretold
+    text: { en: "Jesus tells Peter that when he is old he will stretch out his hands and be led where he does not want to go, showing \"by what death he should glorify God\"." }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "21:18-19" }
+      - { source: 2-peter, locator: "1:14" }
+    notes: { en: "A prophecy only; reading it as crucifixion is an interpretation (Tertullian, c. 200)." }
+  - id: peter-crucified
+    text: { en: "At Rome under Nero, Peter is crucified." }
+    when: { from: 64, to: 68, circa: true }
+    grade: B
+    citations:
+      - { source: tertullian-praescription, locator: "36", quote: "Peter endures a passion like his Lord's" }
+      - { source: tertullian-scorpiace, locator: "15", quote: "Then is Peter girt by another, when he is made fast to the cross." }
+      - { source: lactantius-mort-pers, locator: "2", quote: "crucified Peter, and slew Paul" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "the soldiers beheaded Paul and crucified Peter, probably upside down" }
+  - id: peter-crucified-head-down
+    text: { en: "Peter is crucified head-downward, at his own request." }
+    when: { from: 64, to: 68, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "3.1.2 (Origen, Commentary on Genesis III)", quote: "having come to Rome, he was crucified head-downwards; for he had requested that he might suffer in this way" }
+      - { source: jerome-vir-ill, locator: "1", quote: "asserting that he was unworthy to be crucified in the same manner as his Lord" }
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "6", quote: "Many Christians are crucified. Just think of the Apostle Peter, who was crucified upside down." }
+    notes: { en: "The earliest narrative of the head-down crucifixion is the apocryphal Acts of Peter 37–38 (c. 180–190, grade D); Origen may depend on it." }
+  - id: peter-quo-vadis
+    text: { en: "Fleeing Rome, Peter meets the Lord, asks \"Lord, where are you going?\" and turns back to Rome." }
+    grade: D
+    citations:
+      - { source: acts-of-peter, locator: "35" }
+    notes: { en: "Chapter numbers confirmed via secondary summaries only." }
+  - id: peter-wife-martyr
+    text: { en: "Clement of Alexandria reports that \"they say\" Peter saw his wife led away to death and called to her: \"Remember the Lord.\"" }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "3.30.2 (Clement of Alexandria, Stromata 7.11)" }
+  - id: peter-vatican-trophy
+    text: { en: "Gaius of Rome (c. 200) points to the \"trophies\" of the founders of the Roman church on the Vatican and on the Ostian Way." }
+    when: { from: 64, to: 68, circa: true }
+    grade: B
+    citations:
+      - { source: eusebius-he, locator: "2.25.7 (Gaius, Dialogue with Proclus)", quote: "if you will go to the Vatican or to the Ostian way, you will find the trophies of those who laid the foundations of this church" }
+    notes: { en: "The Vatican excavations (1940–49) found a small shrine (aedicula) against the \"Red Wall\", dated by brick stamps to c. 146–161. This confirms a 2nd-century memorial; it does not prove that Peter's body lay there, and the identification of bones (1968) is disputed." }
+items:
+  - type: stay
+    id: peter-jerusalem-apostles
+    place: jerusalem
+    when: { from: 30, to: 34, circa: true }
+    claim: peter-leads-eleven
+    episodes:
+      - id: peter-fisherman-of-galilee
+        title: { en: "A fisherman from Galilee" }
+        text: { en: "Simon was a fisherman from Bethsaida who lived in Capernaum with his wife. His brother Andrew brought him to Jesus, who gave him a new name: Cephas, or Peter, which means \"rock\"." }
+        when: { from: 28, to: 30, circa: true }
+        claim: peter-called
+      - id: peter-chooses-matthias
+        title: { en: "Leader of the eleven" }
+        text: { en: "After Jesus goes up to heaven, Peter is named first among the eleven. He stands up among the believers and leads them in choosing Matthias to take the place of Judas." }
+        when: { from: 30, to: 33, circa: true }
+        claim: peter-leads-eleven
+      - id: peter-pentecost-sermon
+        title: { en: "Pentecost" }
+        text: { en: "When the Holy Spirit comes at Pentecost, Peter stands up and preaches to a huge crowd that Jesus is the Christ. About three thousand people are baptised that day." }
+        when: { from: 30, to: 33, circa: true }
+        claim: peter-pentecost
+      - id: peter-heals-lame-man
+        title: { en: "Arrested for healing" }
+        text: { en: "At the temple gate Peter heals a man who had been lame from birth. The leaders arrest Peter and John and later have the apostles flogged, but they keep on preaching." }
+        when: { from: 30, to: 34, circa: true }
+        claim: peter-temple-arrests
+  - { type: leg, id: peter-jerusalem-samaria, from: jerusalem, to: samaria, when: { from: 31, to: 35, circa: true }, mode: land, claim: peter-samaria }
+  - type: stay
+    id: peter-samaria-visit
+    place: samaria
+    when: { from: 31, to: 35, circa: true }
+    claim: peter-samaria
+    episodes:
+      - id: peter-rebukes-simon-magus
+        title: { en: "The Spirit is not for sale" }
+        text: { en: "Peter and John pray for the new believers in Samaria and they receive the Holy Spirit. A magician called Simon offers them money for this power, and Peter tells him sharply that God's gift cannot be bought." }
+        when: { from: 31, to: 35, circa: true }
+        claim: peter-samaria
+  - { type: leg, id: peter-samaria-jerusalem, from: samaria, to: jerusalem, when: { from: 31, to: 35, circa: true }, mode: land, claim: peter-samaria }
+  - type: stay
+    id: peter-jerusalem-paul-visit
+    place: jerusalem
+    when: { from: 34, to: 37, circa: true }
+    claim: peter-paul-visit
+    episodes:
+      - id: peter-hosts-paul
+        title: { en: "Fifteen days with Paul" }
+        text: { en: "Paul, the former persecutor, comes to Jerusalem to get to know Peter. He stays with him for fifteen days." }
+        when: { from: 34, to: 37, circa: true }
+        claim: peter-paul-visit
+  - { type: leg, id: peter-jerusalem-lydda, from: jerusalem, to: lydda, when: { from: 35, to: 40, circa: true }, mode: land, claim: peter-lydda }
+  - type: stay
+    id: peter-at-lydda
+    place: lydda
+    when: { from: 35, to: 40, circa: true }
+    claim: peter-lydda
+    episodes:
+      - id: peter-heals-aeneas
+        title: { en: "Aeneas gets up" }
+        text: { en: "At Lydda Peter meets Aeneas, who had been paralysed and in bed for eight years. Peter says, \"Jesus Christ heals you; get up!\" and he gets up at once." }
+        when: { from: 35, to: 40, circa: true }
+        claim: peter-lydda
+  - { type: leg, id: peter-lydda-joppa, from: lydda, to: joppa, when: { from: 35, to: 40, circa: true }, mode: land, claim: peter-joppa }
+  - type: stay
+    id: peter-at-joppa
+    place: joppa
+    when: { from: 35, to: 40, circa: true }
+    claim: peter-joppa
+    episodes:
+      - id: peter-raises-tabitha
+        title: { en: "Tabitha, get up" }
+        text: { en: "In the port of Joppa a kind woman called Tabitha (Dorcas) has died. Peter is called, prays beside her and says \"Tabitha, get up\" — and she opens her eyes." }
+        when: { from: 35, to: 40, circa: true }
+        claim: peter-joppa
+      - id: peter-sheet-vision
+        title: { en: "The vision on the roof" }
+        text: { en: "Praying on the roof of Simon the tanner's house, Peter sees a great sheet full of animals let down from heaven. God tells him not to call unclean what God has made clean." }
+        when: { from: 35, to: 40, circa: true }
+        claim: peter-joppa
+  - { type: leg, id: peter-joppa-caesarea, from: joppa, to: caesarea, via: [[34.81, 32.20]], when: { from: 35, to: 40, circa: true }, mode: land, claim: peter-cornelius }
+  - type: stay
+    id: peter-caesarea
+    place: caesarea
+    when: { from: 35, to: 40, circa: true }
+    claim: peter-cornelius
+    episodes:
+      - id: peter-baptises-cornelius
+        title: { en: "The first Gentile believers" }
+        text: { en: "Peter enters the house of Cornelius, a Roman army officer. While Peter is still speaking, the Holy Spirit comes on everyone listening, and Peter has them baptised." }
+        when: { from: 35, to: 40, circa: true }
+        claim: peter-cornelius
+  - { type: leg, id: peter-caesarea-jerusalem, from: caesarea, to: jerusalem, via: [[34.93, 32.10]], when: { from: 37, to: 41, circa: true }, mode: land, claim: peter-defends-gentiles }
+  - type: stay
+    id: peter-jerusalem-agrippa
+    place: jerusalem
+    when: { from: 37, to: 44, circa: true }
+    claim: peter-defends-gentiles
+    episodes:
+      - id: peter-explains-cornelius
+        title: { en: "Peter explains himself" }
+        text: { en: "Some believers in Jerusalem are upset that Peter ate with Gentiles. He tells them the whole story, and they praise God that he has given Gentiles new life too." }
+        when: { from: 37, to: 41, circa: true }
+        claim: peter-defends-gentiles
+      - id: peter-freed-by-angel
+        title: { en: "Freed by an angel" }
+        text: { en: "King Herod Agrippa has James killed and throws Peter into prison. In the night an angel wakes Peter, his chains fall off and he walks out; then he goes \"to another place\"." }
+        when: { from: 41, to: 44, circa: true }
+        claim: peter-prison-escape
+  - type: stay
+    id: peter-jerusalem-council
+    place: jerusalem
+    when: { from: 48, to: 49, circa: true }
+    claim: peter-council
+    episodes:
+      - id: peter-speaks-at-council
+        title: { en: "The Jerusalem meeting" }
+        text: { en: "The church meets to decide whether Gentile believers must be circumcised. Peter says God saves Jews and Gentiles in the same way, by grace, and the meeting agrees." }
+        when: { from: 48, to: 49, circa: true }
+        claim: peter-council
+  - { type: leg, id: peter-jerusalem-antioch, from: jerusalem, to: antioch, via: [[35.20, 32.50], [35.70, 33.60], [36.10, 34.90]], when: { from: 48, to: 50, circa: true }, mode: land, claim: peter-antioch-clash }
+  - type: stay
+    id: peter-antioch
+    place: antioch
+    when: { from: 48, to: 50, circa: true }
+    claim: peter-antioch-clash
+    episodes:
+      - id: peter-opposed-by-paul
+        title: { en: "Paul opposes Peter" }
+        text: { en: "At Antioch Peter happily eats with Gentile Christians, until visitors from Jerusalem arrive and he pulls back. Paul tells him to his face that this goes against the gospel." }
+        when: { from: 48, to: 50, circa: true }
+        claim: peter-antioch-clash
+      - id: peter-antioch-first-bishop
+        title: { en: "First bishop of Antioch?" }
+        text: { en: "Writers from around 300 onward list Peter as the first leader of the church at Antioch, before Evodius and Ignatius. The Bible itself does not say this." }
+        when: { from: 48, to: 50, circa: true }
+        claim: peter-antioch-bishop
+  - type: stay
+    id: peter-in-asia-minor
+    place: galatia
+    when: { from: 50, to: 64, circa: true }
+    claim: peter-asia-minor
+    episodes:
+      - id: peter-preaches-dispersion
+        title: { en: "Preaching in Asia Minor?" }
+        text: { en: "The letter 1 Peter is written to Christians in Pontus, Galatia, Cappadocia, Asia and Bithynia. Origen guessed from this that Peter had preached there himself." }
+        when: { from: 50, to: 64, circa: true }
+        claim: peter-asia-minor
+  - type: leg
+    id: peter-antioch-corinth
+    from: antioch
+    to: corinth
+    via: [[35.75, 36.00], [34.30, 34.40], [32.00, 34.50], [29.00, 35.30], [27.50, 35.70], [27.00, 36.15], [25.50, 36.10], [23.60, 36.80], [23.75, 37.55], [23.15, 37.82]]
+    when: { from: 50, to: 55, circa: true }
+    mode: sea
+    claim: peter-corinth-dionysius
+  - type: stay
+    id: peter-corinth
+    place: corinth
+    when: { from: 50, to: 55, circa: true }
+    claim: peter-corinth-dionysius
+    episodes:
+      - id: peter-follow-cephas
+        title: { en: "\"I follow Cephas\"" }
+        text: { en: "In Corinth the Christians start forming fan clubs: \"I follow Paul\", \"I follow Apollos\", \"I follow Cephas\". Paul tells them that Christ is not divided." }
+        when: { from: 53, to: 55, circa: true }
+        claim: peter-cephas-party
+  - type: leg
+    id: peter-corinth-rome
+    from: corinth
+    to: rome
+    via: [[22.90, 38.00], [22.50, 38.20], [22.15, 38.33], [21.85, 38.35], [21.62, 38.32], [21.00, 38.10], [20.75, 37.99], [19.50, 38.00], [16.50, 37.70], [15.40, 37.40], [15.20, 36.55], [12.70, 37.10], [11.90, 37.85], [12.30, 39.50], [12.25, 41.50]]
+    when: { from: 55, to: 64, circa: true }
+    mode: sea
+    claim: peter-corinth-dionysius
+  - type: stay
+    id: peter-rome-claudius
+    place: rome
+    when: { from: 42, to: 67, circa: true }
+    claim: peter-rome-early-claudius
+    episodes:
+      - id: peter-rome-25-years
+        title: { en: "Twenty-five years in Rome?" }
+        text: { en: "Eusebius and Jerome, writing around 300–400, say Peter came to Rome early, under Emperor Claudius, to oppose Simon the magician, and led the church there for 25 years. The New Testament puts Peter in Jerusalem and Antioch in those same years." }
+        when: { from: 42, to: 67, circa: true }
+        claim: peter-rome-early-claudius
+  - type: stay
+    id: peter-rome
+    place: rome
+    when: { from: 60, to: 64, circa: true }
+    claim: peter-rome-founding
+    episodes:
+      - id: peter-preaches-in-rome
+        title: { en: "Peter in Rome" }
+        text: { en: "Irenaeus, writing around 180, says Peter and Paul both preached in Rome and laid the foundations of the church there. Nobody tells us exactly when Peter arrived." }
+        when: { from: 60, to: 64, circa: true }
+        claim: peter-rome-founding
+      - id: peter-mark-writes
+        title: { en: "Mark writes down Peter's preaching" }
+        text: { en: "Mark travels with Peter as his interpreter. According to Papias, Mark carefully wrote down what Peter told about the words and deeds of Jesus." }
+        when: { from: 60, to: 64, circa: true }
+        claim: peter-mark-gospel
+      - id: peter-letter-from-babylon
+        title: { en: "A letter from \"Babylon\"" }
+        text: { en: "The first letter of Peter ends with greetings from \"she who is in Babylon\" and from Mark. Early Christians said \"Babylon\" was a code-name for Rome." }
+        when: { from: 60, to: 64, circa: true }
+        claim: peter-1peter-babylon
+  - type: stay
+    id: peter-martyrdom
+    place: rome
+    when: { from: 64, to: 68, circa: true }
+    claim: peter-martyred-rome
+    episodes:
+      - id: peter-another-will-lead-you
+        title: { en: "\"Another will lead you\"" }
+        text: { en: "Long before, Jesus had told Peter that when he was old someone would stretch out his hands and lead him where he did not want to go. John explains that this showed how Peter would die to glorify God." }
+        when: { from: 64, to: 68, circa: true }
+        claim: peter-death-foretold
+      - id: peter-meets-lord-on-road
+        title: { en: "\"Lord, where are you going?\"" }
+        text: { en: "A 2nd-century story, the Acts of Peter, tells that Peter fled Rome and met Jesus on the road. \"Lord, where are you going?\" he asked — and when Jesus answered that he was going to Rome to be crucified again, Peter turned back." }
+        when: { from: 64, to: 68, circa: true }
+        claim: peter-quo-vadis
+      - id: peter-wife-led-away
+        title: { en: "\"Remember the Lord\"" }
+        text: { en: "Clement of Alexandria passes on a story that Peter saw his wife being led away to die. He called her by name and said, \"Remember the Lord.\"" }
+        when: { from: 64, to: 68, circa: true }
+        claim: peter-wife-martyr
+      - id: peter-martyr
+        title: { en: "Martyr in Rome" }
+        text: { en: "Clement, writing from Rome around 96, says Peter worked hard for the gospel and then died as a martyr. This was during Emperor Nero's persecution of the Christians." }
+        when: { from: 64, to: 68, circa: true }
+        claim: peter-martyred-rome
+      - id: peter-fastened-to-cross
+        title: { en: "Crucified like his Lord" }
+        text: { en: "Around 200, Tertullian writes that in Rome Peter was fastened to a cross, suffering the same kind of death as Jesus." }
+        when: { from: 64, to: 68, circa: true }
+        claim: peter-crucified
+      - id: peter-upside-down
+        title: { en: "Upside down" }
+        text: { en: "Origen and later Jerome say Peter asked to be crucified head-downward, because he did not feel worthy to die in the same way as his Lord. The first to tell this is the legendary Acts of Peter." }
+        when: { from: 64, to: 68, circa: true }
+        claim: peter-crucified-head-down
+  - type: stay
+    id: peter-vatican-grave
+    place: vatican-hill
+    when: { from: 64, to: 68, circa: true }
+    claim: peter-vatican-trophy
+    episodes:
+      - id: peter-trophy-of-gaius
+        title: { en: "A memorial on the Vatican" }
+        text: { en: "Around 200 a Roman Christian named Gaius said visitors could see Peter's memorial on the Vatican hill. Archaeologists digging under St Peter's found a small shrine built about 160." }
+        when: { from: 64, to: 68, circa: true }
+        claim: peter-vatican-trophy

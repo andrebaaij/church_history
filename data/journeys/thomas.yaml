@@ -1,0 +1,329 @@
+person: thomas
+claims:
+  # --- Gospel period and Jerusalem (grade A) ---
+  - id: thomas-in-upper-room
+    text: { en: "Thomas is named among the apostles waiting in the upper room in Jerusalem before Pentecost. This is the last time the New Testament mentions him." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:13" }
+  - id: thomas-one-of-twelve
+    text: { en: "Thomas is one of the twelve apostles chosen by Jesus." }
+    when: { from: 28, to: 30, circa: true }
+    grade: A
+    citations:
+      - { source: matthew-gospel, locator: "10:3" }
+      - { source: mark-gospel, locator: "3:18" }
+      - { source: luke, locator: "6:15" }
+  - id: thomas-die-with-him
+    text: { en: "When Jesus goes back to Judea, Thomas says: \"Let us also go, that we may die with him.\"" }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "11:16", quote: "Let us also go, that we may die with him." }
+  - id: thomas-asks-the-way
+    text: { en: "At the Last Supper Thomas asks how they can know the way, and Jesus answers: \"I am the way, the truth, and the life.\"" }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "14:5-6", quote: "Lord, we know not whither thou goest; and how can we know the way?" }
+  - id: thomas-doubts-and-confesses
+    text: { en: "Thomas doubts the resurrection until he sees the risen Jesus eight days later, and then confesses \"My Lord and my God\"." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "20:24-29", quote: "My Lord and my God." }
+  - id: thomas-at-the-lake
+    text: { en: "Thomas is among the seven disciples to whom the risen Jesus appears at the Sea of Tiberias (Galilee)." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: john-gospel, locator: "21:2" }
+  - id: thomas-sends-thaddaeus-to-edessa
+    text: { en: "After the ascension, \"Judas, who was also called Thomas\" sends Thaddaeus, one of the Seventy, to King Abgar of Edessa. Thomas himself is not said to go to Edessa." }
+    when: { from: 30, to: 33, circa: true }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "1.13.4" }
+      - { source: eusebius-he, locator: "1.13.11", quote: "After the ascension of Jesus, Judas, who was also called Thomas, sent to him Thaddeus, an apostle, one of the Seventy." }
+    notes: { en: "Eusebius says he translated this from Syriac archive documents at Edessa; the Abgar correspondence is generally judged legendary." }
+
+  # --- Mission field: three competing traditions ---
+  - id: thomas-parthia
+    text: { en: "By tradition, Parthia was allotted to Thomas as his field of work." }
+    grade: C
+    citations:
+      - { source: eusebius-he, locator: "3.1.1", quote: "Parthia, according to tradition, was allotted to Thomas as his field of labor" }
+      - { source: socrates-he, locator: "1.19", quote: "Thomas received the apostleship of the Parthians" }
+    alternativeTo: [thomas-india-gundaphorus, thomas-kerala]
+    notes: { en: "Eusebius (c. 320) attributes the passage (HE 3.1.3) to Origen's lost Commentary on Genesis (c. 230); scholars debate whether Origen's words cover this list. No source gives a date: the years on the map are a placeholder for 'some time after Pentecost'. Ctesiphon marks the Parthian empire. Parthia and the Indo-Parthian 'India' overlap, so this and the Acts of Thomas need not contradict each other (a modern inference)." }
+  - id: thomas-india-gundaphorus
+    text: { en: "In the Acts of Thomas, India falls to Thomas by lot; he is sold as a slave-carpenter to Abbanes, merchant of King Gundaphorus, sails to India and converts the king and his brother Gad." }
+    grade: D
+    citations:
+      - { source: acts-of-thomas, locator: "1-29" }
+    alternativeTo: [thomas-parthia, thomas-kerala]
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Most likely, the savages in India murdered Thomas." }
+    notes: { en: "Acts of Thomas: Syriac romance, probably Edessa, early 3rd c., with Gnostic/encratite features. It names no port except 'Andrapolis, a royal city'. Taxila (capital of the real Indo-Parthian king Gondophares) and the route via Aila and the Indus are modern placements for the map, not in the text. Dates assume the Gondophares link (reign c. AD 19–46)." }
+  - id: thomas-kerala
+    text: { en: "Kerala tradition: Thomas lands at Kodungallur (Muziris) in AD 52 and founds seven churches: Kodungallur, Kollam, Niranam, Nilakkal, Kokkamangalam, Kottakkavu and Palayur." }
+    when: { from: 52, to: 72, circa: true }
+    grade: E
+    citations:
+      - { source: thomas-christian-tradition, locator: "Thomas Ramban Pattu (arrival dated AD 50)" }
+    alternativeTo: [thomas-parthia, thomas-india-gundaphorus]
+    notes: { en: "No written source before the medieval period; the Thomas Ramban Pattu is a late ballad (claimed to go back to 1601 or earlier) and gives AD 50, not 52. The route via Alexandria, Coptos and Berenike is the normal 1st-century route described by Pliny, not part of the tradition." }
+
+  # --- Context: the sea route really existed ---
+  - id: thomas-monsoon-route
+    text: { en: "In the 1st century ships sailed every year from the Egyptian Red Sea ports to India, using the monsoon wind; from Okelis at the mouth of the Red Sea, Muziris could be reached in about 40 days." }
+    when: { from: 20, to: 79, circa: true }
+    grade: B
+    citations:
+      - { source: strabo-geography, locator: "2.5.12", quote: "about one hundred and twenty ships sail from Myos-hormos to India" }
+      - { source: pliny-nh, locator: "6.26 (6.104)" }
+      - { source: periplus, locator: "53-57" }
+    notes: { en: "This shows a voyage to South India was possible in Thomas' lifetime. It is not evidence that he made one." }
+  - id: thomas-desert-road
+    text: { en: "Travellers to India went up the Nile from Alexandria to Coptos, crossed the desert by camel to Berenike, and set sail from there at midsummer." }
+    when: { from: 70, to: 79, circa: true }
+    grade: B
+    citations:
+      - { source: pliny-nh, locator: "6.26 (6.102-104)" }
+  - id: thomas-gondophares-real
+    text: { en: "King Gondophares, the 'Gundaphorus' of the Acts of Thomas, really existed: an inscription from Takht-i-Bahi (Pakistan) is dated in his 26th regnal year, usually computed as AD 46." }
+    when: { from: 19, to: 46, circa: true }
+    grade: A
+    citations:
+      - { source: takht-i-bahi-inscription, locator: "line 1 (year 103, regnal year 26)" }
+    notes: { en: "Proves the king existed, not that Thomas met him. The AD 46 date depends on equating the Azes era with the Vikrama era (57 BC), which is debated." }
+
+  # --- Death: four competing accounts ---
+  - id: thomas-death-natural
+    text: { en: "The earliest statement about his end: Thomas is listed among the saved who 'departed' without making a public confession before the authorities, i.e. he did not die as a martyr." }
+    grade: B
+    citations:
+      - { source: clement-stromata, locator: "4.9", quote: "Of whom are Matthew, Philip, Thomas, Levi, and many others." }
+    alternativeTo: [thomas-death-calamina, thomas-death-mylapore]
+    notes: { en: "Heracleon the Valentinian (c. 170), quoted by Clement of Alexandria (c. 200). Heterodox source, but Clement does not dispute the fact. No place is given, so this claim has no map item." }
+  - id: thomas-death-calamina
+    text: { en: "Thomas is killed with spears in 'India': the Acts of Thomas has four soldiers spear him on a mountain on the orders of King Misdaeus; Pseudo-Hippolytus says he was thrust through with pine spears at Calamene, a city of India, and buried there." }
+    grade: D
+    citations:
+      - { source: acts-of-thomas, locator: "164-168" }
+      - { source: ps-hippolytus-twelve, locator: "8", quote: "was thrust through in the four members of his body with a pine spears at Calamene, the city of India, and was buried there" }
+    alternativeTo: [thomas-death-natural, thomas-death-mylapore]
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Most likely, the savages in India murdered Thomas." }
+    notes: { en: "The Acts of Thomas names no place. Pleiades/Barrington place Calamina on the Coromandel coast, following the later Mylapore tradition. No source gives a year." }
+  - id: thomas-death-mylapore
+    text: { en: "Tamil and Kerala tradition: Thomas is martyred on St Thomas Mount near Mylapore (Chennai) on 3 July AD 72." }
+    when: { from: 72, to: 72, circa: true }
+    grade: E
+    citations:
+      - { source: thomas-christian-tradition, locator: "Mylapore tradition (3 July 72)" }
+    alternativeTo: [thomas-death-natural, thomas-death-calamina]
+    referenceWorks:
+      - { work: vreugdenhil, chapter: "1", quote: "Most likely, the savages in India murdered Thomas." }
+    notes: { en: "No written attestation before the medieval period. 3 July is Thomas' feast day in the Syriac churches and the modern Roman calendar." }
+  - id: thomas-mylapore-location
+    text: { en: "Mylapore (Chennai) and nearby St Thomas Mount are the place of Thomas' tomb and death in local tradition." }
+    grade: E
+    citations:
+      - { source: thomas-christian-tradition, locator: "Mylapore tradition" }
+items:
+  - type: stay
+    id: thomas-jerusalem
+    place: jerusalem
+    when: { from: 30, to: 33, circa: true }
+    claim: thomas-in-upper-room
+    episodes:
+      - id: thomas-ep-chosen
+        title: { en: "One of the Twelve" }
+        text: { en: "Jesus chooses twelve men to be his apostles, and Thomas, called \"the Twin\", is one of them. He appears in every list of the Twelve." }
+        when: { from: 28, to: 30, circa: true }
+        claim: thomas-one-of-twelve
+      - id: thomas-ep-die-with-him
+        title: { en: "\"Let us go and die with him\"" }
+        text: { en: "Jesus decides to go back to Judea, where people had tried to stone him. While the others hesitate, Thomas says bravely: \"Let us also go, that we may die with him.\"" }
+        when: { from: 30, to: 33, circa: true }
+        claim: thomas-die-with-him
+      - id: thomas-ep-the-way
+        title: { en: "\"How can we know the way?\"" }
+        text: { en: "At the Last Supper Jesus says he is going away. Thomas honestly admits he doesn't understand: \"How can we know the way?\" Jesus answers: \"I am the way, the truth, and the life.\"" }
+        when: { from: 30, to: 33, circa: true }
+        claim: thomas-asks-the-way
+      - id: thomas-ep-my-lord-and-my-god
+        title: { en: "\"My Lord and my God!\"" }
+        text: { en: "Thomas was not there when the risen Jesus first appeared, and he refuses to believe it unless he can touch the wounds. Eight days later Jesus stands among them and invites him to look; Thomas cries out: \"My Lord and my God!\"" }
+        when: { from: 30, to: 33, circa: true }
+        claim: thomas-doubts-and-confesses
+      - id: thomas-ep-by-the-lake
+        title: { en: "Breakfast by the lake" }
+        text: { en: "Back in Galilee, Thomas goes fishing with Peter and five others. At dawn the risen Jesus stands on the shore and calls to them." }
+        when: { from: 30, to: 33, circa: true }
+        claim: thomas-at-the-lake
+      - id: thomas-ep-sends-thaddaeus
+        title: { en: "A messenger to Edessa" }
+        text: { en: "A story kept at Edessa says that after the ascension Thomas sent Thaddaeus to heal King Abgar. Eusebius copied it around 320; Thomas himself does not travel in this story." }
+        when: { from: 30, to: 33, circa: true }
+        claim: thomas-sends-thaddaeus-to-edessa
+
+  # Tradition A — Parthia (grade C)
+  - type: leg
+    id: thomas-jerusalem-ctesiphon
+    from: jerusalem
+    to: ctesiphon
+    via: [[36.309, 33.512], [38.270, 34.550], [40.730, 34.750]]
+    when: { from: 33, to: 35, circa: true }
+    mode: land
+    claim: thomas-parthia
+  - type: stay
+    id: thomas-parthia-stay
+    place: ctesiphon
+    when: { from: 35, to: 70, circa: true }
+    claim: thomas-parthia
+    episodes:
+      - id: thomas-ep-parthia-lot
+        title: { en: "Parthia, the empire in the east" }
+        text: { en: "Around 230 the scholar Origen wrote that the apostles spread out over the world and that Parthia, the great rival empire of Rome, fell to Thomas. This is the oldest written statement of where Thomas went." }
+        when: { from: 35, to: 70, circa: true }
+        claim: thomas-parthia
+
+  # Tradition B — "India" of King Gundaphorus (grade D)
+  - type: leg
+    id: thomas-jerusalem-aila
+    from: jerusalem
+    to: aila
+    via: [[35.400, 31.050], [35.150, 30.200]]
+    when: { from: 42, to: 43, circa: true }
+    mode: land
+    claim: thomas-india-gundaphorus
+    episodes:
+      - id: thomas-ep-sold-as-slave
+        title: { en: "Sold as a carpenter" }
+        text: { en: "In the Acts of Thomas the apostles cast lots and India falls to Thomas, but he refuses to go. Then, the story says, Jesus \"sells\" him for three pounds of silver to Abbanes, a merchant of King Gundaphorus who is looking for a carpenter." }
+        when: { from: 42, to: 43, circa: true }
+        claim: thomas-india-gundaphorus
+  - type: leg
+    id: thomas-aila-barbarikon
+    from: aila
+    to: barbarikon
+    via: [[34.780, 29.000], [34.550, 28.300], [34.450, 27.960], [34.900, 27.300], [36.600, 24.500], [38.400, 20.500], [40.200, 17.300], [41.000, 15.800], [42.300, 14.300], [43.150, 12.950], [43.350, 12.580], [44.300, 12.250], [47.500, 12.600], [51.000, 12.900], [53.500, 13.200], [58.500, 17.000], [60.000, 20.500], [65.000, 24.000], [67.300, 23.950], [67.530, 24.060], [67.820, 24.280], [67.870, 24.420], [68.020, 24.760], [68.150, 24.910]]
+    when: { from: 43, to: 43, circa: true }
+    mode: sea
+    claim: thomas-india-gundaphorus
+  - type: leg
+    id: thomas-barbarikon-taxila
+    from: barbarikon
+    to: taxila
+    via: [[68.000, 26.400], [70.800, 30.000], [71.500, 32.900]]
+    when: { from: 43, to: 43, circa: true }
+    mode: land
+    claim: thomas-india-gundaphorus
+  - type: stay
+    id: thomas-india-gundaphorus-stay
+    place: taxila
+    when: { from: 43, to: 50, circa: true }
+    claim: thomas-india-gundaphorus
+    episodes:
+      - id: thomas-ep-palace-in-heaven
+        title: { en: "A palace in heaven" }
+        text: { en: "King Gundaphorus gives Thomas money to build him a palace. Thomas gives it all to the poor instead. When the angry king asks where his palace is, Thomas says it has been built in heaven — and in the story the king and his brother Gad come to believe." }
+        when: { from: 43, to: 50, circa: true }
+        claim: thomas-india-gundaphorus
+      - id: thomas-ep-real-king
+        title: { en: "A king who really lived" }
+        text: { en: "Was King Gundaphorus made up? No: coins and a stone inscription from Takht-i-Bahi in Pakistan show that a king Gondophares really ruled there around AD 20–46. The stone proves the king existed, but it does not mention Thomas." }
+        when: { from: 43, to: 46, circa: true }
+        claim: thomas-gondophares-real
+
+  # Tradition C — Kerala (grade E), along the real 1st-century trade route
+  - type: leg
+    id: thomas-jerusalem-alexandria
+    from: jerusalem
+    to: alexandria
+    via: [[34.460, 31.500], [32.570, 31.040]]
+    when: { from: 51, to: 52, circa: true }
+    mode: land
+    claim: thomas-kerala
+  - type: leg
+    id: thomas-alexandria-coptos
+    from: alexandria
+    to: coptos
+    via: [[31.250, 29.850], [30.750, 28.100], [31.690, 26.560]]
+    when: { from: 51, to: 52, circa: true }
+    mode: land
+    claim: thomas-kerala
+    episodes:
+      - id: thomas-ep-up-the-nile
+        title: { en: "Up the Nile and across the desert" }
+        text: { en: "The Roman writer Pliny describes the way to India: by boat up the Nile from Alexandria to Coptos, then twelve days by camel across the desert to the port of Berenike, travelling mostly at night because of the heat." }
+        when: { from: 51, to: 52, circa: true }
+        claim: thomas-desert-road
+  - type: leg
+    id: thomas-coptos-berenike
+    from: coptos
+    to: berenike
+    via: [[33.600, 25.000], [34.600, 24.300]]
+    when: { from: 52, to: 52, circa: true }
+    mode: land
+    claim: thomas-kerala
+  - type: leg
+    id: thomas-berenike-muziris
+    from: berenike
+    to: muziris
+    via: [[36.200, 23.300], [38.400, 20.500], [40.200, 17.300], [41.000, 15.800], [42.300, 14.300], [43.150, 12.950], [43.350, 12.580], [44.300, 12.250], [47.500, 12.600], [51.000, 12.900], [53.500, 13.200], [60.000, 12.000], [68.000, 10.500], [73.200, 9.300], [75.900, 10.150]]
+    when: { from: 52, to: 52, circa: true }
+    mode: sea
+    claim: thomas-kerala
+    episodes:
+      - id: thomas-ep-monsoon
+        title: { en: "Riding the monsoon" }
+        text: { en: "Every summer around a hundred ships left Egypt's Red Sea ports for India. Once past the narrow strait at the mouth of the Red Sea, the monsoon wind blew them straight across the open ocean to Muziris in about forty days. A trip to India was possible in Thomas' lifetime — but that alone does not prove he made it." }
+        when: { from: 52, to: 52, circa: true }
+        claim: thomas-monsoon-route
+  - type: stay
+    id: thomas-kerala-stay
+    place: muziris
+    when: { from: 52, to: 70, circa: true }
+    claim: thomas-kerala
+    episodes:
+      - id: thomas-ep-seven-churches
+        title: { en: "Seven churches in Kerala" }
+        text: { en: "The Christians of Kerala in South India say that Thomas landed here in AD 52 and founded seven churches along the coast. Their families have kept this story for many centuries, but it was written down only much later." }
+        when: { from: 52, to: 70, circa: true }
+        claim: thomas-kerala
+  - type: leg
+    id: thomas-muziris-mylapore
+    from: muziris
+    to: mylapore
+    via: [[76.700, 10.780], [78.150, 11.650], [79.700, 12.830]]
+    when: { from: 70, to: 72, circa: true }
+    mode: land
+    claim: thomas-kerala
+
+  # Death — competing accounts
+  - type: stay
+    id: thomas-death-calamina-stay
+    place: calamina
+    when: { from: 70, to: 72, circa: true }
+    claim: thomas-death-calamina
+    episodes:
+      - id: thomas-ep-speared
+        title: { en: "Killed with spears" }
+        text: { en: "The Acts of Thomas tells that a king called Misdaeus had Thomas led up a mountain, where four soldiers killed him with spears. A later list says it happened at Calamene, \"the city of India\"." }
+        when: { from: 70, to: 72, circa: true }
+        claim: thomas-death-calamina
+  - type: stay
+    id: thomas-death-mylapore-stay
+    place: mylapore
+    when: { from: 72, to: 72, circa: true }
+    claim: thomas-death-mylapore
+    episodes:
+      - id: thomas-ep-st-thomas-mount
+        title: { en: "St Thomas Mount" }
+        text: { en: "Christians in Chennai point to a hill called St Thomas Mount and say Thomas was killed there on 3 July 72. It is a strong local memory, but no written source for it is older than the Middle Ages." }
+        when: { from: 72, to: 72, circa: true }
+        claim: thomas-death-mylapore
