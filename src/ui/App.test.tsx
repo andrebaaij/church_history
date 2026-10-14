@@ -21,3 +21,15 @@ it("opens the detail panel for a valid shared selection", async () => {
   render(<Loaded ds={makeDataset()} />);
   expect(screen.getByTestId("detail-panel")).toBeTruthy();
 });
+
+it("shows the welcome card on a first plain visit, not on shared links", async () => {
+  localStorage.removeItem("intro-seen");
+  history.replaceState(null, "", "/");
+  const { Loaded } = await import("./App");
+  const { unmount } = render(<Loaded ds={makeDataset()} />);
+  expect(screen.getByRole("heading", { name: /Follow the apostles/ })).toBeTruthy();
+  unmount();
+  history.replaceState(null, "", "/?sel=paul-antioch");
+  render(<Loaded ds={makeDataset()} />);
+  expect(screen.queryByRole("heading", { name: /Follow the apostles/ })).toBeNull();
+});

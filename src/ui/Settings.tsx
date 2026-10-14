@@ -6,10 +6,10 @@ import { tx } from "../i18n/tx";
 
 type Props = {
   lang: string; theme: ThemeName; stories: Story[]; onLang(l: string): void; onTheme(t: ThemeName): void;
-  onStory(id: string): void; onAttribution(): void; copyStep?: () => void;
+  onStory(id: string): void; onAttribution(): void; onHelp(): void; copyStep?: () => void;
 };
 
-export function Settings({ lang, theme, stories, onLang, onTheme, onStory, onAttribution, copyStep }: Props) {
+export function Settings({ lang, theme, stories, onLang, onTheme, onStory, onAttribution, onHelp, copyStep }: Props) {
   const { t } = useTranslation();
   return (
     <div className="settings">
@@ -23,6 +23,7 @@ export function Settings({ lang, theme, stories, onLang, onTheme, onStory, onAtt
       <select aria-label={t("settings.language")} value={lang} onChange={(e) => onLang(e.target.value)}>
         {LANGS.map((l) => <option key={l} value={l}>{l.toUpperCase()}</option>)}
       </select>
+      <button className="btn ghost icon" onClick={onHelp} aria-label={t("intro.help")} title={t("intro.help")}>?</button>
       <button className="btn ghost" onClick={onAttribution}>{t("attribution.open")}</button>
       {copyStep && <button className="btn ghost" onClick={copyStep}>{t("settings.copyStep")}</button>}
     </div>

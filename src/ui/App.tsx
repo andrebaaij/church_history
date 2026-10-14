@@ -19,6 +19,7 @@ import { DetailPanel } from "./DetailPanel";
 import { Search } from "./Search";
 import { Settings } from "./Settings";
 import { Attribution } from "./Attribution";
+import { Intro } from "./Intro";
 import { StoryMode } from "../story/StoryMode";
 import { stepYaml } from "../story/story";
 import "./app.css";
@@ -45,6 +46,22 @@ export function Loaded({ ds }: { ds: Dataset }) {
     });
   });
   const [showAttribution, setShowAttribution] = useState(false);
+  const [showIntro, setShowIntro] = useState(() => {
+    if (location.search.includes("sel=") || location.search.includes("story=")) return false;
+    try {
+      return localStorage.getItem("intro-seen") !== "1";
+    } catch {
+      return true;
+    }
+  });
+  const closeIntro = () => {
+    setShowIntro(false);
+    try {
+      localStorage.setItem("intro-seen", "1");
+    } catch {
+      /* storage unavailable: the card will simply show again next visit */
+    }
+  };
 
   useEffect(() => {
     history.replaceState(null, "", location.pathname + serializeUrlState(state, defaults));
@@ -111,6 +128,7 @@ export function Loaded({ ds }: { ds: Dataset }) {
               onTheme={(theme) => dispatch({ type: "setTheme", theme })}
               onStory={(id) => dispatch({ type: "startStory", id })}
               onAttribution={() => setShowAttribution(true)}
+              onHelp={() => setShowIntro(true)}
               copyStep={copyStep}
             />
           </header>
@@ -120,6 +138,13 @@ export function Loaded({ ds }: { ds: Dataset }) {
             onToggleGrade={(grade) => dispatch({ type: "toggleGrade", grade })}
             onOpenPerson={select}
           />
+          {showIntro && !detail && (
+            <Intro
+              storyTitle={ds.stories[0] ? tx(ds.stories[0].title, state.lang) : undefined}
+              onStory={ds.stories[0] ? () => { closeIntro(); dispatch({ type: "startStory", id: ds.stories[0].id }); } : undefined}
+              onClose={closeIntro}
+            />
+          )}
           {detail && <DetailPanel detail={detail} lang={state.lang} idx={idx} onSelect={focus} onClose={() => select(null)} />}
           <YearSlider ds={ds} timeline={ds.timeline} year={state.year} lang={state.lang} filters={state.filters} selected={state.selected} onYear={setYear} onSelect={focus} />
         </>

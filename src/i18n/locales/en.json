@@ -90,5 +90,17 @@
     "territory": "Territory",
     "claim": "Claim",
     "person": "Person"
+  },
+  "intro": {
+    "eyebrow": "Welcome",
+    "title": "Follow the apostles, AD 30–100",
+    "timeTitle": "Travel through time.",
+    "time": "Drag the timeline or press play to watch the century unfold under the reigning emperor.",
+    "linesTitle": "Read the lines.",
+    "lines": "Each colour is a person. The line style shows how reliable the source is — from New Testament (solid) to local tradition (sparse dots).",
+    "sourcesTitle": "Check the sources.",
+    "sources": "Click any route, place or border to see exactly which ancient text supports it — and where traditions disagree.",
+    "explore": "Explore the map",
+    "help": "How to read this map"
   }
 }
