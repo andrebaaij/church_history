@@ -27,3 +27,14 @@ it("describes entities regardless of year/filters (no time input at all)", () =>
 it("returns null for unknown ids", () => {
   expect(describeEntity("deleted-id", idx)).toBeNull();
 });
+
+it("describes a person as a chronological itinerary with grades", () => {
+  const d = describeEntity("paul", idx)!;
+  expect(d.kind).toBe("person");
+  expect(d.title.en).toBe("Paul");
+  expect(d.itinerary!.map((i) => [i.id, i.grade, i.when.from])).toEqual([
+    ["paul-antioch", "A", 44],
+    ["paul-to-seleucia", "A", 46],
+  ]);
+  expect(d.itinerary![1].title.en).toBe("Antiochia → Seleucia Pieria");
+});

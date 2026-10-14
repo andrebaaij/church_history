@@ -5,9 +5,9 @@ import type { Filters as F } from "../state/urlState";
 import { tx } from "../i18n/tx";
 import { GradeLine } from "./Legend";
 
-type Props = { people: Person[]; filters: F; lang: string; onTogglePerson(id: string): void; onToggleGrade(g: Grade): void };
+type Props = { people: Person[]; filters: F; lang: string; onTogglePerson(id: string): void; onToggleGrade(g: Grade): void; onOpenPerson(id: string): void };
 
-export function Filters({ people, filters, lang, onTogglePerson, onToggleGrade }: Props) {
+export function Filters({ people, filters, lang, onTogglePerson, onToggleGrade, onOpenPerson }: Props) {
   const { t } = useTranslation();
   return (
     <aside className="panel filters">
@@ -16,12 +16,12 @@ export function Filters({ people, filters, lang, onTogglePerson, onToggleGrade }
         {people.map((p) => {
           const on = filters.people === null || filters.people.includes(p.id);
           return (
-            <li key={p.id}>
-              <label className={`person ${on ? "on" : "off"}`}>
+            <li key={p.id} className={`person ${on ? "on" : "off"}`}>
+              <label className="person-toggle" title={t("filters.toggle")}>
                 <input type="checkbox" checked={on} onChange={() => onTogglePerson(p.id)} />
                 <span className="swatch" style={{ background: p.color }} />
-                <span>{tx(p.name, lang)}</span>
               </label>
+              <button className="person-name" onClick={() => onOpenPerson(p.id)}>{tx(p.name, lang)}</button>
             </li>
           );
         })}

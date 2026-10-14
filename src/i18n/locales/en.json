@@ -19,7 +19,8 @@
     "title": "Filters",
     "people": "People",
     "grades": "Reliability",
-    "hint": "Line style shows how reliable a route is; colour shows who travelled."
+    "hint": "Line style shows how reliable a route is; colour shows who travelled.",
+    "toggle": "Show or hide on the map"
   },
   "grade": {
     "A": "A — New Testament or archaeology",
@@ -37,7 +38,8 @@
     "alsoToldBy": "Also told by {{author}}, ch. {{chapter}}",
     "alternatives": "Competing traditions",
     "episodes": "What happened here",
-    "notes": "Note"
+    "notes": "Note",
+    "itinerary": "Journey, step by step"
   },
   "media": {
     "illustration": "Illustration — not evidence",

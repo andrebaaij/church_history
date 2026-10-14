@@ -118,7 +118,8 @@ select { border: 1px solid var(--line-strong); border-radius: 999px; padding: 6p
 .filters input { position: absolute; opacity: 0; pointer-events: none; }
 .person, .grade-toggle { display: flex; align-items: center; gap: 9px; padding: 6px 8px; border-radius: 8px; cursor: pointer; transition: background 0.15s, opacity 0.15s; }
 .person:hover, .grade-toggle:hover { background: rgba(255, 255, 255, 0.75); }
-.person.off, .grade-toggle.off { opacity: 0.38; }
+.grade-toggle.off { opacity: 0.38; }
+.person.off .swatch { opacity: 0.35; }
 .person:focus-within, .grade-toggle:focus-within { outline: 2px solid var(--accent); outline-offset: -2px; }
 .grade-label { font-size: 13px; color: var(--ink-soft); }
 .hint { font-size: 12px; color: var(--muted); margin: 12px 4px 0; font-style: italic; font-family: var(--serif); font-size: 14px; }
@@ -286,7 +287,7 @@ figcaption { font-size: 12px; color: var(--muted); margin-top: 6px; }
 .lane::before { content: ""; position: absolute; left: 0; right: 0; top: 4px; height: 4px; border-radius: 2px; background: rgba(92, 76, 59, 0.07); }
 .span { height: 6px; top: 3px; }
 .lanes-toggle {
-  position: absolute; left: 70px; bottom: 12px; width: 120px; border: 1px solid var(--line-strong); background: var(--paper-solid);
+  position: absolute; left: 70px; bottom: 12px; white-space: nowrap; border: 1px solid var(--line-strong); background: var(--paper-solid);
   border-radius: 999px; padding: 4px 8px; font: 600 11px var(--sans); color: var(--ink-soft); cursor: pointer; z-index: 1;
 }
 .lanes-toggle.on { background: var(--ink); color: #fff; border-color: var(--ink); }
@@ -300,3 +301,17 @@ figcaption { font-size: 12px; color: var(--muted); margin-top: 6px; }
   .track, .ticks, .key-events { margin-left: 0; }
   .lanes, .lanes-toggle { display: none; }
 }
+
+/* person rows: swatch toggles visibility, name opens the itinerary */
+.people .person { display: flex; align-items: center; gap: 4px; padding: 2px 4px; border-radius: 8px; }
+.person-toggle { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; cursor: pointer; }
+.person-toggle:hover { background: rgba(255, 255, 255, 0.9); }
+.person-name { border: 0; background: none; padding: 2px 2px; cursor: pointer; text-align: left; font: 13px/1.2 var(--sans); color: var(--ink); border-radius: 4px; }
+.person-name:hover { color: var(--accent); text-decoration: underline; }
+.person.off .person-name { opacity: 0.4; }
+.itinerary { list-style: none; margin: 0; padding: 0 0 0 10px; border-left: 2px solid var(--accent-person, var(--line-strong)); display: grid; gap: 2px; }
+.itinerary .episode { font-size: 15px; align-items: center; }
+.itinerary-icon { color: var(--accent-person, var(--muted)); font-size: 11px; width: 12px; }
+.itinerary-title { flex: 1; }
+.lane-label { border: 0; background: none; padding: 0; cursor: pointer; }
+.lane-label:hover { text-decoration: underline; }

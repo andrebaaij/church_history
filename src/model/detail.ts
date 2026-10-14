@@ -9,10 +9,12 @@ export type ClaimView = {
   mentions: { work: ReferenceWork; chapter: string; quote?: string }[];
   alternatives: Claim[];
 };
-export type EntityKind = "leg" | "stay" | "episode" | "place" | "territory" | "claim";
+export type EntityKind = "leg" | "stay" | "episode" | "place" | "territory" | "claim" | "person";
+export type ItineraryItem = { id: string; type: "leg" | "stay"; title: I18nText; when: When; grade: Claim["grade"] };
 export type EntityDetail = {
   id: string; kind: EntityKind; title: I18nText; when?: When; person?: string;
   claims: ClaimView[]; episodes: Episode[]; media: Media[];
+  itinerary?: ItineraryItem[];
 };
 
 export function claimView(id: string, idx: Index): ClaimView | null {
@@ -56,6 +58,20 @@ export function describeEntity(id: string, idx: Index): EntityDetail | null {
   if (territory) {
     const claimIds = [...new Set(territory.versions.map((v) => v.claim))];
     return { id, kind: "territory", title: territory.name, claims: views(claimIds, idx), episodes: [], media: [] };
+  }
+  const person = idx.people.get(id);
+  if (person) {
+    const itinerary: ItineraryItem[] = [
+      ...[...idx.legs.values()].filter((l) => l.person === id).map(({ leg }) => ({
+        id: leg.id, type: "leg" as const, when: leg.when, grade: idx.claims.get(leg.claim)!.grade,
+        title: joinText(idx.places.get(leg.from)!.name.ancient, " → ", idx.places.get(leg.to)!.name.ancient),
+      })),
+      ...[...idx.stays.values()].filter((s) => s.person === id).map(({ stay }) => ({
+        id: stay.id, type: "stay" as const, when: stay.when, grade: idx.claims.get(stay.claim)!.grade,
+        title: idx.places.get(stay.place)!.name.ancient,
+      })),
+    ].sort((a, b) => a.when.from - b.when.from || a.when.to - b.when.to);
+    return { id, kind: "person", title: person.name, person: id, claims: [], episodes: [], media: [], itinerary };
   }
   const claim = idx.claims.get(id);
   if (claim) return { id, kind: "claim", title: claim.text, when: claim.when, claims: views([id], idx), episodes: [], media: [] };

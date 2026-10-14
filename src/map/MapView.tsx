@@ -92,7 +92,8 @@ export function MapView(props: MapViewProps) {
     const map = mapRef.current;
     if (!ready || !map) return;
     const ids = [props.selected, ...props.highlight].filter(Boolean);
-    map.setFilter("route-highlight", ["in", ["get", "id"], ["literal", ids]]);
+    // Highlight a selected leg, or every leg of a selected person.
+    map.setFilter("route-highlight", ["any", ["in", ["get", "id"], ["literal", ids]], ["in", ["get", "person"], ["literal", ids]]]);
   }, [ready, props.selected, props.highlight]);
 
   useEffect(() => {

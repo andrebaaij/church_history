@@ -60,10 +60,10 @@ export function YearSlider({ ds, timeline, year, lang, filters, selected, onYear
       </button>
       <div className="timeline-body">
         <div className="track">
-          {showLanes && <div className="lanes" aria-hidden>
+          {showLanes && <div className="lanes">
             {lanes.map(({ person, items }) => (
               <div key={person.id} className="lane" title={tx(person.name, lang)}>
-                <span className="lane-label" style={{ color: person.color }}>{tx(person.name, lang)}</span>
+                <button className="lane-label" style={{ color: person.color }} onClick={() => onSelect(person.id)}>{tx(person.name, lang)}</button>
                 {items.map((it) => (
                   <button
                     key={it.id}

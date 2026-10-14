@@ -88,6 +88,23 @@ export function DetailPanel({ detail, lang, idx, onSelect, onClose }: Props) {
         </figure>
       ))}
       {detail.claims.map((v) => <ClaimBlock key={v.claim.id} view={v} lang={lang} onSelect={onSelect} />)}
+      {detail.itinerary && detail.itinerary.length > 0 && (
+        <>
+          <h3 className="eyebrow">{t("detail.itinerary")}</h3>
+          <ol className="itinerary">
+            {detail.itinerary.map((it) => (
+              <li key={it.id}>
+                <button className="episode" onClick={() => onSelect(it.id)}>
+                  <span className="episode-year">{it.when.from === it.when.to ? it.when.from : `${it.when.from}–${it.when.to}`}</span>
+                  <span className="itinerary-icon" aria-hidden>{it.type === "leg" ? "⟶" : "●"}</span>
+                  <span className="itinerary-title">{tx(it.title, lang)}</span>
+                  <span className={`grade grade-${it.grade}`}>{it.grade}</span>
+                </button>
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
       {detail.episodes.length > 0 && (
         <>
           <h3 className="eyebrow">{t("detail.episodes")}</h3>

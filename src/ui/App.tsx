@@ -103,7 +103,7 @@ export function Loaded({ ds }: { ds: Dataset }) {
                 <p>{t("app.subtitle")}</p>
               </div>
             </div>
-            <Search ds={ds} idx={idx} lang={state.lang} onPick={(r) => (r.kind === "person" ? dispatch({ type: "onlyPerson", id: r.id }) : focus(r.id))} />
+            <Search ds={ds} idx={idx} lang={state.lang} onPick={(r) => (r.kind === "person" ? select(r.id) : focus(r.id))} />
             {story && <button className="btn" onClick={() => dispatch({ type: "resumeStory" })}>{t("story.back")}</button>}
             <Settings
               lang={state.lang} theme={state.theme} stories={ds.stories}
@@ -118,6 +118,7 @@ export function Loaded({ ds }: { ds: Dataset }) {
             people={ds.people} filters={state.filters} lang={state.lang}
             onTogglePerson={(id) => dispatch({ type: "togglePerson", id, all: ds.people.map((p) => p.id) })}
             onToggleGrade={(grade) => dispatch({ type: "toggleGrade", grade })}
+            onOpenPerson={select}
           />
           {detail && <DetailPanel detail={detail} lang={state.lang} idx={idx} onSelect={focus} onClose={() => select(null)} />}
           <YearSlider ds={ds} timeline={ds.timeline} year={state.year} lang={state.lang} filters={state.filters} selected={state.selected} onYear={setYear} onSelect={focus} />
