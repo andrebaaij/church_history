@@ -1,0 +1,7 @@
+places:
+  - { id: mare-internum, name: { ancient: { en: Mare Internum }, modern: { en: Mediterranean Sea } }, coords: [18.5, 34.6], kind: sea, claim: sea-mare-internum }
+  - { id: pontus-euxinus, name: { ancient: { en: Pontus Euxinus }, modern: { en: Black Sea } }, coords: [34.5, 43.3], kind: sea, claim: sea-pontus-euxinus }
+  - { id: mare-erythraeum, name: { ancient: { en: Mare Erythraeum }, modern: { en: Arabian Sea } }, coords: [64, 14], kind: sea, claim: sea-erythraean }
+  - { id: sinus-arabicus, name: { ancient: { en: Sinus Arabicus }, modern: { en: Red Sea } }, coords: [38.6, 20.2], kind: sea, claim: sea-arabian-gulf }
+  - { id: sinus-persicus, name: { ancient: { en: Sinus Persicus }, modern: { en: Persian Gulf } }, coords: [51.5, 27], kind: sea, claim: sea-persian-gulf }
+  - { id: mare-hyrcanum, name: { ancient: { en: Mare Hyrcanum }, modern: { en: Caspian Sea } }, coords: [51, 41.5], kind: sea, claim: sea-caspian }

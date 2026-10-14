@@ -76,3 +76,9 @@ describe("validateReferences", () => {
     expect(msgs(ds)).toContainEqual('timeline.end.claim: unknown claim "nope"');
   });
 });
+
+it("flags eras whose claim does not exist", () => {
+  const ds = makeDataset();
+  ds.timeline.eras = [{ from: 30, to: 37, label: { en: "Tiberius" }, claim: "nope" }];
+  expect(validateReferences(ds, () => true).map((e) => `${e.path}: ${e.message}`)).toContainEqual('timeline.eras.0.claim: unknown claim "nope"');
+});

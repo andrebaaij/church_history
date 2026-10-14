@@ -37,6 +37,6 @@ export function makeDataset(): Dataset {
     ],
     media: [],
     stories: [{ id: "demo", title: { en: "Demo" }, steps: [{ year: 44, camera: { center: [36.18, 36.22], zoom: 6, bearing: 0 }, highlight: ["antioch"], episode: "paul-teaches" }] }],
-    timeline: { start: { year: 30, circa: true, claim: "c-start" }, end: { year: 100, circa: true, claim: "c-end" }, keyEvents: [] },
+    timeline: { start: { year: 30, circa: true, claim: "c-start" }, end: { year: 100, circa: true, claim: "c-end" }, keyEvents: [], eras: [] },
   };
 }

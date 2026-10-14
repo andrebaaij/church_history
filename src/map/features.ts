@@ -50,7 +50,7 @@ export function buildPlaceFeatures(ds: Dataset, idx: Index, year: number, lang: 
       .map((p) => {
         const ancient = tx(p.name.ancient, lang);
         const modern = tx(p.name.modern, lang);
-        return point(p.coords, { id: p.id, ancient, modern: modern === ancient ? "" : modern, rank: idx.placeRank.get(p.id) ?? 0 });
+        return point(p.coords, { id: p.id, ancient, modern: modern === ancient ? "" : modern, rank: idx.placeRank.get(p.id) ?? 0, kind: p.kind });
       }),
   };
 }

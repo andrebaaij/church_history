@@ -8,9 +8,9 @@ territories:
     name: { en: Judea }
     color: "#3d6d9e"
     versions:
-      - { when: { from: 30, to: 40 }, status: province, overlord: roman-empire, geometry: judea.geojson, geometrySource: historical-basemaps, precision: 2, claim: terr-judea-province-6 }
-      - { when: { from: 41, to: 44 }, status: client-kingdom, overlord: roman-empire, geometry: judea.geojson, geometrySource: historical-basemaps, precision: 2, claim: terr-judea-agrippa }
-      - { when: { from: 45, to: 100 }, status: province, overlord: roman-empire, geometry: judea.geojson, geometrySource: historical-basemaps, precision: 2, claim: terr-judea-province-44 }
+      - { when: { from: 30, to: 40 }, status: province, overlord: roman-empire, geometry: judea.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-judea-province-6 }
+      - { when: { from: 41, to: 44 }, status: client-kingdom, overlord: roman-empire, geometry: judea.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-judea-agrippa }
+      - { when: { from: 45, to: 100 }, status: province, overlord: roman-empire, geometry: judea.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-judea-province-44 }
   - id: britannia-province
     name: { en: Britannia }
     color: "#a33a2c"

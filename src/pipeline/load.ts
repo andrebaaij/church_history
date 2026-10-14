@@ -8,7 +8,7 @@ import {
 import type { Dataset } from "../model/dataset";
 import type { ValidationError } from "./errors";
 
-const EMPTY_TIMELINE = { start: { year: 0, circa: true, claim: "missing-timeline" }, end: { year: 0, circa: true, claim: "missing-timeline" }, keyEvents: [] };
+const EMPTY_TIMELINE = { start: { year: 0, circa: true, claim: "missing-timeline" }, end: { year: 0, circa: true, claim: "missing-timeline" }, keyEvents: [], eras: [] };
 
 export function loadDataset(dataDir: string): { dataset: Dataset; errors: ValidationError[] } {
   const errors: ValidationError[] = [];

@@ -13,3 +13,14 @@ it("clamps years", () => {
   expect(clampYear(120, 30, 100)).toBe(100);
   expect(clampYear(51.6, 30, 100)).toBe(52);
 });
+
+it("finds the era (reign) for a year, preferring the later one on overlap years", async () => {
+  const { eraAt } = await import("./time");
+  const eras = [
+    { from: 14, to: 37, label: { en: "Tiberius" }, claim: "c" },
+    { from: 37, to: 41, label: { en: "Caligula" }, claim: "c" },
+  ];
+  expect(eraAt(eras, 30)?.label.en).toBe("Tiberius");
+  expect(eraAt(eras, 37)?.label.en).toBe("Caligula");
+  expect(eraAt(eras, 50)).toBeNull();
+});

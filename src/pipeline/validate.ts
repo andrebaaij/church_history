@@ -93,6 +93,7 @@ export function validateReferences(ds: Dataset, fileExists: FileExists): Validat
 
   need("claim", ds.timeline.start.claim, "timeline.start.claim");
   need("claim", ds.timeline.end.claim, "timeline.end.claim");
+  ds.timeline.eras.forEach((e, i) => need("claim", e.claim, `timeline.eras.${i}.claim`));
   ds.timeline.keyEvents.forEach((k, i) => {
     if (!kindOf.has(k.target)) err(`timeline.keyEvents.${i}.target`, `unknown id "${k.target}"`);
   });

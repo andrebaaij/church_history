@@ -3,3 +3,14 @@ end: { year: 100, circa: true, claim: john-lives-to-trajan }
 keyEvents:
   - { year: 47, label: { en: "Paul's first journey" }, target: paul-antioch-seleucia }
   - { year: 95, label: { en: "John on Patmos" }, target: john-patmos }
+eras:
+  - { from: 14, to: 37, label: { en: "Emperor Tiberius" }, claim: roman-emperors }
+  - { from: 37, to: 41, label: { en: "Emperor Caligula" }, claim: roman-emperors }
+  - { from: 41, to: 54, label: { en: "Emperor Claudius" }, claim: roman-emperors }
+  - { from: 54, to: 68, label: { en: "Emperor Nero" }, claim: roman-emperors }
+  - { from: 68, to: 69, label: { en: "Year of the four emperors" }, claim: roman-emperors }
+  - { from: 69, to: 79, label: { en: "Emperor Vespasian" }, claim: roman-emperors }
+  - { from: 79, to: 81, label: { en: "Emperor Titus" }, claim: roman-emperors }
+  - { from: 81, to: 96, label: { en: "Emperor Domitian" }, claim: roman-emperors }
+  - { from: 96, to: 98, label: { en: "Emperor Nerva" }, claim: roman-emperors }
+  - { from: 98, to: 117, label: { en: "Emperor Trajan" }, claim: roman-emperors }

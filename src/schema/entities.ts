@@ -40,7 +40,7 @@ export const Place = z.object({
   name: z.object({ ancient: I18nText, modern: I18nText.optional() }),
   coords: LonLat,
   pleiades: z.url().optional(),
-  kind: z.enum(["city", "region", "island", "site"]),
+  kind: z.enum(["city", "region", "island", "site", "sea"]),
   exists: When.optional(),
   claim: Id.optional(),
 });
@@ -117,6 +117,8 @@ export const Timeline = z.object({
   start: TimelinePoint,
   end: TimelinePoint,
   keyEvents: z.array(z.object({ year: z.number().int(), label: I18nText, target: Id })).default([]),
+  /** Context shown under the year, e.g. the reigning emperor. */
+  eras: z.array(z.object({ from: z.number().int(), to: z.number().int(), label: I18nText, claim: Id })).default([]),
 });
 export type Timeline = z.infer<typeof Timeline>;
 

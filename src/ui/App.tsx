@@ -5,7 +5,8 @@ import type { Dataset } from "../model/dataset";
 import { buildIndex } from "../model/index";
 import { describeEntity } from "../model/detail";
 import { DEFAULT_CAMERA, focusFor, startYearFor } from "../model/focus";
-import { clampYear } from "../model/time";
+import { clampYear, eraAt } from "../model/time";
+import { tx } from "../i18n/tx";
 import { defaultUrlState, parseUrlState, serializeUrlState } from "../state/urlState";
 import { initialAppState, reducer } from "../state/store";
 import { MapView } from "../map/MapView";
@@ -64,6 +65,7 @@ export function Loaded({ ds }: { ds: Dataset }) {
 
   const detail = state.selected ? describeEntity(state.selected, idx) : null;
   const story = state.story ? idx.stories.get(state.story) ?? null : null;
+  const era = eraAt(ds.timeline.eras, state.year);
   const circa = state.mode === "story" && !!(state.selected && idx.episodes.get(state.selected)?.episode.when.circa);
   const copyStep = import.meta.env.DEV
     ? () => void navigator.clipboard.writeText(stepYaml({ year: state.year, camera: state.camera ?? DEFAULT_CAMERA, selected: state.selected, idx }))
@@ -80,7 +82,12 @@ export function Loaded({ ds }: { ds: Dataset }) {
         onCameraChange={(camera) => dispatch({ type: "cameraMoved", camera })}
       />
       <div className="vignette" aria-hidden />
-      <YearDisplay year={state.year} circa={circa} />
+      <YearDisplay
+        year={state.year}
+        circa={circa}
+        era={era ? tx(era.label, state.lang) : undefined}
+        onEra={era && state.mode === "explore" ? () => select(era.claim) : undefined}
+      />
       {state.mode === "story" && story ? (
         <>
           <StoryMode story={story} state={state} dispatch={dispatch} idx={idx} lang={state.lang} />

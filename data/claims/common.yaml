@@ -20,3 +20,11 @@ claims:
     grade: A
     citations:
       - { source: revelation, locator: "1:9" }
+  - id: roman-emperors
+    text: { en: "The reigns of the Roman emperors from Tiberius to Trajan." }
+    grade: B
+    citations:
+      - { source: suetonius-caesars, locator: "Tiberius 73; Caligula 58-59; Claudius 45; Nero 49" }
+      - { source: suetonius-caesars, locator: "Galba 23; Otho 11; Vitellius 18; Vespasian 24; Titus 11; Domitian 17" }
+      - { source: eusebius-he, locator: "3.20.8-3.21.1" }
+    notes: { en: "Nerva (96–98) and Trajan (from 98) are later than Suetonius; Eusebius records the succession." }
