@@ -61,7 +61,7 @@ claims:
   - id: andrew-relics-constantinople
     text: { en: "In 356/357 Emperor Constantius II has Andrew's remains moved from Achaia to the Church of the Holy Apostles in Constantinople." }
     when: { from: 356, to: 357, circa: false }
-    grade: C
+    grade: B
     citations:
       - { source: jerome-vir-ill, locator: "7", quote: "in the twentieth year of Constantius" }
       - { source: philostorgius-he, locator: "3.2", quote: "translated the remains of St. Andrew the apostle from Achaia" }
@@ -93,7 +93,7 @@ claims:
     when: { from: 33, to: 100, circa: true }
     grade: D
     citations:
-      - { source: ps-dorotheus-lists, locator: "Andrew" }
+      - { source: ps-dorotheus-lists, locator: "Disciples list, Stachys (cf. Apostles list, Andrew)", quote: "whom also Andrew the apostle, traversing the sea of Pontus, in Argyropolis of Thrace appointed bishop of Byzantium" }
     notes: { en: "F. Dvornik (1958) argues the legend was codified only in the 9th century, giving Constantinople an apostolic founder to match Peter at Rome. Later lists give the year 38; its source was not traced." }
   - id: andrew-kyiv-chronicle
     text: { en: "The Russian Primary Chronicle (c. 1113) tells that Andrew sailed from Sinope to Chersonesos (Korsun), went up the Dnieper, blessed the hills where Kyiv would stand and set up a cross, then visited the Slovenes near Novgorod." }

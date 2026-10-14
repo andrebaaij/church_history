@@ -30,6 +30,11 @@ function ClaimBlock({ view, lang, onSelect }: { view: ClaimView; lang: string; o
             ) : (
               <span>{c.source.author}, <cite>{c.source.work}</cite> {c.locator}</span>
             )}
+            <span className="cite-date">
+              {t(c.source.written.circa ? "detail.writtenCirca" : "detail.written", {
+                years: c.source.written.from === c.source.written.to ? c.source.written.from : `${c.source.written.from}–${c.source.written.to}`,
+              })}
+            </span>
             {c.quote && <blockquote>“{c.quote}”</blockquote>}
           </li>
         ))}

@@ -75,7 +75,7 @@ claims:
     grade: A
     citations:
       - { source: acts, locator: "12:1-19" }
-      - { source: josephus-antiquities, locator: "19.343-352", quote: "death of Agrippa I (AD 44) — date anchor only" }
+      - { source: josephus-antiquities, locator: "19.343-352 (death of Agrippa I, AD 44 — date anchor)" }
     notes: { en: "Agrippa I ruled Judea 41–44; Josephus dates his death to 44. Acts does not say where \"another place\" was." }
   - id: peter-council
     text: { en: "At the Jerusalem meeting Peter speaks for accepting Gentiles without circumcision; James, Cephas and John, the \"pillars\", agree that Peter goes to the Jews." }
@@ -137,7 +137,7 @@ claims:
     citations:
       - { source: 1-peter, locator: "5:12-13" }
       - { source: eusebius-he, locator: "2.15.2", quote: "they say that he wrote [1 Peter] in Rome itself … when he calls the city, by a figure, Babylon" }
-      - { source: revelation, locator: "14:8; 17:5, 18", quote: "Revelation also uses \"Babylon\" for Rome" }
+      - { source: revelation, locator: "14:8; 17:5, 18", quote: "that great city, which reigneth over the kings of the earth" }
     notes: { en: "It is not fully clear whether the Babylon = Rome note is from Papias/Clement (B) or Eusebius's own inference (C). Many scholars date 1 Peter c. 70–90 and treat it as written in Peter's name. Literal Babylon (Calvin) and Babylon in Egypt (Coptic) are other readings — see research/import-issues/peter-andrew.md." }
   - id: peter-rome-early-claudius
     text: { en: "Eusebius says Peter came to Rome under Claudius to oppose Simon Magus; Jerome adds that he arrived in Claudius's second year (42) and led the church there for 25 years." }

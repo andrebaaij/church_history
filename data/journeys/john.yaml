@@ -180,7 +180,7 @@ claims:
     grade: B
     citations:
       - { source: eusebius-he, locator: "5.20.6", quote: "(Irenaeus, Letter to Florinus) his intercourse with John" }
-      - { source: irenaeus-ah, locator: "3.3.4", quote: "appointed bishop… by apostles in Asia" }
+      - { source: irenaeus-ah, locator: "3.3.4", quote: "by apostles in Asia, appointed bishop of the Church in Smyrna" }
       - { source: tertullian-praescription, locator: "32", quote: "the church of Smyrna, which records that Polycarp was placed therein by John" }
     referenceWorks:
       - { work: vreugdenhil, chapter: "9", quote: "Polycarp was also a student of the apostle John… John appointed Polycarp as bishop" }
@@ -207,7 +207,7 @@ claims:
     grade: B
     citations:
       - { source: irenaeus-ah, locator: "2.22.5", quote: "he remained among them up to the times of Trajan" }
-      - { source: eusebius-he, locator: "3.31.3", quote: "(quoting Polycrates of Ephesus, c. 190) He fell asleep at Ephesus." }
+      - { source: eusebius-he, locator: "5.24.3", quote: "(quoting Polycrates of Ephesus, c. 190) He fell asleep at Ephesus." }
       - { source: eusebius-he, locator: "3.23.1-4" }
       - { source: jerome-vir-ill, locator: "9", quote: "worn out by old age, died in the sixty-eighth year after our Lord's passion and was buried near the same city" }
     referenceWorks:

@@ -39,7 +39,9 @@
     "alternatives": "Competing traditions",
     "episodes": "What happened here",
     "notes": "Note",
-    "itinerary": "Journey, step by step"
+    "itinerary": "Journey, step by step",
+    "written": "written {{years}}",
+    "writtenCirca": "written c. {{years}}"
   },
   "media": {
     "illustration": "Illustration — not evidence",
