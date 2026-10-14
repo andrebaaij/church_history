@@ -1,0 +1,71 @@
+id: youth-evening-1
+title: { en: "To the ends of the earth" }
+steps:
+  - year: 30
+    camera: { center: [35.2, 31.8], zoom: 4 }
+    highlight: [jerusalem]
+    text: { en: "Around AD 30, a small group of Galilean fishermen and friends wait in Jerusalem. Seventy years later the message has reached Spain, Ethiopia and India. How did that happen — and how do we know?" }
+    notes: { en: "Open question: where would you have gone first? Point out the year and the emperor under it." }
+  - year: 30
+    camera: { center: [35.23, 31.78], zoom: 6.5 }
+    episode: peter-pentecost-sermon
+    notes: { en: "Acts 2:9–11 lists visitors from Parthia, Mesopotamia, Egypt and Rome — the map of where the gospel will go." }
+  - year: 33
+    camera: { center: [36.31, 33.51], zoom: 6.5 }
+    episode: paul-light-from-heaven
+  - year: 47
+    camera: { center: [33.5, 35.1], zoom: 6.3 }
+    highlight: [paul-salamis-paphos]
+    episode: paul-elymas-blinded
+    notes: { en: "First journey. Show the solid line: grade A, straight from Acts 13." }
+  - year: 49
+    camera: { center: [35.23, 31.78], zoom: 6.5 }
+    episode: paul-council-decision
+  - year: 51
+    camera: { center: [22.88, 37.91], zoom: 6.5 }
+    episode: paul-gallio-stone
+    notes: { en: "Key point: an inscription found at Delphi lets us date Paul in Corinth to about AD 51. That is why it is grade A." }
+  - year: 35
+    camera: { center: [44.58, 33.1], zoom: 4.6 }
+    episode: thomas-ep-parthia-lot
+    notes: { en: "Switch to Thomas. Grade C: Eusebius quoting Origen. Notice the dashed line." }
+  - year: 43
+    camera: { center: [72.8, 33.7], zoom: 5 }
+    episode: thomas-ep-real-king
+    notes: { en: "The king really existed (coins, an inscription) — but that does not prove Thomas met him. The story itself is grade D." }
+  - year: 52
+    camera: { center: [60, 16], zoom: 3.7 }
+    highlight: [thomas-berenike-muziris]
+    episode: thomas-ep-monsoon
+  - year: 52
+    camera: { center: [76.2, 10.2], zoom: 6 }
+    episode: thomas-ep-seven-churches
+  - year: 52
+    camera: { center: [60, 24], zoom: 3.1 }
+    text: { en: "Question: Parthia (C), the Acts of Thomas (D), the Kerala tradition (E). Which would you trust most — and why does it matter that we say so honestly?" }
+    notes: { en: "Let the group discuss. Toggle grades D and E off in explore mode to show what is left." }
+  - year: 66
+    camera: { center: [33.7, 16.9], zoom: 5 }
+    episode: matthew-ep-candace
+    notes: { en: "Acts 8: the Ethiopian official served Queen Candace — Meroë in today's Sudan, not modern Ethiopia." }
+  - year: 59
+    camera: { center: [14.4, 35.9], zoom: 6.5 }
+    episode: paul-shipwreck
+  - year: 64
+    camera: { center: [12.49, 41.89], zoom: 6.5 }
+    episode: peter-fastened-to-cross
+    notes: { en: "Rome, after the great fire under Nero (Tacitus, Annals 15.44). Peter and Paul both die in Rome in these years." }
+  - year: 70
+    camera: { center: [35.23, 31.78], zoom: 6 }
+    highlight: [judea]
+    text: { en: "AD 70: Roman legions under Titus destroy Jerusalem and its temple, as Josephus describes in The Jewish War (book 6). The church has already spread far beyond Judea." }
+  - year: 95
+    camera: { center: [26.56, 37.33], zoom: 7.5 }
+    episode: john-receives-revelation
+  - year: 98
+    camera: { center: [27.34, 37.94], zoom: 6.5 }
+    episode: john-falls-asleep
+  - year: 100
+    camera: { center: [45, 26], zoom: 2.6 }
+    text: { en: "By AD 100 the last apostle has died. Their journeys reached from Spain to India — some known for certain, some only from later tradition. What story would you tell about them?" }
+    notes: { en: "Close: open the 'Who was where' lanes and press play to replay the century." }

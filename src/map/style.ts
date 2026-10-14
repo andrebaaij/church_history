@@ -96,6 +96,7 @@ export function buildStyle(themeName: ThemeName, origin: string, base: string, l
         },
         paint: { "text-color": t.label, "text-opacity": 0.6, "text-halo-color": t.halo, "text-halo-width": 1.2 },
       },
+      { id: "territory-highlight", type: "line", source: "territories", filter: ["in", ["get", "id"], ["literal", []]], paint: { "line-color": "#f1c40f", "line-width": 4, "line-opacity": 0.85, "line-blur": 1 } },
       { id: "routes-casing", type: "line", source: "routes", filter: ["==", ["get", "part"], "done"], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": t.halo, "line-width": t.lineWidth + 4, "line-opacity": 0.85 } },
       ...routeLayers,
       { id: "route-highlight", type: "line", source: "routes", filter: ["in", ["get", "id"], ["literal", []]], paint: { "line-color": "#f1c40f", "line-width": t.lineWidth * 3, "line-opacity": 0.5, "line-blur": 2 } },
