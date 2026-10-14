@@ -9,10 +9,11 @@ claims:
       - { source: mark-gospel, locator: "3:18" }
       - { source: luke, locator: "6:15" }
   - id: simon-zealot-zealot-party
-    text: { en: "Josephus first uses \"Zealots\" as the name of a rebel party during the Jewish War (67-68), so in Simon's day \"zealot\" may simply mean zealous for God's law." }
-    when: { from: 67, to: 68, circa: true }
+    text: { en: "Josephus uses \"Zealots\" as the name of a rebel party during the Jewish War (from 66) and explains the name at War 4.3.9, so in Simon's day \"zealot\" may simply mean zealous for God's law." }
+    when: { from: 66, to: 68, circa: true }
     grade: B
     citations:
+      - { source: josephus-war, locator: "2.22.1" }
       - { source: josephus-war, locator: "4.3.9", quote: "for that was the name they went by, as if they were zealous in good undertakings" }
     notes: { en: "Scholars disagree whether an organised Zealot movement already existed around AD 30." }
   - id: simon-zealot-upper-room

@@ -54,7 +54,7 @@ claims:
     when: { from: 60, to: 90, circa: true }
     grade: B
     citations:
-      - { source: eusebius-he, locator: "3.31.3", quote: "Philip, one of the twelve apostles, who fell asleep in Hierapolis" }
+      - { source: eusebius-he, locator: "3.31.3", quote: "Philip, one of the twelve apostles, who sleeps in Hierapolis" }
       - { source: eusebius-he, locator: "5.24.2" }
     alternativeTo: [philip-hierapolis-evangelist]
     notes: { en: "No early source gives the years; Papias (writing c. 110-130) knew the daughters, so a stay some time in the later 1st century is shown." }

@@ -544,7 +544,7 @@ claims:
       - { source: acts, locator: "28:14-15" }
   # ---------- Rome ----------
   - id: paul-rome-two-years
-    text: { en: "In Rome Paul lives for two whole years in his own rented lodging, guarded by a soldier. He welcomes all who come to him, preaching the kingdom of God 'with all boldness, no man forbidding him'. Acts ends here." }
+    text: { en: "In Rome Paul lives for two whole years in his own rented lodging, guarded by a soldier. He welcomes all who come to him, preaching the kingdom of God 'with all confidence, no man forbidding him'. Acts ends here." }
     when: { from: 60, to: 62, circa: true }
     grade: A
     citations:
@@ -618,7 +618,7 @@ claims:
     notes: { en: "Eusebius (HE 2.22.2–7) places this letter in a second Roman imprisonment (grade C); critical scholars who doubt Pauline authorship treat it as not historical." }
   # ---------- Death ----------
   - id: paul-martyrdom-rome-nero
-    text: { en: "Paul dies as a martyr in Rome under Nero (AD 54–68). Clement of Rome, Ignatius, Dionysius of Corinth and Irenaeus all remember Peter and Paul as the martyred founders of the church in Rome." }
+    text: { en: "Paul dies as a martyr in Rome under Nero (AD 54–68). Clement of Rome (c. 96) tells of the martyrdom of Peter and Paul; Ignatius (c. 110) calls Paul 'the holy, the martyred'; Dionysius of Corinth (c. 170) and Irenaeus (c. 180) name Peter and Paul as founders of the church in Rome who suffered martyrdom." }
     when: { from: 64, to: 68, circa: true }
     grade: B
     citations:

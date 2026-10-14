@@ -3,7 +3,7 @@ claims:
     text: { en: "The Roman Empire rules the lands around the Mediterranean, from Spain and Gaul to Egypt and Syria." }
     grade: B
     citations:
-      - { source: tacitus-annals, locator: "1.11", quote: "how many provinces and client kingdoms" }
+      - { source: tacitus-annals, locator: "1.11.4", quote: "the number of citizens and allies under arms, of the fleets, subject kingdoms, provinces, taxes" }
       - { source: strabo-geography, locator: "17.3.24-25" }
     notes: { en: "Shape is a low-precision outline (historical-basemaps, AD 100) clipped to modern coastlines." }
   - id: terr-judea-province-6
@@ -60,12 +60,12 @@ claims:
       - { source: tacitus-annals, locator: "2.64-67" }
     notes: { en: "The year it became a province (AD 46) comes from modern chronology." }
   - id: terr-thrace-province
-    text: { en: "Thrace becomes a Roman province (AD 46)." }
+    text: { en: "Thrace becomes a Roman province. Suetonius lists it among the lands made provinces; modern historians date the annexation to AD 46 under Claudius." }
     when: { from: 46, to: 100, circa: true }
     grade: B
     citations:
-      - { source: tacitus-annals, locator: "2.64-67" }
-    notes: { en: "Ancient writers do not give the year directly; AD 46 is the date used by modern historians." }
+      - { source: suetonius-caesars, locator: "Vespasian 8.4" }
+    notes: { en: "Suetonius credits Vespasian (69–79); the year 46 used on this map comes from modern chronology, not from an ancient text." }
   - id: terr-commagene
     text: { en: "Commagene: a Roman province from AD 17, given back to King Antiochus IV by Caligula in 38, and annexed for good by Vespasian in 72." }
     grade: B
@@ -74,7 +74,7 @@ claims:
       - { source: josephus-war, locator: "7.7.1-3" }
   - id: terr-parthia
     text: { en: "The Parthian (Arsacid) Empire rules Mesopotamia and Iran — Rome's great rival in the east." }
-    grade: A
+    grade: B
     citations:
       - { source: acts, locator: "2:9", quote: "Parthians, and Medes, and Elamites, and the dwellers in Mesopotamia" }
       - { source: tacitus-annals, locator: "15.1-17" }
@@ -128,6 +128,7 @@ claims:
     grade: B
     citations:
       - { source: rabatak-inscription, locator: "lines 12-14" }
+    notes: { en: "The inscription gives the kings' names and succession; the extent into north-west India and the dates c. 50–100 are modern reconstructions from coins." }
   - id: terr-western-satraps
     text: { en: "The Western Satraps (Saka rulers) hold Gujarat and the port of Barygaza." }
     grade: B
