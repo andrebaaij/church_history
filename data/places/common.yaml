@@ -1,0 +1,8 @@
+places:
+  - { id: jerusalem, name: { ancient: { en: Hierosolyma }, modern: { en: Jerusalem } }, coords: [35.235, 31.777], pleiades: "https://pleiades.stoa.org/places/687928", kind: city }
+  - { id: antioch, name: { ancient: { en: Antiochia }, modern: { en: Antakya } }, coords: [36.183, 36.223], pleiades: "https://pleiades.stoa.org/places/658381", kind: city }
+  - { id: seleucia, name: { ancient: { en: Seleucia Pieria }, modern: { en: "near Samandağ" } }, coords: [35.929, 36.121], pleiades: "https://pleiades.stoa.org/places/658483", kind: city }
+  - { id: salamis, name: { ancient: { en: Salamis }, modern: { en: "near Famagusta" } }, coords: [33.903, 35.180], pleiades: "https://pleiades.stoa.org/places/707617", kind: city }
+  - { id: paphos, name: { ancient: { en: Paphos }, modern: { en: Paphos } }, coords: [32.407, 34.757], pleiades: "https://pleiades.stoa.org/places/707586", kind: city }
+  - { id: ephesus, name: { ancient: { en: Ephesus }, modern: { en: "near Selçuk" } }, coords: [27.342, 37.940], pleiades: "https://pleiades.stoa.org/places/599612", kind: city }
+  - { id: patmos, name: { ancient: { en: Patmos }, modern: { en: Patmos } }, coords: [26.559, 37.328], pleiades: "https://pleiades.stoa.org/places/599872", kind: island }

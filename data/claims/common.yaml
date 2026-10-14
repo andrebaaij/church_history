@@ -1,0 +1,27 @@
+claims:
+  - id: ascension
+    text: { en: "Jesus is taken up into heaven forty days after the resurrection (AD 30 or 33, depending on the crucifixion date)." }
+    when: { from: 30, to: 33, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "1:3" }
+      - { source: acts, locator: "1:9" }
+      - { source: luke, locator: "3:1", quote: "in the fifteenth year of the reign of Tiberius Caesar" }
+    notes: { en: "The year comes from modern chronology built on Luke 3:1 and the Passover calendar; Acts gives no year." }
+  - id: john-lives-to-trajan
+    text: { en: "John remains at Ephesus until the time of Trajan (from AD 98)." }
+    when: { from: 98, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: irenaeus-ah, locator: "3.3.4" }
+      - { source: eusebius-he, locator: "3.23.3-4" }
+  - id: roman-rule-extent
+    text: { en: "Approximate extent of Roman rule. Geometry is a low-precision outline for c. AD 100." }
+    grade: B
+    citations:
+      - { source: tacitus-annals, locator: "1.11" }
+  - id: patmos-island
+    text: { en: "Patmos, a small island in the Aegean Sea." }
+    grade: A
+    citations:
+      - { source: revelation, locator: "1:9" }

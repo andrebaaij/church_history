@@ -1,0 +1,49 @@
+sources:
+  - id: luke
+    author: Luke
+    work: Gospel of Luke
+    written: { from: 60, to: 90, circa: true }
+    kind: scripture
+    locatorUrl: "https://www.biblegateway.com/passage/?search=Luke+{locator}&version=KJV"
+  - id: acts
+    author: Luke
+    work: Acts of the Apostles
+    written: { from: 60, to: 90, circa: true }
+    kind: scripture
+    locatorUrl: "https://www.biblegateway.com/passage/?search=Acts+{locator}&version=KJV"
+  - id: revelation
+    author: John
+    work: Revelation
+    written: { from: 90, to: 96, circa: true }
+    kind: scripture
+    locatorUrl: "https://www.biblegateway.com/passage/?search=Revelation+{locator}&version=KJV"
+  - id: irenaeus-ah
+    author: Irenaeus of Lyon
+    work: Against Heresies
+    written: { from: 180, to: 189, circa: true }
+    kind: church-writer
+    edition: "ANF vol. 1, tr. Roberts & Rambaut"
+    url: "https://ccel.org/ccel/schaff/anf01"
+  - id: eusebius-he
+    author: Eusebius of Caesarea
+    work: Church History (Historia Ecclesiastica)
+    written: { from: 313, to: 325, circa: true }
+    kind: church-writer
+    edition: "NPNF2 vol. 1, tr. McGiffert"
+    url: "https://www.newadvent.org/fathers/2501.htm"
+  - id: tacitus-annals
+    author: Tacitus
+    work: Annals
+    written: { from: 115, to: 120, circa: true }
+    kind: historian
+  - id: historical-basemaps
+    author: A. Ourednik
+    work: historical-basemaps (world_bc1, world_100)
+    written: { from: 2019, to: 2025, circa: false }
+    kind: dataset
+    url: "https://github.com/aourednik/historical-basemaps"
+referenceWorks:
+  - id: vreugdenhil
+    author: J. Vreugdenhil
+    title: Church History for Young and Old (Kerkgeschiedenis voor jong en oud)
+    url: "https://defenceofthetruth.com/church-history/church-history-for-young-and-old/"

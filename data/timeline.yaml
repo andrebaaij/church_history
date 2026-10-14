@@ -1,0 +1,5 @@
+start: { year: 30, circa: true, claim: ascension }
+end: { year: 100, circa: true, claim: john-lives-to-trajan }
+keyEvents:
+  - { year: 47, label: { en: "Paul's first journey" }, target: paul-antioch-seleucia }
+  - { year: 95, label: { en: "John on Patmos" }, target: john-patmos }

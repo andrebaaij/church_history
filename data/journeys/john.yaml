@@ -1,0 +1,31 @@
+person: john
+claims:
+  - id: john-on-patmos
+    text: { en: "John is on the island of Patmos \"for the word of God and for the testimony of Jesus\"." }
+    grade: A
+    citations:
+      - { source: revelation, locator: "1:9" }
+  - id: john-patmos-under-domitian
+    text: { en: "The Revelation was seen near the end of Domitian's reign (Domitian ruled AD 81–96)." }
+    when: { from: 95, to: 96, circa: true }
+    grade: B
+    citations:
+      - { source: irenaeus-ah, locator: "5.30.3" }
+      - { source: eusebius-he, locator: "3.18.1-3" }
+items:
+  - type: stay
+    id: john-patmos
+    place: patmos
+    when: { from: 95, to: 96, circa: true }
+    claim: john-on-patmos
+    episodes:
+      - id: john-receives-revelation
+        title: { en: "The Revelation on Patmos" }
+        text: { en: "On the Lord's day John sees the risen Christ and is told to write what he sees to seven churches in Asia." }
+        when: { from: 95, to: 96, circa: true }
+        claim: john-on-patmos
+      - id: john-banished-under-domitian
+        title: { en: "Banished under Domitian" }
+        text: { en: "Irenaeus, writing around 180, dates the vision to the end of Domitian's reign." }
+        when: { from: 95, to: 96, circa: true }
+        claim: john-patmos-under-domitian

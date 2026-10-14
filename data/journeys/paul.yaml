@@ -1,0 +1,18 @@
+person: paul
+claims:
+  - id: paul-sent-from-antioch
+    text: { en: "Sent out by the Holy Spirit, Barnabas and Saul go down to Seleucia and sail to Cyprus." }
+    when: { from: 46, to: 48, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "13:2-4" }
+  - id: paul-salamis-to-paphos
+    text: { en: "They preach in the synagogues at Salamis and cross the whole island to Paphos." }
+    when: { from: 46, to: 48, circa: true }
+    grade: A
+    citations:
+      - { source: acts, locator: "13:5-6" }
+items:
+  - { type: leg, id: paul-antioch-seleucia, from: antioch, to: seleucia, when: { from: 47, to: 47, circa: true }, mode: land, claim: paul-sent-from-antioch }
+  - { type: leg, id: paul-seleucia-salamis, from: seleucia, to: salamis, when: { from: 47, to: 47, circa: true }, mode: sea, claim: paul-sent-from-antioch }
+  - { type: leg, id: paul-salamis-paphos, from: salamis, to: paphos, when: { from: 47, to: 47, circa: true }, mode: land, claim: paul-salamis-to-paphos }

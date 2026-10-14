@@ -1,0 +1,3 @@
+people:
+  - { id: paul, name: { en: Paul }, role: apostle, color: "#c0392b" }
+  - { id: john, name: { en: John }, role: apostle, color: "#1f618d" }

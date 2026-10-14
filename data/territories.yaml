@@ -1,0 +1,6 @@
+territories:
+  - id: roman-empire
+    name: { en: Roman Empire }
+    color: "#b03a2e"
+    versions:
+      - { when: { from: 30, to: 100 }, status: empire, geometry: roman-empire-100.geojson, geometrySource: historical-basemaps, precision: 1, claim: roman-rule-extent }
