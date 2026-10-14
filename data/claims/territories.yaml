@@ -1,0 +1,156 @@
+claims:
+  - id: terr-roman-core
+    text: { en: "The Roman Empire rules the lands around the Mediterranean, from Spain and Gaul to Egypt and Syria." }
+    grade: B
+    citations:
+      - { source: tacitus-annals, locator: "1.11", quote: "how many provinces and client kingdoms" }
+      - { source: strabo-geography, locator: "17.3.24-25" }
+    notes: { en: "Shape is a low-precision outline (historical-basemaps, AD 100) clipped to modern coastlines." }
+  - id: terr-judea-province-6
+    text: { en: "Judea is a Roman province under a prefect (from AD 6) — Pontius Pilate governs AD 26–36." }
+    when: { from: 6, to: 40, circa: false }
+    grade: A
+    citations:
+      - { source: luke, locator: "3:1" }
+      - { source: josephus-antiquities, locator: "18.1.1" }
+      - { source: josephus-antiquities, locator: "18.4.2" }
+    notes: { en: "Galilee and Perea remain under Herod Antipas until AD 39; the map shows the Herodian lands as one region." }
+  - id: terr-judea-agrippa
+    text: { en: "Herod Agrippa I rules as king over all Judea for Rome (AD 41–44); he has James son of Zebedee killed and dies at Caesarea." }
+    when: { from: 41, to: 44, circa: false }
+    grade: A
+    citations:
+      - { source: acts, locator: "12:1-2" }
+      - { source: acts, locator: "12:20-23" }
+      - { source: josephus-antiquities, locator: "19.5.1" }
+      - { source: josephus-antiquities, locator: "19.8.2" }
+  - id: terr-judea-province-44
+    text: { en: "After Agrippa's death Judea is again ruled by Roman procurators; the Jewish revolt (66–70) ends with the destruction of Jerusalem." }
+    when: { from: 44, to: 100, circa: false }
+    grade: B
+    citations:
+      - { source: josephus-antiquities, locator: "19.9.2" }
+      - { source: josephus-war, locator: "6.4.5-8" }
+      - { source: tacitus-histories, locator: "5.1-13" }
+  - id: terr-britain-conquest
+    text: { en: "Emperor Claudius invades Britain in AD 43; Roman control spreads north over the following decades." }
+    when: { from: 43, to: 100, circa: false }
+    grade: B
+    citations:
+      - { source: suetonius-caesars, locator: "Claudius 17" }
+      - { source: tacitus-agricola, locator: "13-17" }
+  - id: terr-mauretania-client
+    text: { en: "Mauretania is a client kingdom of Rome under King Ptolemy." }
+    when: { from: 23, to: 40, circa: true }
+    grade: B
+    citations:
+      - { source: suetonius-caesars, locator: "Caligula 35.1" }
+  - id: terr-mauretania-province
+    text: { en: "After Caligula has King Ptolemy killed (AD 40), Mauretania becomes Roman provinces." }
+    when: { from: 40, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: suetonius-caesars, locator: "Caligula 35.1" }
+      - { source: pliny-nh, locator: "5.1.2 (5.11)" }
+  - id: terr-thrace-client
+    text: { en: "Thrace is ruled by client kings under Roman oversight." }
+    when: { from: 19, to: 45, circa: true }
+    grade: B
+    citations:
+      - { source: tacitus-annals, locator: "2.64-67" }
+    notes: { en: "The year it became a province (AD 46) comes from modern chronology." }
+  - id: terr-thrace-province
+    text: { en: "Thrace becomes a Roman province (AD 46)." }
+    when: { from: 46, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: tacitus-annals, locator: "2.64-67" }
+    notes: { en: "Ancient writers do not give the year directly; AD 46 is the date used by modern historians." }
+  - id: terr-commagene
+    text: { en: "Commagene: a Roman province from AD 17, given back to King Antiochus IV by Caligula in 38, and annexed for good by Vespasian in 72." }
+    grade: B
+    citations:
+      - { source: tacitus-annals, locator: "2.42, 2.56" }
+      - { source: josephus-war, locator: "7.7.1-3" }
+  - id: terr-parthia
+    text: { en: "The Parthian (Arsacid) Empire rules Mesopotamia and Iran — Rome's great rival in the east." }
+    grade: A
+    citations:
+      - { source: acts, locator: "2:9", quote: "Parthians, and Medes, and Elamites, and the dwellers in Mesopotamia" }
+      - { source: tacitus-annals, locator: "15.1-17" }
+  - id: terr-armenia
+    text: { en: "Armenia is a kingdom contested between Rome and Parthia; from AD 63 its Parthian-born king is crowned by Nero." }
+    grade: B
+    citations:
+      - { source: tacitus-annals, locator: "15.28-31" }
+      - { source: suetonius-caesars, locator: "Nero 13" }
+  - id: terr-nabataea
+    text: { en: "The Nabataean kingdom (capital Petra) is an ally of Rome; its King Aretas has a governor in Damascus when Paul escapes." }
+    grade: A
+    citations:
+      - { source: 2-corinthians, locator: "11:32-33" }
+      - { source: strabo-geography, locator: "16.4.21-26" }
+  - id: terr-bosporus
+    text: { en: "The Bosporan kingdom on the Black Sea is a client kingdom of Rome." }
+    grade: B
+    citations:
+      - { source: josephus-war, locator: "2.16.4 (2.366-367)" }
+  - id: terr-meroe
+    text: { en: "The kingdom of Kush (Meroë), ruled by queens called Kandake — the 'Ethiopia' of Acts 8." }
+    grade: A
+    citations:
+      - { source: acts, locator: "8:27", quote: "Candace queen of the Ethiopians" }
+      - { source: strabo-geography, locator: "17.1.54" }
+      - { source: pliny-nh, locator: "6.35 (6.186)" }
+  - id: terr-axum
+    text: { en: "The kingdom of Aksum in the Ethiopian highlands, reached from the Red Sea port of Adulis." }
+    grade: B
+    citations:
+      - { source: periplus, locator: "4-5" }
+  - id: terr-himyar
+    text: { en: "The Himyarite kingdom in south-west Arabia." }
+    grade: B
+    citations:
+      - { source: periplus, locator: "23" }
+  - id: terr-hadramaut
+    text: { en: "Hadramaut, the frankincense kingdom of southern Arabia." }
+    grade: B
+    citations:
+      - { source: periplus, locator: "27" }
+  - id: terr-indo-parthian
+    text: { en: "The Indo-Parthian kingdom of Gondophares rules in what is now Pakistan and Afghanistan (c. AD 19–46) — the 'King Gundaphorus' of the Acts of Thomas." }
+    grade: A
+    citations:
+      - { source: takht-i-bahi-inscription, locator: "regnal year 26 (c. AD 46)" }
+  - id: terr-kushan
+    text: { en: "The Kushans under Kujula Kadphises and Vima Takto expand from Bactria into north-west India (c. AD 50–100)." }
+    when: { from: 50, to: 100, circa: true }
+    grade: B
+    citations:
+      - { source: rabatak-inscription, locator: "lines 12-14" }
+  - id: terr-western-satraps
+    text: { en: "The Western Satraps (Saka rulers) hold Gujarat and the port of Barygaza." }
+    grade: B
+    citations:
+      - { source: periplus, locator: "41-49" }
+  - id: terr-satavahana
+    text: { en: "The Satavahana kingdom rules the Deccan plateau of central India." }
+    grade: B
+    citations:
+      - { source: periplus, locator: "51-52" }
+  - id: terr-tamil
+    text: { en: "The Tamil kingdoms of South India — the Cheras (with the pepper port of Muziris), Pandyas and Cholas — trade with Roman merchants." }
+    grade: B
+    citations:
+      - { source: periplus, locator: "53-60" }
+      - { source: pliny-nh, locator: "6.26 (6.104-106)" }
+  - id: terr-anuradhapura
+    text: { en: "The island of Taprobane (Sri Lanka), whose king sends envoys to Emperor Claudius." }
+    grade: B
+    citations:
+      - { source: pliny-nh, locator: "6.24 (6.84-91)" }
+  - id: terr-dacia
+    text: { en: "The kingdom of Dacia north of the Danube, conquered by Rome only after AD 100." }
+    grade: B
+    citations:
+      - { source: strabo-geography, locator: "7.3.11-13" }

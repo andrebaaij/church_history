@@ -2,11 +2,11 @@ import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } fr
 import { join } from "node:path";
 import { loadDataset } from "../src/pipeline/load";
 import { validateReferences } from "../src/pipeline/validate";
-import { compileTerritories } from "../src/pipeline/emit";
+import { compileTerritories, compileTerritoryLabels } from "../src/pipeline/emit";
 import { formatErrors } from "../src/pipeline/errors";
 
 const ROOT = join(import.meta.dirname, "..");
-const DATA = join(ROOT, "data");
+const DATA = process.env.DATA_DIR ?? join(ROOT, "data");
 const OUT = join(ROOT, "public");
 
 const { dataset, errors } = loadDataset(DATA);
@@ -20,9 +20,13 @@ rmSync(join(OUT, "data"), { recursive: true, force: true });
 rmSync(join(OUT, "media"), { recursive: true, force: true });
 mkdirSync(join(OUT, "data"), { recursive: true });
 writeFileSync(join(OUT, "data/dataset.json"), JSON.stringify(dataset));
-const territories = compileTerritories(dataset, (rel) => JSON.parse(readFileSync(join(DATA, rel), "utf8")));
+const readGeo = (rel: string) => JSON.parse(readFileSync(join(DATA, rel), "utf8"));
+const territories = compileTerritories(dataset, readGeo);
 writeFileSync(join(OUT, "data/territories.geojson"), JSON.stringify(territories));
+writeFileSync(join(OUT, "data/territory-labels.geojson"), JSON.stringify(compileTerritoryLabels(dataset, readGeo)));
 for (const f of ["land.geojson", "rivers.geojson"]) cpSync(join(DATA, "geo/base", f), join(OUT, "data", f));
+const sea = join(DATA, "geo/base/ancient-sea.geojson");
+writeFileSync(join(OUT, "data/ancient-sea.geojson"), existsSync(sea) ? readFileSync(sea) : JSON.stringify({ type: "FeatureCollection", features: [] }));
 if (existsSync(join(DATA, "media/files"))) cpSync(join(DATA, "media/files"), join(OUT, "media"), { recursive: true });
 
 console.log(

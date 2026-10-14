@@ -25,3 +25,8 @@ it("projector theme draws thicker routes", () => {
 it("filters territories by year inclusively", () => {
   expect(territoryFilter(44)).toEqual(["all", ["<=", ["get", "from"], 44], [">=", ["get", "to"], 44]]);
 });
+
+it("draws the ancient-sea correction directly above land", () => {
+  const ids = buildStyle("default", "http://x", "/", "en").layers.map((l) => l.id);
+  expect(ids.indexOf("ancient-sea")).toBe(ids.indexOf("land") + 1);
+});

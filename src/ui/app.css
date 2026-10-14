@@ -263,3 +263,8 @@ figcaption { font-size: 12px; color: var(--muted); margin-top: 6px; }
   .story-text.lead { font-size: 21px; }
   .mode-story .legend, .story-keys { display: none; }
 }
+
+/* compact two-column people list so 14 apostles + the grade legend fit */
+.people { display: grid; grid-template-columns: 1fr 1fr; gap: 0 4px; }
+.people .person { padding: 4px 6px; font-size: 13px; line-height: 1.2; }
+.filters { width: 300px; }

@@ -15,11 +15,6 @@ claims:
     citations:
       - { source: irenaeus-ah, locator: "3.3.4" }
       - { source: eusebius-he, locator: "3.23.3-4" }
-  - id: roman-rule-extent
-    text: { en: "Approximate extent of Roman rule. Geometry is a low-precision outline for c. AD 100." }
-    grade: B
-    citations:
-      - { source: tacitus-annals, locator: "1.11" }
   - id: patmos-island
     text: { en: "Patmos, a small island in the Aegean Sea." }
     grade: A

@@ -1,6 +1,112 @@
 territories:
   - id: roman-empire
     name: { en: Roman Empire }
-    color: "#b03a2e"
+    color: "#a33a2c"
     versions:
-      - { when: { from: 30, to: 100 }, status: empire, geometry: roman-empire-100.geojson, geometrySource: historical-basemaps, precision: 1, claim: roman-rule-extent }
+      - { when: { from: 30, to: 100 }, status: empire, geometry: roman-empire.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-roman-core }
+  - id: judea
+    name: { en: Judea }
+    color: "#3d6d9e"
+    versions:
+      - { when: { from: 30, to: 40 }, status: province, overlord: roman-empire, geometry: judea.geojson, geometrySource: historical-basemaps, precision: 2, claim: terr-judea-province-6 }
+      - { when: { from: 41, to: 44 }, status: client-kingdom, overlord: roman-empire, geometry: judea.geojson, geometrySource: historical-basemaps, precision: 2, claim: terr-judea-agrippa }
+      - { when: { from: 45, to: 100 }, status: province, overlord: roman-empire, geometry: judea.geojson, geometrySource: historical-basemaps, precision: 2, claim: terr-judea-province-44 }
+  - id: britannia-province
+    name: { en: Britannia }
+    color: "#a33a2c"
+    versions:
+      - { when: { from: 43, to: 100 }, status: province, overlord: roman-empire, geometry: britannia.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-britain-conquest }
+  - id: mauretania
+    name: { en: Mauretania }
+    color: "#c47a3d"
+    versions:
+      - { when: { from: 30, to: 39 }, status: client-kingdom, overlord: roman-empire, geometry: mauretania.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-mauretania-client }
+      - { when: { from: 40, to: 100 }, status: province, overlord: roman-empire, geometry: mauretania.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-mauretania-province }
+  - id: thrace
+    name: { en: Thrace }
+    color: "#7d6b45"
+    versions:
+      - { when: { from: 30, to: 45 }, status: client-kingdom, overlord: roman-empire, geometry: thrace.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-thrace-client }
+      - { when: { from: 46, to: 100 }, status: province, overlord: roman-empire, geometry: thrace.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-thrace-province }
+  - id: commagene
+    name: { en: Commagene }
+    color: "#8a6f3a"
+    versions:
+      - { when: { from: 30, to: 37 }, status: province, overlord: roman-empire, geometry: commagene.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-commagene }
+      - { when: { from: 38, to: 71 }, status: client-kingdom, overlord: roman-empire, geometry: commagene.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-commagene }
+      - { when: { from: 72, to: 100 }, status: province, overlord: roman-empire, geometry: commagene.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-commagene }
+  - id: nabataea
+    name: { en: Nabataea }
+    color: "#c2853d"
+    versions:
+      - { when: { from: 30, to: 100 }, status: client-kingdom, overlord: roman-empire, geometry: nabataea.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-nabataea }
+  - id: bosporan-kingdom
+    name: { en: Bosporan Kingdom }
+    color: "#6f8f72"
+    versions:
+      - { when: { from: 30, to: 100 }, status: client-kingdom, overlord: roman-empire, geometry: bosporan-kingdom.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-bosporus }
+  - id: parthian-empire
+    name: { en: Parthian Empire }
+    color: "#6b5b95"
+    versions:
+      - { when: { from: 30, to: 100 }, status: empire, geometry: parthian-empire.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-parthia }
+  - id: armenia
+    name: { en: Armenia }
+    color: "#8c6d3f"
+    versions:
+      - { when: { from: 30, to: 100 }, status: kingdom, geometry: armenia.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-armenia }
+  - id: meroe-kingdom
+    name: { en: "Kush (Meroë)" }
+    color: "#9a5b2e"
+    versions:
+      - { when: { from: 30, to: 100 }, status: kingdom, geometry: meroe.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-meroe }
+  - id: axum-kingdom
+    name: { en: Aksum }
+    color: "#4f7c63"
+    versions:
+      - { when: { from: 30, to: 100 }, status: kingdom, geometry: axum.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-axum }
+  - id: himyar
+    name: { en: Himyar }
+    color: "#a07c3a"
+    versions:
+      - { when: { from: 30, to: 100 }, status: kingdom, geometry: himyar.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-himyar }
+  - id: hadramaut
+    name: { en: Hadramaut }
+    color: "#b28e5a"
+    versions:
+      - { when: { from: 30, to: 100 }, status: kingdom, geometry: hadramaut.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-hadramaut }
+  - id: indo-parthian-kingdom
+    name: { en: Indo-Parthian Kingdom }
+    color: "#5a7aa0"
+    versions:
+      - { when: { from: 30, to: 100 }, status: kingdom, geometry: indo-parthian-kingdom.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-indo-parthian }
+  - id: kushan-empire
+    name: { en: Kushan Empire }
+    color: "#2f6d7e"
+    versions:
+      - { when: { from: 50, to: 100, circa: true }, status: empire, geometry: kushan-empire.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-kushan }
+  - id: western-satraps
+    name: { en: Western Satraps }
+    color: "#7a6a9a"
+    versions:
+      - { when: { from: 30, to: 100 }, status: kingdom, geometry: western-satraps.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-western-satraps }
+  - id: satavahana
+    name: { en: Satavahana Kingdom }
+    color: "#a2675c"
+    versions:
+      - { when: { from: 30, to: 100 }, status: kingdom, geometry: satavahana.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-satavahana }
+  - id: tamil-kingdoms
+    name: { en: "Tamil kingdoms (Chera, Pandya, Chola)" }
+    color: "#3f8f6b"
+    versions:
+      - { when: { from: 30, to: 100 }, status: kingdom, geometry: tamil-kingdoms.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-tamil }
+  - id: taprobane
+    name: { en: "Taprobane (Sri Lanka)" }
+    color: "#8a9a3b"
+    versions:
+      - { when: { from: 30, to: 100 }, status: kingdom, geometry: anuradhapura.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-anuradhapura }
+  - id: dacia
+    name: { en: Dacia }
+    color: "#7e6b5a"
+    versions:
+      - { when: { from: 30, to: 100 }, status: kingdom, geometry: dacia.geojson, geometrySource: historical-basemaps, precision: 1, claim: terr-dacia }

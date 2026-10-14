@@ -1,0 +1,7 @@
+sources:
+  - { id: tacitus-agricola, author: Tacitus, work: Agricola, written: { from: 98, to: 98, circa: true }, kind: historian }
+  - { id: tacitus-histories, author: Tacitus, work: Histories, written: { from: 100, to: 110, circa: true }, kind: historian }
+  - { id: rabatak-inscription, author: Kanishka (royal inscription), work: Rabatak inscription, written: { from: 127, to: 150, circa: true }, kind: inscription }
+  - { id: takht-i-bahi-inscription, author: Gondophares (royal inscription), work: Takht-i-Bahi inscription, written: { from: 45, to: 47, circa: true }, kind: inscription }
+  - { id: natural-earth, author: Natural Earth, work: Natural Earth 1:50m land and rivers, written: { from: 2009, to: 2025, circa: false }, kind: dataset, url: "https://www.naturalearthdata.com/" }
+  - { id: pleiades, author: Pleiades contributors, work: "Pleiades: a gazetteer of past places", written: { from: 2006, to: 2025, circa: false }, kind: dataset, url: "https://pleiades.stoa.org/" }

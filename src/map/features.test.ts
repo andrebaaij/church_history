@@ -30,3 +30,10 @@ it("labels places with ancient and modern names and rank", () => {
   const f = buildPlaceFeatures(ds, idx, 40, "en").features.find((x) => x.properties!.id === "antioch")!;
   expect(f.properties).toEqual({ id: "antioch", ancient: "Antiochia", modern: "Antakya", rank: 2 });
 });
+
+it("omits the modern name when it equals the ancient one", () => {
+  const d = makeDataset();
+  d.places[0].name.modern = { en: "Antiochia" };
+  const f = buildPlaceFeatures(d, buildIndex(d), 40, "en").features.find((x) => x.properties!.id === "antioch")!;
+  expect(f.properties!.modern).toBe("");
+});

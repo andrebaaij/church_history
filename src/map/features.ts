@@ -47,6 +47,10 @@ export function buildPlaceFeatures(ds: Dataset, idx: Index, year: number, lang: 
     type: "FeatureCollection",
     features: ds.places
       .filter((p) => !p.exists || isActive(p.exists, year))
-      .map((p) => point(p.coords, { id: p.id, ancient: tx(p.name.ancient, lang), modern: tx(p.name.modern, lang), rank: idx.placeRank.get(p.id) ?? 0 })),
+      .map((p) => {
+        const ancient = tx(p.name.ancient, lang);
+        const modern = tx(p.name.modern, lang);
+        return point(p.coords, { id: p.id, ancient, modern: modern === ancient ? "" : modern, rank: idx.placeRank.get(p.id) ?? 0 });
+      }),
   };
 }
