@@ -34,7 +34,7 @@ sources:
   - { id: 2-peter, author: "Peter", work: "Second Letter of Peter", written: { from: 65, to: 100, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=2+Peter+{locator}&version=KJV" }
   - { id: jude-letter, author: "Jude", work: "Letter of Jude", written: { from: 65, to: 90, circa: true }, kind: scripture, locatorUrl: "https://www.biblegateway.com/passage/?search=Jude+{locator}&version=KJV" }
   - { id: jerome-vir-ill, author: Jerome, work: "On Illustrious Men (De viris illustribus)", written: { from: 392, to: 393, circa: true }, kind: church-writer, edition: "NPNF2 vol. 3", url: "https://www.newadvent.org/fathers/2708.htm" }
-  - { id: acts-of-thomas, author: Anonymous, work: Acts of Thomas, written: { from: 200, to: 240, circa: true }, kind: apocryphon, edition: "ANF vol. 8", url: "https://www.newadvent.org/fathers/0823.htm" }
+  - { id: acts-of-thomas, author: Anonymous, work: Acts of Thomas, written: { from: 200, to: 240, circa: true }, kind: apocryphon, edition: "M. R. James, The Apocryphal New Testament (1924), numbered sections", url: "https://cts.perseids.org/read/greekLit/tlg2038/tlg001/1st1K-eng1/1-10" }
   - { id: ps-hippolytus-twelve, author: Pseudo-Hippolytus, work: On the Twelve Apostles, written: { from: 300, to: 800, circa: true }, kind: apocryphon, edition: "ANF vol. 5", url: "https://www.newadvent.org/fathers/0524.htm" }
   - { id: 1-clement, author: Clement of Rome, work: First Letter of Clement, written: { from: 95, to: 97, circa: true }, kind: church-writer, edition: "ANF vol. 1", url: "https://www.newadvent.org/fathers/1010.htm" }
   - { id: josephus-antiquities, author: Flavius Josephus, work: Antiquities of the Jews, written: { from: 93, to: 94, circa: true }, kind: historian }

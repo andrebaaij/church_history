@@ -13,6 +13,7 @@ claims:
     grade: A
     citations:
       - { source: matthew-gospel, locator: "9:9" }
+      - { source: mark-gospel, locator: "2:1" }
       - { source: mark-gospel, locator: "2:14" }
       - { source: luke, locator: "5:27-28" }
   - id: matthew-feast
@@ -61,7 +62,7 @@ claims:
   - id: matthew-ethiopia-is-kush
     text: { en: "In 1st-century writers 'Ethiopia' is the kingdom of Kush/Meroë on the Nile, ruled by queens with the title Candace; Philip baptised an official of 'Candace queen of the Ethiopians'." }
     when: { from: 32, to: 62, circa: true }
-    grade: A
+    grade: B
     citations:
       - { source: acts, locator: "8:27", quote: "a man of Ethiopia, an eunuch of great authority under Candace queen of the Ethiopians" }
       - { source: pliny-nh, locator: "6.35 (6.186)" }
